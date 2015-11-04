@@ -1,0 +1,15 @@
+{ 
+"name":"gitline", 
+"version":"0.0.1", 
+"description": "graphical git ui",
+"author": "stephan blecher <stephan@blecher.at>",
+"keywords": [ "git", "ui", "graph", "network" ],
+"scripts": {
+	"test": "test/index.js",
+	"start": "main/server.js" },
+"preferGlobal": true, 
+"private": true,
+"dependencies": {
+	"git2json": "0.0.1"
+}
+}

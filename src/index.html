@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<title>git2html sample</title>
+<script type="text/javascript" src="./jsgl.min.js"></script>
+<script type="text/javascript" src="../target/Branch.js"></script>
+<script type="text/javascript" src="../target/Commit.js"></script>
+<script type="text/javascript" src="../target/Gitline.js"></script>
+<script type="text/javascript" src="../target/Config.js"></script>
+<script type="text/javascript"
+	src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		myPanel = new jsgl.Panel(document.getElementById("panel"));
+		
+		
+		$.getJSON("test/sample003.json", {}, function(json) {
+			console.log("JSON: "+json);
+			console.log(json);
+			var panel = document.getElementById("panel");
+			new Gitline().render(panel, document.getElementById("textPanel"), json);
+			panel.style.position = "absolute";
+		});
+	});
+
+	</script>
+	
+	<style>
+		.head-label {
+			background-color: lightgrey;
+		}
+		
+		.commit-legend {
+			border-bottom: 1px solid #e0e0e0;
+			width: 100%;
+			box-sizing: border-box;
+			padding-left: 50%;
+		}
+		
+		body { font-family: Verdana, Arial; margin: 0;
+		font-size: 12px }
+		
+		#textPanel {
+			width: 100%
+			
+		}
+		
+		#console {
+			width: 100%;
+			background-color: black;
+			color: #e6e6e6;
+			border: 0;
+		}
+	</style>
+
+</head>
+<body>
+	<input id="console" type="text" />
+	<div id="textPanel" style="position: absolute; top: 20px; z-index: 2"></div>
+	<div id="panel" style="top: 20px; height: 10000px; z-index: 1"></div>
+	<script type="text/javascript">
+      /* Instantiate JSGL Panel. */
+ 
+ 
+    </script>
+</body>
+</html>
