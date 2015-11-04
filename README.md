@@ -16,4 +16,8 @@ Future developments will include:
 - support other input formats like github-api
 - statistics 
 
-Build with the fantastic JSGL http://www.jsgl.org/
+Imports
+-------
+Programming Language: Typescript http://www.typescriptlang.org/
+SVG Rendering: JSGL http://www.jsgl.org/
+JQuery: https://jquery.org/
