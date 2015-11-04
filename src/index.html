@@ -15,12 +15,15 @@
 		myPanel = new jsgl.Panel(document.getElementById("panel"));
 		
 		
-		$.getJSON("test/sample003.json", {}, function(json) {
+		var jsonFile = "test/sample004.json";
+		$.getJSON(jsonFile, {}, function(json) {
 			console.log("JSON: "+json);
 			console.log(json);
 			var panel = document.getElementById("panel");
 			new Gitline().render(panel, document.getElementById("textPanel"), json);
 			panel.style.position = "absolute";
+		}).error(function() {
+			alert("Error loading git data from "+jsonFile+ " create it using git2json");
 		});
 	});
 
