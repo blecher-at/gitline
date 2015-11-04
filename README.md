@@ -19,5 +19,7 @@ Future developments will include:
 Imports
 -------
 Programming Language: Typescript http://www.typescriptlang.org/
+
 SVG Rendering: JSGL http://www.jsgl.org/
+
 JQuery: https://jquery.org/
