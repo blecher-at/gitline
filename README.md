@@ -1,4 +1,6 @@
-gitline - a git history to html renderer implemented in javascript.
+![gitline sample](https://github.com/blecher-at/gitline/blob/master/doc/gitline.png)
+
+gitline - a git history to html renderer implemented in javascript (typescript).
 
 Idea is to have this on a central server or your local machine, to keep tabs on what your team is doing :)
 needs a json file as input (generated with git2json)
@@ -11,5 +13,3 @@ Future developments will include:
 - filtering functionality (by branches, author etc.)
 - support other input formats like github-api
 - statistics 
-
-
