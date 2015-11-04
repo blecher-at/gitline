@@ -6,6 +6,7 @@ needs a json file as input (generated with git2json)
 Tries to autodetect the category and assignment of branches and groups commits accordingly.
 
 Future developments will include:
+- include meaningful sample data
 - show author and timestamp metadata
 - filtering functionality (by branches, author etc.)
 - support other input formats like github-api
