@@ -12,6 +12,7 @@ class Commit {
 	public outOfScope: boolean = false; // This commit was not part of the logs scope, but is referenced by another commit.
 	public merges = { standard: [], anonymous: []};
 	private sha: string;
+	private ssha: string; // Abbreviated hash
 	public subject: string;
 	private data: any;
 	private indexY: number;
@@ -36,16 +37,17 @@ class Commit {
 		if(data.refnames == null) data.refnames = [];
 	
 		this.sha = data.sha;
+		this.ssha = data.ssha;
 		this.subject = data.subject;
 		this.indexY = container.maxIndexY ++;
 	}
 	
 	public getShortSha() : string {
-		return this.data.sha.substring(0, 8);
+		return this.ssha;
 	}
 	
 	public getFullSha() : string {
-		return this.data.sha;
+		return this.sha;
 	}
 	
 	public initRelations() {
@@ -180,8 +182,6 @@ class Commit {
 				merge.branch.category = child.mostSpecificHead.category;
 				
 				this.container.headsMap[merge.mostSpecificHead.ref] = merge.branch;
-				
-				//merge.initDefaultBranch();
 			}
 		});
 	}
