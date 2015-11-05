@@ -1,4 +1,82 @@
 {
+  "f1cc0a06051406554268e8611c483f533309fea8": {
+    "sha": "f1cc0a06051406554268e8611c483f533309fea8",
+    "ssha": "f1cc0a0",
+    "parenthashes": [
+      "236200e72f7dd9fba041557b002e3813814e84ba",
+      "3eb8a621f1e0f381a5dea772e3b5d46427fa1d26"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446766649",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446766649",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:blecher-at/gitline",
+    "ssubject": "Merge-branch-master-of-github.com-blecher-at-gitline",
+    "body": "",
+    "refnames": [
+      "HEAD -> master",
+      "origin/master"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 0
+  },
+  "236200e72f7dd9fba041557b002e3813814e84ba": {
+    "sha": "236200e72f7dd9fba041557b002e3813814e84ba",
+    "ssha": "236200e",
+    "parenthashes": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446766639",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446766639",
+    "encoding": "",
+    "subject": "add self as sample, add loading indicator",
+    "ssubject": "add-self-as-sample-add-loading-indicator",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f1cc0a06051406554268e8611c483f533309fea8"
+    ],
+    "inHeads": [
+      "f1cc0a06051406554268e8611c483f533309fea8"
+    ],
+    "index": 1
+  },
+  "3eb8a621f1e0f381a5dea772e3b5d46427fa1d26": {
+    "sha": "3eb8a621f1e0f381a5dea772e3b5d46427fa1d26",
+    "ssha": "3eb8a62",
+    "parenthashes": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446759572",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446759572",
+    "encoding": "",
+    "subject": "Update README.md",
+    "ssubject": "Update-README.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f1cc0a06051406554268e8611c483f533309fea8"
+    ],
+    "inHeads": [
+      "f1cc0a06051406554268e8611c483f533309fea8"
+    ],
+    "index": 2
+  },
   "6db247034d84531f7015bfd5b519213c0a5812fe": {
     "sha": "6db247034d84531f7015bfd5b519213c0a5812fe",
     "ssha": "6db2470",
@@ -16,14 +94,17 @@
     "subject": "Merge branch 'master' of github.com:blecher-at/gitline",
     "ssubject": "Merge-branch-master-of-github.com-blecher-at-gitline",
     "body": "",
-    "refnames": [
-      "HEAD -> master",
-      "origin/master"
-    ],
+    "refnames": [],
     "parents": [],
-    "children": [],
-    "inHeads": [],
-    "index": 0
+    "children": [
+      "236200e72f7dd9fba041557b002e3813814e84ba",
+      "3eb8a621f1e0f381a5dea772e3b5d46427fa1d26"
+    ],
+    "inHeads": [
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
+    ],
+    "index": 3
   },
   "170c68be4d12c0dcbf0c23b7169d7fe0e7728203": {
     "sha": "170c68be4d12c0dcbf0c23b7169d7fe0e7728203",
@@ -47,9 +128,10 @@
       "6db247034d84531f7015bfd5b519213c0a5812fe"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 1
+    "index": 4
   },
   "2e98cfb9886de2c3e78725d81aca294a11ca90c3": {
     "sha": "2e98cfb9886de2c3e78725d81aca294a11ca90c3",
@@ -73,9 +155,10 @@
       "170c68be4d12c0dcbf0c23b7169d7fe0e7728203"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 2
+    "index": 5
   },
   "677b6c601e8d2465af0054dcca8fcf4895880cde": {
     "sha": "677b6c601e8d2465af0054dcca8fcf4895880cde",
@@ -99,9 +182,10 @@
       "6db247034d84531f7015bfd5b519213c0a5812fe"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 3
+    "index": 6
   },
   "b2e81f470bef10d1bce902bac756c459111a26d6": {
     "sha": "b2e81f470bef10d1bce902bac756c459111a26d6",
@@ -125,9 +209,10 @@
       "677b6c601e8d2465af0054dcca8fcf4895880cde"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 4
+    "index": 7
   },
   "81be68959bfc371d437e614e2c79c91b550d4edb": {
     "sha": "81be68959bfc371d437e614e2c79c91b550d4edb",
@@ -151,9 +236,10 @@
       "b2e81f470bef10d1bce902bac756c459111a26d6"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 5
+    "index": 8
   },
   "b1eb5755f077c54a561d6ce3f96a2afaba08a459": {
     "sha": "b1eb5755f077c54a561d6ce3f96a2afaba08a459",
@@ -177,9 +263,10 @@
       "81be68959bfc371d437e614e2c79c91b550d4edb"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 6
+    "index": 9
   },
   "48cf07df713bcd4151c104bb8fcc20262fc2f00b": {
     "sha": "48cf07df713bcd4151c104bb8fcc20262fc2f00b",
@@ -203,9 +290,10 @@
       "b1eb5755f077c54a561d6ce3f96a2afaba08a459"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 7
+    "index": 10
   },
   "708c461edc2a3b9fba6390b1097f41612c9c79f9": {
     "sha": "708c461edc2a3b9fba6390b1097f41612c9c79f9",
@@ -231,10 +319,12 @@
       "48cf07df713bcd4151c104bb8fcc20262fc2f00b"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe",
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 8
+    "index": 11
   },
   "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b": {
     "sha": "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b",
@@ -258,10 +348,12 @@
       "708c461edc2a3b9fba6390b1097f41612c9c79f9"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe",
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 9
+    "index": 12
   },
   "3196b9e181d58327a00fd02b613c0325245b07ad": {
     "sha": "3196b9e181d58327a00fd02b613c0325245b07ad",
@@ -285,10 +377,12 @@
       "708c461edc2a3b9fba6390b1097f41612c9c79f9"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe",
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 10
+    "index": 13
   },
   "43eff664c83e9289b23bfba07f0444b47641bb4b": {
     "sha": "43eff664c83e9289b23bfba07f0444b47641bb4b",
@@ -312,10 +406,12 @@
       "3196b9e181d58327a00fd02b613c0325245b07ad"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe",
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 11
+    "index": 14
   },
   "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b": {
     "sha": "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b",
@@ -338,11 +434,15 @@
       "43eff664c83e9289b23bfba07f0444b47641bb4b"
     ],
     "inHeads": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe",
-      "6db247034d84531f7015bfd5b519213c0a5812fe",
-      "6db247034d84531f7015bfd5b519213c0a5812fe",
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8",
+      "f1cc0a06051406554268e8611c483f533309fea8"
     ],
-    "index": 12
+    "index": 15
   }
 }
