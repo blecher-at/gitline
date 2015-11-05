@@ -1,6 +1,7 @@
 /// <reference path="Branch.ts"/>
 /// <reference path="Commit.ts"/>
 /// <reference path="Config.ts"/>
+/// <reference path="AsyncLoader.ts"/>
 	
 interface Commits { [key:string]:Commit; }
 interface Branches { [key:string]:Branch; }
@@ -33,49 +34,55 @@ class Gitline {
 		this.headsMap[refname] = branch;
 	}
 	
-	public render(panel, textPanel, data) {
+	public render(loadingPanel, panel, textPanel, data) {
 
 		this.data = data;
 		this.canvas = new jsgl.Panel(panel);
 		this.panel = panel;
 		this.textPanel = textPanel;
 
-		// Initlialize the data
-		for (var sha in this.data) {
+		var al: AsyncLoader = new AsyncLoader(loadingPanel);
+
+		al.then("Loading Commits", () => {return Object.keys(this.data)}, (sha) => {
 			var commit = new Commit(this, data[sha]);
 			this.addCommit(commit);
-		}
-		
-	
-		for (var sha in this.commits) {
+		});
+
+		al.then("Calculating Relationships", () => {return Object.keys(this.commits)}, (sha) => {
 			var commit = this.commits[sha];
 			
 			commit.initRelations();
 			commit.initHeadSpecifity();
 			commit.initMerges();
-			
-		}
+		});
 		
-		this.initBranches();
+		al.thenSingle("Assigning Branches", () => {
+			this.initBranches();
+		});
 
-
-
-		for (var sha in this.commits) {
+		al.then("Drawing Labels", () => {return Object.keys(this.commits)}, (sha) => {
 			var commit = this.commits[sha];
 			this.drawCommit(commit);
-		}
+		});
 		
 		
-		this.rootLabel = document.createElement('div')
-		this.rootLabel.className = "commit-legend"
-		this.textPanel.appendChild(this.rootLabel);
+		al.thenSingle("Creating Legend", () => {
+			this.rootLabel = document.createElement('div')
+			this.rootLabel.className = "commit-legend"
+			this.textPanel.appendChild(this.rootLabel);
+		});
 		
-		for (var sha in this.commits) {
+		al.then("Drawing Merges", () => {return Object.keys(this.commits)}, (sha) => {
 			var commit = this.commits[sha];
 			this.drawReferences(commit);
-		}
+		});
 		
-		panel.style.width = indexToX(this.maxX + 1) + "px"
+		al.thenSingle("Resizing", () => {
+			panel.style.width = indexToX(this.maxX + 1) + "px"
+			panel.style.height = this.rootLabel.offsetTop + "px";
+		});
+		
+		al.start();
 		
 	}
 	

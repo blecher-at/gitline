@@ -221,7 +221,7 @@ class Commit {
 		} else if(this.branch.start.outOfScope){
 			return this.container.maxIndexY;
 		} else {
-			this.warn("Branch "+this.branch.ref+ " has no origin or start ");
+			return this.branch.start.indexY;
 		}
 	}
 	

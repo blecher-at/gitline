@@ -12,12 +12,13 @@
 		myPanel = new jsgl.Panel(document.getElementById("panel"));
 		
 		
-		var jsonFile = "test/example01.json";
+		
+		
+		var jsonFile = "test/example02.json";
 		$.getJSON(jsonFile, {}, function(json) {
-			console.log("JSON: "+json);
-			console.log(json);
 			var panel = document.getElementById("panel");
-			new Gitline().render(panel, document.getElementById("textPanel"), json);
+			var loadingPanel = document.getElementById("loadingPanel");
+			new Gitline().render(loadingPanel, panel, document.getElementById("textPanel"), json);
 			panel.style.position = "absolute";
 		}).error(function() {
 			alert("Error loading git data from "+jsonFile+ " create it using git2json");
@@ -52,13 +53,27 @@
 			color: #e6e6e6;
 			border: 0;
 		}
+		
+		#loadingPanel {
+			position: fixed;
+			top: 0; 
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 10000;
+			background-color: white;
+			font-size: 20px;
+			text-align: center;
+			padding-top: 25%;
+		}
 	</style>
 
 </head>
 <body>
 	<input id="console" type="text" />
+	<div id="loadingPanel"></div>
 	<div id="textPanel" style="position: absolute; top: 20px; z-index: 1"></div>
-	<div id="panel" style="top: 20px; height: 10000px; z-index: 2"></div>
+	<div id="panel" style="top: 20px; z-index: 2"></div>
 	<script type="text/javascript">
       /* Instantiate JSGL Panel. */
  

@@ -1,0 +1,348 @@
+{
+  "6db247034d84531f7015bfd5b519213c0a5812fe": {
+    "sha": "6db247034d84531f7015bfd5b519213c0a5812fe",
+    "ssha": "6db2470",
+    "parenthashes": [
+      "170c68be4d12c0dcbf0c23b7169d7fe0e7728203",
+      "677b6c601e8d2465af0054dcca8fcf4895880cde"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446758962",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446758962",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:blecher-at/gitline",
+    "ssubject": "Merge-branch-master-of-github.com-blecher-at-gitline",
+    "body": "",
+    "refnames": [
+      "HEAD -> master",
+      "origin/master"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 0
+  },
+  "170c68be4d12c0dcbf0c23b7169d7fe0e7728203": {
+    "sha": "170c68be4d12c0dcbf0c23b7169d7fe0e7728203",
+    "ssha": "170c68b",
+    "parenthashes": [
+      "2e98cfb9886de2c3e78725d81aca294a11ca90c3"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446751674",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446751674",
+    "encoding": "",
+    "subject": "add tsconfig for easy compilement, adapted for non-origin repo, hide anonymous branch refs",
+    "ssubject": "add-tsconfig-for-easy-compilement-adapted-for-non-origin-repo-hide-anonymous-branch-refs",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 1
+  },
+  "2e98cfb9886de2c3e78725d81aca294a11ca90c3": {
+    "sha": "2e98cfb9886de2c3e78725d81aca294a11ca90c3",
+    "ssha": "2e98cfb",
+    "parenthashes": [
+      "708c461edc2a3b9fba6390b1097f41612c9c79f9"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446751166",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446751166",
+    "encoding": "",
+    "subject": "add tsconfig for easy compilement",
+    "ssubject": "add-tsconfig-for-easy-compilement",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "170c68be4d12c0dcbf0c23b7169d7fe0e7728203"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 2
+  },
+  "677b6c601e8d2465af0054dcca8fcf4895880cde": {
+    "sha": "677b6c601e8d2465af0054dcca8fcf4895880cde",
+    "ssha": "677b6c6",
+    "parenthashes": [
+      "b2e81f470bef10d1bce902bac756c459111a26d6"
+    ],
+    "authorname": "blecher-at",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446671922",
+    "committername": "blecher-at",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446671922",
+    "encoding": "",
+    "subject": "Update README.md",
+    "ssubject": "Update-README.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 3
+  },
+  "b2e81f470bef10d1bce902bac756c459111a26d6": {
+    "sha": "b2e81f470bef10d1bce902bac756c459111a26d6",
+    "ssha": "b2e81f4",
+    "parenthashes": [
+      "81be68959bfc371d437e614e2c79c91b550d4edb"
+    ],
+    "authorname": "blecher-at",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446671906",
+    "committername": "blecher-at",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446671906",
+    "encoding": "",
+    "subject": "Update README.md",
+    "ssubject": "Update-README.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "677b6c601e8d2465af0054dcca8fcf4895880cde"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 4
+  },
+  "81be68959bfc371d437e614e2c79c91b550d4edb": {
+    "sha": "81be68959bfc371d437e614e2c79c91b550d4edb",
+    "ssha": "81be689",
+    "parenthashes": [
+      "b1eb5755f077c54a561d6ce3f96a2afaba08a459"
+    ],
+    "authorname": "blecher-at",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446671785",
+    "committername": "blecher-at",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446671785",
+    "encoding": "",
+    "subject": "Update README.md",
+    "ssubject": "Update-README.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b2e81f470bef10d1bce902bac756c459111a26d6"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 5
+  },
+  "b1eb5755f077c54a561d6ce3f96a2afaba08a459": {
+    "sha": "b1eb5755f077c54a561d6ce3f96a2afaba08a459",
+    "ssha": "b1eb575",
+    "parenthashes": [
+      "48cf07df713bcd4151c104bb8fcc20262fc2f00b"
+    ],
+    "authorname": "blecher-at",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446671617",
+    "committername": "blecher-at",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446671617",
+    "encoding": "",
+    "subject": "Update README.md",
+    "ssubject": "Update-README.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "81be68959bfc371d437e614e2c79c91b550d4edb"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 6
+  },
+  "48cf07df713bcd4151c104bb8fcc20262fc2f00b": {
+    "sha": "48cf07df713bcd4151c104bb8fcc20262fc2f00b",
+    "ssha": "48cf07d",
+    "parenthashes": [
+      "708c461edc2a3b9fba6390b1097f41612c9c79f9"
+    ],
+    "authorname": "blecher-at",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446671486",
+    "committername": "blecher-at",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446671486",
+    "encoding": "",
+    "subject": "Update README.md",
+    "ssubject": "Update-README.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b1eb5755f077c54a561d6ce3f96a2afaba08a459"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 7
+  },
+  "708c461edc2a3b9fba6390b1097f41612c9c79f9": {
+    "sha": "708c461edc2a3b9fba6390b1097f41612c9c79f9",
+    "ssha": "708c461",
+    "parenthashes": [
+      "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b",
+      "3196b9e181d58327a00fd02b613c0325245b07ad"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446671345",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446671345",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:blecher-at/gitline",
+    "ssubject": "Merge-branch-master-of-github.com-blecher-at-gitline",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2e98cfb9886de2c3e78725d81aca294a11ca90c3",
+      "48cf07df713bcd4151c104bb8fcc20262fc2f00b"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe",
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 8
+  },
+  "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b": {
+    "sha": "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b",
+    "ssha": "2f83de8",
+    "parenthashes": [
+      "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446671314",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446671314",
+    "encoding": "",
+    "subject": "Error handling for nonexisting sample file, example picture",
+    "ssubject": "Error-handling-for-nonexisting-sample-file-example-picture",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "708c461edc2a3b9fba6390b1097f41612c9c79f9"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe",
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 9
+  },
+  "3196b9e181d58327a00fd02b613c0325245b07ad": {
+    "sha": "3196b9e181d58327a00fd02b613c0325245b07ad",
+    "ssha": "3196b9e",
+    "parenthashes": [
+      "43eff664c83e9289b23bfba07f0444b47641bb4b"
+    ],
+    "authorname": "blecher-at",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446671024",
+    "committername": "blecher-at",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446671024",
+    "encoding": "",
+    "subject": "Update README.md",
+    "ssubject": "Update-README.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "708c461edc2a3b9fba6390b1097f41612c9c79f9"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe",
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 10
+  },
+  "43eff664c83e9289b23bfba07f0444b47641bb4b": {
+    "sha": "43eff664c83e9289b23bfba07f0444b47641bb4b",
+    "ssha": "43eff66",
+    "parenthashes": [
+      "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b"
+    ],
+    "authorname": "blecher-at",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446670961",
+    "committername": "blecher-at",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446670961",
+    "encoding": "",
+    "subject": "Create README.md",
+    "ssubject": "Create-README.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "3196b9e181d58327a00fd02b613c0325245b07ad"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe",
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 11
+  },
+  "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b": {
+    "sha": "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b",
+    "ssha": "1f9a9df",
+    "parenthashes": [],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446670712",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446670712",
+    "encoding": "",
+    "subject": "Initial commit",
+    "ssubject": "Initial-commit",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b",
+      "43eff664c83e9289b23bfba07f0444b47641bb4b"
+    ],
+    "inHeads": [
+      "6db247034d84531f7015bfd5b519213c0a5812fe",
+      "6db247034d84531f7015bfd5b519213c0a5812fe",
+      "6db247034d84531f7015bfd5b519213c0a5812fe",
+      "6db247034d84531f7015bfd5b519213c0a5812fe"
+    ],
+    "index": 12
+  }
+}
