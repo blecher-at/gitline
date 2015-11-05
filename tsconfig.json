@@ -3,7 +3,7 @@
         "module": "commonjs",
         "target": "es3",
         "noImplicitAny": false,
-        "outDir": "target",
+        "outFile": "target/gitline.js",
         "rootDir": "src/main/ts",
         "sourceMap": false
     },

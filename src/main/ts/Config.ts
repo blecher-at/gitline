@@ -15,5 +15,5 @@ class GitlineConfig {
 	public dotRadiusY = this.dotHeight / 2;
 	public dotRadiusX = this.dotWidth / 2;
 
-	public remoteOnly: boolean = true;
+	public remoteOnly: boolean = false;
 }

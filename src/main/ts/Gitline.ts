@@ -96,7 +96,9 @@ class Gitline {
 			}
 			var self = this;
 			commit.domLabel.onclick = function() {
-				console.log(self);
+				if(console) {
+					console.log(commit);	
+				}
 			}
 			
 			commit.domLabel.style['padding-left'] = indexToX(this.maxX + 1)+"px"
@@ -248,7 +250,7 @@ class Gitline {
 		label.appendChild(sha);
 
 		// Branch - TODO: Tags and other branches		
-		if(commit.branch && commit.branch.commit === commit) {
+		if(commit.branch && commit.branch.commit === commit && !commit.branch.anonymous) {
 			var head = document.createElement("span");
 			head.className = "head-label";
 			head.style.backgroundColor = commit.getColor(40);
@@ -262,8 +264,8 @@ class Gitline {
 		
 		// Subject		
 		var subject = document.createElement("span");
-		subject.innerHTML = commit.subject;
-		subject.style.color = "grey"
+		subject.innerHTML = " "+commit.subject;
+		subject.style.color = commit.hasMerges() ? "grey": "black";
 		label.appendChild(subject); 
 		
 		label.style.position = "relative";
@@ -312,8 +314,6 @@ class Gitline {
 			var head = this.headsMap[headName];
 			var tip: Commit = head.commit;
 			
-			//head.index = i;
-			
 			if(tip.branch === head) {
 				head.lane = maxLane;
 				maxLane ++;
@@ -334,7 +334,7 @@ class Gitline {
 					
 					if(canUseLane) {
 						minLane = Math.max(minLane, headOnLane.branch.lane)+1;
-						console.log("NO INTERSECTS: ",tip.branch.ref," - ",headOnLane.branch.ref);
+						//console.log("NO INTERSECTS: ",tip.branch.ref," - ",headOnLane.branch.ref);
 						head.lane = l;
 						break;
 					}

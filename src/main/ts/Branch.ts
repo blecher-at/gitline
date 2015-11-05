@@ -1,3 +1,5 @@
+/// <reference path="Commit.ts"/>
+
 class Branch {
 	public specifity: number;
 	public start: Commit;
@@ -9,4 +11,3 @@ class Branch {
 	public parent: Branch;
 	public anonymous: boolean;
 }
-	

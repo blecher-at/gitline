@@ -87,11 +87,14 @@ class Commit {
 			var refname = this.data.refnames[i];
 	
 			if(!this.container.config.remoteOnly || refname.indexOf("origin/") == 0) {
-				refname = refname.replace(/^origin./, '');
+				
+				if(this.container.config.remoteOnly) {
+					refname = refname.replace(/^origin./, '');	
+				}
+				
 				var specifity = refname.replace(/[^\/-]/g, '').length*1000;
 				specifity += refname.replace(/[^a-zA-Z0-9-]/, '').length;
 				
-				var category = refname.substring(0, refname.lastIndexOf("/"));
 				this.container.addBranch(refname, this, specifity);
 				
 				/* assign the most specific head on this tip commit */
@@ -101,7 +104,7 @@ class Commit {
 				}
 					
 				this.branch = this.mostSpecificHead;
-				this.branch.category = category;
+				this.branch.category = this.branch.ref.substring(0, refname.lastIndexOf("/"));;
 			}
 		}
 	}
@@ -153,44 +156,52 @@ class Commit {
 	public initAnonymous() {
 		// Create a dummy branch for anonymous merges, which is as specific as the original branch. 
 		// try finding the original branch by going up direct parents, which will get the original
+
 		var self: Commit = this;
 		this.merges.anonymous.forEach(_merge => {
 			var merge: Commit = _merge.source
 			var child = this;
 			
-			while(child != null && child.data.mostSpecificHead == null) {
+			while(child != null && child.mostSpecificHead == null) {
 				child = child.directchild;
 			}
 				
 			/* this is only an anonymous branch head, if there is only one child (the merge) 
 			   if there are multiple, it is an intermediate merge and the branch still belongs to another tip */ 
-			if(child != null && merge.data.mostSpecificHead == null && merge.childs.length == 1) {
-				merge.branch = merge.data.mostSpecificHead = new Branch();
+			if(child != null && merge.mostSpecificHead == null && merge.childs.length == 1) {
+				merge.branch = merge.mostSpecificHead = new Branch();
 				
-				//merge.branch.ref = child.data.mostSpecificHead.ref+"/anonymous"+merge.sha, 
+				merge.branch.ref = child.mostSpecificHead.ref+"/anonymous"+merge.sha, 
 				merge.branch.anonymous = true;
 				merge.branch.commit = merge;
-				merge.branch.specifity = child.data.mostSpecificHead.specifity;
-				merge.branch.parent = child.data.mostSpecificHead;
+				merge.branch.specifity = child.mostSpecificHead.specifity;
+				merge.branch.parent = child.mostSpecificHead;
 				merge.branch.start =child;
-				merge.branch.category = child.data.mostSpecificHead.category;
+				merge.branch.category = child.mostSpecificHead.category;
 				
-				this.container.headsMap[merge.data.mostSpecificHead.ref] = merge.data.mostSpecificHead;
+				this.container.headsMap[merge.mostSpecificHead.ref] = merge.branch;
 				
 				//merge.initDefaultBranch();
 			}
 		});
 	}
 	
-
-	
 	public getColor(lightness: number): string {
 		if(this.branch == null) {
 			this.warn("No Branch set")
 		} else {
-		var hue = this.branch.lane * 360/this.container.maxX;
-		return "hsl("+hue+", 100%, "+lightness+"%)";
+			var b = this.branch;
+			if(this.branch.anonymous) {
+				b = this.branch.parent;
+			}
+			 
+			var hue = b.lane * 360/this.container.maxX;
+			return "hsl("+hue+", 100%, "+lightness+"%)";
 		}
+	}
+	
+	public hasMerges(): boolean {
+		return this.merges.standard.length > 0 || this.merges.anonymous.length > 0;
 	}
 	
 	public getX() {
@@ -210,7 +221,7 @@ class Commit {
 		} else if(this.branch.start.outOfScope){
 			return this.container.maxIndexY;
 		} else {
-			console.log("Error no origin or start", this.branch);
+			this.warn("Branch "+this.branch.ref+ " has no origin or start ");
 		}
 	}
 	

@@ -3,19 +3,16 @@
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 <title>git2html sample</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="./jsgl.min.js"></script>
-<script type="text/javascript" src="../target/Branch.js"></script>
-<script type="text/javascript" src="../target/Commit.js"></script>
-<script type="text/javascript" src="../target/Gitline.js"></script>
-<script type="text/javascript" src="../target/Config.js"></script>
-<script type="text/javascript"
-	src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<script type="text/javascript" src="../target/gitline.js"></script>
 <script type="text/javascript">
 	$(function() {
 		myPanel = new jsgl.Panel(document.getElementById("panel"));
 		
 		
-		var jsonFile = "test/sample004.json";
+		var jsonFile = "test/example01.json";
 		$.getJSON(jsonFile, {}, function(json) {
 			console.log("JSON: "+json);
 			console.log(json);
@@ -60,8 +57,8 @@
 </head>
 <body>
 	<input id="console" type="text" />
-	<div id="textPanel" style="position: absolute; top: 20px; z-index: 2"></div>
-	<div id="panel" style="top: 20px; height: 10000px; z-index: 1"></div>
+	<div id="textPanel" style="position: absolute; top: 20px; z-index: 1"></div>
+	<div id="panel" style="top: 20px; height: 10000px; z-index: 2"></div>
 	<script type="text/javascript">
       /* Instantiate JSGL Panel. */
  
