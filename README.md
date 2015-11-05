@@ -16,6 +16,19 @@ Future developments will include:
 - support other input formats like github-api
 - statistics 
 
+Buidling
+------------------
+- Install node.js
+- Install typescript "npm install -g typescript"
+- Install git2json (https://github.com/blecher-at/git2json/blob/master/README.md)
+- run tsc to compile this
+
+Creating Sample data
+-----------
+- run "git json > myfile.json" (in a cronjob presumably)
+- point index.html to the json file.
+
+
 Imports
 -------
 Programming Language: Typescript http://www.typescriptlang.org/
