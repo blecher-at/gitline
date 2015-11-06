@@ -46,19 +46,24 @@ class AsyncLoader {
 	public next() {
 		var nextItem: AsyncLoadingItem = this.items.shift();
 		if(nextItem !== undefined) {
-			this.showStatus(nextItem);
-		
-			window.setTimeout(() => {
-				//console.log("executing "+nextItem.label+ " ("+nextItem.index+"/"+nextItem.of+")");
-				this.execute(nextItem);
-			}, 0);
+            // avoid yielding control unnecessarily, but limit stack depth at the same time
+            if ((nextItem.index % 50) === 0) {
+                this.showStatus(nextItem);
+            
+                window.setTimeout(() => {
+                    //console.log("executing "+nextItem.label+ " ("+nextItem.index+"/"+nextItem.of+")");
+                    this.execute(nextItem);
+                }, 0);
+            } else {
+                this.execute(nextItem);
+            }
 		} else {
 			this.element.hidden = true;
 		}
 	}
 	
 	public showStatus(item: AsyncLoadingItem) {
-		this.element.innerHTML = item.label + " ("+(item.index+1)+"/"+item.of+")";
+		this.element.innerHTML = item.label + " (items: "+item.of+")";
 	}
 	
 	public execute(item: AsyncLoadingItem) {
