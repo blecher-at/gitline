@@ -3,6 +3,8 @@
 gitline - A git history to HTML renderer implemented in TypeScript
 ===========
 
+[![Join the chat at https://gitter.im/blecher-at/gitline](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/blecher-at/gitline?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 The idea is to have this on a central server or your local machine, to keep tabs on what your team is doing :)
 Needs a JSON file as input (generated with [git2json](https://github.com/blecher-at/git2json))
 
