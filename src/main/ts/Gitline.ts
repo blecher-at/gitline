@@ -179,11 +179,11 @@ class Gitline {
 		var fullname = id.name + " &lt;"+id.email.toLowerCase()+"&gt;";
 		el.setAttribute("title", fullname);
 		
-		el.whenShort("?");
+		el.style.background = this.config.avatars.map(f => {return "url("+f(id.email)+") no-repeat"}).join(", ");
 		el.whenFull(fullname);
+		el.whenShort(" ");
 		return el;
 	}
-	
 
 	/*
 		Based on the specifity assign the branches to the commits. if in doubt the commit will be on the most specific branch 
