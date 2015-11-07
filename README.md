@@ -27,6 +27,7 @@ Imports / Third party
 - Programming language: [TypeScript](http://www.typescriptlang.org/)
 - SVG Rendering: [JSGL](http://www.jsgl.org/)  
 - Generic JS framework: [jQuery](https://jquery.org/)
+- Hash Generation: [Crypto JS](https://github.com/brix/crypto-js)
 
 Legal
 -----
