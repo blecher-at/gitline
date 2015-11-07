@@ -1,5 +1,6 @@
 /// <reference path="Branch.ts"/>
 /// <reference path="Gitline.ts"/>
+/// <reference path="CommitView.ts"/>
 
 /** committer or author */
 class Identity {
@@ -31,7 +32,7 @@ class Commit {
 	public directparent: Commit;
 	public directchild: Commit;
 	
-	public domLabel: any;
+	public view : CommitView;
 	
 	public committer: Identity;
 	public author: Identity;
@@ -226,7 +227,7 @@ class Commit {
 		if(this.outOfScope) {
 			return this.container.rootLabel.offsetTop + 20;
 		}
-		return this.domLabel.offsetTop + 10;
+		return this.view.label.offsetTop + 10;
 	}
 	
 	public getOriginIndexY(): number {
