@@ -14,7 +14,7 @@ class Commit {
 	private container: Gitline;
 
 	private warnings: any[] = [];
-	private inHeadsRef: any[] = [];
+	private inHeadsRef: Commit[] = [];
 	private parents: Commit[] = [];
 	private childs: Commit[] = [];
 	private siblings: Commit[] = [];
@@ -72,7 +72,7 @@ class Commit {
 
 			// Create a virtual commit
 			if(parentCommit == null) {
-				parentCommit = new Commit(this.container,  {sha: hash});
+				parentCommit = new Commit(this.container,  {sha: hash+Math.random()});
 				parentCommit.outOfScope = true;
 				self.container.addCommit(parentCommit);
 			}
@@ -87,6 +87,14 @@ class Commit {
 				dp.directchild = this;
 			}
 		});
+		
+		this.data.inHeads.forEach(headsha => {
+			var commit = this.container.commits[headsha];
+			if(this.inHeadsRef.indexOf(commit) === undefined) {
+				this.inHeadsRef.push(commit)
+			}
+		});
+		
 	}
 	
 	public initDefaultBranch() {
@@ -137,12 +145,7 @@ class Commit {
 
 		this.merges = { standard: [], anonymous: []};
 		this.warnings = [];
-		this.inHeadsRef = [];
 		
-		this.data.inHeads.forEach(headsha => {
-			this.inHeadsRef.push(this.container.commits[headsha]);
-		});
-
 		// Detect a merge (octopus currently not supported)
 
 		if(this.parents.length == 1) {
@@ -179,7 +182,7 @@ class Commit {
 	
 	public initAnonymous() {
 		// Create a dummy branch for anonymous merges, which is as specific as the original branch. 
-		// try finding the original branch by going up direct parents, which will get the original
+		// try finding the original branch by going up direct childs, which will get the original
 		
 		var self: Commit = this;
 		this.merges.anonymous.forEach(_merge => {
@@ -191,19 +194,20 @@ class Commit {
 			}
 				
 			/* this is only an anonymous branch head, if there is only one child (the merge) 
-			   if there are multiple, it is an intermediate merge and the branch still belongs to another tip */ 
-			if(child != null && merge.branch == null && merge.childs.length == 1) {
+			   TODO: if there are multiple, it might result in wrongly assigned branches */ 
+			if(child != null && merge.branch == null) {
 				merge.branch = new Branch();
-				merge.branch.ref = child.branch.ref+"/anonymous"+merge.sha, 
+				merge.branch.ref = child.branch.ref+"/anonymous"+merge.sha+Math.random();
 				merge.branch.anonymous = true;
 				merge.branch.commit = merge;
-				merge.branch.specifity = child.branch.specifity;
+				merge.branch.specifity = child.branch.specifity+1;
 				merge.branch.parent = child.branch;
 				merge.branch.start =child;
 				merge.branch.category = child.branch.category;
 				
 				this.container.headsMap[merge.branch.ref] = merge.branch;
 			}
+			
 		});
 	}
 	
@@ -215,8 +219,8 @@ class Commit {
 			if(this.branch.anonymous) {
 				b = this.branch.parent;
 			}
-			 
-			var hue = b.lane * 360/this.container.maxX;
+			
+			var hue = b.lane * 300/this.container.maxX;
 			return "hsl("+hue+", 100%, "+lightness+"%)";
 		}
 	}
@@ -247,7 +251,9 @@ class Commit {
 	}
 	
 	public intersects(other: Commit): boolean {
-		var otherY=9999, thisY=9999;
+		var otherY=9999999, thisY=999999;
+		if(this.outOfScope || other.outOfScope) return true;
+		
 		if(other.directchild != null) {
 			otherY = other.directchild.indexY;
 		}
