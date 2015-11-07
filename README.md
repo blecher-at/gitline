@@ -1,38 +1,29 @@
 ![gitline sample](https://github.com/blecher-at/gitline/blob/master/doc/gitline.png)
 
-gitline - a git history to html renderer implemented in javascript (typescript).
+gitline - A git history to HTML renderer implemented in TypeScript
 ===========
 
-Idea is to have this on a central server or your local machine, to keep tabs on what your team is doing :)
-needs a json file as input (generated with git2json)
+The idea is to have this on a central server or your local machine, to keep tabs on what your team is doing :)
+Needs a JSON file as input (generated with [git2json](https://github.com/blecher-at/git2json))
 
-Tries to be aware of your branching scheme. It will autodetect the category and assignment of branches and groups commits accordingly.
+gitline tries to be aware of your branching scheme. It will autodetect the category and assignment of branches and groups commits accordingly.
 
-Future developments will include:
-- include meaningful sample data
-- show author and timestamp metadata
-- include configuration dialog to configure your teams branching patterns (custom grouping/colors etc.)
-- filtering functionality (by branches, author etc.)
-- support other input formats like github-api
-- statistics 
-
-Buidling
+Installation / Setup of development environment
 ------------------
-- Install node.js
-- Install typescript "npm install -g typescript"
-- Install git2json (https://github.com/blecher-at/git2json/blob/master/README.md)
-- run tsc to compile this
+- Install Node.js
+- Install a simple web server: `npm install -g serve` or use [devd](https://github.com/cortesi/devd)
+- Install TypeScript: `npm install -g typescript`
+- Install [git2json](https://github.com/blecher-at/git2json)
+- Run `tsc --watch` in project's root folder in a second terminal window to compile TypeScript on the fly when a file changes
+- Run `serve` in project's root folder or start devd accordingly
 
-Creating Sample data
------------
-- run "git json > myfile.json" (in a cronjob presumably)
-- point index.html to the json file.
+Creating sample data
+------------------
+- run `git json > myfile.json` - in a cronjob presumably
+- point `src/index.html` to the newly created JSON file
 
-
-Imports
--------
-Programming Language: Typescript http://www.typescriptlang.org/
-
-SVG Rendering: JSGL http://www.jsgl.org/
-
-JQuery: https://jquery.org/
+Imports / Third party
+------------------
+- Programming language: [TypeScript](http://www.typescriptlang.org/)
+- SVG Rendering: [JSGL](http://www.jsgl.org/)  
+- Generic JS framework: [jQuery](https://jquery.org/)
