@@ -13,6 +13,7 @@
 <script type="text/javascript">
 	$(function() {
 		new Gitline().fromJSON("test/example02.json").withHeader("Gitline repository from Github").renderTo(document.getElementById("myGitlinePanel-1"));
+		new Gitline().fromJSON("test/example03.json").withHeader("git repository from Github").renderTo(document.getElementById("myGitlinePanel-2"));
 	});
 
 	</script>
@@ -20,6 +21,7 @@
 
 </head>
 <body>
-	<div id="myGitlinePanel-1"></div>
+	<div id="myGitlinePanel-1" style="position: absolute; left: 50px; top: 50px; width: 500px; height: 500px; overflow-y: scroll"></div>
+	<div id="myGitlinePanel-2" style="position: absolute; left: 600px; top: 50px; width: 700px; height: 500px; overflow-y: scroll"></div>
 </body>
 </html>

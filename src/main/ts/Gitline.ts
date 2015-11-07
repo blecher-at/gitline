@@ -3,6 +3,7 @@
 /// <reference path="Config.ts"/>
 /// <reference path="AsyncLoader.ts"/>
 /// <reference path="Expandable.ts"/>
+declare var jQuery: any;
 	
 interface Commits { [key:string]:Commit; }
 interface Branches { [key:string]:Branch; }
@@ -22,6 +23,12 @@ class Gitline {
 		
 	public al: AsyncLoader;
 	public config: GitlineConfig = new GitlineConfig();
+			
+	// HTML stuff
+	private loadingPanel: HTMLElement;
+	private graphicalPanel: HTMLElement;
+	private headerPanel: HTMLElement;  
+	private contentPanel: HTMLElement;
 			
 	public addCommit(commit: Commit) {
 		this.commits[commit.getFullSha()] = commit;
@@ -262,4 +269,46 @@ class Gitline {
 		}
 		
 	}
+	
+	// Launching
+	public fromJSON(jsonFile: string): Gitline {
+		jQuery.getJSON(jsonFile, {}, (json) => {
+			this.loaded(json);
+		}).error(function() {
+			this.displayFatalError("Error loading git data from "+jsonFile+ " create it using git2json");
+		});
+		return this;
+	}
+	
+	private renderTo(panel: HTMLElement): Gitline {
+		if(this.headerPanel !== undefined) {
+			panel.appendChild(this.headerPanel);
+		}
+		panel.appendChild(this.loadingPanel = document.createElement("gitline-loadingpanel"));
+		panel.appendChild(this.contentPanel = document.createElement("gitline-contentpanel"));
+		this.contentPanel.appendChild(this.graphicalPanel = document.createElement("gitline-graphicalpanel"));
+		this.contentPanel.appendChild(this.textPanel = document.createElement("gitline-textpanel"));
+		return this;
+	}
+	
+	public withHeader(header: string): Gitline;
+	public withHeader(header: HTMLElement): Gitline;
+
+	public withHeader(header: any) {
+		if(typeof header === "string") {
+			this.headerPanel = document.createElement("gitline-headerpanel");
+			this.headerPanel.textContent = header;
+		} else {
+			this.headerPanel = header;
+		}
+		
+		return this;
+	}
+	
+	private loaded(json: any) {
+		this.data = json;
+		this.render(this.loadingPanel, this.graphicalPanel, this.textPanel, this.data);
+	}
+	
+	
 }	

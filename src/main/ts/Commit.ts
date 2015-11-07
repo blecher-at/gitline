@@ -233,7 +233,7 @@ class Commit {
 		if(this.outOfScope) {
 			return this.container.rootLabel.offsetTop + 20;
 		}
-		return this.view.label.offsetTop + 10;
+		return this.view.label.offsetTop + this.view.label.offsetHeight /2;
 	}
 	
 	public getOriginIndexY(): number {
