@@ -2,6 +2,7 @@
 /// <reference path="Commit.ts"/>
 /// <reference path="Config.ts"/>
 /// <reference path="AsyncLoader.ts"/>
+/// <reference path="Expandable.ts"/>
 	
 interface Commits { [key:string]:Commit; }
 interface Branches { [key:string]:Branch; }
@@ -138,21 +139,20 @@ class Gitline {
 		// SHA Hash 
 		var shortSha:string = commit.getShortSha();
 		var fullSha:string = commit.getFullSha();
-		var sha = document.createElement("span");
-		sha.innerHTML = shortSha+" ";
+		var sha:HTMLExpandableElement = Expandable.extend(document.createElement("span"));
+		sha.whenShort(shortSha+" ");
+		sha.whenFull(fullSha);
 		sha.style.fontFamily = "Courier";
 		
-		sha.onclick = function (event) {
-			if(event.detail == 2) {
-				this.innerHTML = fullSha+ " ";
-				event.cancelBubble = true;
-			}
-		};
-		sha.onmouseout = function (event) {
-			this.innerHTML = shortSha+ " ";
-		};		
 		label.appendChild(sha);
-
+		
+		// Author and committer
+		label.appendChild(this.drawIdentity("author", commit.author));
+		
+		if(commit.author.email != commit.committer.email) {
+			label.appendChild(this.drawIdentity("committer", commit.committer));
+		}
+		 
 		// Branch - TODO: Tags and other branches		
 		if(commit.branch && commit.branch.commit === commit && !commit.branch.anonymous) {
 			var head = document.createElement("span");
@@ -176,8 +176,19 @@ class Gitline {
 		return label;
 	}
 	
+	public drawIdentity(type: string, id: Identity) {
+		var el: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-identity"));
+		el.setAttribute("class", type);
+		el.setAttribute("name", id.name);
+		var fullname = id.name + " &lt;"+id.email.toLowerCase()+"&gt;";
+		el.setAttribute("title", fullname);
 		
-	
+		el.style.background = this.config.avatars.map(f => {return "url("+f(id.email)+") no-repeat"}).join(", ");
+		el.whenFull(fullname);
+		el.whenShort(" ");
+		return el;
+	}
+
 	/*
 		Based on the specifity assign the branches to the commits. if in doubt the commit will be on the most specific branch 
 	*/

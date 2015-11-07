@@ -2,6 +2,14 @@
 /// <reference path="Gitline.ts"/>
 /// <reference path="CommitView.ts"/>
 
+/** committer or author */
+class Identity {
+	public image: string; // optional
+	
+	public constructor (public name: string, public email: string) {
+	}
+}
+
 class Commit {
 	private container: Gitline;
 
@@ -25,6 +33,9 @@ class Commit {
 	
 	public view : CommitView;
 	
+	public committer: Identity;
+	public author: Identity;
+	
 	constructor(container: Gitline, data) {
 		this.container = container;
 		this.data = data;
@@ -40,6 +51,9 @@ class Commit {
 		this.ssha = data.ssha;
 		this.subject = data.subject;
 		this.indexY = container.maxIndexY ++;
+		
+		this.committer = new Identity(this.data.committername, this.data.committeremail);
+		this.author = new Identity(this.data.authorname, this.data.authoremail);
 	}
 	
 	public getShortSha() : string {
