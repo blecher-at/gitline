@@ -21,7 +21,6 @@
   "devDependencies": {
     "git2json": "https://github.com/blecher-at/git2json.git",
     "serve": "^1.4.0",
-    "typescript": "^1.6.2",
-    "underscore": "^1.8.3"
+    "typescript": "^1.6.2"
   }
 }
