@@ -19,7 +19,6 @@ class Commit {
 	private indexY: number;
 
 	private maxSpecifity: number;
-	private mostSpecificHead: Branch;
 	public branch: Branch;
 	public directparent: Commit;
 	public directchild: Commit;
@@ -67,7 +66,12 @@ class Commit {
 			this.parents.push(parentCommit);
 			parentCommit.childs.push(this);
 			this.siblings = parentCommit.childs; // this will be overwitten as new childs are found
-				
+			
+			if(this.parents.length > 0) {
+				var dp = this.parents[0];
+				this.directparent = dp;
+				dp.directchild = this;
+			}
 		});
 	}
 	
@@ -76,9 +80,10 @@ class Commit {
 			
 		while(commit != null) {
 				
-			// GUESSING: The correct branch is usually the one with the most specific name
+			// GUESSING: The correct branch is usually the one with the least specific name
 			if(commit.branch == null || commit.branch.specifity > this.branch.specifity) {
 				commit.branch = this.branch;
+				//commit.debug("assigning "+this.branch.ref)
 			}
 			commit.branch.start = commit; // this function will traverse the parents, so the last one will be the first commit
 			commit.branch.origin = commit.directparent; // this could be null -> it is outside of the history.
@@ -102,12 +107,14 @@ class Commit {
 				
 				/* assign the most specific head on this tip commit */
 				if (this.maxSpecifity == null || specifity < this.maxSpecifity) {
+					//console.log("assigning branch", refname, this.sha, this.maxSpecifity, specifity)
 					this.maxSpecifity = specifity;
-					this.mostSpecificHead = this.container.headsMap[refname];
+					this.branch = this.container.headsMap[refname];
 				}
 					
-				this.branch = this.mostSpecificHead;
-				this.branch.category = this.branch.ref.substring(0, refname.lastIndexOf("/"));;
+				this.branch.category = this.branch.ref.substring(0, refname.lastIndexOf("/"));
+				
+				this.initDefaultBranch();
 			}
 		}
 	}
@@ -159,30 +166,29 @@ class Commit {
 	public initAnonymous() {
 		// Create a dummy branch for anonymous merges, which is as specific as the original branch. 
 		// try finding the original branch by going up direct parents, which will get the original
-
+		
 		var self: Commit = this;
 		this.merges.anonymous.forEach(_merge => {
 			var merge: Commit = _merge.source
 			var child = this;
 			
-			while(child != null && child.mostSpecificHead == null) {
+			while(child != null && child.branch == null) {
 				child = child.directchild;
 			}
 				
 			/* this is only an anonymous branch head, if there is only one child (the merge) 
 			   if there are multiple, it is an intermediate merge and the branch still belongs to another tip */ 
-			if(child != null && merge.mostSpecificHead == null && merge.childs.length == 1) {
-				merge.branch = merge.mostSpecificHead = new Branch();
-				
-				merge.branch.ref = child.mostSpecificHead.ref+"/anonymous"+merge.sha, 
+			if(child != null && merge.branch == null && merge.childs.length == 1) {
+				merge.branch = new Branch();
+				merge.branch.ref = child.branch.ref+"/anonymous"+merge.sha, 
 				merge.branch.anonymous = true;
 				merge.branch.commit = merge;
-				merge.branch.specifity = child.mostSpecificHead.specifity;
-				merge.branch.parent = child.mostSpecificHead;
+				merge.branch.specifity = child.branch.specifity;
+				merge.branch.parent = child.branch;
 				merge.branch.start =child;
-				merge.branch.category = child.mostSpecificHead.category;
+				merge.branch.category = child.branch.category;
 				
-				this.container.headsMap[merge.mostSpecificHead.ref] = merge.branch;
+				this.container.headsMap[merge.branch.ref] = merge.branch;
 			}
 		});
 	}
@@ -249,11 +255,15 @@ class Commit {
 	
 	public warn(warning: string) {
 		this.warnings.push(warning);
+		this.debug(warning);
+	}
+	
+	public debug(warning: string) {
 		if(console) {
 			console.log(warning, this);
 		}
 	}
-	
+		
 	public getLane() {
 		if(this.branch != null) { // TODO: anonymous branches will get their index from parent ones
 			return this.branch.commit.branch.lane;

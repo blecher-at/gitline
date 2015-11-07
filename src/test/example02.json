@@ -1,41 +1,342 @@
 {
-  "f1cc0a06051406554268e8611c483f533309fea8": {
-    "sha": "f1cc0a06051406554268e8611c483f533309fea8",
-    "ssha": "f1cc0a0",
+  "56018d12e167fdb4bc482dd5656bd7ce3057e79c": {
+    "sha": "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+    "ssha": "56018d1",
     "parenthashes": [
-      "236200e72f7dd9fba041557b002e3813814e84ba",
-      "3eb8a621f1e0f381a5dea772e3b5d46427fa1d26"
+      "71d4d3304e8bdf6fc462f7c1a05035b6b273be3b",
+      "60e0d1ec8a83a0cb01f418fb9b9950f54797eef1"
     ],
-    "authorname": "U-epsilon10\\blecher",
-    "authoremail": "stephan@blecher.at",
-    "authordate": "1446766649",
-    "committername": "U-epsilon10\\blecher",
-    "committeremail": "stephan@blecher.at",
-    "committerdate": "1446766649",
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446857896",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446857896",
     "encoding": "",
-    "subject": "Merge branch 'master' of github.com:blecher-at/gitline",
-    "ssubject": "Merge-branch-master-of-github.com-blecher-at-gitline",
-    "body": "",
+    "subject": "Merge pull request #3 from cbonitz/master",
+    "ssubject": "Merge-pull-request-3-from-cbonitz-master",
+    "body": "improve performance by limiting the number of setTimeout operations in AsyncLoader",
     "refnames": [
-      "HEAD -> master",
-      "origin/master"
+      "origin/master",
+      "master"
     ],
     "parents": [],
     "children": [],
     "inHeads": [],
     "index": 0
   },
-  "236200e72f7dd9fba041557b002e3813814e84ba": {
-    "sha": "236200e72f7dd9fba041557b002e3813814e84ba",
-    "ssha": "236200e",
+  "e41732d033c2f13ea5f0e60a6106fb609ebf87e7": {
+    "sha": "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+    "ssha": "e41732d",
     "parenthashes": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "451f86f76902698a29fc0b48e7e949af897d4bc5"
     ],
-    "authorname": "U-epsilon10\\blecher",
-    "authoremail": "stephan@blecher.at",
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446857812",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446857812",
+    "encoding": "",
+    "subject": "GL-2: add support for pluggable avatar provider (gravatar default)",
+    "ssubject": "GL-2-add-support-for-pluggable-avatar-provider-gravatar-default",
+    "body": "",
+    "refnames": [
+      "HEAD -> feature/GL-2-author",
+      "origin/feature/GL-2-author"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 1
+  },
+  "451f86f76902698a29fc0b48e7e949af897d4bc5": {
+    "sha": "451f86f76902698a29fc0b48e7e949af897d4bc5",
+    "ssha": "451f86f",
+    "parenthashes": [
+      "4ae421f84ed32a062b32e41b4b478467464d715b",
+      "71d4d3304e8bdf6fc462f7c1a05035b6b273be3b"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446856222",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446856222",
+    "encoding": "",
+    "subject": "Merge branch 'master' into feature/GL-2-author",
+    "ssubject": "Merge-branch-master-into-feature-GL-2-author",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7"
+    ],
+    "inHeads": [
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7"
+    ],
+    "index": 2
+  },
+  "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2": {
+    "sha": "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+    "ssha": "f3581ac",
+    "parenthashes": [
+      "a1d5524f82c3c2324fe2cf8c7ee387815062a58c",
+      "71d4d3304e8bdf6fc462f7c1a05035b6b273be3b"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446855152",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446855152",
+    "encoding": "",
+    "subject": "Merge branch 'master' into develop",
+    "ssubject": "Merge-branch-master-into-develop",
+    "body": "",
+    "refnames": [
+      "origin/develop"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 3
+  },
+  "71d4d3304e8bdf6fc462f7c1a05035b6b273be3b": {
+    "sha": "71d4d3304e8bdf6fc462f7c1a05035b6b273be3b",
+    "ssha": "71d4d33",
+    "parenthashes": [
+      "a1d5524f82c3c2324fe2cf8c7ee387815062a58c",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446854715",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446854715",
+    "encoding": "",
+    "subject": "Merge pull request #4 from blecher-at/bugfix/GL-1-resizing",
+    "ssubject": "Merge-pull-request-4-from-blecher-at-bugfix-GL-1-resizing",
+    "body": "GL-1: modularize rendering to support resize",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "451f86f76902698a29fc0b48e7e949af897d4bc5",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2"
+    ],
+    "inHeads": [
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2"
+    ],
+    "index": 4
+  },
+  "0e94e1d86721abde625d3b6f90d7a99c17de1b25": {
+    "sha": "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+    "ssha": "0e94e1d",
+    "parenthashes": [
+      "a1d5524f82c3c2324fe2cf8c7ee387815062a58c"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446853780",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446853780",
+    "encoding": "",
+    "subject": "GL-1: modularize rendering to support resize",
+    "ssubject": "GL-1-modularize-rendering-to-support-resize",
+    "body": "",
+    "refnames": [
+      "origin/bugfix/GL-1-resizing",
+      "bugfix/GL-1-resizing"
+    ],
+    "parents": [],
+    "children": [
+      "71d4d3304e8bdf6fc462f7c1a05035b6b273be3b"
+    ],
+    "inHeads": [
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2"
+    ],
+    "index": 5
+  },
+  "60e0d1ec8a83a0cb01f418fb9b9950f54797eef1": {
+    "sha": "60e0d1ec8a83a0cb01f418fb9b9950f54797eef1",
+    "ssha": "60e0d1e",
+    "parenthashes": [
+      "a1d5524f82c3c2324fe2cf8c7ee387815062a58c"
+    ],
+    "authorname": "Christoph Bonitz",
+    "authoremail": "ml.christophbonitz@gmail.com",
+    "authordate": "1446852712",
+    "committername": "Christoph Bonitz",
+    "committeremail": "ml.christophbonitz@gmail.com",
+    "committerdate": "1446852712",
+    "encoding": "",
+    "subject": "improve performance by limiting the number of setTimeout operations in AsyncLoader",
+    "ssubject": "improve-performance-by-limiting-the-number-of-setTimeout-operations-in-AsyncLoader",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c"
+    ],
+    "inHeads": [
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c"
+    ],
+    "index": 6
+  },
+  "4ae421f84ed32a062b32e41b4b478467464d715b": {
+    "sha": "4ae421f84ed32a062b32e41b4b478467464d715b",
+    "ssha": "4ae421f",
+    "parenthashes": [
+      "a1d5524f82c3c2324fe2cf8c7ee387815062a58c"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446842348",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446842348",
+    "encoding": "",
+    "subject": "GL-2 add basic author support, no avatars yet",
+    "ssubject": "GL-2-add-basic-author-support-no-avatars-yet",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "451f86f76902698a29fc0b48e7e949af897d4bc5"
+    ],
+    "inHeads": [
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7"
+    ],
+    "index": 7
+  },
+  "a1d5524f82c3c2324fe2cf8c7ee387815062a58c": {
+    "sha": "a1d5524f82c3c2324fe2cf8c7ee387815062a58c",
+    "ssha": "a1d5524",
+    "parenthashes": [
+      "578686d24896c848868a037a624670e057361605"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446766926",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446766926",
+    "encoding": "",
+    "subject": "use short sha from data",
+    "ssubject": "use-short-sha-from-data",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "71d4d3304e8bdf6fc462f7c1a05035b6b273be3b",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "60e0d1ec8a83a0cb01f418fb9b9950f54797eef1",
+      "4ae421f84ed32a062b32e41b4b478467464d715b"
+    ],
+    "inHeads": [
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
+    ],
+    "index": 8
+  },
+  "578686d24896c848868a037a624670e057361605": {
+    "sha": "578686d24896c848868a037a624670e057361605",
+    "ssha": "578686d",
+    "parenthashes": [
+      "dc0f31647b1fcf5038e181a009ed3fa3f0e38256"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446766718",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446766718",
+    "encoding": "",
+    "subject": "update self as sample",
+    "ssubject": "update-self-as-sample",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a1d5524f82c3c2324fe2cf8c7ee387815062a58c"
+    ],
+    "inHeads": [
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
+    ],
+    "index": 9
+  },
+  "dc0f31647b1fcf5038e181a009ed3fa3f0e38256": {
+    "sha": "dc0f31647b1fcf5038e181a009ed3fa3f0e38256",
+    "ssha": "dc0f316",
+    "parenthashes": [
+      "408c72ef8ad73498d23122dd5a19d7ebc7cf94ff",
+      "2b9816e9811dcfe0f852f7d10ab8ef6ea532f647"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
+    "authordate": "1446766649",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
+    "committerdate": "1446766649",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:blecher-at/gitline",
+    "ssubject": "Merge-branch-master-of-github.com-blecher-at-gitline",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "578686d24896c848868a037a624670e057361605"
+    ],
+    "inHeads": [
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
+    ],
+    "index": 10
+  },
+  "408c72ef8ad73498d23122dd5a19d7ebc7cf94ff": {
+    "sha": "408c72ef8ad73498d23122dd5a19d7ebc7cf94ff",
+    "ssha": "408c72e",
+    "parenthashes": [
+      "2b4e68ad8cc44b2c0de470cca248f4196cef1efa"
+    ],
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
     "authordate": "1446766639",
-    "committername": "U-epsilon10\\blecher",
-    "committeremail": "stephan@blecher.at",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
     "committerdate": "1446766639",
     "encoding": "",
     "subject": "add self as sample, add loading indicator",
@@ -44,18 +345,27 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "dc0f31647b1fcf5038e181a009ed3fa3f0e38256"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 1
+    "index": 11
   },
-  "3eb8a621f1e0f381a5dea772e3b5d46427fa1d26": {
-    "sha": "3eb8a621f1e0f381a5dea772e3b5d46427fa1d26",
-    "ssha": "3eb8a62",
+  "2b9816e9811dcfe0f852f7d10ab8ef6ea532f647": {
+    "sha": "2b9816e9811dcfe0f852f7d10ab8ef6ea532f647",
+    "ssha": "2b9816e",
     "parenthashes": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "2b4e68ad8cc44b2c0de470cca248f4196cef1efa"
     ],
     "authorname": "Stephan",
     "authoremail": "token_github@blecher.at",
@@ -70,25 +380,34 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "dc0f31647b1fcf5038e181a009ed3fa3f0e38256"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 2
+    "index": 12
   },
-  "6db247034d84531f7015bfd5b519213c0a5812fe": {
-    "sha": "6db247034d84531f7015bfd5b519213c0a5812fe",
-    "ssha": "6db2470",
+  "2b4e68ad8cc44b2c0de470cca248f4196cef1efa": {
+    "sha": "2b4e68ad8cc44b2c0de470cca248f4196cef1efa",
+    "ssha": "2b4e68a",
     "parenthashes": [
-      "170c68be4d12c0dcbf0c23b7169d7fe0e7728203",
-      "677b6c601e8d2465af0054dcca8fcf4895880cde"
+      "325434e2186188303c12d8a13b8fb1999fca7cf4",
+      "e8820b61f4d2ec7a472674a88a4c84a9f749ea0b"
     ],
-    "authorname": "U-epsilon10\\blecher",
-    "authoremail": "stephan@blecher.at",
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
     "authordate": "1446758962",
-    "committername": "U-epsilon10\\blecher",
-    "committeremail": "stephan@blecher.at",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
     "committerdate": "1446758962",
     "encoding": "",
     "subject": "Merge branch 'master' of github.com:blecher-at/gitline",
@@ -97,26 +416,44 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "236200e72f7dd9fba041557b002e3813814e84ba",
-      "3eb8a621f1e0f381a5dea772e3b5d46427fa1d26"
+      "408c72ef8ad73498d23122dd5a19d7ebc7cf94ff",
+      "2b9816e9811dcfe0f852f7d10ab8ef6ea532f647"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 3
+    "index": 13
   },
-  "170c68be4d12c0dcbf0c23b7169d7fe0e7728203": {
-    "sha": "170c68be4d12c0dcbf0c23b7169d7fe0e7728203",
-    "ssha": "170c68b",
+  "325434e2186188303c12d8a13b8fb1999fca7cf4": {
+    "sha": "325434e2186188303c12d8a13b8fb1999fca7cf4",
+    "ssha": "325434e",
     "parenthashes": [
-      "2e98cfb9886de2c3e78725d81aca294a11ca90c3"
+      "a151263a51c03f56162b20b061a28f7593990e62"
     ],
-    "authorname": "U-epsilon10\\blecher",
-    "authoremail": "stephan@blecher.at",
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
     "authordate": "1446751674",
-    "committername": "U-epsilon10\\blecher",
-    "committeremail": "stephan@blecher.at",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
     "committerdate": "1446751674",
     "encoding": "",
     "subject": "add tsconfig for easy compilement, adapted for non-origin repo, hide anonymous branch refs",
@@ -125,25 +462,43 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "2b4e68ad8cc44b2c0de470cca248f4196cef1efa"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 4
+    "index": 14
   },
-  "2e98cfb9886de2c3e78725d81aca294a11ca90c3": {
-    "sha": "2e98cfb9886de2c3e78725d81aca294a11ca90c3",
-    "ssha": "2e98cfb",
+  "a151263a51c03f56162b20b061a28f7593990e62": {
+    "sha": "a151263a51c03f56162b20b061a28f7593990e62",
+    "ssha": "a151263",
     "parenthashes": [
-      "708c461edc2a3b9fba6390b1097f41612c9c79f9"
+      "b6e50eba74a16115a3754e5d84b3e03800da4eb7"
     ],
-    "authorname": "U-epsilon10\\blecher",
-    "authoremail": "stephan@blecher.at",
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
     "authordate": "1446751166",
-    "committername": "U-epsilon10\\blecher",
-    "committeremail": "stephan@blecher.at",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
     "committerdate": "1446751166",
     "encoding": "",
     "subject": "add tsconfig for easy compilement",
@@ -152,24 +507,42 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "170c68be4d12c0dcbf0c23b7169d7fe0e7728203"
+      "325434e2186188303c12d8a13b8fb1999fca7cf4"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 5
+    "index": 15
   },
-  "677b6c601e8d2465af0054dcca8fcf4895880cde": {
-    "sha": "677b6c601e8d2465af0054dcca8fcf4895880cde",
-    "ssha": "677b6c6",
+  "e8820b61f4d2ec7a472674a88a4c84a9f749ea0b": {
+    "sha": "e8820b61f4d2ec7a472674a88a4c84a9f749ea0b",
+    "ssha": "e8820b6",
     "parenthashes": [
-      "b2e81f470bef10d1bce902bac756c459111a26d6"
+      "824db9041d885b4ee10590a4fe07193f005c6c31"
     ],
-    "authorname": "blecher-at",
+    "authorname": "Stephan",
     "authoremail": "token_github@blecher.at",
     "authordate": "1446671922",
-    "committername": "blecher-at",
+    "committername": "Stephan",
     "committeremail": "token_github@blecher.at",
     "committerdate": "1446671922",
     "encoding": "",
@@ -179,24 +552,42 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "6db247034d84531f7015bfd5b519213c0a5812fe"
+      "2b4e68ad8cc44b2c0de470cca248f4196cef1efa"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 6
+    "index": 16
   },
-  "b2e81f470bef10d1bce902bac756c459111a26d6": {
-    "sha": "b2e81f470bef10d1bce902bac756c459111a26d6",
-    "ssha": "b2e81f4",
+  "824db9041d885b4ee10590a4fe07193f005c6c31": {
+    "sha": "824db9041d885b4ee10590a4fe07193f005c6c31",
+    "ssha": "824db90",
     "parenthashes": [
-      "81be68959bfc371d437e614e2c79c91b550d4edb"
+      "d34068208483b266bd7d28144f47594f7a70d45c"
     ],
-    "authorname": "blecher-at",
+    "authorname": "Stephan",
     "authoremail": "token_github@blecher.at",
     "authordate": "1446671906",
-    "committername": "blecher-at",
+    "committername": "Stephan",
     "committeremail": "token_github@blecher.at",
     "committerdate": "1446671906",
     "encoding": "",
@@ -206,24 +597,42 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "677b6c601e8d2465af0054dcca8fcf4895880cde"
+      "e8820b61f4d2ec7a472674a88a4c84a9f749ea0b"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 7
+    "index": 17
   },
-  "81be68959bfc371d437e614e2c79c91b550d4edb": {
-    "sha": "81be68959bfc371d437e614e2c79c91b550d4edb",
-    "ssha": "81be689",
+  "d34068208483b266bd7d28144f47594f7a70d45c": {
+    "sha": "d34068208483b266bd7d28144f47594f7a70d45c",
+    "ssha": "d340682",
     "parenthashes": [
-      "b1eb5755f077c54a561d6ce3f96a2afaba08a459"
+      "ba07e9c2ec4d6a42974c454432c3b3b531bc00d3"
     ],
-    "authorname": "blecher-at",
+    "authorname": "Stephan",
     "authoremail": "token_github@blecher.at",
     "authordate": "1446671785",
-    "committername": "blecher-at",
+    "committername": "Stephan",
     "committeremail": "token_github@blecher.at",
     "committerdate": "1446671785",
     "encoding": "",
@@ -233,24 +642,42 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "b2e81f470bef10d1bce902bac756c459111a26d6"
+      "824db9041d885b4ee10590a4fe07193f005c6c31"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 8
+    "index": 18
   },
-  "b1eb5755f077c54a561d6ce3f96a2afaba08a459": {
-    "sha": "b1eb5755f077c54a561d6ce3f96a2afaba08a459",
-    "ssha": "b1eb575",
+  "ba07e9c2ec4d6a42974c454432c3b3b531bc00d3": {
+    "sha": "ba07e9c2ec4d6a42974c454432c3b3b531bc00d3",
+    "ssha": "ba07e9c",
     "parenthashes": [
-      "48cf07df713bcd4151c104bb8fcc20262fc2f00b"
+      "12b715e6be0177aa42330bc523b0e99efde95d50"
     ],
-    "authorname": "blecher-at",
+    "authorname": "Stephan",
     "authoremail": "token_github@blecher.at",
     "authordate": "1446671617",
-    "committername": "blecher-at",
+    "committername": "Stephan",
     "committeremail": "token_github@blecher.at",
     "committerdate": "1446671617",
     "encoding": "",
@@ -260,24 +687,42 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "81be68959bfc371d437e614e2c79c91b550d4edb"
+      "d34068208483b266bd7d28144f47594f7a70d45c"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 9
+    "index": 19
   },
-  "48cf07df713bcd4151c104bb8fcc20262fc2f00b": {
-    "sha": "48cf07df713bcd4151c104bb8fcc20262fc2f00b",
-    "ssha": "48cf07d",
+  "12b715e6be0177aa42330bc523b0e99efde95d50": {
+    "sha": "12b715e6be0177aa42330bc523b0e99efde95d50",
+    "ssha": "12b715e",
     "parenthashes": [
-      "708c461edc2a3b9fba6390b1097f41612c9c79f9"
+      "b6e50eba74a16115a3754e5d84b3e03800da4eb7"
     ],
-    "authorname": "blecher-at",
+    "authorname": "Stephan",
     "authoremail": "token_github@blecher.at",
     "authordate": "1446671486",
-    "committername": "blecher-at",
+    "committername": "Stephan",
     "committeremail": "token_github@blecher.at",
     "committerdate": "1446671486",
     "encoding": "",
@@ -287,26 +732,44 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "b1eb5755f077c54a561d6ce3f96a2afaba08a459"
+      "ba07e9c2ec4d6a42974c454432c3b3b531bc00d3"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 10
+    "index": 20
   },
-  "708c461edc2a3b9fba6390b1097f41612c9c79f9": {
-    "sha": "708c461edc2a3b9fba6390b1097f41612c9c79f9",
-    "ssha": "708c461",
+  "b6e50eba74a16115a3754e5d84b3e03800da4eb7": {
+    "sha": "b6e50eba74a16115a3754e5d84b3e03800da4eb7",
+    "ssha": "b6e50eb",
     "parenthashes": [
-      "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b",
-      "3196b9e181d58327a00fd02b613c0325245b07ad"
+      "14882f3ac926c46ca7db01f05a22039fdab5f586",
+      "88f8532a417d894bbf314555cf8b948b39a205b7"
     ],
-    "authorname": "U-epsilon10\\blecher",
-    "authoremail": "stephan@blecher.at",
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
     "authordate": "1446671345",
-    "committername": "U-epsilon10\\blecher",
-    "committeremail": "stephan@blecher.at",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
     "committerdate": "1446671345",
     "encoding": "",
     "subject": "Merge branch 'master' of github.com:blecher-at/gitline",
@@ -315,28 +778,64 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "2e98cfb9886de2c3e78725d81aca294a11ca90c3",
-      "48cf07df713bcd4151c104bb8fcc20262fc2f00b"
+      "a151263a51c03f56162b20b061a28f7593990e62",
+      "12b715e6be0177aa42330bc523b0e99efde95d50"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 11
+    "index": 21
   },
-  "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b": {
-    "sha": "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b",
-    "ssha": "2f83de8",
+  "14882f3ac926c46ca7db01f05a22039fdab5f586": {
+    "sha": "14882f3ac926c46ca7db01f05a22039fdab5f586",
+    "ssha": "14882f3",
     "parenthashes": [
-      "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b"
+      "07b173490f3c4be21746d19959292a32b0ddc760"
     ],
-    "authorname": "U-epsilon10\\blecher",
-    "authoremail": "stephan@blecher.at",
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
     "authordate": "1446671314",
-    "committername": "U-epsilon10\\blecher",
-    "committeremail": "stephan@blecher.at",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
     "committerdate": "1446671314",
     "encoding": "",
     "subject": "Error handling for nonexisting sample file, example picture",
@@ -345,26 +844,62 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "708c461edc2a3b9fba6390b1097f41612c9c79f9"
+      "b6e50eba74a16115a3754e5d84b3e03800da4eb7"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 12
+    "index": 22
   },
-  "3196b9e181d58327a00fd02b613c0325245b07ad": {
-    "sha": "3196b9e181d58327a00fd02b613c0325245b07ad",
-    "ssha": "3196b9e",
+  "88f8532a417d894bbf314555cf8b948b39a205b7": {
+    "sha": "88f8532a417d894bbf314555cf8b948b39a205b7",
+    "ssha": "88f8532",
     "parenthashes": [
-      "43eff664c83e9289b23bfba07f0444b47641bb4b"
+      "64316b498550f0e4d814b6832e5ab40224b53585"
     ],
-    "authorname": "blecher-at",
+    "authorname": "Stephan",
     "authoremail": "token_github@blecher.at",
     "authordate": "1446671024",
-    "committername": "blecher-at",
+    "committername": "Stephan",
     "committeremail": "token_github@blecher.at",
     "committerdate": "1446671024",
     "encoding": "",
@@ -374,26 +909,62 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "708c461edc2a3b9fba6390b1097f41612c9c79f9"
+      "b6e50eba74a16115a3754e5d84b3e03800da4eb7"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 13
+    "index": 23
   },
-  "43eff664c83e9289b23bfba07f0444b47641bb4b": {
-    "sha": "43eff664c83e9289b23bfba07f0444b47641bb4b",
-    "ssha": "43eff66",
+  "64316b498550f0e4d814b6832e5ab40224b53585": {
+    "sha": "64316b498550f0e4d814b6832e5ab40224b53585",
+    "ssha": "64316b4",
     "parenthashes": [
-      "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b"
+      "07b173490f3c4be21746d19959292a32b0ddc760"
     ],
-    "authorname": "blecher-at",
+    "authorname": "Stephan",
     "authoremail": "token_github@blecher.at",
     "authordate": "1446670961",
-    "committername": "blecher-at",
+    "committername": "Stephan",
     "committeremail": "token_github@blecher.at",
     "committerdate": "1446670961",
     "encoding": "",
@@ -403,25 +974,61 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "3196b9e181d58327a00fd02b613c0325245b07ad"
+      "88f8532a417d894bbf314555cf8b948b39a205b7"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 14
+    "index": 24
   },
-  "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b": {
-    "sha": "1f9a9df6f4346d3fd46cc8aea3f4ed2b067e073b",
-    "ssha": "1f9a9df",
+  "07b173490f3c4be21746d19959292a32b0ddc760": {
+    "sha": "07b173490f3c4be21746d19959292a32b0ddc760",
+    "ssha": "07b1734",
     "parenthashes": [],
-    "authorname": "U-epsilon10\\blecher",
-    "authoremail": "stephan@blecher.at",
+    "authorname": "Stephan",
+    "authoremail": "token_github@blecher.at",
     "authordate": "1446670712",
-    "committername": "U-epsilon10\\blecher",
-    "committeremail": "stephan@blecher.at",
+    "committername": "Stephan",
+    "committeremail": "token_github@blecher.at",
     "committerdate": "1446670712",
     "encoding": "",
     "subject": "Initial commit",
@@ -430,19 +1037,91 @@
     "refnames": [],
     "parents": [],
     "children": [
-      "2f83de8fbf1aa13f52280ccc87cbb2a0a0b9c06b",
-      "43eff664c83e9289b23bfba07f0444b47641bb4b"
+      "14882f3ac926c46ca7db01f05a22039fdab5f586",
+      "64316b498550f0e4d814b6832e5ab40224b53585"
     ],
     "inHeads": [
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8",
-      "f1cc0a06051406554268e8611c483f533309fea8"
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "56018d12e167fdb4bc482dd5656bd7ce3057e79c",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "e41732d033c2f13ea5f0e60a6106fb609ebf87e7",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "f3581aca965e5e08c3dc39c3ca7f996edb7cdaa2",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25",
+      "0e94e1d86721abde625d3b6f90d7a99c17de1b25"
     ],
-    "index": 15
+    "index": 25
   }
 }
