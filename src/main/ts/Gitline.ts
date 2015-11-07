@@ -246,6 +246,7 @@ class Gitline {
 						if(headOnLane === undefined || headOnLane.branch != head && headOnLane.branch.lane === l && (tip.intersects(headOnLane) || tip.branch.category != headOnLane.branch.category)) {
 							canUseLane = false;
 						}
+						
 					}
 					
 					if(canUseLane) {
