@@ -4,9 +4,8 @@
 		
 		.commit-legend {
 			border-bottom: 1px solid #e0e0e0;
-			width: 100%;
-			box-sizing: border-box;
-			padding-left: 50%;
+			min-width: 250px;
+			box-sizing: content-box;
 		}
 		
 		body { font-family: Verdana, Arial; margin: 0;
@@ -23,9 +22,21 @@
 			color: #e6e6e6;
 			border: 0;
 		}
+
+		gitline-headerpanel {
+			background-color: #f2f2f2;
+			width: 100%;
+			display: block;
+			padding: 6px;
+			font-size: 14px;
+			box-sizing: border-box;
+		}
 		
-		#loadingPanel {
-			position: fixed;
+		gitline-contentpanel {
+			position: relative;
+		}
+		gitline-loadingpanel {
+			position: absolute;
 			top: 0; 
 			left: 0;
 			height: 100%;
@@ -34,7 +45,12 @@
 			background-color: #f2f2f2;
 			font-size: 20px;
 			text-align: center;
-			padding-top: 25%;
+			padding-top: 50%;
+			opacity: 0.8;
+		}
+		
+		gitline-textpanel {
+			min-width: 300px;
 		}
 		
 		gitline-identity {
@@ -46,4 +62,9 @@
 			background-color: #f2f2f2;
 			text-align: center;
 			vertical-align: bottom;
+		}
+		
+		gitline-graphicalpanel {
+			position: absolute!important; 
+			display: block;
 		}
