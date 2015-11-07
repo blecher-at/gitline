@@ -1,5 +1,6 @@
 /// <reference path="Branch.ts"/>
 /// <reference path="Gitline.ts"/>
+/// <reference path="CommitView.ts"/>
 
 class Commit {
 	private container: Gitline;
@@ -23,7 +24,7 @@ class Commit {
 	public directparent: Commit;
 	public directchild: Commit;
 	
-	public domLabel: any;
+	public view : CommitView;
 	
 	constructor(container: Gitline, data) {
 		this.container = container;
@@ -212,7 +213,7 @@ class Commit {
 		if(this.outOfScope) {
 			return this.container.rootLabel.offsetTop + 20;
 		}
-		return this.domLabel.offsetTop + 10;
+		return this.view.label.offsetTop + 10;
 	}
 	
 	public getOriginIndexY(): number {

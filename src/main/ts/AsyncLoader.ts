@@ -39,7 +39,10 @@ class AsyncLoader {
 		this.items.push(new AsyncLoadingItem(label, null, callback, 1, 1));	
 	}
 	
-	public start() {
+	public start(shield: boolean = true) {
+		if(shield) {
+			this.element.hidden = false;	
+		}
 		this.next();
 	}
 	
