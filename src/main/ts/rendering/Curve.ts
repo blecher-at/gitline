@@ -6,8 +6,18 @@ declare var jsgl: any;
  
 class Curve extends BaseLink {
 	
+	private arrow;
+	
 	constructor(canvas: any) {
 		super(canvas, canvas.createCurve());
+		this.arrow = this.canvas.createPolygon();
+	}
+	
+	public addElements() {
+		super.addElements();
+		
+		// 2nd element
+		this.canvas.addElement(this.arrow);
 	}
 	
 	public update() {
@@ -28,20 +38,20 @@ class Curve extends BaseLink {
 		this.element.getStroke().setColor(color);
 		
 		
-		new jsgl.Vector2D(100,50);
-		var arrow = this.canvas.createPolygon();
-		arrow.addPointXY(0,0);
-		arrow.addPointXY(6,-4)
-		arrow.addPointXY(6,4)
-
-		arrow.getStroke().setWeight(0)
-		arrow.getFill().setColor(color)
+		this.arrow.getStroke().setWeight(0)
+		this.arrow.getFill().setColor(color)
+		
+		this.arrow.clearPoints();
+		this.arrow.addPointXY(0,0);
+		this.arrow.addPointXY(6,-4)
+		this.arrow.addPointXY(6,4)
 		
 		// Move					
-		for(var i=0;i<arrow.getPointsCount(); i++) {
-			var px = arrow.getPointAt(i).getX();
-			var py = arrow.getPointAt(i).getY();
-			arrow.setPointXYAt(px*direction + x + this.childDot.width / 2*direction, py + y, i);
+		for(var i=0;i<this.arrow.getPointsCount(); i++) {
+			var px = this.arrow.getPointAt(i).X;
+			var py = this.arrow.getPointAt(i).Y;
+			//this.arrow.setPointXYAt(px, py + y, i);
+			this.arrow.setPointXYAt(px*direction + x + this.childDot.width / 2*direction, py + y, i);
 		}
 	}
 	

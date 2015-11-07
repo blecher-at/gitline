@@ -51,8 +51,12 @@ class Gitline {
 
 		al.then("Calculating Relationships", () => {return Object.keys(this.commits)}, (sha) => {
 			var commit = this.commits[sha];
-			
 			commit.initRelations();
+		});
+		
+		al.then("Calculating Branches", () => {return Object.keys(this.commits)}, (sha) => {
+			var commit = this.commits[sha];
+			
 			commit.initHeadSpecifity();
 			commit.initMerges();
 		});
@@ -216,9 +220,9 @@ class Gitline {
 			
 			if(tip.branch === head) {
 				head.lane = maxLane;
+				//head.index = maxLane;
 				maxLane ++;
 
-				var minLane = 0;
 				// Can we display this head a little more to the left?
 				for(var l=0; l< heads.length; l++) {
 
@@ -227,13 +231,13 @@ class Gitline {
 						var jheadName = heads[j];
 						var headOnLane: Commit = this.headsMap[jheadName].commit;
 						
-						if(headOnLane !== undefined && headOnLane.branch != head && headOnLane.branch.lane === l && (tip.intersects(headOnLane) || tip.branch.category != headOnLane.branch.category)) {
+						if(headOnLane === undefined || headOnLane.branch != head && headOnLane.branch.lane === l && (tip.intersects(headOnLane) || tip.branch.category != headOnLane.branch.category)) {
 							canUseLane = false;
 						}
 					}
 					
 					if(canUseLane) {
-						minLane = Math.max(minLane, headOnLane.branch.lane)+1;
+						
 						//console.log("NO INTERSECTS: ",tip.branch.ref," - ",headOnLane.branch.ref);
 						head.lane = l;
 						break;
