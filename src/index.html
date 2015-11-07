@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<title>git2html sample</title>
+<title>Gitline Example</title>
 <script type="text/javascript" src="main/external/jquery-2.1.4.min.js"></script>
 <script type="text/javascript" src="main/external/md5.js"></script>
 <script type="text/javascript" src="main/external/jsgl.min.js"></script>
@@ -12,7 +12,10 @@
 
 <script type="text/javascript">
 	$(function() {
-		new Gitline().fromJSON("test/example02.json").withHeader("Gitline repository from Github").renderTo(document.getElementById("myGitlinePanel-1"));
+		new Gitline()
+			.fromJSON("test/example02.json")
+			.withHeader("Gitline repository <a href=\"https://github.com/blecher-at/gitline\">https://github.com/blecher-at/gitline</a>")
+			.renderTo(document.getElementById("myGitlinePanel-1"));
 	});
 
 	</script>

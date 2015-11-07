@@ -298,7 +298,7 @@ class Gitline {
 	public withHeader(header: any) {
 		if(typeof header === "string") {
 			this.headerPanel = document.createElement("gitline-headerpanel");
-			this.headerPanel.textContent = header;
+			this.headerPanel.innerHTML = header;
 		} else {
 			this.headerPanel = header;
 		}
