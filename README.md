@@ -11,14 +11,14 @@ gitline tries to be aware of your branching scheme. It will autodetect the categ
 Installation / Setup of development environment
 ------------------
 - Install Node.js
-- Install a simple web server: `npm install -g serve` or use [devd](https://github.com/cortesi/devd)
-- Install TypeScript: `npm install -g typescript`
-- Install [git2json](https://github.com/blecher-at/git2json)
-- Run `tsc --watch` in project's root folder in a second terminal window to compile TypeScript on the fly when a file changes
-- Run `serve` in project's root folder or start devd accordingly
+- Install dependencies: `npm install`
+- Run `npm run watch` in project's root folder in a second terminal window to compile TypeScript on the fly when a file changes
+- To run, execute `npm start` in project's root folder, then visit http://localhost:3000
+- To test, execute `npm test`
 
 Creating sample data
 ------------------
+- Install [git2json](https://github.com/blecher-at/git2json)
 - run `git json > myfile.json` - in a cronjob presumably
 - point `src/index.html` to the newly created JSON file
 

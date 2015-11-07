@@ -1,15 +1,26 @@
-{ 
-"name":"gitline", 
-"version":"0.0.1", 
-"description": "graphical git ui",
-"author": "stephan blecher <stephan@blecher.at>",
-"keywords": [ "git", "ui", "graph", "network" ],
-"scripts": {
-	"test": "test/index.js",
-	"start": "main/server.js" },
-"preferGlobal": true, 
-"private": true,
-"dependencies": {
-	"git2json": "0.0.1"
-}
+{
+  "name": "gitline",
+  "version": "0.0.1",
+  "description": "graphical git ui",
+  "author": "stephan blecher <stephan@blecher.at>",
+  "keywords": [
+    "git",
+    "ui",
+    "graph",
+    "network"
+  ],
+  "scripts": {
+    "pretest": "tsc",
+    "test": "node src/test/index.js",
+    "prestart": "tsc",
+    "start": "serve .",
+    "watch": "tsc --watch"
+  },
+  "preferGlobal": true,
+  "private": true,
+  "devDependencies": {
+    "git2json": "https://github.com/blecher-at/git2json.git",
+    "serve": "^1.4.0",
+    "typescript": "^1.6.2"
+  }
 }
