@@ -27,3 +27,8 @@ Imports / Third party
 - Programming language: [TypeScript](http://www.typescriptlang.org/)
 - SVG Rendering: [JSGL](http://www.jsgl.org/)  
 - Generic JS framework: [jQuery](https://jquery.org/)
+- Hash Generation: [Crypto JS](https://github.com/brix/crypto-js)
+
+Legal
+-----
+Licensed under the Affero GPLv3 (https://www.gnu.org/licenses/agpl-3.0.html), which basically says: you are free to hack and use, but if you want to build a product out of it, or host it as a service, we need to talk.
