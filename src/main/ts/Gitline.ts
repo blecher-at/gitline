@@ -19,6 +19,7 @@ class Gitline {
 	public headsMap:Branches = {};
 	public rootLabel; 
 		
+	public al: AsyncLoader;
 	public config: GitlineConfig = new GitlineConfig();
 			
 	public addCommit(commit: Commit) {
@@ -41,7 +42,7 @@ class Gitline {
 		this.panel = panel;
 		this.textPanel = textPanel;
 
-		var al: AsyncLoader = new AsyncLoader(loadingPanel);
+		var al = this.al = new AsyncLoader(loadingPanel);
 
 		al.then("Loading Commits", () => {return Object.keys(this.data)}, (sha) => {
 			var commit = new Commit(this, data[sha]);
@@ -65,7 +66,6 @@ class Gitline {
 			this.drawCommit(commit);
 		});
 		
-		
 		al.thenSingle("Creating Legend", () => {
 			this.rootLabel = document.createElement('div')
 			this.rootLabel.className = "commit-legend"
@@ -84,154 +84,47 @@ class Gitline {
 		
 		al.start();
 		
+		
+		window.onresize = (event: UIEvent) => {
+			
+			al.then("Redrawing", () => {return Object.keys(this.commits)}, (sha) => {
+				var commit:Commit = this.commits[sha];
+				commit.view.redraw();
+			});
+			al.thenSingle("Resizing", () => {
+				panel.style.width = indexToX(this.maxX + 1) + "px"
+				panel.style.height = this.rootLabel.offsetTop + "px";
+			});			
+			al.start(false); 
+		};
 	}
-	
 	
 	
 	public drawCommit(commit: Commit) {
 		// Label
 		
 		if(commit.outOfScope == false) {
-			commit.domLabel = this.drawLabel(commit);
-			this.textPanel.appendChild(commit.domLabel);
-		
-			var lane = commit.getLane();
-			if(lane != null) {
-				this.drawDot(commit.getX(), commit.getY(), commit.getColor(20), commit.getColor(80));
-			} else {
-				commit.warn("lane not found")
-			}
+			commit.view = new CommitView(this.canvas, this.config, commit);
+			var label = commit.view.label = this.drawLabel(commit);
+			
+			this.textPanel.appendChild(commit.view.label);
+			
 			var self = this;
-			commit.domLabel.onclick = function() {
+			commit.view.label.onclick = function() {
 				if(console) {
 					console.log(commit);	
 				}
 			}
 			
-			commit.domLabel.style['padding-left'] = indexToX(this.maxX + 1)+"px"
+			commit.view.label.style['padding-left'] = indexToX(this.maxX + 1)+"px"
 		}
 				
 
 	}
 	
 	public drawReferences(commit: Commit) {
-	
-		var x = commit.getX();
-		var y = commit.getY();
-		
-		if(commit.directparent != null) {
-			var parentX = commit.directparent.getX();
-			
-			var parentY = commit.directparent.getY();
-	
-			if(commit.directparent.outOfScope) {
-				this.drawStraight(x, y, x, parentY, commit.getColor(20));
-			} else		
-			if(x == parentX || commit.directparent.outOfScope) {  
-				/* direct parent is the same X/lane, this means it is a standard forward commit */
-				this.drawStraight(x, y, parentX, parentY, commit.getColor(20));
-				
-			} else { 
-				/* direct parent is on a different lane, this is most certainly a new branch */
-				this.drawCreation(x, y, parentX, parentY, commit.getColor(30));
-			}
-		}
-		
-		var allmerges = commit.merges.standard.concat(commit.merges.anonymous);
-		
-		allmerges.forEach( merge => {
-			var parentCommit: Commit = merge.source;
-			
-			var parentX = indexToX(parentCommit.getLane());
-			var parentY = parentCommit.getY();
-		
-			this.drawCurve(x, y, parentX, parentY, parentCommit.getColor(40));
-		});
-	}
-	
-	public drawStraight(x: number, y: number, parentX: number, parentY: number, color: string) {
-		var l = this.canvas.createLine();
-		
-		l.setStartPointXY(x, y + this.config.dotRadiusY);
-		l.setEndPointXY(parentX, parentY - this.config.dotRadiusY);
-		l.getStroke().setWeight(1)
-		l.getStroke().setColor(color)
-		this.canvas.addElement(l);
-	}
-	
-	public drawCreation(x: number, y: number, parentX: number, parentY: number, color: string) {
-					
-		var l = this.canvas.createLine();
-		
-		if(parentX < x) {
-			l.setStartPointXY(parentX + this.config.dotRadiusX, parentY)
-		} else {
-			l.setStartPointXY(parentX - this.config.dotRadiusX, parentY)
-		}
-		l.setEndPointXY(x, parentY);
-		l.getStroke().setWeight(1)
-		l.getStroke().setDashStyle(jsgl.DashStyles.DASH); 
-		l.getStroke().setColor(color)
-		this.canvas.addElement(l);
-		
-		var l = this.canvas.createLine();
-		l.setStartPointXY(x, parentY)
-		l.setEndPointXY(x, y + this.config.dotRadiusY);
-		l.getStroke().setWeight(1)
-		l.getStroke().setColor(color)
-		this.canvas.addElement(l);
-	}
-	
-	public drawDot(x: number, y: number, color: string, fillColor: string) {
-		var circle = this.canvas.createRectangle();
-		var sizeX = this.config.dotWidth;
-		var sizeY = this.config.dotHeight;
-		
-		circle.setLocationXY(x - this.config.dotRadiusX, y - this.config.dotRadiusY)
-		circle.setWidth(sizeX)
-		circle.setHeight(sizeY)
-		circle.setXRadius(sizeX /4)
-		circle.setYRadius(sizeX /4)
-		circle.getStroke().setWeight(1)
-		circle.getStroke().setColor(color)
-		circle.getFill().setColor(fillColor)
-		this.canvas.addElement(circle);
-	}
-	
-	public drawCurve(x: number, y: number, parentX: number, parentY: number, color: string) {
-				// Merge
-				var l = this.canvas.createCurve();
-				
-				var direction = x < parentX ? 1 : -1;
-
-				l.setStartPointXY(parentX, parentY - this.config.dotRadiusY)
-				l.setEndPointXY(x+this.config.dotRadiusX*direction, y);
-				l.setControl2PointXY(parentX, y)
-				l.setControl1PointXY(parentX, y)
-
-				l.getStroke().setWeight(1)
-				l.getStroke().setColor(color)
-				this.canvas.addElement(l);
-				
-				
-				new jsgl.Vector2D(100,50);
-				var arrow = this.canvas.createPolygon();
-				arrow.addPointXY(0,0);
-				arrow.addPointXY(6,-4)
-				arrow.addPointXY(6,4)
-
-				arrow.getStroke().setWeight(0)
-				arrow.getFill().setColor(color)
-				
-				// Move					
-				for(var i=0;i<arrow.getPointsCount(); i++) {
-					var px = arrow.getPointAt(i).getX();
-					var py = arrow.getPointAt(i).getY();
-					arrow.setPointXYAt(px*direction + x + this.config.dotRadiusX*direction, py + y, i);
-				}
-				this.canvas.addElement(arrow);
-				
-				
+		commit.view.addRelations();
+		commit.view.redraw();
 	}
 	
 	public drawLabel(commit: Commit) {
