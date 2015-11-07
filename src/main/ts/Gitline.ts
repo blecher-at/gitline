@@ -103,8 +103,9 @@ class Gitline {
 	public drawCommit(commit: Commit) {
 		// Label
 		
+		commit.view = new CommitView(this.canvas, this.config, commit);
+		
 		if(commit.outOfScope == false) {
-			commit.view = new CommitView(this.canvas, this.config, commit);
 			var label = commit.view.label = this.drawLabel(commit);
 			
 			this.textPanel.appendChild(commit.view.label);
