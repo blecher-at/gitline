@@ -6,7 +6,7 @@
 class Identity {
 	public image: string; // optional
 	
-	public constructor (public name: string, public email: string) {
+	public constructor (public name: string, public email: string, public date:number) {
 	}
 }
 
@@ -52,8 +52,8 @@ class Commit {
 		this.subject = data.subject;
 		this.indexY = container.maxIndexY ++;
 		
-		this.committer = new Identity(this.data.committername, this.data.committeremail);
-		this.author = new Identity(this.data.authorname, this.data.authoremail);
+		this.committer = new Identity(this.data.committername, this.data.committeremail, new Date(this.data.committerdate).getTime());
+		this.author = new Identity(this.data.authorname, this.data.authoremail, new Date(this.data.authordate).getTime());
 	}
 	
 	public getShortSha() : string {

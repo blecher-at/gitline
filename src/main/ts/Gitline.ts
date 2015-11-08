@@ -279,7 +279,10 @@ class Gitline {
 	}
 	
 	public fromProvider(commitProvider: CommitProvider): Gitline {
-		commitProvider.withCallback(this.loaded);
+		commitProvider.withCallback( (json) => {
+			this.data = json;
+			this.render(this.loadingPanel, this.graphicalPanel, this.textPanel, this.data);
+		});
 		return this;
 	}
 	
@@ -307,11 +310,5 @@ class Gitline {
 		
 		return this;
 	}
-	
-	private loaded(json: any) {
-		this.data = json;
-		this.render(this.loadingPanel, this.graphicalPanel, this.textPanel, this.data);
-	}
-	
 	
 }	
