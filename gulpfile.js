@@ -29,12 +29,12 @@ gulp.task('build', ['compress']);
 
 gulp.task('run', ['build'], serve('.'));
 
-gulp.task('watch', ['build'], function () {
-    gulp.watch('src/main/ts/*.ts', ['build']);
-});
-
-gulp.task('test', function () {
+gulp.task('test', ['build'], function () {
     return gulp.src('src/test/GitlineTests.js', {read: false})
         // gulp-mocha needs filepaths so you can't have any plugins before it
         .pipe(mocha());
+});
+
+gulp.task('watch', ['build', 'test'], function () {
+    gulp.watch('src/main/ts/*.ts', ['build', 'test']);
 });
