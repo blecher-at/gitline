@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-<title>Gitline Example</title>
-<script type="text/javascript" src="main/external/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="main/external/md5.js"></script>
-<script type="text/javascript" src="main/external/jsgl.min.js"></script>
+    <meta charset="utf-8"/>
+    <title>Gitline Example</title>
+    <script src="main/external/jquery-2.1.4.min.js"></script>
+    <script src="main/external/md5.js"></script>
+    <script src="main/external/jsgl.min.js"></script>
 
-<link rel="stylesheet" href="main/css/gitline.css"></link>
-<script type="text/javascript" src="../target/gitline.js"></script>
+    <link rel="stylesheet" href="main/css/gitline.css"/>
+    <script src="../target/gitline.min.js"></script>
 
-<script type="text/javascript">
-	$(function() {
-		new Gitline()
-			.fromJSON("test/example02.json")
-			.withHeader("Gitline repository <a href=\"https://github.com/blecher-at/gitline\">https://github.com/blecher-at/gitline</a>")
-			.renderTo(document.getElementById("myGitlinePanel-1"));
-	});
-
-	</script>
-	
+    <script>
+        $(function () {
+            new Gitline()
+                    .fromJSON('test/example02.json')
+                    .withHeader('Gitline repository <a href="https://github.com/blecher-at/gitline">https://github.com/blecher-at/gitline</a>"')
+                    .renderTo($("#myGitlinePanel-1").get());
+        });
+    </script>
 
 </head>
 <body>
-	<div id="myGitlinePanel-1"></div>
+<div id="myGitlinePanel-1"></div>
 </body>
 </html>

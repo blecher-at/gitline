@@ -183,8 +183,7 @@ class Commit {
 	public initAnonymous() {
 		// Create a dummy branch for anonymous merges, which is as specific as the original branch. 
 		// try finding the original branch by going up direct childs, which will get the original
-		
-		var self: Commit = this;
+
 		this.merges.anonymous.forEach(_merge => {
 			var merge: Commit = _merge.source
 			var child = this;

@@ -1,8 +1,8 @@
 {
   "name": "gitline",
   "version": "0.0.1",
-  "description": "graphical git ui",
-  "author": "stephan blecher <stephan@blecher.at>",
+  "description": "Graphical git UI",
+  "author": "Stephan Blecher <stephan@blecher.at>",
   "keywords": [
     "git",
     "ui",
@@ -10,17 +10,22 @@
     "network"
   ],
   "scripts": {
-    "pretest": "tsc",
+    "uglify": "uglifyjs --compress --mangle --output target/gitline.min.js target/gitline.js",
+    "build": "tsc && npm run uglify",
+    "pretest": "npm run build",
     "test": "node src/test/index.js",
-    "prestart": "tsc",
+    "prestart": "npm run build",
     "start": "serve .",
-    "watch": "tsc --watch"
+    "watch:ts": "tsc --watch",
+    "watch:uglify": "watch echo hello target/gitline.js",
+    "watch": "npm run watch:ts & npm run watch:uglify"
   },
   "preferGlobal": true,
   "private": true,
   "devDependencies": {
-    "git2json": "https://github.com/blecher-at/git2json.git",
     "serve": "^1.4.0",
-    "typescript": "^1.6.2"
+    "typescript": "^1.6.2",
+    "uglify-js": "^2.5.0",
+    "watch": "^0.16.0"
   }
 }
