@@ -1,0 +1,3686 @@
+{
+  "16026cfed7f2e700871c0c8416a6467db8d0c67d": {
+    "sha": "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+    "ssha": "16026cf",
+    "parenthashes": [
+      "e15c36f53fa2ecdbcef189c5e4a93d08cdb33fc3",
+      "2794123deb5d7d252436c3aef50709ad989c7cfa"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1446535305",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1446535305",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:openscad/openscad",
+    "ssubject": "Merge-branch-master-of-github.com-openscad-openscad",
+    "body": "",
+    "refnames": [
+      "HEAD",
+      "origin/master",
+      "origin/HEAD",
+      "master"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 0
+  },
+  "e15c36f53fa2ecdbcef189c5e4a93d08cdb33fc3": {
+    "sha": "e15c36f53fa2ecdbcef189c5e4a93d08cdb33fc3",
+    "ssha": "e15c36f",
+    "parenthashes": [
+      "fbb5e895aba24c97235e5fdb8e2e9de77863b1c9"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1446535302",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1446535302",
+    "encoding": "",
+    "subject": "Patch Qt scaling issue when using pixmaps in QLabels",
+    "ssubject": "Patch-Qt-scaling-issue-when-using-pixmaps-in-QLabels",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "index": 1
+  },
+  "fbb5e895aba24c97235e5fdb8e2e9de77863b1c9": {
+    "sha": "fbb5e895aba24c97235e5fdb8e2e9de77863b1c9",
+    "ssha": "fbb5e89",
+    "parenthashes": [
+      "56399622248719ab14bd5da6b067eb0b0c2d2490"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1446532511",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1446532511",
+    "encoding": "",
+    "subject": "Updated Qt to 5.5.1, Sparkle to 1.11.0, added tweaks to build using Xcode 7",
+    "ssubject": "Updated-Qt-to-5.5.1-Sparkle-to-1.11.0-added-tweaks-to-build-using-Xcode-7",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e15c36f53fa2ecdbcef189c5e4a93d08cdb33fc3"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "index": 2
+  },
+  "56399622248719ab14bd5da6b067eb0b0c2d2490": {
+    "sha": "56399622248719ab14bd5da6b067eb0b0c2d2490",
+    "ssha": "5639962",
+    "parenthashes": [
+      "ab73c8c8a2e893669a99c2837252aaccb105c099"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1446531498",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1446531498",
+    "encoding": "",
+    "subject": "doc",
+    "ssubject": "doc",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fbb5e895aba24c97235e5fdb8e2e9de77863b1c9"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "index": 3
+  },
+  "2794123deb5d7d252436c3aef50709ad989c7cfa": {
+    "sha": "2794123deb5d7d252436c3aef50709ad989c7cfa",
+    "ssha": "2794123",
+    "parenthashes": [
+      "b9ff5fc5a78696710541f361bf646afa8c27a9e4"
+    ],
+    "authorname": "Don",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1446527733",
+    "committername": "Don",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1446527733",
+    "encoding": "",
+    "subject": "improve shared library MXE cross build. set CONFIG proper and copy .dll libs",
+    "ssubject": "improve-shared-library-MXE-cross-build.-set-CONFIG-proper-and-copy-.dll-libs",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "index": 4
+  },
+  "71ab915a5fb3da7ef09f29a70e4d4208a33ac377": {
+    "sha": "71ab915a5fb3da7ef09f29a70e4d4208a33ac377",
+    "ssha": "71ab915",
+    "parenthashes": [
+      "1a534f2589853f15d60bf7b454e1fc458707787c"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1446084326",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1446431966",
+    "encoding": "",
+    "subject": "use boost cstdint.hpp, prevent \"int32_t does not name a type\" error on new gcc",
+    "ssubject": "use-boost-cstdint.hpp-prevent-int32_t-does-not-name-a-type-error-on-new-gcc",
+    "body": "",
+    "refnames": [
+      "origin/2015.03"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 5
+  },
+  "1a534f2589853f15d60bf7b454e1fc458707787c": {
+    "sha": "1a534f2589853f15d60bf7b454e1fc458707787c",
+    "ssha": "1a534f2",
+    "parenthashes": [
+      "cc92ba5a80994ee13b42deb1b7f7c4e401ff279c"
+    ],
+    "authorname": "Don",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1446415024",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1446431950",
+    "encoding": "",
+    "subject": "add some updated notes on MXE cross build",
+    "ssubject": "add-some-updated-notes-on-MXE-cross-build",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 6
+  },
+  "cc92ba5a80994ee13b42deb1b7f7c4e401ff279c": {
+    "sha": "cc92ba5a80994ee13b42deb1b7f7c4e401ff279c",
+    "ssha": "cc92ba5",
+    "parenthashes": [
+      "a3af70309c0070a979470da1db2043c40ac40c1a"
+    ],
+    "authorname": "Don",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1446417669",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1446431933",
+    "encoding": "",
+    "subject": "updates to MXE/win cross-build. use mingw64.static build dir. check for 'zip' command when building package. auto detect mxe in /opt/mxe",
+    "ssubject": "updates-to-MXE-win-cross-build.-use-mingw64.static-build-dir",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "1a534f2589853f15d60bf7b454e1fc458707787c"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 7
+  },
+  "b9ff5fc5a78696710541f361bf646afa8c27a9e4": {
+    "sha": "b9ff5fc5a78696710541f361bf646afa8c27a9e4",
+    "ssha": "b9ff5fc",
+    "parenthashes": [
+      "ab73c8c8a2e893669a99c2837252aaccb105c099"
+    ],
+    "authorname": "Don",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1446431208",
+    "committername": "Don",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1446431208",
+    "encoding": "",
+    "subject": "allow shared library cross-build under MXE",
+    "ssubject": "allow-shared-library-cross-build-under-MXE",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2794123deb5d7d252436c3aef50709ad989c7cfa"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "index": 8
+  },
+  "ab73c8c8a2e893669a99c2837252aaccb105c099": {
+    "sha": "ab73c8c8a2e893669a99c2837252aaccb105c099",
+    "ssha": "ab73c8c",
+    "parenthashes": [
+      "a2814e11a70fcffd42181e53195d55d1a2e2c3b1"
+    ],
+    "authorname": "Don",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1446417669",
+    "committername": "Don",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1446417669",
+    "encoding": "",
+    "subject": "updates to MXE/win cross-build. use mingw64.static build dir. check for 'zip' command when building package. auto detect mxe in /opt/mxe",
+    "ssubject": "updates-to-MXE-win-cross-build.-use-mingw64.static-build-dir",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "56399622248719ab14bd5da6b067eb0b0c2d2490",
+      "b9ff5fc5a78696710541f361bf646afa8c27a9e4"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "index": 9
+  },
+  "a2814e11a70fcffd42181e53195d55d1a2e2c3b1": {
+    "sha": "a2814e11a70fcffd42181e53195d55d1a2e2c3b1",
+    "ssha": "a2814e1",
+    "parenthashes": [
+      "f65cc7816ccd02164ba23bbbae2a4f8499e99e29"
+    ],
+    "authorname": "Don",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1446415024",
+    "committername": "Don",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1446415024",
+    "encoding": "",
+    "subject": "add some updated notes on MXE cross build",
+    "ssubject": "add-some-updated-notes-on-MXE-cross-build",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ab73c8c8a2e893669a99c2837252aaccb105c099"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "index": 10
+  },
+  "4b79c102bc51a413ccf56d8ce47332718721ddcd": {
+    "sha": "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+    "ssha": "4b79c10",
+    "parenthashes": [
+      "f4a62db0665ee5105b1b67e8f1b4603e86e70f3e"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1446179927",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1446179927",
+    "encoding": "",
+    "subject": "allow build of distributable zip package on msys2. allow parallell build as well by modifying the bison call in bison.pri",
+    "ssubject": "allow-build-of-distributable-zip-package-on-msys2.-allow-parallell-build",
+    "body": "",
+    "refnames": [
+      "origin/msys2"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 11
+  },
+  "f4a62db0665ee5105b1b67e8f1b4603e86e70f3e": {
+    "sha": "f4a62db0665ee5105b1b67e8f1b4603e86e70f3e",
+    "ssha": "f4a62db",
+    "parenthashes": [
+      "3acaa82fbbbdfd512161faa1004304de61b9c2ee"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1446096877",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1446096877",
+    "encoding": "",
+    "subject": "beginning of Package build for Windows from within MSYS2",
+    "ssubject": "beginning-of-Package-build-for-Windows-from-within-MSYS2",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd"
+    ],
+    "inHeads": [
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd"
+    ],
+    "index": 12
+  },
+  "3acaa82fbbbdfd512161faa1004304de61b9c2ee": {
+    "sha": "3acaa82fbbbdfd512161faa1004304de61b9c2ee",
+    "ssha": "3acaa82",
+    "parenthashes": [
+      "a58b7594acb4d4fcc5bfcb75a0b46120015d1a8c"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1446090248",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1446090248",
+    "encoding": "",
+    "subject": "use boost cstdint to portably workaround 'int32_t does not name a type' error",
+    "ssubject": "use-boost-cstdint-to-portably-workaround-int32_t-does-not-name-a-type-error",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f4a62db0665ee5105b1b67e8f1b4603e86e70f3e"
+    ],
+    "inHeads": [
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd"
+    ],
+    "index": 13
+  },
+  "a58b7594acb4d4fcc5bfcb75a0b46120015d1a8c": {
+    "sha": "a58b7594acb4d4fcc5bfcb75a0b46120015d1a8c",
+    "ssha": "a58b759",
+    "parenthashes": [
+      "66a1137f51f0e1c7a2763950b488b24040c28724",
+      "53c255d4fd962e105ce6bbf99fe6acb6296276df"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1446089347",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1446089347",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:openscad/openscad into msys2",
+    "ssubject": "Merge-branch-master-of-github.com-openscad-openscad-into-msys2",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "3acaa82fbbbdfd512161faa1004304de61b9c2ee"
+    ],
+    "inHeads": [
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd"
+    ],
+    "index": 14
+  },
+  "f65cc7816ccd02164ba23bbbae2a4f8499e99e29": {
+    "sha": "f65cc7816ccd02164ba23bbbae2a4f8499e99e29",
+    "ssha": "f65cc78",
+    "parenthashes": [
+      "53c255d4fd962e105ce6bbf99fe6acb6296276df"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1446084326",
+    "committername": "Don Bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1446084326",
+    "encoding": "",
+    "subject": "use boost cstdint.hpp, prevent \"int32_t does not name a type\" error on new gcc",
+    "ssubject": "use-boost-cstdint.hpp-prevent-int32_t-does-not-name-a-type-error-on-new-gcc",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a2814e11a70fcffd42181e53195d55d1a2e2c3b1"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d"
+    ],
+    "index": 15
+  },
+  "6cc5d1ced625e261334fb24386cec7f4a04d2066": {
+    "sha": "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+    "ssha": "6cc5d1c",
+    "parenthashes": [
+      "7da2fe101d14398ec0e97229748a2fcf13603f6e"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1445922331",
+    "committername": "Don Bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1445922331",
+    "encoding": "",
+    "subject": "import obj format",
+    "ssubject": "import-obj-format",
+    "body": "",
+    "refnames": [
+      "origin/objexport99"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 16
+  },
+  "7da2fe101d14398ec0e97229748a2fcf13603f6e": {
+    "sha": "7da2fe101d14398ec0e97229748a2fcf13603f6e",
+    "ssha": "7da2fe1",
+    "parenthashes": [
+      "71651425239bc6579141f36d87ae3e6ef0570d20"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1445920694",
+    "committername": "Don Bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1445920694",
+    "encoding": "",
+    "subject": "polygons come from geomutils",
+    "ssubject": "polygons-come-from-geomutils",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066"
+    ],
+    "inHeads": [
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066"
+    ],
+    "index": 17
+  },
+  "71651425239bc6579141f36d87ae3e6ef0570d20": {
+    "sha": "71651425239bc6579141f36d87ae3e6ef0570d20",
+    "ssha": "7165142",
+    "parenthashes": [
+      "1d7992ad922ff2a5e813470d9563e2591afff320",
+      "53c255d4fd962e105ce6bbf99fe6acb6296276df"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1445918727",
+    "committername": "Don Bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1445918727",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:openscad/openscad into objexport99",
+    "ssubject": "Merge-branch-master-of-github.com-openscad-openscad-into-objexport99",
+    "body": "Conflicts:\n\tsrc/MainWindow.ui\n\tsrc/export.cc\n\tsrc/mainwin.cc\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7da2fe101d14398ec0e97229748a2fcf13603f6e"
+    ],
+    "inHeads": [
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066"
+    ],
+    "index": 18
+  },
+  "56c5125fa8a6bc3960d063e193a2dac1e4833835": {
+    "sha": "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+    "ssha": "56c5125",
+    "parenthashes": [
+      "07e948f522f9ce4019547c74de2769bbbd148df8"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1445911763",
+    "committername": "Don Bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1445911763",
+    "encoding": "",
+    "subject": "add .nef3 output extension. fixup cgal/decompose for linux",
+    "ssubject": "add-.nef3-output-extension.-fixup-cgal-decompose-for-linux",
+    "body": "",
+    "refnames": [
+      "origin/smapdebug"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 19
+  },
+  "07e948f522f9ce4019547c74de2769bbbd148df8": {
+    "sha": "07e948f522f9ce4019547c74de2769bbbd148df8",
+    "ssha": "07e948f",
+    "parenthashes": [
+      "53c255d4fd962e105ce6bbf99fe6acb6296276df"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1445906587",
+    "committername": "Don Bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1445906587",
+    "encoding": "",
+    "subject": "\".nefdbg\" extension to dump debug info on CGALNefPolyhedron3+SphereMaps",
+    "ssubject": ".nefdbg-extension-to-dump-debug-info-on-CGALNefPolyhedron3-SphereMaps",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "inHeads": [
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 20
+  },
+  "a3af70309c0070a979470da1db2043c40ac40c1a": {
+    "sha": "a3af70309c0070a979470da1db2043c40ac40c1a",
+    "ssha": "a3af703",
+    "parenthashes": [
+      "e7434abe40c7a7f35a7201f1aa6e85abbc2de4c3"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445896518",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445896518",
+    "encoding": "",
+    "subject": "#452 2015.03 branch still uses separate executable for tests, causing some numbers to be output differently",
+    "ssubject": "452-2015.03-branch-still-uses-separate-executable-for-tests-causing-some-numbers-to-be-output-differently",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "cc92ba5a80994ee13b42deb1b7f7c4e401ff279c"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 21
+  },
+  "e7434abe40c7a7f35a7201f1aa6e85abbc2de4c3": {
+    "sha": "e7434abe40c7a7f35a7201f1aa6e85abbc2de4c3",
+    "ssha": "e7434ab",
+    "parenthashes": [
+      "b0f42558fc2b6a5bed35a134865e0e475c675ac1"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445656605",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889466",
+    "encoding": "",
+    "subject": "simplify documentation, for deeper knowledge people should follow urls",
+    "ssubject": "simplify-documentation-for-deeper-knowledge-people-should-follow-urls",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a3af70309c0070a979470da1db2043c40ac40c1a"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 22
+  },
+  "b0f42558fc2b6a5bed35a134865e0e475c675ac1": {
+    "sha": "b0f42558fc2b6a5bed35a134865e0e475c675ac1",
+    "ssha": "b0f4255",
+    "parenthashes": [
+      "a7aaec1376c4c3de80789355fd0db4eb2b05357f"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445656376",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889461",
+    "encoding": "",
+    "subject": "remove extraneous space",
+    "ssubject": "remove-extraneous-space",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e7434abe40c7a7f35a7201f1aa6e85abbc2de4c3"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 23
+  },
+  "a7aaec1376c4c3de80789355fd0db4eb2b05357f": {
+    "sha": "a7aaec1376c4c3de80789355fd0db4eb2b05357f",
+    "ssha": "a7aaec1",
+    "parenthashes": [
+      "74f4818837758538745b94df0e85baf73d4a1533"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445656263",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889455",
+    "encoding": "",
+    "subject": "improve documentation of number conversion function (again)",
+    "ssubject": "improve-documentation-of-number-conversion-function-again",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b0f42558fc2b6a5bed35a134865e0e475c675ac1"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 24
+  },
+  "74f4818837758538745b94df0e85baf73d4a1533": {
+    "sha": "74f4818837758538745b94df0e85baf73d4a1533",
+    "ssha": "74f4818",
+    "parenthashes": [
+      "c5f65e9146f57c409c0751fd38ee368d5b0ff4a2"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445656152",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889450",
+    "encoding": "",
+    "subject": "better documentation of number conversion function",
+    "ssubject": "better-documentation-of-number-conversion-function",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a7aaec1376c4c3de80789355fd0db4eb2b05357f"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 25
+  },
+  "c5f65e9146f57c409c0751fd38ee368d5b0ff4a2": {
+    "sha": "c5f65e9146f57c409c0751fd38ee368d5b0ff4a2",
+    "ssha": "c5f65e9",
+    "parenthashes": [
+      "d69065792f893e75dcdcebf799631f17eee5b921"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443057735",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889433",
+    "encoding": "",
+    "subject": "add convenience search for openscad binary under openscad/bin/openscad",
+    "ssubject": "add-convenience-search-for-openscad-binary-under-openscad-bin-openscad",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "74f4818837758538745b94df0e85baf73d4a1533"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 26
+  },
+  "d69065792f893e75dcdcebf799631f17eee5b921": {
+    "sha": "d69065792f893e75dcdcebf799631f17eee5b921",
+    "ssha": "d690657",
+    "parenthashes": [
+      "9faf28b6a05f0309dfc4add0a7a3a05cce9f666e"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443057652",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889337",
+    "encoding": "",
+    "subject": "update test results to match output verbiage",
+    "ssubject": "update-test-results-to-match-output-verbiage",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c5f65e9146f57c409c0751fd38ee368d5b0ff4a2"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 27
+  },
+  "9faf28b6a05f0309dfc4add0a7a3a05cce9f666e": {
+    "sha": "9faf28b6a05f0309dfc4add0a7a3a05cce9f666e",
+    "ssha": "9faf28b",
+    "parenthashes": [
+      "c6b49151cb05268f070cd55f67672780eb650cc5"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443056947",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889321",
+    "encoding": "",
+    "subject": "convenience search of openscad gui binary, for test run",
+    "ssubject": "convenience-search-of-openscad-gui-binary-for-test-run",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d69065792f893e75dcdcebf799631f17eee5b921"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 28
+  },
+  "c6b49151cb05268f070cd55f67672780eb650cc5": {
+    "sha": "c6b49151cb05268f070cd55f67672780eb650cc5",
+    "ssha": "c6b4915",
+    "parenthashes": [
+      "f47866ac2eb07ed9c920277dff9e11841a62924e"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443056614",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889026",
+    "encoding": "",
+    "subject": "add a few more tests for floating point rands() seeds, and expected results.",
+    "ssubject": "add-a-few-more-tests-for-floating-point-rands-seeds-and-expected-results",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9faf28b6a05f0309dfc4add0a7a3a05cce9f666e"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 29
+  },
+  "f47866ac2eb07ed9c920277dff9e11841a62924e": {
+    "sha": "f47866ac2eb07ed9c920277dff9e11841a62924e",
+    "ssha": "f47866a",
+    "parenthashes": [
+      "48177ff27ccc9a8e0818643cd7df3839307349e4"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443056284",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889021",
+    "encoding": "",
+    "subject": "add test results for rands() dealing with floating point seeds & infinite inputs",
+    "ssubject": "add-test-results-for-rands-dealing-with-floating-point-seeds-infinite-inputs",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c6b49151cb05268f070cd55f67672780eb650cc5"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 30
+  },
+  "48177ff27ccc9a8e0818643cd7df3839307349e4": {
+    "sha": "48177ff27ccc9a8e0818643cd7df3839307349e4",
+    "ssha": "48177ff",
+    "parenthashes": [
+      "7c62ecc49c2d1077b6c06e67781cf295c80c7480"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443055972",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889015",
+    "encoding": "",
+    "subject": "minor cleanup of unneeded code",
+    "ssubject": "minor-cleanup-of-unneeded-code",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f47866ac2eb07ed9c920277dff9e11841a62924e"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 31
+  },
+  "7c62ecc49c2d1077b6c06e67781cf295c80c7480": {
+    "sha": "7c62ecc49c2d1077b6c06e67781cf295c80c7480",
+    "ssha": "7c62ecc",
+    "parenthashes": [
+      "9ce966edb87810a8c11477cae2c1f7849a1362a9"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443055246",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889009",
+    "encoding": "",
+    "subject": "add new tests for infinite inputs to rands()",
+    "ssubject": "add-new-tests-for-infinite-inputs-to-rands",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "48177ff27ccc9a8e0818643cd7df3839307349e4"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 32
+  },
+  "9ce966edb87810a8c11477cae2c1f7849a1362a9": {
+    "sha": "9ce966edb87810a8c11477cae2c1f7849a1362a9",
+    "ssha": "9ce966e",
+    "parenthashes": [
+      "80cf0574e104c856144b97693adad716b26e2ff2"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443054646",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445889004",
+    "encoding": "",
+    "subject": "rm my old hash, use awesome floating point hash from Python, include license",
+    "ssubject": "rm-my-old-hash-use-awesome-floating-point-hash-from-Python-include-license",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7c62ecc49c2d1077b6c06e67781cf295c80c7480"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 33
+  },
+  "80cf0574e104c856144b97693adad716b26e2ff2": {
+    "sha": "80cf0574e104c856144b97693adad716b26e2ff2",
+    "ssha": "80cf057",
+    "parenthashes": [
+      "829b53fb725436b06f4ff5e3c3c09e1af9cfb9e0"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1442807176",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445888998",
+    "encoding": "",
+    "subject": "create better hash function for 64 double->32 bit unsigned int",
+    "ssubject": "create-better-hash-function-for-64-double-32-bit-unsigned-int",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9ce966edb87810a8c11477cae2c1f7849a1362a9"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 34
+  },
+  "829b53fb725436b06f4ff5e3c3c09e1af9cfb9e0": {
+    "sha": "829b53fb725436b06f4ff5e3c3c09e1af9cfb9e0",
+    "ssha": "829b53f",
+    "parenthashes": [
+      "fba8130303d8e6083f6baa07203f6888f3f7a313"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1442642453",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445888993",
+    "encoding": "",
+    "subject": "make rands() deal better with float input for seed, and inf input",
+    "ssubject": "make-rands-deal-better-with-float-input-for-seed-and-inf-input",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "80cf0574e104c856144b97693adad716b26e2ff2"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 35
+  },
+  "53c255d4fd962e105ce6bbf99fe6acb6296276df": {
+    "sha": "53c255d4fd962e105ce6bbf99fe6acb6296276df",
+    "ssha": "53c255d",
+    "parenthashes": [
+      "e3c1a90a973540b3fec6ea33d4fa836adefc66fa",
+      "6736b1e3a3bec6a2b113c9d07d5d329fede77c56"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445888728",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445888728",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:openscad/openscad",
+    "ssubject": "Merge-branch-master-of-github.com-openscad-openscad",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a58b7594acb4d4fcc5bfcb75a0b46120015d1a8c",
+      "f65cc7816ccd02164ba23bbbae2a4f8499e99e29",
+      "71651425239bc6579141f36d87ae3e6ef0570d20",
+      "07e948f522f9ce4019547c74de2769bbbd148df8"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 36
+  },
+  "6736b1e3a3bec6a2b113c9d07d5d329fede77c56": {
+    "sha": "6736b1e3a3bec6a2b113c9d07d5d329fede77c56",
+    "ssha": "6736b1e",
+    "parenthashes": [
+      "5bdc9383f5a252336bf19fbd355fc679d1440d08",
+      "da426df8c715a0de969424c6421cc810e51e8176"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445888722",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445888722",
+    "encoding": "",
+    "subject": "Merge pull request #1464 from openscad/issue452part2",
+    "ssubject": "Merge-pull-request-1464-from-openscad-issue452part2",
+    "body": "Issue452part2",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "53c255d4fd962e105ce6bbf99fe6acb6296276df"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 37
+  },
+  "e3c1a90a973540b3fec6ea33d4fa836adefc66fa": {
+    "sha": "e3c1a90a973540b3fec6ea33d4fa836adefc66fa",
+    "ssha": "e3c1a90",
+    "parenthashes": [
+      "9a83b0bacf299b2ecd542e6be18ef20751964b72"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445888359",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445888359",
+    "encoding": "",
+    "subject": "Detect El Capitan",
+    "ssubject": "Detect-El-Capitan",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "53c255d4fd962e105ce6bbf99fe6acb6296276df"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 38
+  },
+  "5bdc9383f5a252336bf19fbd355fc679d1440d08": {
+    "sha": "5bdc9383f5a252336bf19fbd355fc679d1440d08",
+    "ssha": "5bdc938",
+    "parenthashes": [
+      "24124f62bf43349bdd9a2513922c5bcaf2a69eca",
+      "5a3d81d55325e617fb007d0f139e834792418831"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445809459",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445809459",
+    "encoding": "",
+    "subject": "Merge pull request #1462 from GilesBathgate/Enable_OpenCSG",
+    "ssubject": "Merge-pull-request-1462-from-GilesBathgate-Enable_OpenCSG",
+    "body": "Enable compilation without OpenCSG.",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6736b1e3a3bec6a2b113c9d07d5d329fede77c56"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 39
+  },
+  "24124f62bf43349bdd9a2513922c5bcaf2a69eca": {
+    "sha": "24124f62bf43349bdd9a2513922c5bcaf2a69eca",
+    "ssha": "24124f6",
+    "parenthashes": [
+      "65cc6703857e3deae30cd401f3614b215e921522"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1445741839",
+    "committername": "Don Bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1445741839",
+    "encoding": "",
+    "subject": "improve infinity tests per discussion on email list",
+    "ssubject": "improve-infinity-tests-per-discussion-on-email-list",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5bdc9383f5a252336bf19fbd355fc679d1440d08"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 40
+  },
+  "65cc6703857e3deae30cd401f3614b215e921522": {
+    "sha": "65cc6703857e3deae30cd401f3614b215e921522",
+    "ssha": "65cc670",
+    "parenthashes": [
+      "9a83b0bacf299b2ecd542e6be18ef20751964b72"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1445708933",
+    "committername": "Don Bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1445708933",
+    "encoding": "",
+    "subject": "make Orthogonal View button show Orthogonal projected cube, not perspective.",
+    "ssubject": "make-Orthogonal-View-button-show-Orthogonal-projected-cube-not-perspective",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "24124f62bf43349bdd9a2513922c5bcaf2a69eca"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 41
+  },
+  "da426df8c715a0de969424c6421cc810e51e8176": {
+    "sha": "da426df8c715a0de969424c6421cc810e51e8176",
+    "ssha": "da426df",
+    "parenthashes": [
+      "a667eba60c6f2776c6d74904b9f68a884c0d2228"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445656605",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1445656605",
+    "encoding": "",
+    "subject": "simplify documentation, for deeper knowledge people should follow urls",
+    "ssubject": "simplify-documentation-for-deeper-knowledge-people-should-follow-urls",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6736b1e3a3bec6a2b113c9d07d5d329fede77c56"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 42
+  },
+  "a667eba60c6f2776c6d74904b9f68a884c0d2228": {
+    "sha": "a667eba60c6f2776c6d74904b9f68a884c0d2228",
+    "ssha": "a667eba",
+    "parenthashes": [
+      "0dded01c37144e69c27eb3816db0621890d4a4eb"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445656376",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1445656376",
+    "encoding": "",
+    "subject": "remove extraneous space",
+    "ssubject": "remove-extraneous-space",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "da426df8c715a0de969424c6421cc810e51e8176"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 43
+  },
+  "0dded01c37144e69c27eb3816db0621890d4a4eb": {
+    "sha": "0dded01c37144e69c27eb3816db0621890d4a4eb",
+    "ssha": "0dded01",
+    "parenthashes": [
+      "fa34694af4cfcf955b598dfc21ec0bdca1ae6acd"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445656263",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1445656263",
+    "encoding": "",
+    "subject": "improve documentation of number conversion function (again)",
+    "ssubject": "improve-documentation-of-number-conversion-function-again",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a667eba60c6f2776c6d74904b9f68a884c0d2228"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 44
+  },
+  "fa34694af4cfcf955b598dfc21ec0bdca1ae6acd": {
+    "sha": "fa34694af4cfcf955b598dfc21ec0bdca1ae6acd",
+    "ssha": "fa34694",
+    "parenthashes": [
+      "cb69ab404f8d79c69084dee0077c6223c89a5b45"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445656152",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1445656152",
+    "encoding": "",
+    "subject": "better documentation of number conversion function",
+    "ssubject": "better-documentation-of-number-conversion-function",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0dded01c37144e69c27eb3816db0621890d4a4eb"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 45
+  },
+  "cb69ab404f8d79c69084dee0077c6223c89a5b45": {
+    "sha": "cb69ab404f8d79c69084dee0077c6223c89a5b45",
+    "ssha": "cb69ab4",
+    "parenthashes": [
+      "42dba75497cf1479cddcd331c7ee778b877b63bf",
+      "9a83b0bacf299b2ecd542e6be18ef20751964b72"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hmbright@fastmail.com",
+    "authordate": "1445655193",
+    "committername": "don bright",
+    "committeremail": "hmbright@fastmail.com",
+    "committerdate": "1445655193",
+    "encoding": "",
+    "subject": "Merge branch 'master' of github.com:openscad/openscad into issue452part2",
+    "ssubject": "Merge-branch-master-of-github.com-openscad-openscad-into-issue452part2",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fa34694af4cfcf955b598dfc21ec0bdca1ae6acd"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 46
+  },
+  "5a3d81d55325e617fb007d0f139e834792418831": {
+    "sha": "5a3d81d55325e617fb007d0f139e834792418831",
+    "ssha": "5a3d81d",
+    "parenthashes": [
+      "280ae53f8e62aa2d2ae888332e5ce50170d1ac0c"
+    ],
+    "authorname": "Giles Bathgate",
+    "authoremail": "giles.bathgate@blueprism.com",
+    "authordate": "1445637722",
+    "committername": "Giles Bathgate",
+    "committeremail": "giles.bathgate@blueprism.com",
+    "committerdate": "1445637722",
+    "encoding": "",
+    "subject": "QGLView requires glew regardless of whether opencsg is used.",
+    "ssubject": "QGLView-requires-glew-regardless-of-whether-opencsg-is-used",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5bdc9383f5a252336bf19fbd355fc679d1440d08"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 47
+  },
+  "280ae53f8e62aa2d2ae888332e5ce50170d1ac0c": {
+    "sha": "280ae53f8e62aa2d2ae888332e5ce50170d1ac0c",
+    "ssha": "280ae53",
+    "parenthashes": [
+      "9a83b0bacf299b2ecd542e6be18ef20751964b72"
+    ],
+    "authorname": "Giles Bathgate",
+    "authoremail": "giles.bathgate@blueprism.com",
+    "authordate": "1445632961",
+    "committername": "Giles Bathgate",
+    "committeremail": "giles.bathgate@blueprism.com",
+    "committerdate": "1445633183",
+    "encoding": "",
+    "subject": "Enable compilation without OpenCSG.",
+    "ssubject": "Enable-compilation-without-OpenCSG",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5a3d81d55325e617fb007d0f139e834792418831"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 48
+  },
+  "9a83b0bacf299b2ecd542e6be18ef20751964b72": {
+    "sha": "9a83b0bacf299b2ecd542e6be18ef20751964b72",
+    "ssha": "9a83b0b",
+    "parenthashes": [
+      "7310cd7aab901ecf7324be691912397d41bb1fdc"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445027628",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445027628",
+    "encoding": "",
+    "subject": "Updated dependencies",
+    "ssubject": "Updated-dependencies",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e3c1a90a973540b3fec6ea33d4fa836adefc66fa",
+      "65cc6703857e3deae30cd401f3614b215e921522",
+      "cb69ab404f8d79c69084dee0077c6223c89a5b45",
+      "280ae53f8e62aa2d2ae888332e5ce50170d1ac0c"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 49
+  },
+  "7310cd7aab901ecf7324be691912397d41bb1fdc": {
+    "sha": "7310cd7aab901ecf7324be691912397d41bb1fdc",
+    "ssha": "7310cd7",
+    "parenthashes": [
+      "5b92c90f9b530c76dc36c1d5ff3939d0247aee63"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445018413",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445018413",
+    "encoding": "",
+    "subject": "CGAL-4.6.3",
+    "ssubject": "CGAL-4.6.3",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9a83b0bacf299b2ecd542e6be18ef20751964b72"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 50
+  },
+  "5b92c90f9b530c76dc36c1d5ff3939d0247aee63": {
+    "sha": "5b92c90f9b530c76dc36c1d5ff3939d0247aee63",
+    "ssha": "5b92c90",
+    "parenthashes": [
+      "24408ef220495f0d032a7e4b1dd0c1c95d2ffb43"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445018396",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445018396",
+    "encoding": "",
+    "subject": "Sync with recent changes to the codebase",
+    "ssubject": "Sync-with-recent-changes-to-the-codebase",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7310cd7aab901ecf7324be691912397d41bb1fdc"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 51
+  },
+  "24408ef220495f0d032a7e4b1dd0c1c95d2ffb43": {
+    "sha": "24408ef220495f0d032a7e4b1dd0c1c95d2ffb43",
+    "ssha": "24408ef",
+    "parenthashes": [
+      "6c8bff81d316ffc159877bf02bf75bda59e03650"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445017475",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445017475",
+    "encoding": "",
+    "subject": "minor wording fixes",
+    "ssubject": "minor-wording-fixes",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5b92c90f9b530c76dc36c1d5ff3939d0247aee63"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 52
+  },
+  "fba8130303d8e6083f6baa07203f6888f3f7a313": {
+    "sha": "fba8130303d8e6083f6baa07203f6888f3f7a313",
+    "ssha": "fba8130",
+    "parenthashes": [
+      "34c83f8ffabe3769eca8984da47a2fce415c5657"
+    ],
+    "authorname": "Andrew Plumb",
+    "authoremail": "andrew@plumb.org",
+    "authordate": "1429123742",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445015361",
+    "encoding": "",
+    "subject": "Manually removing WARNING echos.",
+    "ssubject": "Manually-removing-WARNING-echos",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "829b53fb725436b06f4ff5e3c3c09e1af9cfb9e0"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 53
+  },
+  "34c83f8ffabe3769eca8984da47a2fce415c5657": {
+    "sha": "34c83f8ffabe3769eca8984da47a2fce415c5657",
+    "ssha": "34c83f8",
+    "parenthashes": [
+      "6f8bb211ff10be4ad9707104ef52dc107975a29e"
+    ],
+    "authorname": "Andrew Plumb",
+    "authoremail": "andrew@plumb.org",
+    "authordate": "1429123844",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445015351",
+    "encoding": "",
+    "subject": "Manually removing WARNING echos.",
+    "ssubject": "Manually-removing-WARNING-echos",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fba8130303d8e6083f6baa07203f6888f3f7a313"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 54
+  },
+  "6f8bb211ff10be4ad9707104ef52dc107975a29e": {
+    "sha": "6f8bb211ff10be4ad9707104ef52dc107975a29e",
+    "ssha": "6f8bb21",
+    "parenthashes": [
+      "38436c36e47a421ed7074422e0d43e02010efdff"
+    ],
+    "authorname": "Andrew Plumb",
+    "authoremail": "andrew@plumb.org",
+    "authordate": "1429136945",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445015306",
+    "encoding": "",
+    "subject": "Found more search PRINTB warnings to remove Conflicts: \tsrc/func.cc",
+    "ssubject": "Found-more-search-PRINTB-warnings-to-remove",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "34c83f8ffabe3769eca8984da47a2fce415c5657"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 55
+  },
+  "38436c36e47a421ed7074422e0d43e02010efdff": {
+    "sha": "38436c36e47a421ed7074422e0d43e02010efdff",
+    "ssha": "38436c3",
+    "parenthashes": [
+      "d380ba4b8586f84ad8854f80a979b458754bef29"
+    ],
+    "authorname": "Andrew Plumb",
+    "authoremail": "andrew@plumb.org",
+    "authordate": "1429123650",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445015260",
+    "encoding": "",
+    "subject": "Removing instead of just commenting out line.",
+    "ssubject": "Removing-instead-of-just-commenting-out-line",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6f8bb211ff10be4ad9707104ef52dc107975a29e"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 56
+  },
+  "d380ba4b8586f84ad8854f80a979b458754bef29": {
+    "sha": "d380ba4b8586f84ad8854f80a979b458754bef29",
+    "ssha": "d380ba4",
+    "parenthashes": [
+      "c8e8f7299c0ebd4c5071739e118310f958efada9"
+    ],
+    "authorname": "Andrew Plumb",
+    "authoremail": "andrew@plumb.org",
+    "authordate": "1428965203",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445015246",
+    "encoding": "",
+    "subject": "Comment out search term not found WARNING",
+    "ssubject": "Comment-out-search-term-not-found-WARNING",
+    "body": "Returning empty result should be sufficient for detecting a no-match condition.\n\nSee forum discussion http://forum.openscad.org/Suppressing-quot-search-term-not-found-quot-warning-in-search-td12359.html\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "38436c36e47a421ed7074422e0d43e02010efdff"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 57
+  },
+  "c8e8f7299c0ebd4c5071739e118310f958efada9": {
+    "sha": "c8e8f7299c0ebd4c5071739e118310f958efada9",
+    "ssha": "c8e8f72",
+    "parenthashes": [
+      "686d66f0f9050dfe8889bbd26b1ef43e90c1f059"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1441510730",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014776",
+    "encoding": "",
+    "subject": "add expected result of recursion-test-vector",
+    "ssubject": "add-expected-result-of-recursion-test-vector",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d380ba4b8586f84ad8854f80a979b458754bef29"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 58
+  },
+  "686d66f0f9050dfe8889bbd26b1ef43e90c1f059": {
+    "sha": "686d66f0f9050dfe8889bbd26b1ef43e90c1f059",
+    "ssha": "686d66f",
+    "parenthashes": [
+      "38d80566b3b53446491e76db44537552c9ac74ff"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1441509993",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014766",
+    "encoding": "",
+    "subject": "add test for issue1407, recursion crash when vectors are parameters",
+    "ssubject": "add-test-for-issue1407-recursion-crash-when-vectors-are-parameters",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c8e8f7299c0ebd4c5071739e118310f958efada9"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 59
+  },
+  "38d80566b3b53446491e76db44537552c9ac74ff": {
+    "sha": "38d80566b3b53446491e76db44537552c9ac74ff",
+    "ssha": "38d8056",
+    "parenthashes": [
+      "fafd3e853f652fb37c6ca78b0fab9c544fdbc648"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1441481578",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014507",
+    "encoding": "",
+    "subject": "#1407 Minor Value vs. ValuePtr value/reference cleanup",
+    "ssubject": "1407-Minor-Value-vs.-ValuePtr-value-reference-cleanup",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "686d66f0f9050dfe8889bbd26b1ef43e90c1f059"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 60
+  },
+  "fafd3e853f652fb37c6ca78b0fab9c544fdbc648": {
+    "sha": "fafd3e853f652fb37c6ca78b0fab9c544fdbc648",
+    "ssha": "fafd3e8",
+    "parenthashes": [
+      "fae761e9d22aaada82cf03345dc5c12820b1d839"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1441394930",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014426",
+    "encoding": "",
+    "subject": "Refactored to let VectorValues use ValuePtr instead of Value, to avoid having to copy large vectors. Attempt to fix #1407",
+    "ssubject": "Refactored-to-let-VectorValues-use-ValuePtr-instead-of-Value-to-avoid-having-to-copy-large-vectors.-Attempt-to-fix-1407",
+    "body": "Conflicts:\n\tsrc/func.cc\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "38d80566b3b53446491e76db44537552c9ac74ff"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 61
+  },
+  "fae761e9d22aaada82cf03345dc5c12820b1d839": {
+    "sha": "fae761e9d22aaada82cf03345dc5c12820b1d839",
+    "ssha": "fae761e",
+    "parenthashes": [
+      "5d12761c6824af58f45f125574555172985b37bd"
+    ],
+    "authorname": "Liam Marshall",
+    "authoremail": "liam@cpan.org",
+    "authordate": "1431714680",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014298",
+    "encoding": "",
+    "subject": "Easier fix for 93925 (control.cc)",
+    "ssubject": "Easier-fix-for-93925-control.cc",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fafd3e853f652fb37c6ca78b0fab9c544fdbc648"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 62
+  },
+  "5d12761c6824af58f45f125574555172985b37bd": {
+    "sha": "5d12761c6824af58f45f125574555172985b37bd",
+    "ssha": "5d12761",
+    "parenthashes": [
+      "0edd05760ee1c2e6aa498c27332b6ea4f94a2100"
+    ],
+    "authorname": "Liam Marshall",
+    "authoremail": "liam@cpan.org",
+    "authordate": "1431712332",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014280",
+    "encoding": "",
+    "subject": "Fix memory leak 93925",
+    "ssubject": "Fix-memory-leak-93925",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fae761e9d22aaada82cf03345dc5c12820b1d839"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 63
+  },
+  "0edd05760ee1c2e6aa498c27332b6ea4f94a2100": {
+    "sha": "0edd05760ee1c2e6aa498c27332b6ea4f94a2100",
+    "ssha": "0edd057",
+    "parenthashes": [
+      "53492199b0aac409be16b0ba10159978077d99eb"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445013875",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014063",
+    "encoding": "",
+    "subject": "#1425 For backwards compatibility, revert  calculation so that  never reaches 1.0",
+    "ssubject": "1425-For-backwards-compatibility-revert-calculation-so-that-never-reaches-1.0",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5d12761c6824af58f45f125574555172985b37bd"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 64
+  },
+  "53492199b0aac409be16b0ba10159978077d99eb": {
+    "sha": "53492199b0aac409be16b0ba10159978077d99eb",
+    "ssha": "5349219",
+    "parenthashes": [
+      "c2ebb73f4d56f36146bb872f75bd490941f9e50f"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1443126557",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014049",
+    "encoding": "",
+    "subject": "#1425 Let the last animation frame correspond with =1.0, to allow people to design for a valid last frame.",
+    "ssubject": "1425-Let-the-last-animation-frame-correspond-with-1.0-to-allow-people-to-design-for-a-valid-last-frame",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0edd05760ee1c2e6aa498c27332b6ea4f94a2100"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 65
+  },
+  "c2ebb73f4d56f36146bb872f75bd490941f9e50f": {
+    "sha": "c2ebb73f4d56f36146bb872f75bd490941f9e50f",
+    "ssha": "c2ebb73",
+    "parenthashes": [
+      "2c42445a7e343bb5ba368b9a9c0618417ca133e4"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1443125387",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445014042",
+    "encoding": "",
+    "subject": "#1425 Correctly reset picture dump if anim steps were changed",
+    "ssubject": "1425-Correctly-reset-picture-dump-if-anim-steps-were-changed",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "53492199b0aac409be16b0ba10159978077d99eb"
+    ],
+    "inHeads": [
+      "71ab915a5fb3da7ef09f29a70e4d4208a33ac377"
+    ],
+    "index": 66
+  },
+  "6c8bff81d316ffc159877bf02bf75bda59e03650": {
+    "sha": "6c8bff81d316ffc159877bf02bf75bda59e03650",
+    "ssha": "6c8bff8",
+    "parenthashes": [
+      "2b5c3ef70d039f3ad40f90f6b533eeba2a8d6225"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1445013875",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1445013875",
+    "encoding": "",
+    "subject": "#1425 For backwards compatibility, revert  calculation so that  never reaches 1.0",
+    "ssubject": "1425-For-backwards-compatibility-revert-calculation-so-that-never-reaches-1.0",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "24408ef220495f0d032a7e4b1dd0c1c95d2ffb43"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 67
+  },
+  "2b5c3ef70d039f3ad40f90f6b533eeba2a8d6225": {
+    "sha": "2b5c3ef70d039f3ad40f90f6b533eeba2a8d6225",
+    "ssha": "2b5c3ef",
+    "parenthashes": [
+      "ab8278416ab0fddb9efe864be812eeb7f6460437"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1444958892",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1444958892",
+    "encoding": "",
+    "subject": "Simplified example",
+    "ssubject": "Simplified-example",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6c8bff81d316ffc159877bf02bf75bda59e03650"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 68
+  },
+  "ab8278416ab0fddb9efe864be812eeb7f6460437": {
+    "sha": "ab8278416ab0fddb9efe864be812eeb7f6460437",
+    "ssha": "ab82784",
+    "parenthashes": [
+      "2ff35fed0c630f018daeea70d3762b184c8a6766"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1444958202",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1444958202",
+    "encoding": "",
+    "subject": "Test for #1455",
+    "ssubject": "Test-for-1455",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2b5c3ef70d039f3ad40f90f6b533eeba2a8d6225"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 69
+  },
+  "2ff35fed0c630f018daeea70d3762b184c8a6766": {
+    "sha": "2ff35fed0c630f018daeea70d3762b184c8a6766",
+    "ssha": "2ff35fe",
+    "parenthashes": [
+      "b40e492d8720df7925b8f91e28cfd7fe9f6b3c89"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1444958054",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1444958054",
+    "encoding": "",
+    "subject": "Nef polyhedron for testing #1455 against a pure CGAL app",
+    "ssubject": "Nef-polyhedron-for-testing-1455-against-a-pure-CGAL-app",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ab8278416ab0fddb9efe864be812eeb7f6460437"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 70
+  },
+  "b40e492d8720df7925b8f91e28cfd7fe9f6b3c89": {
+    "sha": "b40e492d8720df7925b8f91e28cfd7fe9f6b3c89",
+    "ssha": "b40e492",
+    "parenthashes": [
+      "f1e8f2c1a5a35eca5e1bc9b16c316d8d4e0f6ad0"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1444957420",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1444957420",
+    "encoding": "",
+    "subject": "Respect ENABLE_OPENCSG define",
+    "ssubject": "Respect-ENABLE_OPENCSG-define",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2ff35fed0c630f018daeea70d3762b184c8a6766"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 71
+  },
+  "dcfb7d32885758ee4990502c1909a11644c88c33": {
+    "sha": "dcfb7d32885758ee4990502c1909a11644c88c33",
+    "ssha": "dcfb7d3",
+    "parenthashes": [
+      "8c8c6e2fdbfa29bce418609659470d00884b75e3"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1444350240",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1444350240",
+    "encoding": "",
+    "subject": "get OSMESA working properly with ThrownTogether and CGAL render (no OpenCSG).",
+    "ssubject": "get-OSMESA-working-properly-with-ThrownTogether-and-CGAL-render-no-OpenCSG",
+    "body": "",
+    "refnames": [
+      "origin/solarisx"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 72
+  },
+  "8c8c6e2fdbfa29bce418609659470d00884b75e3": {
+    "sha": "8c8c6e2fdbfa29bce418609659470d00884b75e3",
+    "ssha": "8c8c6e2",
+    "parenthashes": [
+      "e204f22f8a04a623e85e58974e0a39d14417e57a"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1444187702",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1444187702",
+    "encoding": "",
+    "subject": "fix NOGUI->OPENSCAD_NOGUI, de-link shaderinfo from GL for easier build, OSMESA stuff",
+    "ssubject": "fix-NOGUI-OPENSCAD_NOGUI-de-link-shaderinfo-from-GL-for-easier-build-OSMESA-stuff",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 73
+  },
+  "e204f22f8a04a623e85e58974e0a39d14417e57a": {
+    "sha": "e204f22f8a04a623e85e58974e0a39d14417e57a",
+    "ssha": "e204f22",
+    "parenthashes": [
+      "5a596e47f3c0649b738624f7dd97015a6f5303d8"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1444088609",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1444088609",
+    "encoding": "",
+    "subject": "first attempt at OSMesa opengl context creation. many build tweaks for solaris.",
+    "ssubject": "first-attempt-at-OSMesa-opengl-context-creation.-many-build-tweaks-for-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8c8c6e2fdbfa29bce418609659470d00884b75e3"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 74
+  },
+  "f1e8f2c1a5a35eca5e1bc9b16c316d8d4e0f6ad0": {
+    "sha": "f1e8f2c1a5a35eca5e1bc9b16c316d8d4e0f6ad0",
+    "ssha": "f1e8f2c",
+    "parenthashes": [
+      "e225f2d3412086ff4ed1de7c9b9cd03531a4dcf3",
+      "e6e933d844a3561a4fffc61b029533dd4f550b21"
+    ],
+    "authorname": "Marius Kintel",
+    "authoremail": "marius@kintel.net",
+    "authordate": "1443929877",
+    "committername": "Marius Kintel",
+    "committeremail": "marius@kintel.net",
+    "committerdate": "1443929877",
+    "encoding": "",
+    "subject": "Merge pull request #1447 from kant/patch-1",
+    "ssubject": "Merge-pull-request-1447-from-kant-patch-1",
+    "body": "Minor fix",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b40e492d8720df7925b8f91e28cfd7fe9f6b3c89"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 75
+  },
+  "5a596e47f3c0649b738624f7dd97015a6f5303d8": {
+    "sha": "5a596e47f3c0649b738624f7dd97015a6f5303d8",
+    "ssha": "5a596e4",
+    "parenthashes": [
+      "4f2817cd93ecb64f6c392d4055b54d5d0a6f59a7"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443918094",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443918094",
+    "encoding": "",
+    "subject": "save/restore FPU for CGAL. cleanup some anti-segfault code & messages.",
+    "ssubject": "save-restore-FPU-for-CGAL.-cleanup-some-anti-segfault-code-messages",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e204f22f8a04a623e85e58974e0a39d14417e57a"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 76
+  },
+  "4f2817cd93ecb64f6c392d4055b54d5d0a6f59a7": {
+    "sha": "4f2817cd93ecb64f6c392d4055b54d5d0a6f59a7",
+    "ssha": "4f2817c",
+    "parenthashes": [
+      "1884549257c10e947a0fd76c0fade5e0cc98003d"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443908933",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443908933",
+    "encoding": "",
+    "subject": "fix glitch, now we can trap SIGSEGV of GLX init and not crash",
+    "ssubject": "fix-glitch-now-we-can-trap-SIGSEGV-of-GLX-init-and-not-crash",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5a596e47f3c0649b738624f7dd97015a6f5303d8"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 77
+  },
+  "1884549257c10e947a0fd76c0fade5e0cc98003d": {
+    "sha": "1884549257c10e947a0fd76c0fade5e0cc98003d",
+    "ssha": "1884549",
+    "parenthashes": [
+      "bbf82cb76462d3c76a88809669ce709d7cee2398"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443908453",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443908453",
+    "encoding": "",
+    "subject": "use longjmp to avoid crash in glx",
+    "ssubject": "use-longjmp-to-avoid-crash-in-glx",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "4f2817cd93ecb64f6c392d4055b54d5d0a6f59a7"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 78
+  },
+  "bbf82cb76462d3c76a88809669ce709d7cee2398": {
+    "sha": "bbf82cb76462d3c76a88809669ce709d7cee2398",
+    "ssha": "bbf82cb",
+    "parenthashes": [
+      "c61d1becdc7ef1bb6f1fd397f10c6ff21376e2ec"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443903578",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443903578",
+    "encoding": "",
+    "subject": "replace stream output w PRINT output, tweak some build for NOGUI solaris",
+    "ssubject": "replace-stream-output-w-PRINT-output-tweak-some-build-for-NOGUI-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "1884549257c10e947a0fd76c0fade5e0cc98003d"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 79
+  },
+  "c61d1becdc7ef1bb6f1fd397f10c6ff21376e2ec": {
+    "sha": "c61d1becdc7ef1bb6f1fd397f10c6ff21376e2ec",
+    "ssha": "c61d1be",
+    "parenthashes": [
+      "98176130a9af34050207b6dac2f0a4e1af418338"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443892794",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443892794",
+    "encoding": "",
+    "subject": "new code to handle crashing GLX + gettext libintl, build fixes for solaris",
+    "ssubject": "new-code-to-handle-crashing-GLX-gettext-libintl-build-fixes-for-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "bbf82cb76462d3c76a88809669ce709d7cee2398"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 80
+  },
+  "e6e933d844a3561a4fffc61b029533dd4f550b21": {
+    "sha": "e6e933d844a3561a4fffc61b029533dd4f550b21",
+    "ssha": "e6e933d",
+    "parenthashes": [
+      "e225f2d3412086ff4ed1de7c9b9cd03531a4dcf3"
+    ],
+    "authorname": "Darío Hereñú",
+    "authoremail": "magallania@gmail.com",
+    "authordate": "1443876457",
+    "committername": "Darío Hereñú",
+    "committeremail": "magallania@gmail.com",
+    "committerdate": "1443876457",
+    "encoding": "",
+    "subject": "Minor fix",
+    "ssubject": "Minor-fix",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f1e8f2c1a5a35eca5e1bc9b16c316d8d4e0f6ad0"
+    ],
+    "inHeads": [
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "16026cfed7f2e700871c0c8416a6467db8d0c67d",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "4b79c102bc51a413ccf56d8ce47332718721ddcd",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "6cc5d1ced625e261334fb24386cec7f4a04d2066",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835",
+      "56c5125fa8a6bc3960d063e193a2dac1e4833835"
+    ],
+    "index": 81
+  },
+  "98176130a9af34050207b6dac2f0a4e1af418338": {
+    "sha": "98176130a9af34050207b6dac2f0a4e1af418338",
+    "ssha": "9817613",
+    "parenthashes": [
+      "0360c82c1bb04769b000ad860972f94fc00a2beb"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443668539",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443668539",
+    "encoding": "",
+    "subject": "GLX: rewrite sigsegv handlr. GLXalt: cp from glxgear. fixup solaris build scrp",
+    "ssubject": "GLX-rewrite-sigsegv-handlr.-GLXalt-cp-from-glxgear.-fixup-solaris-build-scrp",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c61d1becdc7ef1bb6f1fd397f10c6ff21376e2ec"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 82
+  },
+  "0360c82c1bb04769b000ad860972f94fc00a2beb": {
+    "sha": "0360c82c1bb04769b000ad860972f94fc00a2beb",
+    "ssha": "0360c82",
+    "parenthashes": [
+      "407e4eaccd995c6b4472d77f4a1a3384e125193e"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443578456",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443578456",
+    "encoding": "",
+    "subject": "fix indentation problems in GLX.cc. copy/paste from glxgears to GLXalt.cc",
+    "ssubject": "fix-indentation-problems-in-GLX.cc.-copy-paste-from-glxgears-to-GLXalt.cc",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "98176130a9af34050207b6dac2f0a4e1af418338"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 83
+  },
+  "407e4eaccd995c6b4472d77f4a1a3384e125193e": {
+    "sha": "407e4eaccd995c6b4472d77f4a1a3384e125193e",
+    "ssha": "407e4ea",
+    "parenthashes": [
+      "ea9d7895602cf669b44b7f1323876b7ed2944493"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443578381",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443578381",
+    "encoding": "",
+    "subject": "start alternative version of GLX context creator",
+    "ssubject": "start-alternative-version-of-GLX-context-creator",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0360c82c1bb04769b000ad860972f94fc00a2beb"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 84
+  },
+  "ea9d7895602cf669b44b7f1323876b7ed2944493": {
+    "sha": "ea9d7895602cf669b44b7f1323876b7ed2944493",
+    "ssha": "ea9d789",
+    "parenthashes": [
+      "2535129353e218dbec30d3e78ccf8b48b4bc0d18"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443578355",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443578355",
+    "encoding": "",
+    "subject": "move curl up, check for DEPLOYDIR pkg-config",
+    "ssubject": "move-curl-up-check-for-DEPLOYDIR-pkg-config",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "407e4eaccd995c6b4472d77f4a1a3384e125193e"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 85
+  },
+  "2535129353e218dbec30d3e78ccf8b48b4bc0d18": {
+    "sha": "2535129353e218dbec30d3e78ccf8b48b4bc0d18",
+    "ssha": "2535129",
+    "parenthashes": [
+      "2936158481f5202bd66eb948477035c3c5b8f9b7"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443483944",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443483944",
+    "encoding": "",
+    "subject": "dont crash the pretty printer",
+    "ssubject": "dont-crash-the-pretty-printer",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ea9d7895602cf669b44b7f1323876b7ed2944493"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 86
+  },
+  "2936158481f5202bd66eb948477035c3c5b8f9b7": {
+    "sha": "2936158481f5202bd66eb948477035c3c5b8f9b7",
+    "ssha": "2936158",
+    "parenthashes": [
+      "c7bb3a9ff8db073e58c1ebf06b0aa3e25b547141",
+      "42dba75497cf1479cddcd331c7ee778b877b63bf"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443407134",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443407134",
+    "encoding": "",
+    "subject": "Merge branch 'issue452part2' of github.com:openscad/openscad into solarisx",
+    "ssubject": "Merge-branch-issue452part2-of-github.com-openscad-openscad-into-solarisx",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2535129353e218dbec30d3e78ccf8b48b4bc0d18"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 87
+  },
+  "c7bb3a9ff8db073e58c1ebf06b0aa3e25b547141": {
+    "sha": "c7bb3a9ff8db073e58c1ebf06b0aa3e25b547141",
+    "ssha": "c7bb3a9",
+    "parenthashes": [
+      "55e136222ffbe8961103b290275ecc2baf871b1e"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443407114",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443407114",
+    "encoding": "",
+    "subject": "temporary workaround for default python3 on solaris",
+    "ssubject": "temporary-workaround-for-default-python3-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2936158481f5202bd66eb948477035c3c5b8f9b7"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 88
+  },
+  "55e136222ffbe8961103b290275ecc2baf871b1e": {
+    "sha": "55e136222ffbe8961103b290275ecc2baf871b1e",
+    "ssha": "55e1362",
+    "parenthashes": [
+      "17bcd59df2541302c7d65c26577cd48ea408a0bb"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443392953",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443392953",
+    "encoding": "",
+    "subject": "try different PKG_CONFIG_PATH settings",
+    "ssubject": "try-different-PKG_CONFIG_PATH-settings",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c7bb3a9ff8db073e58c1ebf06b0aa3e25b547141"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 89
+  },
+  "17bcd59df2541302c7d65c26577cd48ea408a0bb": {
+    "sha": "17bcd59df2541302c7d65c26577cd48ea408a0bb",
+    "ssha": "17bcd59",
+    "parenthashes": [
+      "7773921a9ed59c98c65a7240e3a7b570af7e28dd"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443386837",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443386837",
+    "encoding": "",
+    "subject": "add -lintl on solaris. also allow building of git",
+    "ssubject": "add-lintl-on-solaris.-also-allow-building-of-git",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "55e136222ffbe8961103b290275ecc2baf871b1e"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 90
+  },
+  "7773921a9ed59c98c65a7240e3a7b570af7e28dd": {
+    "sha": "7773921a9ed59c98c65a7240e3a7b570af7e28dd",
+    "ssha": "7773921",
+    "parenthashes": [
+      "5019cc76df828689ee58f273ab6e25d70fffd0dc"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443378632",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443378632",
+    "encoding": "",
+    "subject": "set -m32 / -m64 for solaris",
+    "ssubject": "set-m32-m64-for-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "17bcd59df2541302c7d65c26577cd48ea408a0bb"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 91
+  },
+  "5019cc76df828689ee58f273ab6e25d70fffd0dc": {
+    "sha": "5019cc76df828689ee58f273ab6e25d70fffd0dc",
+    "ssha": "5019cc7",
+    "parenthashes": [
+      "7d54228c8670c01562d31db1008cbf146837d495"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443376797",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443376797",
+    "encoding": "",
+    "subject": "fix the harfbuzz PKG_CONFIG_PATH export command that i broke",
+    "ssubject": "fix-the-harfbuzz-PKG_CONFIG_PATH-export-command-that-i-broke",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7773921a9ed59c98c65a7240e3a7b570af7e28dd"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 92
+  },
+  "7d54228c8670c01562d31db1008cbf146837d495": {
+    "sha": "7d54228c8670c01562d31db1008cbf146837d495",
+    "ssha": "7d54228",
+    "parenthashes": [
+      "8480a0bf84332f7ad60db14c01e28f05286f1d6c"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443371449",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443371449",
+    "encoding": "",
+    "subject": "allow the use qmake on solaris (-m32 and -m64 flags)",
+    "ssubject": "allow-the-use-qmake-on-solaris-m32-and-m64-flags",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5019cc76df828689ee58f273ab6e25d70fffd0dc"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 93
+  },
+  "8480a0bf84332f7ad60db14c01e28f05286f1d6c": {
+    "sha": "8480a0bf84332f7ad60db14c01e28f05286f1d6c",
+    "ssha": "8480a0b",
+    "parenthashes": [
+      "6307b753db6c5260c7a4de81904e4cfabe562d85"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443364304",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443364304",
+    "encoding": "",
+    "subject": "single-cpu build binutils. remove complicated MAKECMD TARCMD system.",
+    "ssubject": "single-cpu-build-binutils.-remove-complicated-MAKECMD-TARCMD-system",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7d54228c8670c01562d31db1008cbf146837d495"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 94
+  },
+  "6307b753db6c5260c7a4de81904e4cfabe562d85": {
+    "sha": "6307b753db6c5260c7a4de81904e4cfabe562d85",
+    "ssha": "6307b75",
+    "parenthashes": [
+      "f137f890f20c6beeaa9341e4dcee0f099590c586",
+      "0167e7cfd6ff144b497e7f88b610e577cbe9b2d3"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443333249",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443333249",
+    "encoding": "",
+    "subject": "Merge branch 'solarisx' of github.com:openscad/openscad into solarisx",
+    "ssubject": "Merge-branch-solarisx-of-github.com-openscad-openscad-into-solarisx",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8480a0bf84332f7ad60db14c01e28f05286f1d6c"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 95
+  },
+  "f137f890f20c6beeaa9341e4dcee0f099590c586": {
+    "sha": "f137f890f20c6beeaa9341e4dcee0f099590c586",
+    "ssha": "f137f89",
+    "parenthashes": [
+      "25a8109856a86c6615c49ffde68fac12aa46c298"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443333228",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443333228",
+    "encoding": "",
+    "subject": "improve working on solaris",
+    "ssubject": "improve-working-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6307b753db6c5260c7a4de81904e4cfabe562d85"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 96
+  },
+  "0167e7cfd6ff144b497e7f88b610e577cbe9b2d3": {
+    "sha": "0167e7cfd6ff144b497e7f88b610e577cbe9b2d3",
+    "ssha": "0167e7c",
+    "parenthashes": [
+      "897fea971b8554c0252be09a416486ed0f76feb3"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443332781",
+    "committername": "don bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1443332781",
+    "encoding": "",
+    "subject": "improve glu detect when build opencsg. improve check deps of binaries",
+    "ssubject": "improve-glu-detect-when-build-opencsg.-improve-check-deps-of-binaries",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6307b753db6c5260c7a4de81904e4cfabe562d85"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 97
+  },
+  "897fea971b8554c0252be09a416486ed0f76feb3": {
+    "sha": "897fea971b8554c0252be09a416486ed0f76feb3",
+    "ssha": "897fea9",
+    "parenthashes": [
+      "9e7a72af4f8211ed492cc7c1f18a27780b9d1437",
+      "25a8109856a86c6615c49ffde68fac12aa46c298"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443331327",
+    "committername": "don bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1443331327",
+    "encoding": "",
+    "subject": "Merge branch 'solarisx' of github.com:openscad/openscad into solarisx",
+    "ssubject": "Merge-branch-solarisx-of-github.com-openscad-openscad-into-solarisx",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0167e7cfd6ff144b497e7f88b610e577cbe9b2d3"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 98
+  },
+  "9e7a72af4f8211ed492cc7c1f18a27780b9d1437": {
+    "sha": "9e7a72af4f8211ed492cc7c1f18a27780b9d1437",
+    "ssha": "9e7a72a",
+    "parenthashes": [
+      "358248faf419e7bb207c9bce5f8e2b5d058b872f"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443331292",
+    "committername": "don bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1443331292",
+    "encoding": "",
+    "subject": "fix opencsg",
+    "ssubject": "fix-opencsg",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "897fea971b8554c0252be09a416486ed0f76feb3"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 99
+  },
+  "358248faf419e7bb207c9bce5f8e2b5d058b872f": {
+    "sha": "358248faf419e7bb207c9bce5f8e2b5d058b872f",
+    "ssha": "358248f",
+    "parenthashes": [
+      "78de613a9e4b570803498aa77bc9087260a68537"
+    ],
+    "authorname": "don bright",
+    "authoremail": "hugh.m.bright@gmail.com",
+    "authordate": "1443331155",
+    "committername": "don bright",
+    "committeremail": "hugh.m.bright@gmail.com",
+    "committerdate": "1443331155",
+    "encoding": "",
+    "subject": "tweak a few bugs in opencs build",
+    "ssubject": "tweak-a-few-bugs-in-opencs-build",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9e7a72af4f8211ed492cc7c1f18a27780b9d1437"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 100
+  },
+  "25a8109856a86c6615c49ffde68fac12aa46c298": {
+    "sha": "25a8109856a86c6615c49ffde68fac12aa46c298",
+    "ssha": "25a8109",
+    "parenthashes": [
+      "78de613a9e4b570803498aa77bc9087260a68537"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443329886",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443329886",
+    "encoding": "",
+    "subject": "avoid ambiguous build error by using static asts. also repair eigen cmake by disabling pkg_config.",
+    "ssubject": "avoid-ambiguous-build-error-by-using-static-asts.-also-repair-eigen",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f137f890f20c6beeaa9341e4dcee0f099590c586",
+      "897fea971b8554c0252be09a416486ed0f76feb3"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 101
+  },
+  "78de613a9e4b570803498aa77bc9087260a68537": {
+    "sha": "78de613a9e4b570803498aa77bc9087260a68537",
+    "ssha": "78de613",
+    "parenthashes": [
+      "1fc194086dcd0e48f6d30633a9da08f0336af720"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443328077",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443328077",
+    "encoding": "",
+    "subject": "avoid ambiguous compile error by specifying type casts",
+    "ssubject": "avoid-ambiguous-compile-error-by-specifying-type-casts",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "358248faf419e7bb207c9bce5f8e2b5d058b872f",
+      "25a8109856a86c6615c49ffde68fac12aa46c298"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 102
+  },
+  "1fc194086dcd0e48f6d30633a9da08f0336af720": {
+    "sha": "1fc194086dcd0e48f6d30633a9da08f0336af720",
+    "ssha": "1fc1940",
+    "parenthashes": [
+      "407bfe1f8d48130cdc3ce70b62e04b1030e882f1"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443327730",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443327730",
+    "encoding": "",
+    "subject": "avoid ambiguous error by casting to float. also turnoff pragma warning on solaris",
+    "ssubject": "avoid-ambiguous-error-by-casting-to-float.-also-turnoff-pragma-warning-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "78de613a9e4b570803498aa77bc9087260a68537"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 103
+  },
+  "407bfe1f8d48130cdc3ce70b62e04b1030e882f1": {
+    "sha": "407bfe1f8d48130cdc3ce70b62e04b1030e882f1",
+    "ssha": "407bfe1",
+    "parenthashes": [
+      "a7e5e3379aae8b9d35e0f08ed11751fac7a8e5cd"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443326623",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443326623",
+    "encoding": "",
+    "subject": "repair eigen installation",
+    "ssubject": "repair-eigen-installation",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "1fc194086dcd0e48f6d30633a9da08f0336af720"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 104
+  },
+  "a7e5e3379aae8b9d35e0f08ed11751fac7a8e5cd": {
+    "sha": "a7e5e3379aae8b9d35e0f08ed11751fac7a8e5cd",
+    "ssha": "a7e5e33",
+    "parenthashes": [
+      "3f486bf6c7aa204b4e3638e7d43655be84443a77"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443325920",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443325920",
+    "encoding": "",
+    "subject": "fix ambiguous log10() bug by casting specific types",
+    "ssubject": "fix-ambiguous-log10-bug-by-casting-specific-types",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "407bfe1f8d48130cdc3ce70b62e04b1030e882f1"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 105
+  },
+  "3f486bf6c7aa204b4e3638e7d43655be84443a77": {
+    "sha": "3f486bf6c7aa204b4e3638e7d43655be84443a77",
+    "ssha": "3f486bf",
+    "parenthashes": [
+      "be0e250c14b7c8bf9d82e2d38883a49dc82970f8"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443324912",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443324912",
+    "encoding": "",
+    "subject": "shorten qt detection. improve eigen detection",
+    "ssubject": "shorten-qt-detection.-improve-eigen-detection",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a7e5e3379aae8b9d35e0f08ed11751fac7a8e5cd"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 106
+  },
+  "be0e250c14b7c8bf9d82e2d38883a49dc82970f8": {
+    "sha": "be0e250c14b7c8bf9d82e2d38883a49dc82970f8",
+    "ssha": "be0e250",
+    "parenthashes": [
+      "07129a354b9d4d2713822551dffd1a220b86c8b2"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443322149",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443322149",
+    "encoding": "",
+    "subject": "better bison+flex detection in check-deps, build bison/flex for solaris",
+    "ssubject": "better-bison-flex-detection-in-check-deps-build-bison-flex-for-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "3f486bf6c7aa204b4e3638e7d43655be84443a77"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 107
+  },
+  "07129a354b9d4d2713822551dffd1a220b86c8b2": {
+    "sha": "07129a354b9d4d2713822551dffd1a220b86c8b2",
+    "ssha": "07129a3",
+    "parenthashes": [
+      "44d57cf07e01233e87764c9e677cc14daada2b9c"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443319192",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443319192",
+    "encoding": "",
+    "subject": "fix eigen3 detection. also remove -a from grep to fix on solaris",
+    "ssubject": "fix-eigen3-detection.-also-remove-a-from-grep-to-fix-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "be0e250c14b7c8bf9d82e2d38883a49dc82970f8"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 108
+  },
+  "44d57cf07e01233e87764c9e677cc14daada2b9c": {
+    "sha": "44d57cf07e01233e87764c9e677cc14daada2b9c",
+    "ssha": "44d57cf",
+    "parenthashes": [
+      "454dfcc0824fdbc72aa6cc184ee3b73d032108ac"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443317893",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443317893",
+    "encoding": "",
+    "subject": "harfbuzz on solaris (automake,autoconf,etc, use pkg-config to find glib)",
+    "ssubject": "harfbuzz-on-solaris-automake-autoconf-etc-use-pkg-config-to-find-glib",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "07129a354b9d4d2713822551dffd1a220b86c8b2"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 109
+  },
+  "454dfcc0824fdbc72aa6cc184ee3b73d032108ac": {
+    "sha": "454dfcc0824fdbc72aa6cc184ee3b73d032108ac",
+    "ssha": "454dfcc",
+    "parenthashes": [
+      "a722c354eebc2d3c62f6a06dc12b47ef4f2bf346"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443316053",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443316053",
+    "encoding": "",
+    "subject": "enable utils (coreutils tar, etc) for solaris",
+    "ssubject": "enable-utils-coreutils-tar-etc-for-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "44d57cf07e01233e87764c9e677cc14daada2b9c"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 110
+  },
+  "a722c354eebc2d3c62f6a06dc12b47ef4f2bf346": {
+    "sha": "a722c354eebc2d3c62f6a06dc12b47ef4f2bf346",
+    "ssha": "a722c35",
+    "parenthashes": [
+      "97163518a972af4793d3340a655670c801aaa666"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443309343",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443309343",
+    "encoding": "",
+    "subject": "remove stale gettext code (new is under common-deps build)",
+    "ssubject": "remove-stale-gettext-code-new-is-under-common-deps-build",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "454dfcc0824fdbc72aa6cc184ee3b73d032108ac"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 111
+  },
+  "97163518a972af4793d3340a655670c801aaa666": {
+    "sha": "97163518a972af4793d3340a655670c801aaa666",
+    "ssha": "9716351",
+    "parenthashes": [
+      "8447d76925599efab52650f99aca94f86f47cdfb"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443309222",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443309222",
+    "encoding": "",
+    "subject": "build_zlib added for solaris. update fontconfig to build on solaris.",
+    "ssubject": "build_zlib-added-for-solaris.-update-fontconfig-to-build-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a722c354eebc2d3c62f6a06dc12b47ef4f2bf346"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 112
+  },
+  "8447d76925599efab52650f99aca94f86f47cdfb": {
+    "sha": "8447d76925599efab52650f99aca94f86f47cdfb",
+    "ssha": "8447d76",
+    "parenthashes": [
+      "c0b4224ae96f9ec08c337efd68a300d2818503a5"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443302305",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443302305",
+    "encoding": "",
+    "subject": "configure --disable-silent-rules easier way to force VERBOSE make",
+    "ssubject": "configure-disable-silent-rules-easier-way-to-force-VERBOSE-make",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "97163518a972af4793d3340a655670c801aaa666"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 113
+  },
+  "c0b4224ae96f9ec08c337efd68a300d2818503a5": {
+    "sha": "c0b4224ae96f9ec08c337efd68a300d2818503a5",
+    "ssha": "c0b4224",
+    "parenthashes": [
+      "217a1fa7a0ca7cc399fe1e5151b20b519154559d"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443301251",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443301251",
+    "encoding": "",
+    "subject": "make VERBOSE=1 can help with debugging build issues",
+    "ssubject": "make-VERBOSE-1-can-help-with-debugging-build-issues",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8447d76925599efab52650f99aca94f86f47cdfb"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 114
+  },
+  "217a1fa7a0ca7cc399fe1e5151b20b519154559d": {
+    "sha": "217a1fa7a0ca7cc399fe1e5151b20b519154559d",
+    "ssha": "217a1fa",
+    "parenthashes": [
+      "d5fdc8aacd1e3f69fe589f0c2099765a8f749a41"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443298873",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443298873",
+    "encoding": "",
+    "subject": "update glib version to prevent solaris build fail",
+    "ssubject": "update-glib-version-to-prevent-solaris-build-fail",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c0b4224ae96f9ec08c337efd68a300d2818503a5"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 115
+  },
+  "d5fdc8aacd1e3f69fe589f0c2099765a8f749a41": {
+    "sha": "d5fdc8aacd1e3f69fe589f0c2099765a8f749a41",
+    "ssha": "d5fdc8a",
+    "parenthashes": [
+      "f544e1827cfbbdc391b317bb01fc5913e1125554"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443296954",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443296954",
+    "encoding": "",
+    "subject": "generalized make, trying to get glib2 to build on solaris,",
+    "ssubject": "generalized-make-trying-to-get-glib2-to-build-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "217a1fa7a0ca7cc399fe1e5151b20b519154559d"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 116
+  },
+  "f544e1827cfbbdc391b317bb01fc5913e1125554": {
+    "sha": "f544e1827cfbbdc391b317bb01fc5913e1125554",
+    "ssha": "f544e18",
+    "parenthashes": [
+      "60ad9ed611b9bd74e852486b7875991fcb0aea4f"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443294466",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443294466",
+    "encoding": "",
+    "subject": "add option to build binutils",
+    "ssubject": "add-option-to-build-binutils",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d5fdc8aacd1e3f69fe589f0c2099765a8f749a41"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 117
+  },
+  "60ad9ed611b9bd74e852486b7875991fcb0aea4f": {
+    "sha": "60ad9ed611b9bd74e852486b7875991fcb0aea4f",
+    "ssha": "60ad9ed",
+    "parenthashes": [
+      "2e2b43e0439573d7caa7efe7413d8bb6e21d25ba"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443293520",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443293585",
+    "encoding": "",
+    "subject": "build glew as 32 bit on solaris. make ungzip / untar more portable",
+    "ssubject": "build-glew-as-32-bit-on-solaris.-make-ungzip-untar-more-portable",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f544e1827cfbbdc391b317bb01fc5913e1125554"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 118
+  },
+  "2e2b43e0439573d7caa7efe7413d8bb6e21d25ba": {
+    "sha": "2e2b43e0439573d7caa7efe7413d8bb6e21d25ba",
+    "ssha": "2e2b43e",
+    "parenthashes": [
+      "74016600ab5cbfc9aba52fa8dfbe7562442de1af"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443288679",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443288679",
+    "encoding": "",
+    "subject": "get boost and CGAL to build on Solaris Sparc 64 also safety rm -rf",
+    "ssubject": "get-boost-and-CGAL-to-build-on-Solaris-Sparc-64-also-safety-rm-rf",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "60ad9ed611b9bd74e852486b7875991fcb0aea4f"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 119
+  },
+  "74016600ab5cbfc9aba52fa8dfbe7562442de1af": {
+    "sha": "74016600ab5cbfc9aba52fa8dfbe7562442de1af",
+    "ssha": "7401660",
+    "parenthashes": [
+      "c66127c2f293aad6f94613a55ae6565f8ecfbf08"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443224968",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443224968",
+    "encoding": "",
+    "subject": "fixes for Solaris, also print msg during download",
+    "ssubject": "fixes-for-Solaris-also-print-msg-during-download",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2e2b43e0439573d7caa7efe7413d8bb6e21d25ba"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 120
+  },
+  "c66127c2f293aad6f94613a55ae6565f8ecfbf08": {
+    "sha": "c66127c2f293aad6f94613a55ae6565f8ecfbf08",
+    "ssha": "c66127c",
+    "parenthashes": [
+      "6579f671c5a1f63307eab9dc5a02b59e8a179c1d"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443140047",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443140047",
+    "encoding": "",
+    "subject": "enable opencsg build on solaris",
+    "ssubject": "enable-opencsg-build-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "74016600ab5cbfc9aba52fa8dfbe7562442de1af"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 121
+  },
+  "6579f671c5a1f63307eab9dc5a02b59e8a179c1d": {
+    "sha": "6579f671c5a1f63307eab9dc5a02b59e8a179c1d",
+    "ssha": "6579f67",
+    "parenthashes": [
+      "f72f676091b369e0ccfdd37a4ee86dd3908946c7"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443137874",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443137874",
+    "encoding": "",
+    "subject": "fix typos from previous commit",
+    "ssubject": "fix-typos-from-previous-commit",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c66127c2f293aad6f94613a55ae6565f8ecfbf08"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 122
+  },
+  "f72f676091b369e0ccfdd37a4ee86dd3908946c7": {
+    "sha": "f72f676091b369e0ccfdd37a4ee86dd3908946c7",
+    "ssha": "f72f676",
+    "parenthashes": [
+      "00818f5989d4b58ddf4ba0adb7aab4f30f230a89"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443137791",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443137791",
+    "encoding": "",
+    "subject": "improve portability of linux detection and of gzip bzip2 tar calls.",
+    "ssubject": "improve-portability-of-linux-detection-and-of-gzip-bzip2-tar-calls",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6579f671c5a1f63307eab9dc5a02b59e8a179c1d"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 123
+  },
+  "00818f5989d4b58ddf4ba0adb7aab4f30f230a89": {
+    "sha": "00818f5989d4b58ddf4ba0adb7aab4f30f230a89",
+    "ssha": "00818f5",
+    "parenthashes": [
+      "5ba4f276220972aaf1fcfdd66984b497b722419b"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443136012",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443136012",
+    "encoding": "",
+    "subject": "show location in check-dependencies",
+    "ssubject": "show-location-in-check-dependencies",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f72f676091b369e0ccfdd37a4ee86dd3908946c7"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 124
+  },
+  "5ba4f276220972aaf1fcfdd66984b497b722419b": {
+    "sha": "5ba4f276220972aaf1fcfdd66984b497b722419b",
+    "ssha": "5ba4f27",
+    "parenthashes": [
+      "82db8a27eb45b84f540c864deb01ecad7630402c"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443135002",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443135002",
+    "encoding": "",
+    "subject": "set custom PKG_CONFIG_PATH on solaris",
+    "ssubject": "set-custom-PKG_CONFIG_PATH-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "00818f5989d4b58ddf4ba0adb7aab4f30f230a89"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 125
+  },
+  "82db8a27eb45b84f540c864deb01ecad7630402c": {
+    "sha": "82db8a27eb45b84f540c864deb01ecad7630402c",
+    "ssha": "82db8a2",
+    "parenthashes": [
+      "be7530ef13474adc0d94f7084b8b2823840842a1"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443134182",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443134182",
+    "encoding": "",
+    "subject": "redirect pkg-config test to /dev/null to prevent gnome-config err on solaris",
+    "ssubject": "redirect-pkg-config-test-to-dev-null-to-prevent-gnome-config-err-on-solaris",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5ba4f276220972aaf1fcfdd66984b497b722419b"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 126
+  },
+  "be7530ef13474adc0d94f7084b8b2823840842a1": {
+    "sha": "be7530ef13474adc0d94f7084b8b2823840842a1",
+    "ssha": "be7530e",
+    "parenthashes": [
+      "0e77b3797fba701d4a36ab7aaa6819236cdc6ee5"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443133440",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443133440",
+    "encoding": "",
+    "subject": "restore dependencies search (was debugging)",
+    "ssubject": "restore-dependencies-search-was-debugging",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "82db8a27eb45b84f540c864deb01ecad7630402c"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 127
+  },
+  "0e77b3797fba701d4a36ab7aaa6819236cdc6ee5": {
+    "sha": "0e77b3797fba701d4a36ab7aaa6819236cdc6ee5",
+    "ssha": "0e77b37",
+    "parenthashes": [
+      "9765bf091e86add9fae931a86fc862c29ee64345"
+    ],
+    "authorname": "Don Bright",
+    "authoremail": "hmbright@fastmail.fm",
+    "authordate": "1443133363",
+    "committername": "Don Bright",
+    "committeremail": "hmbright@fastmail.fm",
+    "committerdate": "1443133363",
+    "encoding": "",
+    "subject": "replace grep -q with a different style, compatible with solaris, but formatted like the other greps inside of the script",
+    "ssubject": "replace-grep-q-with-a-different-style-compatible-with-solaris-but",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "be7530ef13474adc0d94f7084b8b2823840842a1"
+    ],
+    "inHeads": [
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33",
+      "dcfb7d32885758ee4990502c1909a11644c88c33"
+    ],
+    "index": 128
+  }
+}
