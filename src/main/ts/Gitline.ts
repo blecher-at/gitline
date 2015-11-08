@@ -120,13 +120,15 @@ class Gitline {
 		commit.view = new CommitView(this.canvas, this.config, commit);
 		
 		if(commit.outOfScope === false) {
-			this.textPanel.appendChild(commit.view.label);
+			commit.view.label = this.drawLabel(commit);
+
 			commit.view.label.onclick = function() {
 				if(console) {
-					console.log(commit);	
+					console.log(commit);
 				}
 			};
-			
+
+			this.textPanel.appendChild(commit.view.label);
 			commit.view.label.style['padding-left'] = indexToX(this.maxX + 1)+"px"
 		}
 	}
