@@ -114,7 +114,6 @@ class Gitline {
 		this.initBranches();
 	}
 	
-	
 	public drawCommit(commit: Commit) {
 		// Label
 		commit.view = new CommitView(this.canvas, this.config, commit);
