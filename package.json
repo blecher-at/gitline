@@ -11,7 +11,7 @@
   ],
   "scripts": {
     "pretest": "tsc",
-    "test": "node src/test/index.js",
+    "test": "mocha src/test",
     "prestart": "tsc",
     "start": "serve .",
     "watch": "tsc --watch"
@@ -19,7 +19,9 @@
   "preferGlobal": true,
   "private": true,
   "devDependencies": {
+    "chai": "^3.4.1",
     "git2json": "https://github.com/blecher-at/git2json.git",
+    "mocha": "^2.3.3",
     "serve": "^1.4.0",
     "typescript": "^1.6.2"
   }
