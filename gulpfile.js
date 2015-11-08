@@ -3,6 +3,7 @@ var ts = require('gulp-typescript');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var serve = require('gulp-serve');
+var mocha = require('gulp-mocha');
 
 var tsProject = ts.createProject({
     outFile: 'gitline.js',
@@ -30,4 +31,10 @@ gulp.task('run', ['build'], serve('.'));
 
 gulp.task('watch', ['build'], function () {
     gulp.watch('src/main/ts/*.ts', ['build']);
+});
+
+gulp.task('test', function () {
+    return gulp.src('src/test/GitlineTests.js', {read: false})
+        // gulp-mocha needs filepaths so you can't have any plugins before it
+        .pipe(mocha({reporter: 'nyan'}));
 });
