@@ -59,20 +59,8 @@ class Gitline {
 			this.addCommit(commit);
 		});
 
-		al.then("Calculating Relationships", () => {return Object.keys(this.commits)}, (sha) => {
-			var commit = this.commits[sha];
-			commit.initRelations();
-		});
-		
-		al.then("Calculating Branches", () => {return Object.keys(this.commits)}, (sha) => {
-			var commit = this.commits[sha];
-			
-			commit.initHeadSpecifity();
-			commit.initMerges();
-		});
-		
-		al.thenSingle("Assigning Branches", () => {
-			this.initBranches();
+		al.thenSingle("Building Graph", () => {
+			this.buildGraph();
 		});
 
 		al.then("Drawing Labels", () => {return Object.keys(this.commits)}, (sha) => {
@@ -113,28 +101,37 @@ class Gitline {
 		};
 	}
 	
+	public buildGraph() {
+		var shas = Object.keys(this.commits);
+		shas.forEach((sha) => {
+			var commit = this.commits[sha];
+			commit.initRelations();
+		});
+		shas.forEach((sha) => {
+			var commit = this.commits[sha];
+			
+			commit.initHeadSpecifity();
+			commit.initMerges();
+		});
+		this.initBranches();
+	}
 	
 	public drawCommit(commit: Commit) {
 		// Label
-		
 		commit.view = new CommitView(this.canvas, this.config, commit);
 		
-		if(commit.outOfScope == false) {
-			var label = commit.view.label = this.drawLabel(commit);
-			
-			this.textPanel.appendChild(commit.view.label);
-			
-			var self = this;
+		if(commit.outOfScope === false) {
+			commit.view.label = this.drawLabel(commit);
+
 			commit.view.label.onclick = function() {
 				if(console) {
-					console.log(commit);	
+					console.log(commit);
 				}
-			}
-			
+			};
+
+			this.textPanel.appendChild(commit.view.label);
 			commit.view.label.style['padding-left'] = indexToX(this.maxX + 1)+"px"
 		}
-				
-
 	}
 	
 	public drawReferences(commit: Commit) {
@@ -272,7 +269,7 @@ class Gitline {
 		}
 		
 	}
-	
+
 	// Launching
 	public fromJSON(jsonFile: string): Gitline {
 		return this.fromProvider(new LocalGit2JsonProvider(jsonFile));
@@ -310,5 +307,4 @@ class Gitline {
 		
 		return this;
 	}
-	
 }	
