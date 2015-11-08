@@ -12,27 +12,15 @@ describe('Gitline', function() {
 
   it('should be able to process git2json output', function() {
     var line = new gitline.Gitline(),
-      that = this,
-      commitList = [];
+      that = this;
     line.data = this.data;
-
-    // Mock the initialization sequence - note: this should be in gitline
+    
+    // Initialize data externally, to circumvent JSON operation
     Object.keys(this.data).forEach(function(key) {
-      var commit = new gitline.Commit(line, that.data[key]);
-      line.addCommit(commit)
-      commitList.push(commit);
+      line.addCommit(new gitline.Commit(line, that.data[key]))
     });
 
-    commitList.forEach(function(commit) {
-      commit.initRelations();
-    });
-
-    commitList.forEach(function(commit) {
-      commit.initHeadSpecifity();
-			commit.initMerges();
-    });
-
-    line.initBranches();
+    line.buildGraph();
 
     aCommit = line.commits['ab275b54c60ae953a9a48b09e72f3b4a20265de8'];
     expect(aCommit.directparent.sha).to.equal('822428bc12c8eec7971a48970a397df4e1ff661e');
