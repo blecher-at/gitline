@@ -3,7 +3,9 @@
 /// <reference path="Config.ts"/>
 /// <reference path="AsyncLoader.ts"/>
 /// <reference path="Expandable.ts"/>
-declare var jQuery: any;
+/// <reference path="CommitProvider.ts"/>
+/// <reference path="plugins/LocalGit2JsonProvider.ts"/>
+/// <reference path="plugins/github.ts"/>
 	
 interface Commits { [key:string]:Commit; }
 interface Branches { [key:string]:Branch; }
@@ -273,11 +275,11 @@ class Gitline {
 	
 	// Launching
 	public fromJSON(jsonFile: string): Gitline {
-		jQuery.getJSON(jsonFile, {}, (json) => {
-			this.loaded(json);
-		}).error(function() {
-			this.displayFatalError("Error loading git data from "+jsonFile+ " create it using git2json");
-		});
+		return this.fromProvider(new LocalGit2JsonProvider(jsonFile));
+	}
+	
+	public fromProvider(commitProvider: CommitProvider): Gitline {
+		commitProvider.withCallback(this.loaded);
 		return this;
 	}
 	
