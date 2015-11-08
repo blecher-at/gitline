@@ -2,6 +2,7 @@
 
 gitline - A git history to HTML renderer implemented in TypeScript
 ===========
+![Travis CI Status](https://travis-ci.org/blecher-at/gitline.svg?branch=master)
 
 The idea is to have this on a central server or your local machine, to keep tabs on what your team is doing :)
 Needs a JSON file as input (generated with [git2json](https://github.com/blecher-at/git2json))
