@@ -2,6 +2,7 @@
 
 gitline - A git history to HTML renderer implemented in TypeScript
 ===========
+[![Travis CI Status](https://travis-ci.org/blecher-at/gitline.svg?branch=master)](https://travis-ci.org/blecher-at/gitline/builds/)
 
 The idea is to have this on a central server or your local machine, to keep tabs on what your team is doing :)
 Needs a JSON file as input (generated with [git2json](https://github.com/blecher-at/git2json))
@@ -11,7 +12,8 @@ gitline tries to be aware of your branching scheme. It will autodetect the categ
 Installation / Setup of development environment
 -----
 - Install Node.js
-- Install dependencies: `npm install`
+- Install Gulp globally: `npm install -g gulp`
+- Install dependencies in project's root folder: `npm install`
 - Run `gulp watch` in project's root folder in a second terminal window to compile TypeScript on the fly when a file changes
 - To run, execute `gulp run` in project's root folder, then visit http://localhost:3000
 - To test, execute `gulp test`
