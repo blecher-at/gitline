@@ -57,8 +57,20 @@ class Gitline {
 			this.addCommit(commit);
 		});
 
-		al.thenSingle("Building Graph", () => {
-			this.buildGraph();
+		al.then("Calculating Relationships", () => {return Object.keys(this.commits)}, (sha) => {
+			var commit = this.commits[sha];
+			commit.initRelations();
+		});
+		
+		al.then("Calculating Branches", () => {return Object.keys(this.commits)}, (sha) => {
+			var commit = this.commits[sha];
+			
+			commit.initHeadSpecifity();
+			commit.initMerges();
+		});
+		
+		al.thenSingle("Assigning Branches", () => {
+			this.initBranches();
 		});
 
 		al.then("Drawing Labels", () => {return Object.keys(this.commits)}, (sha) => {
@@ -97,21 +109,6 @@ class Gitline {
 			});			
 			al.start(false); 
 		};
-	}
-	
-	public buildGraph() {
-		var shas = Object.keys(this.commits);
-		shas.forEach((sha) => {
-			var commit = this.commits[sha];
-			commit.initRelations();
-		});
-		shas.forEach((sha) => {
-			var commit = this.commits[sha];
-			
-			commit.initHeadSpecifity();
-			commit.initMerges();
-		});
-		this.initBranches();
 	}
 	
 	
