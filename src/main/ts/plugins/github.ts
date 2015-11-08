@@ -63,7 +63,9 @@ class GithubCommitProvider extends CommitProvider {
 	public processBranches(fork, data) {
 		data.forEach(branch => {
 			branch.repo = fork;
-			branch.name = branch.name + "@" + fork.full_name;
+			if(fork.full_name !== undefined) {
+				branch.name = branch.name + "@" + fork.full_name;
+			}
 			this.baseBranches.push(branch);
 		});
 	}
@@ -125,19 +127,21 @@ class GithubCommitProvider extends CommitProvider {
 			this.data[commit.sha] = commit;
 		});
 		
+	}
+	
+
+	public process() {
 		this.baseBranches.forEach(b => {
 			var commit = this.data[b.commit.sha];
 			if(commit == undefined) {
 				// commit missing for branch - TODO: fetch it
 			} else {
+				b.assigned = true;
 				commit.refnames.push(b.name);
-				this.assignHeads(data, commit);
+				this.assignHeads(this.data, commit);
 			}
 		});
-	}
-	
-
-	public process() {
+		
 		// Sort
 		var newdata = {};
 		Object.keys(this.data).sort((a,b) => {

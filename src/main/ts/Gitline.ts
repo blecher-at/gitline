@@ -24,6 +24,7 @@ class Gitline {
 	public rootLabel; 
 		
 	public al: AsyncLoader;
+	
 	public config: GitlineConfig = new GitlineConfig();
 			
 	// HTML stuff
@@ -32,6 +33,8 @@ class Gitline {
 	private headerPanel: HTMLElement;  
 	private contentPanel: HTMLElement;
 			
+	private commitProvider: CommitProvider;
+	
 	public addCommit(commit: Commit) {
 		this.commits[commit.getFullSha()] = commit;
 		
@@ -45,59 +48,49 @@ class Gitline {
 		this.headsMap[refname] = branch;
 	}
 	
-	public render(loadingPanel, panel, textPanel, data) {
+	public render() {
+		this.canvas = new jsgl.Panel(this.graphicalPanel);
 
-		this.data = data;
-		this.canvas = new jsgl.Panel(panel);
-		this.panel = panel;
-		this.textPanel = textPanel;
-
-		var al = this.al = new AsyncLoader(loadingPanel);
-
-		al.then("Loading Commits", () => {return Object.keys(this.data)}, (sha) => {
-			var commit = new Commit(this, data[sha]);
+		this.al.thenSingle("Loading Data", () => {
+			this.al.suspend();
+			this.commitProvider.withCallback( (json) => {
+				this.data = json;
+				this.al.resume();
+			})
+		}).then("Loading Commits", () => {return Object.keys(this.data)}, (sha) => {
+			var commit = new Commit(this, this.data[sha]);
 			this.addCommit(commit);
-		});
-
-		al.thenSingle("Building Graph", () => {
+		})
+		.thenSingle("Building Graph", () => {
 			this.buildGraph();
-		});
-
-		al.then("Drawing Labels", () => {return Object.keys(this.commits)}, (sha) => {
+		})
+		.then("Drawing Labels", () => {return Object.keys(this.commits)}, (sha) => {
 			var commit = this.commits[sha];
 			this.drawCommit(commit);
-		});
-		
-		al.thenSingle("Creating Legend", () => {
+		})
+		.thenSingle("Creating Legend", () => {
 			this.rootLabel = document.createElement('div')
 			this.rootLabel.className = "commit-legend"
 			this.textPanel.appendChild(this.rootLabel);
-		});
-		
-		al.then("Drawing Merges", () => {return Object.keys(this.commits)}, (sha) => {
+		})
+		.then("Drawing Merges", () => {return Object.keys(this.commits)}, (sha) => {
 			var commit = this.commits[sha];
 			this.drawReferences(commit);
-		});
-		
-		al.thenSingle("Resizing", () => {
-			panel.style.width = indexToX(this.maxX + 1) + "px"
-			panel.style.height = this.rootLabel.offsetTop + "px";
-		});
-		
-		al.start();
-		
+		})
+		.thenSingle("Resizing", () => {
+			this.graphicalPanel.style.width = indexToX(this.maxX + 1) + "px"
+			this.graphicalPanel.style.height = this.rootLabel.offsetTop + "px";
+		}).start();
 		
 		window.onresize = (event: UIEvent) => {
 			
-			al.then("Redrawing", () => {return Object.keys(this.commits)}, (sha) => {
+			this.al.then("Redrawing", () => {return Object.keys(this.commits)}, (sha) => {
 				var commit:Commit = this.commits[sha];
 				commit.view.redraw();
-			});
-			al.thenSingle("Resizing", () => {
-				panel.style.width = indexToX(this.maxX + 1) + "px"
-				panel.style.height = this.rootLabel.offsetTop + "px";
-			});			
-			al.start(false); 
+			}).thenSingle("Resizing", () => {
+				this.graphicalPanel.style.width = indexToX(this.maxX + 1) + "px"
+				this.graphicalPanel.style.height = this.rootLabel.offsetTop + "px";
+			}).start(false); 
 		};
 	}
 	
@@ -276,10 +269,7 @@ class Gitline {
 	}
 	
 	public fromProvider(commitProvider: CommitProvider): Gitline {
-		commitProvider.withCallback( (json) => {
-			this.data = json;
-			this.render(this.loadingPanel, this.graphicalPanel, this.textPanel, this.data);
-		});
+		this.commitProvider = commitProvider;
 		return this;
 	}
 	
@@ -291,6 +281,9 @@ class Gitline {
 		panel.appendChild(this.contentPanel = document.createElement("gitline-contentpanel"));
 		this.contentPanel.appendChild(this.graphicalPanel = document.createElement("gitline-graphicalpanel"));
 		this.contentPanel.appendChild(this.textPanel = document.createElement("gitline-textpanel"));
+		this.al = new AsyncLoader(this.loadingPanel);
+		
+		this.render();
 		return this;
 	}
 	
