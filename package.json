@@ -9,23 +9,17 @@
     "graph",
     "network"
   ],
-  "scripts": {
-    "uglify": "uglifyjs --compress --mangle --output target/gitline.min.js target/gitline.js",
-    "build": "tsc && npm run uglify",
-    "pretest": "npm run build",
-    "test": "node src/test/index.js",
-    "prestart": "npm run build",
-    "start": "serve .",
-    "watch:ts": "tsc --watch",
-    "watch:uglify": "watch echo hello target/gitline.js",
-    "watch": "npm run watch:ts & npm run watch:uglify"
-  },
   "preferGlobal": true,
   "private": true,
   "devDependencies": {
-    "serve": "^1.4.0",
-    "typescript": "^1.6.2",
-    "uglify-js": "^2.5.0",
-    "watch": "^0.16.0"
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.9.2",
+    "gulp-uglify": "^1.4.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-serve": "^1.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/blecher-at/gitline.git"
   }
 }
