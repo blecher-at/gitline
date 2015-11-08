@@ -11,7 +11,8 @@ gitline tries to be aware of your branching scheme. It will autodetect the categ
 Installation / Setup of development environment
 -----
 - Install Node.js
-- Install dependencies: `npm install`
+- Install Gulp globally: `npm install -g gulp`
+- Install dependencies in project's root folder: `npm install`
 - Run `gulp watch` in project's root folder in a second terminal window to compile TypeScript on the fly when a file changes
 - To run, execute `gulp run` in project's root folder, then visit http://localhost:3000
 - To test, execute `gulp test`
