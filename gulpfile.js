@@ -36,5 +36,5 @@ gulp.task('watch', ['build'], function () {
 gulp.task('test', function () {
     return gulp.src('src/test/GitlineTests.js', {read: false})
         // gulp-mocha needs filepaths so you can't have any plugins before it
-        .pipe(mocha({reporter: 'nyan'}));
+        .pipe(mocha());
 });
