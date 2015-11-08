@@ -1,1 +1,14 @@
-script: npm install && npm test
+sudo: false # use container based infrastructure
+
+language: node_js
+
+node_js:
+  - 0.12
+
+before_script:
+  - npm install -g gulp
+
+script:
+  - gulp build
+  - gulp test
+

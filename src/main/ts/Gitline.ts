@@ -116,25 +116,20 @@ class Gitline {
 	
 	public drawCommit(commit: Commit) {
 		// Label
-		
 		commit.view = new CommitView(this.canvas, this.config, commit);
 		
-		if(commit.outOfScope == false) {
-			var label = commit.view.label = this.drawLabel(commit);
-			
-			this.textPanel.appendChild(commit.view.label);
-			
-			var self = this;
+		if(commit.outOfScope === false) {
+			commit.view.label = this.drawLabel(commit);
+
 			commit.view.label.onclick = function() {
 				if(console) {
-					console.log(commit);	
+					console.log(commit);
 				}
-			}
-			
+			};
+
+			this.textPanel.appendChild(commit.view.label);
 			commit.view.label.style['padding-left'] = indexToX(this.maxX + 1)+"px"
 		}
-				
-
 	}
 	
 	public drawReferences(commit: Commit) {
@@ -272,13 +267,13 @@ class Gitline {
 		}
 		
 	}
-	
+
 	// Launching
-	public fromJSON(jsonFile: string): Gitline {
+	public fromJSON(jsonFile:string):Gitline {
 		jQuery.getJSON(jsonFile, {}, (json) => {
 			this.loaded(json);
-		}).error(function() {
-			this.displayFatalError("Error loading git data from "+jsonFile+ " create it using git2json");
+		}).error(function () {
+			Gitline.displayFatalError("Error loading git data from " + jsonFile + " create it using git2json");
 		});
 		return this;
 	}
@@ -313,5 +308,7 @@ class Gitline {
 		this.render(this.loadingPanel, this.graphicalPanel, this.textPanel, this.data);
 	}
 	
-	
+	public static displayFatalError(message: string) {
+		alert(message);
+	}
 }	
