@@ -26,25 +26,31 @@ gulp.task('tsc', function () {
 
 gulp.task('compress', ['tsc'], function () {
     return gulp.src('target/js/gitline.js')
+        .pipe(sourcemaps.init({loadMaps: true}))
         .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
         }))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('target/js'));
 });
 
 gulp.task('sass:compressed', function () {
     return gulp.src('src/main/scss/**/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
         .pipe(rename({
             suffix: '.min'
         }))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('target/css'));
 });
 
 gulp.task('sass:uncompressed', function () {
     return gulp.src('src/main/scss/**/*.scss')
+        .pipe(sourcemaps.write())
         .pipe(sass().on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('target/css'));
 });
 
