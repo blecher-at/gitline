@@ -129,13 +129,11 @@ class Commit {
 				
 				/* assign the most specific head on this tip commit */
 				if (this.maxSpecifity == null || specifity < this.maxSpecifity) {
-					//console.log("assigning branch", refname, this.sha, this.maxSpecifity, specifity)
+					Logger.debug("assigning branch", refname, this.sha, this.maxSpecifity, specifity)
 					this.maxSpecifity = specifity;
 					this.branch = this.container.headsMap[refname];
 				}
 					
-				this.branch.category = this.branch.ref.substring(0, refname.lastIndexOf("/"));
-				
 				this.initDefaultBranch();
 			}
 		}
@@ -196,11 +194,8 @@ class Commit {
 			/* this is only an anonymous branch head, if there is only one child (the merge) 
 			   TODO: if there are multiple, it might result in wrongly assigned branches */ 
 			if(child != null && merge.branch == null) {
-				merge.branch = new Branch();
-				merge.branch.ref = child.branch.ref+"/anonymous"+merge.sha+Math.random();
+				merge.branch = new Branch(child.branch.ref+"/anonymous"+merge.sha+Math.random(), merge, child.branch.specifity+1);
 				merge.branch.anonymous = true;
-				merge.branch.commit = merge;
-				merge.branch.specifity = child.branch.specifity+1;
 				merge.branch.parent = child.branch;
 				merge.branch.start =child;
 				merge.branch.category = child.branch.category;
@@ -280,7 +275,7 @@ class Commit {
 	
 	public debug(warning: string) {
 		if(console) {
-			console.log(warning, this);
+			Logger.debug(warning, this);
 		}
 	}
 		

@@ -3,6 +3,7 @@
  */
 /// <reference path="../CommitProvider.ts"/>
 declare var jQuery: any;
+declare var Logger: any;
 
 class LocalGit2JsonProvider extends CommitProvider {
 	
@@ -11,7 +12,7 @@ class LocalGit2JsonProvider extends CommitProvider {
 		jQuery.getJSON(url, {}, (json) => {
 			this.whenDone(json);
 		}).error(function() {
-			alert("Error loading git data from "+url+ " create it using git2json");
+			Logger.error("Error loading git data from "+url+ " create it using git2json");
 		});
 	}
 }

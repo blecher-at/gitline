@@ -8,7 +8,6 @@ class CommitProvider {
  	
 	constructor (url: string) {
 		this.url = url;
-		this.onRequested(this.url);
 	}
 	
 	public whenDone(data: any) {
@@ -22,6 +21,10 @@ class CommitProvider {
 	/** this method should be overwritten. it must call whenDone(data) when all data was loaded. */
 	public onRequested(url: string) {
 		throw new Error("onRequested not implemented on "+this);
+	}
+	
+	public request() {
+		this.onRequested(this.url);
 	}
 }
 	

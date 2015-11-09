@@ -56,7 +56,7 @@ class AsyncLoader {
 			if ((nextItem.index % 50) === 0) {
 				this.showStatus(nextItem);
 	    		window.setTimeout(() => {
-                    //console.log("executing "+nextItem.label+ " ("+nextItem.index+"/"+nextItem.of+")");
+                    Logger.debug("executing "+nextItem.label+ " ("+nextItem.index+"/"+nextItem.of+")");
                     this.execute(nextItem);
                 }, 0);
             } else {

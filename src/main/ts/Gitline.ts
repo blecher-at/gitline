@@ -41,10 +41,7 @@ class Gitline {
 	}
 	
 	public addBranch(refname: string, commit: Commit, specifity: number) {
-		var branch = new Branch();
-		branch.ref = refname;
-		branch.commit = commit;
-		branch.specifity = specifity;
+		var branch = new Branch(refname, commit, specifity);
 		this.headsMap[refname] = branch;
 	}
 	
@@ -57,6 +54,7 @@ class Gitline {
 				this.data = json;
 				this.al.resume();
 			})
+			this.commitProvider.request();
 		}).then("Loading Commits", () => {return Object.keys(this.data)}, (sha) => {
 			var commit = new Commit(this, this.data[sha]);
 			this.addCommit(commit);
@@ -118,7 +116,7 @@ class Gitline {
 
 			commit.view.label.onclick = function() {
 				if(console) {
-					console.log(commit);
+					Logger.debug(commit);
 				}
 			};
 
@@ -250,7 +248,7 @@ class Gitline {
 					
 					if(canUseLane) {
 						
-						//console.log("NO INTERSECTS: ",tip.branch.ref," - ",headOnLane.branch.ref);
+						Logger.debug("NO INTERSECTS: ",tip.branch.ref," - ",headOnLane.branch.ref);
 						head.lane = l;
 						break;
 					}
@@ -300,4 +298,4 @@ class Gitline {
 		
 		return this;
 	}
-}	
+}

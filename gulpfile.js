@@ -11,14 +11,14 @@ var tsProject = ts.createProject({
 });
 
 gulp.task('tsc', function () {
-    var tsResult = gulp.src('src/main/ts/*.ts')
+    var tsResult = gulp.src('src/main/ts/**/*.ts')
         .pipe(ts(tsProject, {}, ts.reporter.fullReporter(true)));
     return tsResult.js.pipe(gulp.dest('target'));
 });
 
 gulp.task('compress', ['tsc'], function () {
     return gulp.src('target/gitline.js')
-        .pipe(uglify())
+//        .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
         }))
@@ -30,7 +30,7 @@ gulp.task('build', ['compress']);
 gulp.task('run', ['build'], serve('.'));
 
 gulp.task('watch', ['build'], function () {
-    gulp.watch('src/main/ts/*.ts', ['build']);
+    gulp.watch('src/main/ts/**/*.ts', ['build']);
 });
 
 gulp.task('test', function () {

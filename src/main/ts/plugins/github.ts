@@ -3,7 +3,8 @@
  */
 /// <reference path="../CommitProvider.ts"/>
 declare var jQuery: any;
-	
+declare var Logger: any;
+
 class GithubCommitProvider extends CommitProvider {
 
 	private forks: any[] = [];
@@ -23,7 +24,7 @@ class GithubCommitProvider extends CommitProvider {
 
 		if(this.accessToken == null) {
 			window.alert("No access token to github defined. see log");
-			console.log('window.localStorage.setItem("github-accesstoken", "TOKEN")');
+			Logger.debug('window.localStorage.setItem("github-accesstoken", "TOKEN")');
 		} else {
 			callback();
 		}
@@ -48,7 +49,6 @@ class GithubCommitProvider extends CommitProvider {
 	public loadForks(url: string) {
 		jQuery.when(
 				jQuery.getJSON(this.gitURL(url, "forks")),
-				//jQuery.getJSON(this.gitURL(url, "commits")),
 				jQuery.getJSON(this.gitURL(url, "branches"))
 			).then( (forks, branches) => {
 				//this.baseCommits = commits[0].data;
@@ -62,7 +62,7 @@ class GithubCommitProvider extends CommitProvider {
 
 	public processBranches(fork, data) {
 		data.forEach(branch => {
-			branch.repo = fork;
+			branch.repo = fork.url !== undefined ? fork.url : fork;
 			if(fork.full_name !== undefined) {
 				branch.name = branch.name + "@" + fork.full_name;
 			}
@@ -72,9 +72,11 @@ class GithubCommitProvider extends CommitProvider {
 	
 	public loadBranches() {
 		var forkRequests = this.forks.map(fork => {return jQuery.getJSON(this.gitURL(fork.url, "branches"), data => {
-				this.processBranches(fork, data.data);
+			Logger.debug("loaded branches for "+fork.name);
+			this.processBranches(fork, data.data);
 		})});
-		jQuery.when(forkRequests).then(() => {
+		jQuery.when.apply(jQuery, forkRequests).done(() => {
+			Logger.debug("all branches loaded");
 			this.loadCommits();
 		});
 	}
@@ -86,18 +88,14 @@ class GithubCommitProvider extends CommitProvider {
 			if(commit == undefined) {
 				commitRequests.push(
 					jQuery.getJSON(this.gitURL(b.repo, "commits", "sha="+b.commit.sha), data => {
+						Logger.debug("loaded commits for "+b.name);
 						this.processCommits(data.data);
 					}));
 			}
 		});
 		
-		jQuery.when(commitRequests).then((req) => {
-			this.done = true;
-			console.log("DONE: ", req);
-			window.setTimeout( () => {
-				// all is loaded, we are done
-				this.process();
-			}, 1000);
+		jQuery.when.apply(jQuery, commitRequests).done(() => {
+			this.process();
 		});
 	}
 	
