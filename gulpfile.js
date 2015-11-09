@@ -7,6 +7,7 @@ var rename = require('gulp-rename');
 var serve = require('gulp-serve');
 var mocha = require('gulp-mocha');
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 var tsProject = ts.createProject({
     outFile: 'gitline.js',
@@ -15,8 +16,12 @@ var tsProject = ts.createProject({
 
 gulp.task('tsc', function () {
     var tsResult = gulp.src('src/main/ts/**/*.ts')
+        .pipe(sourcemaps.init())
         .pipe(ts(tsProject, {}, ts.reporter.fullReporter(true)));
-    return tsResult.js.pipe(gulp.dest('target/js'));
+
+    return tsResult.js
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest('target/js'));
 });
 
 gulp.task('compress', ['tsc'], function () {
