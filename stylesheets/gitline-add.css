@@ -1,4 +1,4 @@
-.main-content #sample { font-size: 12px; height: 300px; overflow-y: scroll; }
+.main-content #sample { font-size: 12px; height: 300px; overflow-y: scroll; position: relative}
 .main-content #sample gitline-identity {box-sizing: content-box}
 
 #header {
