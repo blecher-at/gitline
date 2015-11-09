@@ -18,7 +18,7 @@ gulp.task('tsc', function () {
 
 gulp.task('compress', ['tsc'], function () {
     return gulp.src('target/gitline.js')
-//        .pipe(uglify())
+        .pipe(uglify())
         .pipe(rename({
             suffix: '.min'
         }))

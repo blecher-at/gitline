@@ -16,6 +16,7 @@ class Gitline {
 	public maxX:number = 0;
 	public maxIndexY:number = 0;
 	public commits:Commits = {};
+	public firstCommit:Commit;
 	public canvas;
 	public data;
 	public panel;
@@ -38,6 +39,10 @@ class Gitline {
 	public addCommit(commit: Commit) {
 		this.commits[commit.getFullSha()] = commit;
 		
+		// first commit needed by rendering
+		if(this.firstCommit === undefined) {
+			this.firstCommit = commit;
+		}
 	}
 	
 	public addBranch(refname: string, commit: Commit, specifity: number) {
