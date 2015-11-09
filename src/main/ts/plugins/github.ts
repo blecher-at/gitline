@@ -1,5 +1,5 @@
 /**
- * New typescript file
+ * Github commit provider. only works if there is and accesstoken configured in the browser
  */
 /// <reference path="../CommitProvider.ts"/>
 declare var jQuery: any;
@@ -172,34 +172,4 @@ class GithubCommitProvider extends CommitProvider {
 			commit.parents1 = newParents
 		}
 	}
-
-	/* 
-	"22f095ab15ca98b73bd1e8dcc655665e4e7f29c7": {
-    "sha": "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
-    "ssha": "22f095a",
-    "parenthashes": [
-      "e0e19b2cd906147a9ca1b8cda8f367314cbdcdcb",
-      "a9379190a399d2144a1b94684f557df4e2f8ee44"
-    ],
-    "authorname": "Junio C Hamano",
-    "authoremail": "gitster@pobox.com",
-    "authordate": "1446764220",
-    "committername": "Junio C Hamano",
-    "committeremail": "gitster@pobox.com",
-    "committerdate": "1446764220",
-    "encoding": "",
-    "subject": "Merge branch 'fp/subtree-todo-update' into pu",
-    "ssubject": "Merge-branch-fp-subtree-todo-update-into-pu",
-    "body": "* fp/subtree-todo-update:\n  contrib/subtree: remove \"push\" command from the \"todo\" file\n",
-    "refnames": [
-      "origin/pu"
-    ],
-    "parents": [],
-    "children": [],
-    "inHeads": [],
-    "index": 0
-  },
-  "a9379190a399d2144a1b94684f557df4e2f8ee44": {
-	
-	*/
 }
