@@ -4,6 +4,7 @@ var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var serve = require('gulp-serve');
 var mocha = require('gulp-mocha');
+var typescriptSource = 'src/main/ts/**/*.ts';
 
 var tsProject = ts.createProject({
     outFile: 'gitline.js',
@@ -11,7 +12,7 @@ var tsProject = ts.createProject({
 });
 
 gulp.task('tsc', function () {
-    var tsResult = gulp.src('src/main/ts/*.ts')
+    var tsResult = gulp.src(typescriptSource)
         .pipe(ts(tsProject, {}, ts.reporter.fullReporter(true)));
     return tsResult.js.pipe(gulp.dest('target'));
 });
@@ -36,5 +37,5 @@ gulp.task('test', ['build'], function () {
 });
 
 gulp.task('watch', ['build', 'test'], function () {
-    gulp.watch('src/main/ts/*.ts', ['build', 'test']);
+    gulp.watch('typescriptSource', ['build', 'test']);
 });
