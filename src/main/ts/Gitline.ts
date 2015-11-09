@@ -82,7 +82,7 @@ class Gitline {
 		})
 		.thenSingle("Resizing", () => {
 			this.graphicalPanel.style.width = indexToX(this.maxX + 1) + "px"
-			this.graphicalPanel.style.height = this.rootLabel.offsetTop + "px";
+			this.graphicalPanel.style.height = this.getHeight() + "px";
 		}).start();
 		
 		window.onresize = (event: UIEvent) => {
@@ -92,9 +92,13 @@ class Gitline {
 				commit.view.redraw();
 			}).thenSingle("Resizing", () => {
 				this.graphicalPanel.style.width = indexToX(this.maxX + 1) + "px"
-				this.graphicalPanel.style.height = this.rootLabel.offsetTop + "px";
+				this.graphicalPanel.style.height = this.getHeight() + "px";
 			}).start(false); 
 		};
+	}
+	
+	public getHeight() {
+		return this.rootLabel.offsetTop - this.firstCommit.view.label.offsetTop;
 	}
 	
 	public buildGraph() {
