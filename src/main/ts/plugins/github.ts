@@ -138,7 +138,7 @@ class GithubCommitProvider extends CommitProvider {
 			} else {
 				b.assigned = true;
 				commit.refnames.push(b.name);
-				this.assignHeads(this.data, commit);
+				this.assignHeads(commit);
 			}
 		});
 		
@@ -154,20 +154,24 @@ class GithubCommitProvider extends CommitProvider {
 		this.whenDone(newdata);
 	}
 	
-	private assignHeads(data:{}, commit) {
-		var parents1 = commit.parenthashes.slice(0) // copy array
+	private assignHeads(commit) {
+		commit.parents1 = commit.parenthashes.map( x => { return x}); // copy array
 	
-		while(parents1.length > 0) {
-			var newParents = []
-			parents1.forEach(function(parentHash) {
-				var p = data[parentHash]	
+		while(commit.parents1.length > 0) {
+			var newParents = [];
+			commit.parents1.forEach( parentHash => {
+				var p = this.data[parentHash]	
 				if(p != undefined) {
 					p.inHeads.push(commit.sha)
 					// add all grandparents to the newparents
-					newParents = newParents.concat(p.parenthashes)
+					p.parenthashes.forEach(h => {
+						if(newParents.indexOf(h) === -1) {
+							newParents.push(h);
+						}
+					})
 				}
 			});
-			parents1 = newParents
+			commit.parents1 = newParents
 		}
 	}
 
