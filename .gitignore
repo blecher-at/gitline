@@ -1,6 +1,7 @@
 target
 .settings
 .project
+.externalToolBuilders
 sample*.json
 node_modules/
 npm-debug.log
