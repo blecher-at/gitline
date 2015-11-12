@@ -9,6 +9,4 @@ before_script:
   - npm install -g gulp
 
 script:
-  - gulp build
   - gulp test
-

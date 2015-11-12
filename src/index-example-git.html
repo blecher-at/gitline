@@ -8,11 +8,13 @@
     <script src="main/external/jsgl.min.js"></script>
     <script src="main/external/logger.min.js"></script>
 
-    <link rel="stylesheet" href="main/css/gitline.css"/>
-    <script src="../target/gitline.min.js"></script>
+    <link rel="stylesheet" href="../target/css/gitline.min.css"/>
+    <script src="../target/js/gitline.min.js"></script>
 
     <script>
         $(function () {
+            Logger.useDefaults();
+
             new Gitline().fromJSON('test/example03.json').renderTo($('#myGitlinePanel-1').get(0));
         });
     </script>
