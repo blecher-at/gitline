@@ -1,29 +1,114 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <title>Gitline Example</title>
-    <script src="external/jquery-2.1.4.min.js"></script>
-    <script src="external/md5.js"></script>
-    <script src="external/jsgl.min.js"></script>
-    <script src="external/logger.min.js"></script>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Gitline by blecher-at</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/gitline-add.css" media="screen">
+    
 
-    <link rel="stylesheet" href="gitline.min.css"/>
-    <script src="gitline.min.js"></script>
+<script type="text/javascript" src="dist/external/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="dist/external/md5.js"></script>
+<script type="text/javascript" src="dist/external/jsgl.min.js"></script>
+<script type="text/javascript" src="dist/external/logger.min.js"></script>
 
-    <script>
-        $(function () {
-        	Logger.useDefaults();
+<link rel="stylesheet" href="dist/gitline.css"></link>
+<script type="text/javascript" src="dist/gitline.min.js"></script>
 
-            new Gitline()
-                    .fromJSON('data/example02.json')
-                    .withHeader('Gitline repository <a href="https://github.com/blecher-at/gitline">https://github.com/blecher-at/gitline</a>"')
-                    .renderTo($("#myGitlinePanel-1").get(0));
+<script type="text/javascript">
+        $(function() {
+                new Gitline()
+                        .fromJSON("dist/example02.json")
+                        .renderTo(document.getElementById("sample"));
+                
+/*                $("#header")
+                	.animate({backgroundSize: '150%'}, 30000)
+                	.animate({backgroundSize: '100%'}, 30000); */
         });
-    </script>
+</script>
 
-</head>
-<body>
-<div id="myGitlinePanel-1"></div>
-</body>
+  </head>
+  <body>
+    <section id="header" class="page-header">
+      <h1 class="project-name">Gitline</h1>
+      <h2 class="project-tagline"></h2>
+      <a href="https://github.com/blecher-at/gitline" class="btn">View on GitHub</a>
+      <a href="https://github.com/blecher-at/gitline/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/blecher-at/gitline/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+		<h1>
+		<a id="gitline---a-git-history-to-html-renderer-implemented-in-typescript" class="anchor" href="#gitline---a-git-history-to-html-renderer-implemented-in-typescript" aria-hidden="true"><span class="octicon octicon-link"></span></a>gitline - A git history to HTML renderer implemented in TypeScript
+<a href="https://travis-ci.org/blecher-at/gitline/builds/"><img src="https://travis-ci.org/blecher-at/gitline.svg?branch=master" alt="Travis CI Status"></a>
+		</h1>
+
+      <p><div id="sample"></div></p>
+
+
+
+<p>The idea is to have this on a central server or your local machine, to keep tabs on what your team is doing :)
+Needs a JSON file as input (generated with <a href="https://github.com/blecher-at/git2json">git2json</a>)</p>
+
+<p>gitline tries to be aware of your branching scheme. It will autodetect the category and assignment of branches and groups commits accordingly.</p>
+
+<h2>
+<a id="installation--setup-of-development-environment" class="anchor" href="#installation--setup-of-development-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation / Setup of development environment</h2>
+
+<ul>
+<li>Install Node.js</li>
+<li>Install Gulp globally: <code>npm install -g gulp</code>
+</li>
+<li>Install dependencies in project's root folder: <code>npm install</code>
+</li>
+<li>Run <code>gulp watch</code> in project's root folder in a second terminal window to compile TypeScript on the fly when a file changes</li>
+<li>To run, execute <code>gulp run</code> in project's root folder, then visit http://localhost:3000</li>
+<li>To test, execute <code>gulp test</code>
+</li>
+</ul>
+
+<h2>
+<a id="creating-sample-data" class="anchor" href="#creating-sample-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating sample data</h2>
+
+<ul>
+<li>Install <a href="https://github.com/blecher-at/git2json">git2json</a>
+</li>
+<li>run <code>git json &gt; myfile.json</code> - in a cronjob presumably</li>
+<li>point <code>src/index.html</code> to the newly created JSON file</li>
+</ul>
+
+<h2>
+<a id="imports--third-party" class="anchor" href="#imports--third-party" aria-hidden="true"><span class="octicon octicon-link"></span></a>Imports / Third party</h2>
+
+<ul>
+<li>Programming language: <a href="http://www.typescriptlang.org/">TypeScript</a>
+</li>
+<li>SVG Rendering: <a href="http://www.jsgl.org/">JSGL</a><br>
+</li>
+<li>Generic JS framework: <a href="https://jquery.org/">jQuery</a>
+</li>
+<li>Hash Generation: <a href="https://github.com/brix/crypto-js">Crypto JS</a>
+</li>
+</ul>
+
+<h2>
+<a id="legal--license" class="anchor" href="#legal--license" aria-hidden="true"><span class="octicon octicon-link"></span></a>Legal / License</h2>
+
+<p>Licensed under the <a href="LICENSE">Affero GPLv3</a>, which basically says: You are free to hack and use,
+but if you want to build a product out of it, or host it as a service, we need to talk.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/blecher-at/gitline">Gitline</a> is maintained by <a href="https://github.com/blecher-at">blecher-at</a>.</span>
+
+        <span class="site-footer-credits">This pages design is based on the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
 </html>
