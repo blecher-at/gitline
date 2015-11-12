@@ -7,7 +7,7 @@ var path = require('path'),
 
 describe('Gitline', function() {
   before(function() {
-    this.data = JSON.parse(fs.readFileSync(path.join(__dirname, 'example02.json'), 'utf8'));
+    this.data = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/example02.json'), 'utf8'));
   });
 
   it('should be able to process git2json output', function() {

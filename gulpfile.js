@@ -64,13 +64,22 @@ gulp.task('sass', ['sass:uncompressed', 'sass:compressed']);
 
 gulp.task('build', ['compress', 'sass']);
 
-gulp.task('run', ['build'], serve('.'));
+gulp.task('run', ['build', 'package'], serve('dist'));
 
-gulp.task('watch', ['build', 'test'], function () {
-    gulp.watch(typescriptSource, ['compress', 'test']);
-    gulp.watch(sassSource, ['sass']);
+gulp.task('watch', ['build', 'test','package'], function () {
+    gulp.watch(typescriptSource, ['compress', 'test', 'package']);
+    gulp.watch(sassSource, ['sass', 'package']);
 });
 
+gulp.task('package', ['build', 'test'], function () {
+	gulp.src([ 'src/main/external/**']).pipe(gulp.dest('dist/external'));
+	gulp.src([ 'src/test/data/**']).pipe(gulp.dest('dist/data'));
+	gulp.src([
+		'target/gitline.min.js', 
+		'target/css/gitline.min.css', 
+		'src/main/external',
+		'src/demo/html/**/*']).pipe(gulp.dest('dist'));
+});
 gulp.task('test', ['build'], function () {
     return gulp.src('src/test/GitlineTests.js', {read: false})
         // gulp-mocha needs filepaths so you can't have any plugins before it
