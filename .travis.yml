@@ -2,7 +2,7 @@ sudo: false # use container based infrastructure
 
 env: 
   global:
-    - secure: "Xt7Fjo3OfFzMEvlG8nciYNPe56Z4NpVEgmOR5x3IsY5vaUiKAEIpRu/YEmkPDPVuSDU6VIN5sukwL4jk+UgB3hLT93jL0Ax6cJ8Wo8aUHop6g+zEeFODfEZ3LlWXoW4P+wV+OGSZJPlQzsg+oZIMKJyW6pq3j3CF0c8fFLh2HlKF0A2I3YNmK4NuB49KhrjqSR3ureeEpLtWn1X3Rw/5la5+X4n/fI+To7He5KXjrmYr5hRMoKR8XsC2a3vCUcZRBmnad4u9v6UgR7Pwk6kJBtWoEy8J3pgQ8Jk2LlroeLN3ti54ZVcVX9CKE46ZnJKGbVofmbPqMe/gW33bCM3L8mJJKbpVRogcv4V7JxPHzQaMplS481fTBwKJzlySwUg6kDDnidhD1SiRrmN3QK1EUw5x8m0Ad7NdSu+0jBUgNla7azo4RluoPTZGym7QSWW85KdMhuPCBc8OC/f3yizrl72x+ShqRcFAI+0BbVEyfjJYQq1PNN7b5n20i4BELW8nysFKU/S51+DGzOyXavv62Oa5ZqDtt82rQwbrxON9e6tfe/odQma6amjVNCYEUDDVRIFkIa05xcK0Wfi18RRjiXXgOYwmAr3IPgMyjNsoGx1kgJXcs1f0x4IsoN55PEHydrYhugp1WNkkAfIQHKfr5uE8E0aPf8sh0hIJQaTuJA4="
+    - secure: "rj6EVMWqOv9ELplMmXbRthMnvsznl884gzsgCfjWhKYLjWWYnnNaVPgdu1UAZRfvSwDEhjcUPqSxO3Mm/I/TpT491J+CnsPXQawStr8634ZLFi+l9jeKHvALlKwBhwjAz2LHiwA47NSYWYNle60M4nixSHVPKHjAf5siz8nqXKrbhhVQKjCk9AWx8CziImbxag055xhNtx3j54t+DJUFLlIJTWlkL6DHWgyfDNFHhC/6XbCMljYcWCELBlERxd1eh/jNA6KoKAHcdPwfdzaDjSLxWgtK0b5ks2BIByR7hYUZKhyUqxPsnhLu9xOPr4J0YBmngP/fvcJjg05XGZCO6e8qhhUv9dCI9ckLW6JiSQEBSScTbkSGcnyYWrYPhrG/9jvYG7sMRoa4wM/M/k4xImDteSOBlWl5J037FBo4eiSbdrjE/j+Fm40MWZI49CDRI3QjgHs9EJye0k3+bmad0RxJtVv0tFHxHVXdfQlkXX1Ca4SrDNWgH4CGPyOERKt8adoyy67rEG2ThfaSg33Ua773AHRLjTYXHgDHBwUs2jved6r7hxvzjpg9CQ2Gw0Bqy9YBJQVrmlqn3mh7znysoRygdnrwOlFopXDKZLA+3OeHKiS4IyZxRUpseGT4uwAg0gST1kfHEtoUaIBAnY+pd7n7XbWhpFsGlOCSAHl/vUs="
 
 
 language: node_js
@@ -14,8 +14,8 @@ before_script:
   - npm install -g gulp
 
 script:
-  - gulp test
-  - echo we are done $FOOBAR
+  - gulp package
+  - echo we are done 
 
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh gh-pages
