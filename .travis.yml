@@ -2,7 +2,8 @@ sudo: false # use container based infrastructure
 
 env: 
   global:
-    - secure: "d5LU6wf2I7Sxg0nZjBUghg9gYLV5dzjhELBdYFNT1WhyUSqDl+2JVw2zq8QQYqDkmpDdx/XDEquygA9CTFFnOO4FvRCgl5ersN18+rx5UGz5rDRpBllP5OybZ6Ql6KxY1rSNx5B54I7X7mxPvxpAKFd5OiaP9R6My29LKfXgX6ckVEYZCLk32QbO/FzEcLQWiKaI+gB2qG8S5xLZSdeFsxHMCv1ueW8NSgWbKp03T9AtaBZ3zcJQHFrhNISDlaCUlemc+n4p66AnexhCfscCGfis81Vl95WXTHshGn38xQKkFzP/bY+8bjIGsCtMJp9i3bzhgoyw6EpRvtobLB2Rdbb4htp1YAiF/eTfdOKRx4c6paPQVGjqSCh9YIdQ92wdeNjPEHKjq4jHW6W1qiY/dkvJR1FsqAlQtchq+hU5cjS07cbTm1Lp2U73wYKHrvhbqSH3HPg+2/9dRRK57d0BIrPS47HoHQRlOezNhA0XW8WT2x3roXobJvkd9m264ek+db+ETEThjpsDQtCOIn/hPmTq7t7sMx93VVzodOOpWY3WglsZsMqjecP6HTa7VICN9Yd1pWnIsyB6NNTZ/0iErPaEjMuzjqe6kT6ic2CCQPgjxaIyJ2GMCwh1egKfiKQ5TYDdYXC0jje+soJnh2iMx/4w4OvYN0Fe4qw0W1nn2/8="
+    - secure: "Xt7Fjo3OfFzMEvlG8nciYNPe56Z4NpVEgmOR5x3IsY5vaUiKAEIpRu/YEmkPDPVuSDU6VIN5sukwL4jk+UgB3hLT93jL0Ax6cJ8Wo8aUHop6g+zEeFODfEZ3LlWXoW4P+wV+OGSZJPlQzsg+oZIMKJyW6pq3j3CF0c8fFLh2HlKF0A2I3YNmK4NuB49KhrjqSR3ureeEpLtWn1X3Rw/5la5+X4n/fI+To7He5KXjrmYr5hRMoKR8XsC2a3vCUcZRBmnad4u9v6UgR7Pwk6kJBtWoEy8J3pgQ8Jk2LlroeLN3ti54ZVcVX9CKE46ZnJKGbVofmbPqMe/gW33bCM3L8mJJKbpVRogcv4V7JxPHzQaMplS481fTBwKJzlySwUg6kDDnidhD1SiRrmN3QK1EUw5x8m0Ad7NdSu+0jBUgNla7azo4RluoPTZGym7QSWW85KdMhuPCBc8OC/f3yizrl72x+ShqRcFAI+0BbVEyfjJYQq1PNN7b5n20i4BELW8nysFKU/S51+DGzOyXavv62Oa5ZqDtt82rQwbrxON9e6tfe/odQma6amjVNCYEUDDVRIFkIa05xcK0Wfi18RRjiXXgOYwmAr3IPgMyjNsoGx1kgJXcs1f0x4IsoN55PEHydrYhugp1WNkkAfIQHKfr5uE8E0aPf8sh0hIJQaTuJA4="
+
 
 language: node_js
 
@@ -14,7 +15,7 @@ before_script:
 
 script:
   - gulp test
-  - echo we are done
+  - echo we are done $FOOBAR
 
 after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh gh-pages
