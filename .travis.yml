@@ -9,4 +9,5 @@ before_script:
   - npm install -g gulp
 
 script:
-  - gulp test deploy
+  - gulp test
+  - echo we are done
