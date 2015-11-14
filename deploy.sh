@@ -2,7 +2,7 @@
 echo Running $0 from $(pwd) - for branch $1
 
 mkdir .deploy
-cp -R ../dist .
+cp -R dist .deploy/
 cd .deploy
 
 git init
