@@ -1,9 +1,0 @@
-.main-content #sample { font-size: 12px; height: 300px; overflow-y: scroll; position: relative}
-.main-content #sample gitline-identity {box-sizing: content-box}
-.main-content #sample gitline-loadingpanel { font-size: 50px; line-height: 300px; padding: 0}
-
-#header {
-	background: grey url(../doc/wp_20151109_21_54_37_pro.jpg) no-repeat;
-	background-size: 100% auto;
-	background-position: center center;
-}
