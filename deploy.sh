@@ -13,4 +13,4 @@ git config user.email "token-travisci@blecher.at"
 cp -R ../dist .
 git add -A
 git commit -m "Automatic deploy of pages to $1"
-git push target HEAD
+git push origin HEAD
