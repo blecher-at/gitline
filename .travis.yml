@@ -1,5 +1,9 @@
 sudo: false # use container based infrastructure
 
+env: 
+  global:
+    - secure: "d5LU6wf2I7Sxg0nZjBUghg9gYLV5dzjhELBdYFNT1WhyUSqDl+2JVw2zq8QQYqDkmpDdx/XDEquygA9CTFFnOO4FvRCgl5ersN18+rx5UGz5rDRpBllP5OybZ6Ql6KxY1rSNx5B54I7X7mxPvxpAKFd5OiaP9R6My29LKfXgX6ckVEYZCLk32QbO/FzEcLQWiKaI+gB2qG8S5xLZSdeFsxHMCv1ueW8NSgWbKp03T9AtaBZ3zcJQHFrhNISDlaCUlemc+n4p66AnexhCfscCGfis81Vl95WXTHshGn38xQKkFzP/bY+8bjIGsCtMJp9i3bzhgoyw6EpRvtobLB2Rdbb4htp1YAiF/eTfdOKRx4c6paPQVGjqSCh9YIdQ92wdeNjPEHKjq4jHW6W1qiY/dkvJR1FsqAlQtchq+hU5cjS07cbTm1Lp2U73wYKHrvhbqSH3HPg+2/9dRRK57d0BIrPS47HoHQRlOezNhA0XW8WT2x3roXobJvkd9m264ek+db+ETEThjpsDQtCOIn/hPmTq7t7sMx93VVzodOOpWY3WglsZsMqjecP6HTa7VICN9Yd1pWnIsyB6NNTZ/0iErPaEjMuzjqe6kT6ic2CCQPgjxaIyJ2GMCwh1egKfiKQ5TYDdYXC0jje+soJnh2iMx/4w4OvYN0Fe4qw0W1nn2/8="
+
 language: node_js
 
 node_js:
@@ -11,3 +15,8 @@ before_script:
 script:
   - gulp test
   - echo we are done
+
+after_success:
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && bash deploy.sh gh-pages
+  - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "feature/GL-36-dist" && bash deploy.sh gh-pages-test
+
