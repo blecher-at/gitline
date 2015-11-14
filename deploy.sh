@@ -9,6 +9,7 @@ git init
 git config user.name "Travis-CI"
 git config user.email "token-travisci@blecher.at"
 git remote add target "http://$GH_TOKEN@github.com/blecher-at/gitline.git"
+git fetch
 git checkout $1
 
 cp -R ../dist .
