@@ -1,16 +1,14 @@
 #!/bin/bash
 echo Running $0 from $(pwd) - for branch $1
 
-mkdir .deploy
-cp -R dist .deploy/
-cd .deploy
 
-git init
+
+git clone -b $1 http://$GH_TOKEN@github.com/blecher-at/gitline.git .deploy
+cd .deploy
+cp -R ../dist .
+
 git config user.name "Travis-CI"
 git config user.email "token-travisci@blecher.at"
-git remote add target "http://$GH_TOKEN@github.com/blecher-at/gitline.git"
-git fetch
-git checkout $1
 
 cp -R ../dist .
 git add -A
