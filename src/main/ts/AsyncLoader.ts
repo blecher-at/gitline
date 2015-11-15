@@ -19,13 +19,14 @@ class AsyncLoader {
 	
 	private element: HTMLElement;
 	private items: AsyncLoadingItem[] = [];
+	private suspended: boolean = false;
 
 	constructor (element: HTMLElement) {
 		this.element = element;
 	}
 	
 	/** do this async, display the label and the data */
-	public then(label: string, datacallback: Function, callback: Function) {
+	public then(label: string, datacallback: Function, callback: Function): AsyncLoader {
 		this.thenSingle(label, () => {
 			// add it to the beginning of the queue
 			var data: any[] = datacallback();
@@ -33,10 +34,12 @@ class AsyncLoader {
 				this.items.unshift(new AsyncLoadingItem(label, data[i], callback, i, data.length));	
 			}
 		});
+		return this;
 	}
 	
-	public thenSingle(label: string, callback: Function) {
-		this.items.push(new AsyncLoadingItem(label, null, callback, 1, 1));	
+	public thenSingle(label: string, callback: Function): AsyncLoader {
+		this.items.push(new AsyncLoadingItem(label, null, callback, 0, 1));
+		return this;	
 	}
 	
 	public start(shield: boolean = true) {
@@ -53,7 +56,7 @@ class AsyncLoader {
 			if ((nextItem.index % 50) === 0) {
 				this.showStatus(nextItem);
 	    		window.setTimeout(() => {
-                    //console.log("executing "+nextItem.label+ " ("+nextItem.index+"/"+nextItem.of+")");
+                    Logger.debug("executing "+nextItem.label+ " ("+nextItem.index+"/"+nextItem.of+")");
                     this.execute(nextItem);
                 }, 0);
             } else {
@@ -64,12 +67,33 @@ class AsyncLoader {
 		}
 	}
 	
+	public suspend() {
+		this.suspended = true;
+	}
+	
+	public resume() {
+		this.suspended = false;
+		this.next();
+	}
 	public showStatus(item: AsyncLoadingItem) {
 		this.element.innerHTML = item.label; // + " ("+item.index + "/"+item.of+")";
 	}
 	
 	public execute(item: AsyncLoadingItem) {
-		item.callback(item.data);
-		this.next();
+		try {
+			item.callback(item.data);
+			if(!this.suspended) {
+				this.next();
+			}
+		} catch (e) {
+			this.error(e);
+		}
+
+	}
+	
+	public error(e: any) {
+		Logger.error(e);
+		this.element.innerHTML = e;
+		this.suspend();
 	}
 }

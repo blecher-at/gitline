@@ -1,5 +1,5 @@
 var path = require('path'),
-  gitline = require('./helper/gitlineModule'),
+  Gitline = require('./helper/gitlineModule'),
   fs = require('fs'),
   chai = require('chai'),
   expect = chai.expect,
@@ -7,17 +7,17 @@ var path = require('path'),
 
 describe('Gitline', function() {
   before(function() {
-    this.data = JSON.parse(fs.readFileSync(path.join(__dirname, 'examples/example02.json'), 'utf8'));
+    this.data = JSON.parse(fs.readFileSync(path.join(__dirname, 'data/example02.json'), 'utf8'));
   });
 
   it('should be able to process git2json output', function() {
-    var line = new gitline.Gitline(),
+    var line = new Gitline.Gitline(),
       that = this;
     line.data = this.data;
     
     // Initialize data externally, to circumvent JSON operation
     Object.keys(this.data).forEach(function(key) {
-      line.addCommit(new gitline.Commit(line, that.data[key]))
+      line.addCommit(new Gitline.Commit(line, that.data[key]))
     });
 
     line.buildGraph();

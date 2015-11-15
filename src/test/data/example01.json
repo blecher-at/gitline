@@ -1,0 +1,252 @@
+{
+  "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5": {
+    "sha": "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+    "ssha": "6a9a61a",
+    "parenthashes": [
+      "aa4c055e68a41ef11748ca18a8710ad21a14f32e",
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446747427",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446747427",
+    "encoding": "",
+    "subject": "Merge branch 'feature/AI-001-firstfeature' into develop",
+    "ssubject": "Merge-branch-feature-AI-001-firstfeature-into-develop",
+    "body": "",
+    "refnames": [
+      "HEAD -> develop"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 0
+  },
+  "4eb13765b383c0fe8f38c147abd7792697719de3": {
+    "sha": "4eb13765b383c0fe8f38c147abd7792697719de3",
+    "ssha": "4eb1376",
+    "parenthashes": [
+      "3fb2a1c83c94cee27021fd89cdabeb642ae56821"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446747403",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446747403",
+    "encoding": "",
+    "subject": "fix what that narn did",
+    "ssubject": "fix-what-that-narn-did",
+    "body": "",
+    "refnames": [
+      "feature/AI-001-firstfeature"
+    ],
+    "parents": [],
+    "children": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5"
+    ],
+    "inHeads": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5"
+    ],
+    "index": 1
+  },
+  "3fb2a1c83c94cee27021fd89cdabeb642ae56821": {
+    "sha": "3fb2a1c83c94cee27021fd89cdabeb642ae56821",
+    "ssha": "3fb2a1c",
+    "parenthashes": [
+      "dde3403b5c839127bd3128346424858b5b007434",
+      "e0e21fc7b7c809242c5c1764b3f2688f9fee6842"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "gkar@babylon5.ea",
+    "authordate": "1446747326",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "gkar@babylon5.ea",
+    "committerdate": "1446747326",
+    "encoding": "",
+    "subject": "Merge branch 'feature/AI-001-firstfeature' of /home/blecher/dev/example5 into feature/AI-001-firstfeature",
+    "ssubject": "Merge-branch-feature-AI-001-firstfeature-of-home-blecher-dev-example5-into-feature-AI-001-firstfeature",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "inHeads": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "index": 2
+  },
+  "e0e21fc7b7c809242c5c1764b3f2688f9fee6842": {
+    "sha": "e0e21fc7b7c809242c5c1764b3f2688f9fee6842",
+    "ssha": "e0e21fc",
+    "parenthashes": [
+      "4a956ce1c78a3955da6dcb18a710cdd30ade08a9"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446747314",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446747314",
+    "encoding": "",
+    "subject": "add more functionality",
+    "ssubject": "add-more-functionality",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "3fb2a1c83c94cee27021fd89cdabeb642ae56821"
+    ],
+    "inHeads": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "index": 3
+  },
+  "dde3403b5c839127bd3128346424858b5b007434": {
+    "sha": "dde3403b5c839127bd3128346424858b5b007434",
+    "ssha": "dde3403",
+    "parenthashes": [
+      "0214336c7eb53b02c005a21fd45fbc06bbb6e06b"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "gkar@babylon5.ea",
+    "authordate": "1446747284",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "gkar@babylon5.ea",
+    "committerdate": "1446747284",
+    "encoding": "",
+    "subject": "I contribute some more",
+    "ssubject": "I-contribute-some-more",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "3fb2a1c83c94cee27021fd89cdabeb642ae56821"
+    ],
+    "inHeads": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "index": 4
+  },
+  "0214336c7eb53b02c005a21fd45fbc06bbb6e06b": {
+    "sha": "0214336c7eb53b02c005a21fd45fbc06bbb6e06b",
+    "ssha": "0214336",
+    "parenthashes": [
+      "4a956ce1c78a3955da6dcb18a710cdd30ade08a9"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "gkar@babylon5.ea",
+    "authordate": "1446747273",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "gkar@babylon5.ea",
+    "committerdate": "1446747273",
+    "encoding": "",
+    "subject": "I contribute",
+    "ssubject": "I-contribute",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "dde3403b5c839127bd3128346424858b5b007434"
+    ],
+    "inHeads": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "index": 5
+  },
+  "4a956ce1c78a3955da6dcb18a710cdd30ade08a9": {
+    "sha": "4a956ce1c78a3955da6dcb18a710cdd30ade08a9",
+    "ssha": "4a956ce",
+    "parenthashes": [
+      "8a7d2a057ac5498856ed5a124b2d8655a2e6aa99"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446747019",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446747019",
+    "encoding": "",
+    "subject": "refinement",
+    "ssubject": "refinement",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e0e21fc7b7c809242c5c1764b3f2688f9fee6842",
+      "0214336c7eb53b02c005a21fd45fbc06bbb6e06b"
+    ],
+    "inHeads": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "4eb13765b383c0fe8f38c147abd7792697719de3",
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "index": 6
+  },
+  "8a7d2a057ac5498856ed5a124b2d8655a2e6aa99": {
+    "sha": "8a7d2a057ac5498856ed5a124b2d8655a2e6aa99",
+    "ssha": "8a7d2a0",
+    "parenthashes": [
+      "aa4c055e68a41ef11748ca18a8710ad21a14f32e"
+    ],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446747014",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446747014",
+    "encoding": "",
+    "subject": "Draft of the AI",
+    "ssubject": "Draft-of-the-AI",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "4a956ce1c78a3955da6dcb18a710cdd30ade08a9"
+    ],
+    "inHeads": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "4eb13765b383c0fe8f38c147abd7792697719de3",
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "index": 7
+  },
+  "aa4c055e68a41ef11748ca18a8710ad21a14f32e": {
+    "sha": "aa4c055e68a41ef11748ca18a8710ad21a14f32e",
+    "ssha": "aa4c055",
+    "parenthashes": [],
+    "authorname": "U-epsilon10\\blecher",
+    "authoremail": "stephan@blecher.at",
+    "authordate": "1446746978",
+    "committername": "U-epsilon10\\blecher",
+    "committeremail": "stephan@blecher.at",
+    "committerdate": "1446746978",
+    "encoding": "",
+    "subject": "Initial Commit - straight on develop",
+    "ssubject": "Initial-Commit-straight-on-develop",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "8a7d2a057ac5498856ed5a124b2d8655a2e6aa99"
+    ],
+    "inHeads": [
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "6a9a61ae9fe10a230a42563f2b4713dfb1b706d5",
+      "4eb13765b383c0fe8f38c147abd7792697719de3",
+      "4eb13765b383c0fe8f38c147abd7792697719de3"
+    ],
+    "index": 8
+  }
+}

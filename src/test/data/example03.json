@@ -1,0 +1,3167 @@
+{
+  "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7": {
+    "sha": "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+    "ssha": "22f095a",
+    "parenthashes": [
+      "e0e19b2cd906147a9ca1b8cda8f367314cbdcdcb",
+      "a9379190a399d2144a1b94684f557df4e2f8ee44"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446764220",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446764220",
+    "encoding": "",
+    "subject": "Merge branch 'fp/subtree-todo-update' into pu",
+    "ssubject": "Merge-branch-fp-subtree-todo-update-into-pu",
+    "body": "* fp/subtree-todo-update:\n  contrib/subtree: remove \"push\" command from the \"todo\" file\n",
+    "refnames": [
+      "origin/pu"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 0
+  },
+  "a9379190a399d2144a1b94684f557df4e2f8ee44": {
+    "sha": "a9379190a399d2144a1b94684f557df4e2f8ee44",
+    "ssha": "a937919",
+    "parenthashes": [
+      "a66aa25afbd957bf0ab25d8875d42d28b921c09e"
+    ],
+    "authorname": "Fabio Porcedda",
+    "authoremail": "fabio.porcedda@gmail.com",
+    "authordate": "1446737217",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446764213",
+    "encoding": "",
+    "subject": "contrib/subtree: remove \"push\" command from the \"todo\" file",
+    "ssubject": "contrib-subtree-remove-push-command-from-the-todo-file",
+    "body": "Because the \"push\" command is already avaiable, remove it from the\n\"todo\" file.\n\nSigned-off-by: Fabio Porcedda <fabio.porcedda@gmail.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 1
+  },
+  "e0e19b2cd906147a9ca1b8cda8f367314cbdcdcb": {
+    "sha": "e0e19b2cd906147a9ca1b8cda8f367314cbdcdcb",
+    "ssha": "e0e19b2",
+    "parenthashes": [
+      "fc7ca6d47098d35e33df77491744ad57110cfa93",
+      "72878b1d4d48ad89d0efd6d6ed3bc507a40abd75"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446764177",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446764177",
+    "encoding": "",
+    "subject": "Merge branch 'dg/git-svn-empty-dirs' into pu",
+    "ssubject": "Merge-branch-dg-git-svn-empty-dirs-into-pu",
+    "body": "* dg/git-svn-empty-dirs:\n  git-svn: improve rebase/mkdirs performance\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 2
+  },
+  "72878b1d4d48ad89d0efd6d6ed3bc507a40abd75": {
+    "sha": "72878b1d4d48ad89d0efd6d6ed3bc507a40abd75",
+    "ssha": "72878b1",
+    "parenthashes": [
+      "1962994f08e7a193998fd0319f02109ed0153447"
+    ],
+    "authorname": "Dair Grant",
+    "authoremail": "dair@feralinteractive.com",
+    "authordate": "1446719175",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446764142",
+    "encoding": "",
+    "subject": "git-svn: improve rebase/mkdirs performance",
+    "ssubject": "git-svn-improve-rebase-mkdirs-performance",
+    "body": "Processing empty_dir directives becomes extremely slow for svn\nrepositories with a large enough history.\n\nThis is due to using a single hash to store the list of empty\ndirectories, with the expensive step being purging items from\nthat hash using grep+delete.\n\nStoring directories in a hash of hashes improves the performance\nof this purge step and removes a potentially lengthy delay after\nevery rebase/mkdirs command.\n\nThe svn repository with this behaviour has 110K commits with\nunhandled.log containing 170K empty_dir directives.\n\nThis takes 10 minutes to process when using a single hash, vs\n3 seconds with a hash of hashes.\n\nSigned-off-by: Dair Grant <dair@feralinteractive.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e0e19b2cd906147a9ca1b8cda8f367314cbdcdcb"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 3
+  },
+  "fc7ca6d47098d35e33df77491744ad57110cfa93": {
+    "sha": "fc7ca6d47098d35e33df77491744ad57110cfa93",
+    "ssha": "fc7ca6d",
+    "parenthashes": [
+      "fa2fa9bbc851ff26d06a32051071e65006f1cddb",
+      "04d6721072a431bdc50593b8768f72cf042412f2"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761340",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761340",
+    "encoding": "",
+    "subject": "Merge branch 'eg/p4-submit-catch-failure' into pu",
+    "ssubject": "Merge-branch-eg-p4-submit-catch-failure-into-pu",
+    "body": "Just like the working tree is cleaned up when the user cancelled\nsubmission in P4Submit.applyCommit(), clean up the mess if \"p4\nsubmit\" fails.\n\n($gmane/280539)\n\n* eg/p4-submit-catch-failure:\n  git-p4: clean up after p4 submit failure\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e0e19b2cd906147a9ca1b8cda8f367314cbdcdcb"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 4
+  },
+  "fa2fa9bbc851ff26d06a32051071e65006f1cddb": {
+    "sha": "fa2fa9bbc851ff26d06a32051071e65006f1cddb",
+    "ssha": "fa2fa9b",
+    "parenthashes": [
+      "255905e5e6e1f3cb0250b763547c769636a71826",
+      "d5110dab7bf12dd3c9f7f367a5f2f2192e005030"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761339",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761339",
+    "encoding": "",
+    "subject": "Merge branch 'ep/ident-with-getaddrinfo' into pu",
+    "ssubject": "Merge-branch-ep-ident-with-getaddrinfo-into-pu",
+    "body": "A build without NO_IPv6 used to use gethostbyname() when guessing\nuser's hostname, instead of getaddrinfo() that is used in other\ncodepaths in such a build.\n\n($gmane/280507)\n\n* ep/ident-with-getaddrinfo:\n  (NEEDSWORK $gmane/280507) ident.c: add support for IPv6\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fc7ca6d47098d35e33df77491744ad57110cfa93"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 5
+  },
+  "255905e5e6e1f3cb0250b763547c769636a71826": {
+    "sha": "255905e5e6e1f3cb0250b763547c769636a71826",
+    "ssha": "255905e",
+    "parenthashes": [
+      "9ac68bcc0dcf39b63e0056a8fda3899ac80a42e8",
+      "b69e2e6344de05f9851201b4d52566670619908b"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761338",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761338",
+    "encoding": "",
+    "subject": "Merge branch 'sg/pretty-more-date-mode-format' into pu",
+    "ssubject": "Merge-branch-sg-pretty-more-date-mode-format-into-pu",
+    "body": "Introduce \"%as\" and \"%aR\" placeholders for \"log --format\" to show\nthe author date in the short and raw formats.\n\nI have a feeling that that this is a step in a wrong direction.\nComments?\n\n* sg/pretty-more-date-mode-format:\n  pretty: add format specifiers for short and raw date formats\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fa2fa9bbc851ff26d06a32051071e65006f1cddb"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 6
+  },
+  "9ac68bcc0dcf39b63e0056a8fda3899ac80a42e8": {
+    "sha": "9ac68bcc0dcf39b63e0056a8fda3899ac80a42e8",
+    "ssha": "9ac68bc",
+    "parenthashes": [
+      "deda7767b29d45de76d982b198531597f592ec31",
+      "c03fd1bd3a84a1923ef130f20ab0c01ec3d8c742"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761336",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761337",
+    "encoding": "",
+    "subject": "Merge branch 'jk/graph-format-padding' into pu",
+    "ssubject": "Merge-branch-jk-graph-format-padding-into-pu",
+    "body": "Redefine the way '%>|(N)' padding and the \"--graph\" option\ninteracts.  It has been that the available columns to display the\nlog message was measured from the edge of the area the graph ended,\nbut with this it becomes the beginning of the entire output.\n\nI have a suspicion that 50% of the users would appreciate this\nchange, and the remainder see this break their expectation.  If\nthat is the case, we might need to introduce a similar but\ndifferent alignment operator so that this new behaviour is\navailable to those who want to use it, without negatively affecting\nexisting uses.\n\nUndecided.\n($gmane/278326)\n\n* jk/graph-format-padding:\n  pretty: pass graph width to pretty formatting for use in '%>|(N)'\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "255905e5e6e1f3cb0250b763547c769636a71826"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 7
+  },
+  "deda7767b29d45de76d982b198531597f592ec31": {
+    "sha": "deda7767b29d45de76d982b198531597f592ec31",
+    "ssha": "deda776",
+    "parenthashes": [
+      "82673b6374222d2a128967330bd1cd03e8bed92c",
+      "a2d2be35781ca1379eb4dae2e7651ac004eb878f"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761335",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761336",
+    "encoding": "",
+    "subject": "Merge branch 'jc/mailinfo' into pu",
+    "ssubject": "Merge-branch-jc-mailinfo-into-pu",
+    "body": "Some people write arbitrary garbage at the beginning of a piece of\ne-mail (or after -- >8 -- scissors -- >8 -- line) in the commit log\nmessage and expect them to be discarded, even though \"From:\" and\n\"Subject:\" are the only documented in-body headers that you are\nsupposed to have there.  Allow some garbage (specifically, what may\nlook like RFC2822 headers like \"MIME-Version: ...\") to be there and\nignore them.\n\nI have a feeling that that this is a step in a wrong direction.\nComments?\n\n* jc/mailinfo:\n  mailinfo: ignore in-body header that we do not care about\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9ac68bcc0dcf39b63e0056a8fda3899ac80a42e8"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 8
+  },
+  "82673b6374222d2a128967330bd1cd03e8bed92c": {
+    "sha": "82673b6374222d2a128967330bd1cd03e8bed92c",
+    "ssha": "82673b6",
+    "parenthashes": [
+      "107f65ef5c47ad66c255cc72d88f793748337d96",
+      "40869034b676b00de76982571674f7d2d4b27c9a"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761334",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761334",
+    "encoding": "",
+    "subject": "Merge branch 'ld/p4-detached-head' into pu",
+    "ssubject": "Merge-branch-ld-p4-detached-head-into-pu",
+    "body": "($gmane/277574)\n\n* ld/p4-detached-head:\n  git-p4: work with a detached head\n  git-p4: add failing test for submit from detached head\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "deda7767b29d45de76d982b198531597f592ec31"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 9
+  },
+  "107f65ef5c47ad66c255cc72d88f793748337d96": {
+    "sha": "107f65ef5c47ad66c255cc72d88f793748337d96",
+    "ssha": "107f65e",
+    "parenthashes": [
+      "ac4908d47c2807ce580d242c12fce49ddb1d232d",
+      "ecc87d3e9b5cbcc6414eda2b89d4f37c6f39a891"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761332",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761332",
+    "encoding": "",
+    "subject": "Merge branch 'ak/format-patch-odir-config' into pu",
+    "ssubject": "Merge-branch-ak-format-patch-odir-config-into-pu",
+    "body": "Reroll exists but didn't pick it up as it seemed to be still\ncollecting review comments.\n\nBecoming tired of waiting for a reroll.\n($gmane/272180).\n\n* ak/format-patch-odir-config:\n  format-patch: introduce format.outputDirectory configuration\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "82673b6374222d2a128967330bd1cd03e8bed92c"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 10
+  },
+  "ac4908d47c2807ce580d242c12fce49ddb1d232d": {
+    "sha": "ac4908d47c2807ce580d242c12fce49ddb1d232d",
+    "ssha": "ac4908d",
+    "parenthashes": [
+      "9fae14b361e16a9eaae6d49158d1b211acd7ebc9",
+      "bfdf86e4f7713f899170433694ca21dd6987e992"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761331",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761331",
+    "encoding": "",
+    "subject": "Merge branch 'wp/sha1-name-negative-match' into pu",
+    "ssubject": "Merge-branch-wp-sha1-name-negative-match-into-pu",
+    "body": "Introduce \"branch^{/!-<pattern>}\" notation to name a commit\nreachable from branch that does not match the given pattern.\n\nBecoming tired of waiting for a reroll.\n($gmane/271213).\n\n* wp/sha1-name-negative-match:\n  sha1_name.c: introduce '^{/!-<negative pattern>}' notation\n  test for '!' handling in rev-parse's named commits\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "107f65ef5c47ad66c255cc72d88f793748337d96"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 11
+  },
+  "9fae14b361e16a9eaae6d49158d1b211acd7ebc9": {
+    "sha": "9fae14b361e16a9eaae6d49158d1b211acd7ebc9",
+    "ssha": "9fae14b",
+    "parenthashes": [
+      "5aaa3380567aaca0973bc2afebbc387209e59232",
+      "52ea296815e739a4b66686649cd3466f1ec3402b"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761329",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761329",
+    "encoding": "",
+    "subject": "Merge branch 'jc/diff-b-m' (early part) into pu",
+    "ssubject": "Merge-branch-jc-diff-b-m-early-part-into-pu",
+    "body": "* 'jc/diff-b-m' (early part):\n  diffcore-rename: allow easier debugging\n  diffcore-rename.c: add locate_rename_src()\n  diffcore-break: allow debugging\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ac4908d47c2807ce580d242c12fce49ddb1d232d"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 12
+  },
+  "5aaa3380567aaca0973bc2afebbc387209e59232": {
+    "sha": "5aaa3380567aaca0973bc2afebbc387209e59232",
+    "ssha": "5aaa338",
+    "parenthashes": [
+      "0371655b8966b3d65163df00549ed3b52721606a",
+      "bbb36739d99581bfdf1f8bd41f580b4a9bc2851f"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761328",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761328",
+    "encoding": "",
+    "subject": "Merge branch 'mg/httpd-tests-update-for-apache-2.4' into pu",
+    "ssubject": "Merge-branch-mg-httpd-tests-update-for-apache-2.4-into-pu",
+    "body": "This is the first two commits in a three-patch series $gmane/266962\n\nBecoming tired of waiting for a reroll.\nwith updated log message ($gmane/268061).\n\n* mg/httpd-tests-update-for-apache-2.4:\n  t/lib-git-svn: check same httpd module dirs as lib-httpd\n  t/lib-httpd: load mod_unixd\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9fae14b361e16a9eaae6d49158d1b211acd7ebc9"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 13
+  },
+  "0371655b8966b3d65163df00549ed3b52721606a": {
+    "sha": "0371655b8966b3d65163df00549ed3b52721606a",
+    "ssha": "0371655",
+    "parenthashes": [
+      "c579d3befcf0a9b1a5456dd9b64b91b2c76cf3f7",
+      "11e1abd6de6dd30416e0db664c73ab51faf0c116"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761326",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761326",
+    "encoding": "",
+    "subject": "Merge branch 'nd/ita-cleanup' into pu",
+    "ssubject": "Merge-branch-nd-ita-cleanup-into-pu",
+    "body": "Paths that have been told the index about with \"add -N\" are not yet\nin the index, but various commands behaved as if they already are.\n\nSome commits need better explanation.\n\n* nd/ita-cleanup:\n  grep: make it clear i-t-a entries are ignored\n  checkout(-index): do not checkout i-t-a entries\n  apply: make sure check_preimage() does not leave empty file on error\n  apply: fix adding new files on i-t-a entries\n  add and use a convenience macro ce_intent_to_add()\n  blame: remove obsolete comment\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5aaa3380567aaca0973bc2afebbc387209e59232"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 14
+  },
+  "c579d3befcf0a9b1a5456dd9b64b91b2c76cf3f7": {
+    "sha": "c579d3befcf0a9b1a5456dd9b64b91b2c76cf3f7",
+    "ssha": "c579d3b",
+    "parenthashes": [
+      "8ceea4387e146e3611e588c93ffde5d25fe8ccc0",
+      "e53a64b982bd1351ad165c9ce6077c66fcc7118b"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761325",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761325",
+    "encoding": "",
+    "subject": "Merge branch 'ad/cygwin-wants-rename' into pu",
+    "ssubject": "Merge-branch-ad-cygwin-wants-rename-into-pu",
+    "body": "Will hold.\n($gmane/275680).\n\n* ad/cygwin-wants-rename:\n  config.mak.uname: Cygwin needs OBJECT_CREATION_USES_RENAMES\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0371655b8966b3d65163df00549ed3b52721606a"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 15
+  },
+  "8ceea4387e146e3611e588c93ffde5d25fe8ccc0": {
+    "sha": "8ceea4387e146e3611e588c93ffde5d25fe8ccc0",
+    "ssha": "8ceea43",
+    "parenthashes": [
+      "23e476781ac698c2e06b26fd411c3d2ffb71c4e2",
+      "1de1b1d248d5ce5cac8e4e9d5f6ecc6f174cdc7a"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761323",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761324",
+    "encoding": "",
+    "subject": "Merge branch 'pt/http-socks-proxy' into pu",
+    "ssubject": "Merge-branch-pt-http-socks-proxy-into-pu",
+    "body": "Add support for talking http/https over socks proxy.\n\n* pt/http-socks-proxy:\n  remote-http(s): support SOCKS proxies\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c579d3befcf0a9b1a5456dd9b64b91b2c76cf3f7"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 16
+  },
+  "23e476781ac698c2e06b26fd411c3d2ffb71c4e2": {
+    "sha": "23e476781ac698c2e06b26fd411c3d2ffb71c4e2",
+    "ssha": "23e4767",
+    "parenthashes": [
+      "a9341bcf2b4839e689210252c57f3fdec4b6c0bb",
+      "715639c9c87e324abe5da48bb7ef522629ec240e"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761321",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761322",
+    "encoding": "",
+    "subject": "Merge branch 'sb/submodule-parallel-update' into pu",
+    "ssubject": "Merge-branch-sb-submodule-parallel-update-into-pu",
+    "body": "Builds on top of the \"fetch --recurse-submodules\" work to introduce\nparallel downloading into multiple submodules for \"submodule update\".\n\n* sb/submodule-parallel-update:\n  clone: allow an explicit argument for parallel submodule clones\n  submodule update: expose parallelism to the user\n  git submodule update: have a dedicated helper for cloning\n  fetching submodules: respect `submodule.jobs` config option\n  submodule config: update parse_config()\n  submodule config: remove name_and_item_from_var\n  submodule config: keep update strategy around\n  run_processes_parallel: add output to tracing messages\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8ceea4387e146e3611e588c93ffde5d25fe8ccc0"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 17
+  },
+  "715639c9c87e324abe5da48bb7ef522629ec240e": {
+    "sha": "715639c9c87e324abe5da48bb7ef522629ec240e",
+    "ssha": "715639c",
+    "parenthashes": [
+      "8002a56b9e9fe951ecaa66eb725fb1ae50071d2e"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446074504",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761265",
+    "encoding": "",
+    "subject": "clone: allow an explicit argument for parallel submodule clones",
+    "ssubject": "clone-allow-an-explicit-argument-for-parallel-submodule-clones",
+    "body": "Just pass it along to \"git submodule update\", which may pick reasonable\ndefaults if you don't specify an explicit number.\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "23e476781ac698c2e06b26fd411c3d2ffb71c4e2"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 18
+  },
+  "8002a56b9e9fe951ecaa66eb725fb1ae50071d2e": {
+    "sha": "8002a56b9e9fe951ecaa66eb725fb1ae50071d2e",
+    "ssha": "8002a56",
+    "parenthashes": [
+      "46697b3139186bbf206db4311fde931b5fb0f366"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446074503",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761265",
+    "encoding": "",
+    "subject": "submodule update: expose parallelism to the user",
+    "ssubject": "submodule-update-expose-parallelism-to-the-user",
+    "body": "Expose possible parallelism either via the \"--jobs\" CLI parameter or\nthe \"submodule.jobs\" setting.\n\nBy having the variable initialized to -1, we make sure 0 can be passed\ninto the parallel processing machine, which will then pick as many parallel\nworkers as there are CPUs.\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "715639c9c87e324abe5da48bb7ef522629ec240e"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 19
+  },
+  "46697b3139186bbf206db4311fde931b5fb0f366": {
+    "sha": "46697b3139186bbf206db4311fde931b5fb0f366",
+    "ssha": "46697b3",
+    "parenthashes": [
+      "b259918f364fda661c448bbe2b540f18655a5e85"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446074502",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761265",
+    "encoding": "",
+    "subject": "git submodule update: have a dedicated helper for cloning",
+    "ssubject": "git-submodule-update-have-a-dedicated-helper-for-cloning",
+    "body": "This introduces a new helper function in git submodule--helper\nwhich takes care of cloning all submodules, which we want to\nparallelize eventually.\n\nSome tests (such as empty URL, update_mode=none) are required in the\nhelper to make the decision for cloning. These checks have been\nmoved into the C function as well (no need to repeat them in the\nshell script).\n\nAs we can only access the stderr channel from within the parallel\nprocessing engine, we need to reroute the error message for\nspecified but initialized submodules to stderr. As it is an error\nmessage, this should have gone to stderr in the first place, so it\nis a bug fix along the way.\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8002a56b9e9fe951ecaa66eb725fb1ae50071d2e"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 20
+  },
+  "b259918f364fda661c448bbe2b540f18655a5e85": {
+    "sha": "b259918f364fda661c448bbe2b540f18655a5e85",
+    "ssha": "b259918",
+    "parenthashes": [
+      "c890e594a5642f1d2a060503a2e7d72cd5e43f1e"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446074501",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761265",
+    "encoding": "",
+    "subject": "fetching submodules: respect `submodule.jobs` config option",
+    "ssubject": "fetching-submodules-respect-submodule.jobs-config-option",
+    "body": "This allows to configure fetching and updating in parallel\nwithout having the command line option.\n\nThis moved the responsibility to determine how many parallel processes\nto start from builtin/fetch to submodule.c as we need a way to communicate\n\"The user did not specify the number of parallel processes in the command\nline options\" in the builtin fetch. The submodule code takes care of\nthe precedence (CLI > config > default)\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "46697b3139186bbf206db4311fde931b5fb0f366"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 21
+  },
+  "c890e594a5642f1d2a060503a2e7d72cd5e43f1e": {
+    "sha": "c890e594a5642f1d2a060503a2e7d72cd5e43f1e",
+    "ssha": "c890e59",
+    "parenthashes": [
+      "7e9d5cbff62b68a9608b9aac986adc7bec0b7ee4"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446074500",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761265",
+    "encoding": "",
+    "subject": "submodule config: update parse_config()",
+    "ssubject": "submodule-config-update-parse_config",
+    "body": "This rewrites parse_config to distinguish between configs specific to\none submodule and configs which apply generically to all submodules.\nWe do not have generic submodule configs yet, but the next patch will\nintroduce \"submodule.jobs\".\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b259918f364fda661c448bbe2b540f18655a5e85"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 22
+  },
+  "7e9d5cbff62b68a9608b9aac986adc7bec0b7ee4": {
+    "sha": "7e9d5cbff62b68a9608b9aac986adc7bec0b7ee4",
+    "ssha": "7e9d5cb",
+    "parenthashes": [
+      "c5b48387f2e096bf9c9c0ee2a9c14d9cecf2677c"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446074499",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761265",
+    "encoding": "",
+    "subject": "submodule config: remove name_and_item_from_var",
+    "ssubject": "submodule-config-remove-name_and_item_from_var",
+    "body": "By inlining `name_and_item_from_var` it is easy to add later options\nwhich are not required to have a submodule name.\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c890e594a5642f1d2a060503a2e7d72cd5e43f1e"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 23
+  },
+  "c5b48387f2e096bf9c9c0ee2a9c14d9cecf2677c": {
+    "sha": "c5b48387f2e096bf9c9c0ee2a9c14d9cecf2677c",
+    "ssha": "c5b4838",
+    "parenthashes": [
+      "c9a89f8902db8300aa70c51b7c6d5eebbee797fa"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446074498",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761264",
+    "encoding": "",
+    "subject": "submodule config: keep update strategy around",
+    "ssubject": "submodule-config-keep-update-strategy-around",
+    "body": "We need the submodule update strategies in a later patch.\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7e9d5cbff62b68a9608b9aac986adc7bec0b7ee4"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 24
+  },
+  "c9a89f8902db8300aa70c51b7c6d5eebbee797fa": {
+    "sha": "c9a89f8902db8300aa70c51b7c6d5eebbee797fa",
+    "ssha": "c9a89f8",
+    "parenthashes": [
+      "e1b7be08fa24605d3aceeb1ebe075e0622f5e4e3"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446074497",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761264",
+    "encoding": "",
+    "subject": "run_processes_parallel: add output to tracing messages",
+    "ssubject": "run_processes_parallel-add-output-to-tracing-messages",
+    "body": "This commit serves 2 purposes. First this may help the user who\ntries to diagnose intermixed process calls. Second this may be used\nin a later patch for testing. As the output of a command should not\nchange visibly except for going faster, grepping for the trace output\nseems like a viable testing strategy.\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c5b48387f2e096bf9c9c0ee2a9c14d9cecf2677c"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 25
+  },
+  "e1b7be08fa24605d3aceeb1ebe075e0622f5e4e3": {
+    "sha": "e1b7be08fa24605d3aceeb1ebe075e0622f5e4e3",
+    "ssha": "e1b7be0",
+    "parenthashes": [
+      "1e8edcba3d1f403a6cbc1c03696cacbe47e09c2a",
+      "b1b49ff8d42a21ade6a72b40a147fd3eaff3db8d"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761207",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761230",
+    "encoding": "",
+    "subject": "Merge branch 'rs/daemon-plug-child-leak' into sb/submodule-parallel-update",
+    "ssubject": "Merge-branch-rs-daemon-plug-child-leak-into-sb-submodule-parallel-update",
+    "body": "* rs/daemon-plug-child-leak:\n  daemon: plug memory leak\n  run-command: factor out child_process_clear()\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c9a89f8902db8300aa70c51b7c6d5eebbee797fa"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 26
+  },
+  "1e8edcba3d1f403a6cbc1c03696cacbe47e09c2a": {
+    "sha": "1e8edcba3d1f403a6cbc1c03696cacbe47e09c2a",
+    "ssha": "1e8edcb",
+    "parenthashes": [
+      "8b70042569044c95ab50a0b0a5ee20a1c876b36d",
+      "6f963a895a97d720c909fcf4eb0544a272ef7c49"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446761174",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446761174",
+    "encoding": "",
+    "subject": "Merge branch 'sb/submodule-parallel-fetch' into sb/submodule-parallel-update",
+    "ssubject": "Merge-branch-sb-submodule-parallel-fetch-into-sb-submodule-parallel-update",
+    "body": "* sb/submodule-parallel-fetch:\n  strbuf: update documentation for strbuf_read_once()\n  run-command: remove set_nonblocking()\n  run-command: fix missing output from late callbacks\n  test-run-command: increase test coverage\n  test-run-command: test for gracefully aborting\n  run-command: initialize the shutdown flag\n  run-command: clear leftover state from child_process structure\n  run-command: fix early shutdown\n  submodules: allow parallel fetching, add tests and documentation\n  fetch_populated_submodules: use new parallel job processing\n  run-command: add an asynchronous parallel child processor\n  sigchain: add command to pop all common signals\n  strbuf: add strbuf_read_once to read without blocking\n  xread_nonblock: add functionality to read from fds without blocking\n  xread: poll on non blocking fds\n  submodule.c: write \"Fetching submodule <foo>\" to stderr\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e1b7be08fa24605d3aceeb1ebe075e0622f5e4e3"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 27
+  },
+  "550542234b0fed5a3944af44b01152b620e8dba1": {
+    "sha": "550542234b0fed5a3944af44b01152b620e8dba1",
+    "ssha": "5505422",
+    "parenthashes": [
+      "aa71ff9bd506794e7e540b3cc7cb51ec10116c71",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446756108",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446756108",
+    "encoding": "",
+    "subject": "Sync with master",
+    "ssubject": "Sync-with-master",
+    "body": "* master:\n  Git 2.6.3\n",
+    "refnames": [
+      "origin/next"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 28
+  },
+  "a9341bcf2b4839e689210252c57f3fdec4b6c0bb": {
+    "sha": "a9341bcf2b4839e689210252c57f3fdec4b6c0bb",
+    "ssha": "a9341bc",
+    "parenthashes": [
+      "9303431dfe172bac4977132591eb71a6ee629df2",
+      "6f963a895a97d720c909fcf4eb0544a272ef7c49"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754982",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754982",
+    "encoding": "",
+    "subject": "Merge branch 'sb/submodule-parallel-fetch' into jch",
+    "ssubject": "Merge-branch-sb-submodule-parallel-fetch-into-jch",
+    "body": "Add a framework to spawn a group of processes in parallel, and use\nit to run \"git fetch --recurse-submodules\" in parallel.\n\nThis needs to be adjusted to make it at least minimally workable on\nWindows.\n\n* sb/submodule-parallel-fetch:\n  strbuf: update documentation for strbuf_read_once()\n  run-command: remove set_nonblocking()\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "23e476781ac698c2e06b26fd411c3d2ffb71c4e2"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 29
+  },
+  "9303431dfe172bac4977132591eb71a6ee629df2": {
+    "sha": "9303431dfe172bac4977132591eb71a6ee629df2",
+    "ssha": "9303431",
+    "parenthashes": [
+      "f653a79bd4bd7370a28b1b696898621322e151bf",
+      "33518409bcd8135ac757251b9c5dcdb9ac5e5142"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754980",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754981",
+    "encoding": "",
+    "subject": "Merge branch 'kf/http-proxy-auth-methods' into jch",
+    "ssubject": "Merge-branch-kf-http-proxy-auth-methods-into-jch",
+    "body": "New http.proxyAuthMethod configuration variable can be used to\nspecify what authentication method to use, as a way to work around\nproxies that do not give error response expected by libcurl when\nCURLAUTH_ANY is used.  Also, the codepath for proxy authentication\nhas been taught to use credential API to store the authentication\nmaterial in user's keyrings.\n\n* kf/http-proxy-auth-methods:\n  SQUASH???\n  http: use credential API to handle proxy authentication\n  http: allow selection of proxy authentication method\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a9341bcf2b4839e689210252c57f3fdec4b6c0bb"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 30
+  },
+  "f653a79bd4bd7370a28b1b696898621322e151bf": {
+    "sha": "f653a79bd4bd7370a28b1b696898621322e151bf",
+    "ssha": "f653a79",
+    "parenthashes": [
+      "42ad3625fc55f81617cd8303845a4309d6b6994d",
+      "478f34d2b6ea13d5f56ecec04de7ca7ce18367c0"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754979",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754980",
+    "encoding": "",
+    "subject": "Merge branch 'dk/gc-idx-wo-pack' into jch",
+    "ssubject": "Merge-branch-dk-gc-idx-wo-pack-into-jch",
+    "body": "Having a leftover .idx file without corresponding .pack file in\nthe repository hurts performance; \"git gc\" learned to prune them.\n\nWe may want to do the same for .bitmap (and notice but not prune\n.keep) without corresponding .pack, but that can be a separate\ntopic.\n\n* dk/gc-idx-wo-pack:\n  gc: remove garbage .idx files from pack dir\n  t5304: test cleaning pack garbage\n  prepare_packed_git(): refactor garbage reporting in pack directory\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9303431dfe172bac4977132591eb71a6ee629df2"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 31
+  },
+  "42ad3625fc55f81617cd8303845a4309d6b6994d": {
+    "sha": "42ad3625fc55f81617cd8303845a4309d6b6994d",
+    "ssha": "42ad362",
+    "parenthashes": [
+      "0a6482fbcffe20c5031fc0cb37f21c2e9303f452",
+      "948bfa2c0f40a97d670c6a3fc22c05ceb2ec2c3f"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754978",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754978",
+    "encoding": "",
+    "subject": "Merge branch 'lf/ref-is-hidden-namespace' into jch",
+    "ssubject": "Merge-branch-lf-ref-is-hidden-namespace-into-jch",
+    "body": "Extend transfer.hideRefs to work better with use of namespaces.\n\n* lf/ref-is-hidden-namespace:\n  t5509: add basic tests for hideRefs\n  hideRefs: add support for matching full refs\n  upload-pack: strip refs before calling ref_is_hidden()\n  config.txt: document the semantics of hideRefs with namespaces\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f653a79bd4bd7370a28b1b696898621322e151bf"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 32
+  },
+  "0a6482fbcffe20c5031fc0cb37f21c2e9303f452": {
+    "sha": "0a6482fbcffe20c5031fc0cb37f21c2e9303f452",
+    "ssha": "0a6482f",
+    "parenthashes": [
+      "fff3f239b1afd9507ed3cc37a65914280587f213",
+      "da17fd5b341f49cde971bb5f4b1945585e3aff8f"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754977",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754977",
+    "encoding": "",
+    "subject": "Merge branch 'jc/test-must-fail-with-sigpipe' into jch",
+    "ssubject": "Merge-branch-jc-test-must-fail-with-sigpipe-into-jch",
+    "body": "* jc/test-must-fail-with-sigpipe:\n  test: accept death by SIGPIPE as a valid failure mode\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "42ad3625fc55f81617cd8303845a4309d6b6994d"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 33
+  },
+  "fff3f239b1afd9507ed3cc37a65914280587f213": {
+    "sha": "fff3f239b1afd9507ed3cc37a65914280587f213",
+    "ssha": "fff3f23",
+    "parenthashes": [
+      "e65ddcbb8c7018b1272cc8a8c37cbed716eb6d83",
+      "0a2c1f6adcfed6e5682ec97ecf09bf640b4d69f6"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754976",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754976",
+    "encoding": "",
+    "subject": "Merge branch 'vl/grep-configurable-threads' into jch",
+    "ssubject": "Merge-branch-vl-grep-configurable-threads-into-jch",
+    "body": "\"git grep\" can now be configured (or told from the command line)\nhow many threads to use when searching in the working tree files.\n\n$gmane/280854\n\n* vl/grep-configurable-threads:\n  grep: add --threads=<num> option and grep.threads configuration\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0a6482fbcffe20c5031fc0cb37f21c2e9303f452"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 34
+  },
+  "e65ddcbb8c7018b1272cc8a8c37cbed716eb6d83": {
+    "sha": "e65ddcbb8c7018b1272cc8a8c37cbed716eb6d83",
+    "ssha": "e65ddcb",
+    "parenthashes": [
+      "9aa2bf3db54ea2edd18647d2fed3dbb93952040e",
+      "001fd7a90b5851f62e700510729a5e09706f9b63"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754976",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754976",
+    "encoding": "",
+    "subject": "Merge branch 'ad/sha1-update-chunked' into jch",
+    "ssubject": "Merge-branch-ad-sha1-update-chunked-into-jch",
+    "body": "Apple's common crypto implementation of SHA1_Update() does not take\nmore than 4GB at a time, and we now have a compile-time workaround\nfor it.\n\n$gmane/280871\n\n* ad/sha1-update-chunked:\n  sha1: allow limiting the size of the data passed to SHA1_Update()\n  sha1: provide another level of indirection for the SHA-1 functions\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fff3f239b1afd9507ed3cc37a65914280587f213"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 35
+  },
+  "9aa2bf3db54ea2edd18647d2fed3dbb93952040e": {
+    "sha": "9aa2bf3db54ea2edd18647d2fed3dbb93952040e",
+    "ssha": "9aa2bf3",
+    "parenthashes": [
+      "743700a0675d7d8efd75f9c959c970faeeebcf0a",
+      "3be111179e48ecfa5394b68d9b308c9a40f235d1"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754974",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754975",
+    "encoding": "",
+    "subject": "Merge branch 'jc/rerere-multi' into jch",
+    "ssubject": "Merge-branch-jc-rerere-multi-into-jch",
+    "body": "\"git rerere\" can encounter two or more files with the same conflict\nsignature that have to be resolved in different ways, but there was\nno way to record these separate resolutions.\n\n* jc/rerere-multi:\n  rerere: do use multiple variants\n  t4200: rerere a merge with two identical conflicts\n  rerere: allow multiple variants to exist\n  rerere: delay the recording of preimage\n  rerere: handle leftover rr-cache/$ID directory and postimage files\n  rerere: scan $GIT_DIR/rr-cache/$ID when instantiating a rerere_id\n  rerere: split conflict ID further\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e65ddcbb8c7018b1272cc8a8c37cbed716eb6d83"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 36
+  },
+  "743700a0675d7d8efd75f9c959c970faeeebcf0a": {
+    "sha": "743700a0675d7d8efd75f9c959c970faeeebcf0a",
+    "ssha": "743700a",
+    "parenthashes": [
+      "45364f02eecd723a3d851ddea85d8d39cda27f0c",
+      "19a541a9048a86cfa07685caf5a8e06818003f60"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754973",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754973",
+    "encoding": "",
+    "subject": "Merge branch 'jc/strbuf-gets' into jch",
+    "ssubject": "Merge-branch-jc-strbuf-gets-into-jch",
+    "body": "Teach codepaths that communicate with users by reading text files\nto be more lenient to editors that write CRLF-terminated lines.\nNote that this is only about communication with Git, like feeding\nlist of object names from the standard input instead of from the\ncommand line, and does not involve files in the working tree.\n\n* jc/strbuf-gets:\n  test-sha1-array: read command stream with strbuf_gets()\n  grep: read -f file with strbuf_gets()\n  send-pack: read list of refs with strbuf_gets()\n  column: read lines with strbuf_gets()\n  cat-file: read batch stream with strbuf_gets()\n  transport-helper: read helper response with strbuf_gets()\n  clone/sha1_file: read info/alternates with strbuf_gets()\n  remote.c: read $GIT_DIR/remotes/* with strbuf_gets()\n  ident.c: read /etc/mailname with strbuf_gets()\n  rev-parse: read parseopt spec with strbuf_gets()\n  revision: read --stdin with strbuf_gets()\n  hash-object: read --stdin-paths with strbuf_gets()\n  mktree: read textual tree representation with strbuf_gets()\n  update-index: read list of paths with strbuf_gets() under --stdin\n  update-index: read --index-info with strbuf_gets()\n  check-attr, check-ignore, checkout-index: read paths with strbuf_gets()\n  strbuf: add strbuf_gets()\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9aa2bf3db54ea2edd18647d2fed3dbb93952040e"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 37
+  },
+  "45364f02eecd723a3d851ddea85d8d39cda27f0c": {
+    "sha": "45364f02eecd723a3d851ddea85d8d39cda27f0c",
+    "ssha": "45364f0",
+    "parenthashes": [
+      "cc8b77f2faee1d065ac3a50b946d87047ca92e70",
+      "4c0ca23e71d92a45fb209172aff1c2907b9203cb"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754973",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754973",
+    "encoding": "",
+    "subject": "Merge branch 'kn/for-each-branch-remainder' into jch",
+    "ssubject": "Merge-branch-kn-for-each-branch-remainder-into-jch",
+    "body": "More unification among \"branch -l\", \"tag -l\" and \"for-each-ref --format\".\n\n($gmane/278926)\n\n* kn/for-each-branch-remainder:\n  branch: implement '--format' option\n  branch: use ref-filter printing APIs\n  ref-filter: make %(upstream:track) prints \"[gone]\" for invalid upstreams\n  ref-filter: introduce format_ref_array_item()\n  ref-filter: adopt get_head_description() from branch.c\n  ref-filter: modify \"%(objectname:short)\" to take length\n  ref-filter: add support for %(path) atom\n  ref-filter: implement %(if:equals=<string>) and %(if:notequals=<string>)\n  ref-filter: implement %(if), %(then), and %(else) atoms\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "743700a0675d7d8efd75f9c959c970faeeebcf0a"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 38
+  },
+  "cc8b77f2faee1d065ac3a50b946d87047ca92e70": {
+    "sha": "cc8b77f2faee1d065ac3a50b946d87047ca92e70",
+    "ssha": "cc8b77f",
+    "parenthashes": [
+      "c5d8949726c1ad58729130bc14656bf0c59a27f6"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754972",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754972",
+    "encoding": "",
+    "subject": "### match next",
+    "ssubject": "match-next",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "45364f02eecd723a3d851ddea85d8d39cda27f0c"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 39
+  },
+  "c5d8949726c1ad58729130bc14656bf0c59a27f6": {
+    "sha": "c5d8949726c1ad58729130bc14656bf0c59a27f6",
+    "ssha": "c5d8949",
+    "parenthashes": [
+      "d58c720e42f9bbcdac7f99872e9c94d93997fbc0",
+      "db05d6194d3f9ea9e64163944961d5f6e85302be"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754971",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754971",
+    "encoding": "",
+    "subject": "Merge branch 'js/am-3-merge-recursive-direct' into jch",
+    "ssubject": "Merge-branch-js-am-3-merge-recursive-direct-into-jch",
+    "body": "The merge_recursive_generic() function has been made a bit safer to\ncall from inside a process.  \"git am -3\" was taught to make a direct\ncall to the function when falling back to three-way merge.\n\nBeing able to make a direct call would be good in general, but as a\nperformance thing, we would want to see it backed up by numbers.\n\nI haven't gone through the \"gently\" change with fine toothed comb;\nI can see that the change avoids calling die(), but I haven't made\nsure that the program states (e.g. what's in the in-core index) are\nadjusted sensibly when it returns to the caller instead of dying,\nor the codepaths that used to die() are free of resource leaks.\nThe original code certainly did not care the program states at the\npoint of dying exactly because it knew it is going to exit, but now\nthey have to care, and they need to be audited.\n\n* js/am-3-merge-recursive-direct:\n  am: make a direct call to merge_recursive\n  merge_recursive_options: introduce the \"gently\" flag\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "cc8b77f2faee1d065ac3a50b946d87047ca92e70"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 40
+  },
+  "d58c720e42f9bbcdac7f99872e9c94d93997fbc0": {
+    "sha": "d58c720e42f9bbcdac7f99872e9c94d93997fbc0",
+    "ssha": "d58c720",
+    "parenthashes": [
+      "388ff1c9aef4c59e9b4bc2d59bb003268884361d",
+      "44c6e1d8ca1c6c6b099401de21cab989f381debe"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754970",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754970",
+    "encoding": "",
+    "subject": "Merge branch 'mh/notes-allow-reading-treeish' into jch",
+    "ssubject": "Merge-branch-mh-notes-allow-reading-treeish-into-jch",
+    "body": "Some \"git notes\" operations, e.g. \"git log --notes=<note>\", should\nbe able to read notes from any tree-ish that is shaped like a notes\ntree, but the notes infrastructure required that the argument must\nbe a ref under refs/notes/.  Loosen it to require a valid ref only\nwhen the operation would update the notes (in which case we must\nhave a place to store the updated notes tree, iow, a ref).\n\nAs the patch was done on top of the 'drop old-syntax from merge',\nthis has to wait until that other topic can graduate, unfortunately.\nIt can be redone in a way that does not depend on that topic after\nthis cycle, though.\n\n* mh/notes-allow-reading-treeish:\n  notes: allow treeish expressions as notes ref\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c5d8949726c1ad58729130bc14656bf0c59a27f6"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 41
+  },
+  "388ff1c9aef4c59e9b4bc2d59bb003268884361d": {
+    "sha": "388ff1c9aef4c59e9b4bc2d59bb003268884361d",
+    "ssha": "388ff1c",
+    "parenthashes": [
+      "7b147d5c6ad72e784edde8c0b349a508917c0ae0",
+      "b4391657ed96c8dd2881d5c9fcad39a07d8cb92a"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754969",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754969",
+    "encoding": "",
+    "subject": "Merge branch 'jc/merge-drop-old-syntax' into jch",
+    "ssubject": "Merge-branch-jc-merge-drop-old-syntax-into-jch",
+    "body": "Stop supporting \"git merge <message> HEAD <commit>\" syntax that has\nbeen deprecated since October 2007.  It has been reported that\ngit-gui still uses the deprecated syntax, which needs to be fixed\nbefore this final step can proceed.\n\n* jc/merge-drop-old-syntax:\n  merge: drop 'git merge <message> HEAD <commit>' syntax\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d58c720e42f9bbcdac7f99872e9c94d93997fbc0"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 42
+  },
+  "7b147d5c6ad72e784edde8c0b349a508917c0ae0": {
+    "sha": "7b147d5c6ad72e784edde8c0b349a508917c0ae0",
+    "ssha": "7b147d5",
+    "parenthashes": [
+      "c110a6bbe9dda5965ce59550e9151035694f94b1",
+      "376d400f4ccc73d5d9cfeca15bafb1250a459d98"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754966",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754966",
+    "encoding": "",
+    "subject": "Merge branch 'sb/submodule-parallel-fetch' (early part) into jch",
+    "ssubject": "Merge-branch-sb-submodule-parallel-fetch-early-part-into-jch",
+    "body": "* 'sb/submodule-parallel-fetch' (early part):\n  run-command: fix missing output from late callbacks\n  test-run-command: increase test coverage\n  test-run-command: test for gracefully aborting\n  run-command: initialize the shutdown flag\n  run-command: clear leftover state from child_process structure\n  run-command: fix early shutdown\n  submodules: allow parallel fetching, add tests and documentation\n  fetch_populated_submodules: use new parallel job processing\n  run-command: add an asynchronous parallel child processor\n  sigchain: add command to pop all common signals\n  strbuf: add strbuf_read_once to read without blocking\n  xread_nonblock: add functionality to read from fds without blocking\n  xread: poll on non blocking fds\n  submodule.c: write \"Fetching submodule <foo>\" to stderr\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "388ff1c9aef4c59e9b4bc2d59bb003268884361d"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 43
+  },
+  "c110a6bbe9dda5965ce59550e9151035694f94b1": {
+    "sha": "c110a6bbe9dda5965ce59550e9151035694f94b1",
+    "ssha": "c110a6b",
+    "parenthashes": [
+      "acb65cdd1786d9df340097886db9b5cccb92ee18",
+      "870ebdb9c4facb55ed4817c5ff0968c0aadb7283"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754964",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754964",
+    "encoding": "",
+    "subject": "Merge branch 'ea/checkout-progress' into jch",
+    "ssubject": "Merge-branch-ea-checkout-progress-into-jch",
+    "body": "\"git checkout\" did not follow the usual \"--[no-]progress\"\nconvention and implemented only \"--quiet\" that is essentially\na superset of \"--no-progress\".  Extend the command to support the\nusual \"--[no-]progress\".\n\n* ea/checkout-progress:\n  checkout: add --progress option\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7b147d5c6ad72e784edde8c0b349a508917c0ae0"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 44
+  },
+  "acb65cdd1786d9df340097886db9b5cccb92ee18": {
+    "sha": "acb65cdd1786d9df340097886db9b5cccb92ee18",
+    "ssha": "acb65cd",
+    "parenthashes": [
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "f8117f550b900b0bc93364ecadbed237b0ffe25e"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754963",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754963",
+    "encoding": "",
+    "subject": "Merge branch 'dt/http-range' into jch",
+    "ssubject": "Merge-branch-dt-http-range-into-jch",
+    "body": "A Range: request can be responded with a full response and when\nasked properly libcurl knows how to strip the result down to the\nrequested range.  However, we were hand-crafting a range request\nand it did not kick in.\n\n* dt/http-range:\n  http: use off_t to store partial file size\n  http.c: use CURLOPT_RANGE for range requests\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c110a6bbe9dda5965ce59550e9151035694f94b1"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 45
+  },
+  "2c78628255b8cc7f0b5d47981acea138db8716d2": {
+    "sha": "2c78628255b8cc7f0b5d47981acea138db8716d2",
+    "ssha": "2c78628",
+    "parenthashes": [
+      "259b5e6d33800762142e1fadefbbcf1150e6ccc5",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754933",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754954",
+    "encoding": "",
+    "subject": "Sync with 2.6.3",
+    "ssubject": "Sync-with-2.6.3",
+    "body": "Signed-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [
+      "HEAD",
+      "origin/master",
+      "origin/HEAD",
+      "master"
+    ],
+    "parents": [],
+    "children": [
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "acb65cdd1786d9df340097886db9b5cccb92ee18"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1"
+    ],
+    "index": 46
+  },
+  "af40944bda352190f05d22b7cb8fe88beb17f3a7": {
+    "sha": "af40944bda352190f05d22b7cb8fe88beb17f3a7",
+    "ssha": "af40944",
+    "parenthashes": [
+      "b8f5242592146c85c2e09fd9721e522ce4dd32e5"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754834",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754834",
+    "encoding": "",
+    "subject": "Git 2.6.3",
+    "ssubject": "Git-2.6.3",
+    "body": "Signed-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [
+      "tag: v2.6.3",
+      "origin/maint"
+    ],
+    "parents": [],
+    "children": [
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 47
+  },
+  "b8f5242592146c85c2e09fd9721e522ce4dd32e5": {
+    "sha": "b8f5242592146c85c2e09fd9721e522ce4dd32e5",
+    "ssha": "b8f5242",
+    "parenthashes": [
+      "db43891ce60d0f713a41cfc46097262c73aa99d7",
+      "b1b49ff8d42a21ade6a72b40a147fd3eaff3db8d"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754696",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754697",
+    "encoding": "",
+    "subject": "Merge branch 'rs/daemon-plug-child-leak' into maint",
+    "ssubject": "Merge-branch-rs-daemon-plug-child-leak-into-maint",
+    "body": "\"git daemon\" uses \"run_command()\" without \"finish_command()\", so it\nneeds to release resources itself, which it forgot to do.\n\n* rs/daemon-plug-child-leak:\n  daemon: plug memory leak\n  run-command: factor out child_process_clear()\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 48
+  },
+  "db43891ce60d0f713a41cfc46097262c73aa99d7": {
+    "sha": "db43891ce60d0f713a41cfc46097262c73aa99d7",
+    "ssha": "db43891",
+    "parenthashes": [
+      "f97aee1f941a08a741c7ce2b0dfb6db7d0cc042e",
+      "c72b49dfab8381abfd947db53c1c9e2da9593ab6"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754695",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754695",
+    "encoding": "",
+    "subject": "Merge branch 'rs/wt-status-detached-branch-fix' into maint",
+    "ssubject": "Merge-branch-rs-wt-status-detached-branch-fix-into-maint",
+    "body": "\"git status --branch --short\" accessed beyond the constant string\n\"HEAD\", which has been corrected.\n\n* rs/wt-status-detached-branch-fix:\n  wt-status: use skip_prefix() to get rid of magic string length constants\n  wt-status: don't skip a magical number of characters blindly\n  wt-status: avoid building bogus branch name with detached HEAD\n  wt-status: exit early using goto in wt_shortstatus_print_tracking()\n  t7060: add test for status --branch on a detached HEAD\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b8f5242592146c85c2e09fd9721e522ce4dd32e5"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 49
+  },
+  "f97aee1f941a08a741c7ce2b0dfb6db7d0cc042e": {
+    "sha": "f97aee1f941a08a741c7ce2b0dfb6db7d0cc042e",
+    "ssha": "f97aee1",
+    "parenthashes": [
+      "ace5348dcb427bbce015a42a21a46dc02ae1b37b",
+      "9a6e4f032ef7ca45a71639ff5e60cbb9b8a6e556"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754694",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754694",
+    "encoding": "",
+    "subject": "Merge branch 'jk/initialization-fix-to-add-submodule-odb' into maint",
+    "ssubject": "Merge-branch-jk-initialization-fix-to-add-submodule-odb-into-maint",
+    "body": "We peek objects from submodule's object store by linking it to the\nlist of alternate object databases, but the code to do so forgot to\ncorrectly initialize the list.\n\n* jk/initialization-fix-to-add-submodule-odb:\n  add_submodule_odb: initialize alt_odb list earlier\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "db43891ce60d0f713a41cfc46097262c73aa99d7"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 50
+  },
+  "ace5348dcb427bbce015a42a21a46dc02ae1b37b": {
+    "sha": "ace5348dcb427bbce015a42a21a46dc02ae1b37b",
+    "ssha": "ace5348",
+    "parenthashes": [
+      "a878e7e62b4826a95effa1420cff47807f9cb88b",
+      "fdcdb778551b904d57c127d9a3546f6a7c8792d3"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754693",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754693",
+    "encoding": "",
+    "subject": "Merge branch 'js/misc-fixes' into maint",
+    "ssubject": "Merge-branch-js-misc-fixes-into-maint",
+    "body": "Various compilation fixes and squelching of warnings.\n\n* js/misc-fixes:\n  Correct fscanf formatting string for I64u values\n  Silence GCC's \"cast of pointer to integer of a different size\" warning\n  Squelch warning about an integer overflow\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f97aee1f941a08a741c7ce2b0dfb6db7d0cc042e"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 51
+  },
+  "a878e7e62b4826a95effa1420cff47807f9cb88b": {
+    "sha": "a878e7e62b4826a95effa1420cff47807f9cb88b",
+    "ssha": "a878e7e",
+    "parenthashes": [
+      "5e6154fb145d66af36e10ef4db7e1d1e9502c501",
+      "29abb33978f713cd0a5cc3687bf61077b0928840"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754692",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754692",
+    "encoding": "",
+    "subject": "Merge branch 'jc/add-u-A-default-to-top' into maint",
+    "ssubject": "Merge-branch-jc-add-u-A-default-to-top-into-maint",
+    "body": "\"git --literal-pathspecs add -u/-A\" without any command line\nargument misbehaved ever since Git 2.0.\n\n* jc/add-u-A-default-to-top:\n  add: simplify -u/-A without pathspec\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ace5348dcb427bbce015a42a21a46dc02ae1b37b"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 52
+  },
+  "5e6154fb145d66af36e10ef4db7e1d1e9502c501": {
+    "sha": "5e6154fb145d66af36e10ef4db7e1d1e9502c501",
+    "ssha": "5e6154f",
+    "parenthashes": [
+      "c378862b1ec23dd526e318b4c1bfbf826f8dd6b6",
+      "72fac66bca302dbecbe42dfa0ddc7e42db2fe567"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754691",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754691",
+    "encoding": "",
+    "subject": "Merge branch 'jk/delete-modechange-conflict' into maint",
+    "ssubject": "Merge-branch-jk-delete-modechange-conflict-into-maint",
+    "body": "Merging a branch that removes a path and another that changes the\nmode bits on the same path should have conflicted at the path, but\nit didn't and silently favoured the removal.\n\n* jk/delete-modechange-conflict:\n  merge: detect delete/modechange conflict\n  t6031: generalize for recursive and resolve strategies\n  t6031: move triple-rename test to t3030\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a878e7e62b4826a95effa1420cff47807f9cb88b"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 53
+  },
+  "c378862b1ec23dd526e318b4c1bfbf826f8dd6b6": {
+    "sha": "c378862b1ec23dd526e318b4c1bfbf826f8dd6b6",
+    "ssha": "c378862",
+    "parenthashes": [
+      "3897d2d906df0edebd78b8d9604d02cd120bac36",
+      "71d92575251bdb8b5e1b5b3a5c649bb63d9fc116"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754690",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754690",
+    "encoding": "",
+    "subject": "Merge branch 'js/imap-send-curl-compilation-fix' into maint",
+    "ssubject": "Merge-branch-js-imap-send-curl-compilation-fix-into-maint",
+    "body": "\"git imap-send\" did not compile well with older version of cURL library.\n\n* js/imap-send-curl-compilation-fix:\n  imap-send: only use CURLOPT_LOGIN_OPTIONS if it is actually available\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5e6154fb145d66af36e10ef4db7e1d1e9502c501"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 54
+  },
+  "3897d2d906df0edebd78b8d9604d02cd120bac36": {
+    "sha": "3897d2d906df0edebd78b8d9604d02cd120bac36",
+    "ssha": "3897d2d",
+    "parenthashes": [
+      "4349f597f08b6dc50fc6198b8e1b96e19df37c65",
+      "7e91e8d73a757801c0604a03fd2f0fa8003e4ac0"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754688",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754689",
+    "encoding": "",
+    "subject": "Merge branch 'rp/link-curl-before-ssl' into maint",
+    "ssubject": "Merge-branch-rp-link-curl-before-ssl-into-maint",
+    "body": "The linkage order of libraries was wrong in places around libcurl.\n\n* rp/link-curl-before-ssl:\n  configure.ac: detect ssl need with libcurl\n  Makefile: make curl-config path configurable\n  Makefile: link libcurl before zlib\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c378862b1ec23dd526e318b4c1bfbf826f8dd6b6"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 55
+  },
+  "4349f597f08b6dc50fc6198b8e1b96e19df37c65": {
+    "sha": "4349f597f08b6dc50fc6198b8e1b96e19df37c65",
+    "ssha": "4349f59",
+    "parenthashes": [
+      "53be145209eeac5972d4ea4374d667fdf594f78f",
+      "d78db8424ec5c3f3327441cd1a897064af39da91"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754687",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754688",
+    "encoding": "",
+    "subject": "Merge branch 'nd/clone-linked-checkout' into maint",
+    "ssubject": "Merge-branch-nd-clone-linked-checkout-into-maint",
+    "body": "It was not possible to use a repository-lookalike created by \"git\nworktree add\" as a local source of \"git clone\".\n\n* nd/clone-linked-checkout:\n  clone: better error when --reference is a linked checkout\n  clone: allow --local from a linked checkout\n  enter_repo: allow .git files in strict mode\n  enter_repo: avoid duplicating logic, use is_git_directory() instead\n  t0002: add test for enter_repo(), non-strict mode\n  path.c: delete an extra space\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "3897d2d906df0edebd78b8d9604d02cd120bac36"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 56
+  },
+  "53be145209eeac5972d4ea4374d667fdf594f78f": {
+    "sha": "53be145209eeac5972d4ea4374d667fdf594f78f",
+    "ssha": "53be145",
+    "parenthashes": [
+      "684fea37948d720cc69b3553b42353b4b42709dc",
+      "f60c483d1d135a1f5f7c6067198a6207f1e59dc6"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446754686",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446754686",
+    "encoding": "",
+    "subject": "Merge branch 'sa/send-email-smtp-batch-data-limit' into maint",
+    "ssubject": "Merge-branch-sa-send-email-smtp-batch-data-limit-into-maint",
+    "body": "When \"git send-email\" wanted to talk over Net::SMTP::SSL,\nNet::Cmd::datasend() did not like to be fed too many bytes at the\nsame time and failed to send messages.  Send the payload one line\nat a time to work around the problem.\n\n* sa/send-email-smtp-batch-data-limit:\n  git-send-email.perl: Fixed sending of many/huge changes/patches\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "4349f597f08b6dc50fc6198b8e1b96e19df37c65"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 57
+  },
+  "948bfa2c0f40a97d670c6a3fc22c05ceb2ec2c3f": {
+    "sha": "948bfa2c0f40a97d670c6a3fc22c05ceb2ec2c3f",
+    "ssha": "948bfa2",
+    "parenthashes": [
+      "78a766ab6eaaa91c2638158bd4fda06a93291da0"
+    ],
+    "authorname": "Lukas Fleischer",
+    "authoremail": "lfleischer@lfos.de",
+    "authordate": "1446703651",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446751502",
+    "encoding": "",
+    "subject": "t5509: add basic tests for hideRefs",
+    "ssubject": "t5509-add-basic-tests-for-hideRefs",
+    "body": "Test whether regular and full hideRefs patterns work as expected when\nnamespaces are used.\n\nHelped-by: Eric Sunshine <sunshine@sunshineco.com>\nSigned-off-by: Lukas Fleischer <lfleischer@lfos.de>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "42ad3625fc55f81617cd8303845a4309d6b6994d"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 58
+  },
+  "78a766ab6eaaa91c2638158bd4fda06a93291da0": {
+    "sha": "78a766ab6eaaa91c2638158bd4fda06a93291da0",
+    "ssha": "78a766a",
+    "parenthashes": [
+      "00b293e519d1aa0c5b57ae9359ec5306d7023b3f"
+    ],
+    "authorname": "Lukas Fleischer",
+    "authoremail": "lfleischer@lfos.de",
+    "authordate": "1446537496",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446751502",
+    "encoding": "",
+    "subject": "hideRefs: add support for matching full refs",
+    "ssubject": "hideRefs-add-support-for-matching-full-refs",
+    "body": "In addition to matching stripped refs, one can now add hideRefs\npatterns that the full (unstripped) ref is matched against. To\ndistinguish between stripped and full matches, those new patterns\nmust be prefixed with a circumflex (^).\n\nThis commit also removes support for the undocumented and unintended\nhideRefs settings \".have\" (suppressing all \"have\" lines) and\n\"capabilities^{}\" (suppressing the capabilities line).\n\nSigned-off-by: Lukas Fleischer <lfleischer@lfos.de>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "948bfa2c0f40a97d670c6a3fc22c05ceb2ec2c3f"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 59
+  },
+  "00b293e519d1aa0c5b57ae9359ec5306d7023b3f": {
+    "sha": "00b293e519d1aa0c5b57ae9359ec5306d7023b3f",
+    "ssha": "00b293e",
+    "parenthashes": [
+      "92cab492ba988ffd3e3edf040f19ba820306c833"
+    ],
+    "authorname": "Lukas Fleischer",
+    "authoremail": "lfleischer@lfos.de",
+    "authordate": "1446703649",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446751502",
+    "encoding": "",
+    "subject": "upload-pack: strip refs before calling ref_is_hidden()",
+    "ssubject": "upload-pack-strip-refs-before-calling-ref_is_hidden",
+    "body": "Make hideRefs handling in upload-pack consistent with the behavior\ndescribed in the documentation by stripping refs before comparing them\nwith prefixes in hideRefs.\n\nSigned-off-by: Lukas Fleischer <lfleischer@lfos.de>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "78a766ab6eaaa91c2638158bd4fda06a93291da0"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 60
+  },
+  "92cab492ba988ffd3e3edf040f19ba820306c833": {
+    "sha": "92cab492ba988ffd3e3edf040f19ba820306c833",
+    "ssha": "92cab49",
+    "parenthashes": [
+      "aa826b651ae3012d1039453b36ed6f1eab939ef9"
+    ],
+    "authorname": "Lukas Fleischer",
+    "authoremail": "lfleischer@lfos.de",
+    "authordate": "1446537494",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446751500",
+    "encoding": "",
+    "subject": "config.txt: document the semantics of hideRefs with namespaces",
+    "ssubject": "config.txt-document-the-semantics-of-hideRefs-with-namespaces",
+    "body": "Right now, there is no clear definition of how transfer.hideRefs should\nbehave when a namespace is set. Explain that hideRefs prefixes match\nstripped names in that case. This is how hideRefs patterns are currently\nhandled in receive-pack.\n\nSigned-off-by: Lukas Fleischer <lfleischer@lfos.de>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "00b293e519d1aa0c5b57ae9359ec5306d7023b3f"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 61
+  },
+  "6f963a895a97d720c909fcf4eb0544a272ef7c49": {
+    "sha": "6f963a895a97d720c909fcf4eb0544a272ef7c49",
+    "ssha": "6f963a8",
+    "parenthashes": [
+      "a4433fd4a51bd489a7589fb17b4d33a54c1f4ec5"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446747439",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446750132",
+    "encoding": "",
+    "subject": "strbuf: update documentation for strbuf_read_once()",
+    "ssubject": "strbuf-update-documentation-for-strbuf_read_once",
+    "body": "No need to document the O_NONBLOCK. We will read just once and\nreturn.  Even when read(2) blocks, the updated description is\ncorrect.\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "1e8edcba3d1f403a6cbc1c03696cacbe47e09c2a",
+      "a9341bcf2b4839e689210252c57f3fdec4b6c0bb"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 62
+  },
+  "a4433fd4a51bd489a7589fb17b4d33a54c1f4ec5": {
+    "sha": "a4433fd4a51bd489a7589fb17b4d33a54c1f4ec5",
+    "ssha": "a4433fd",
+    "parenthashes": [
+      "376d400f4ccc73d5d9cfeca15bafb1250a459d98"
+    ],
+    "authorname": "Stefan Beller",
+    "authoremail": "sbeller@google.com",
+    "authordate": "1446747438",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446749631",
+    "encoding": "",
+    "subject": "run-command: remove set_nonblocking()",
+    "ssubject": "run-command-remove-set_nonblocking",
+    "body": "strbuf_read_once can also operate on blocking file descriptors if we\nare sure they are ready.  And the poll(2) we call before calling\nthis ensures that this is the case.\n\nReading the manual for poll(2), there may be spurious returns\nindicating readiness but that is for network sockets only and pipes\nshould be unaffected.\n\nWith this change, we rely on\n\n - poll(2) returns only non-empty pipes; and\n - read(2) on a non-empty pipe does not block.\n\nThis should fix compilation on Windows.\n\nSigned-off-by: Stefan Beller <sbeller@google.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6f963a895a97d720c909fcf4eb0544a272ef7c49"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 63
+  },
+  "001fd7a90b5851f62e700510729a5e09706f9b63": {
+    "sha": "001fd7a90b5851f62e700510729a5e09706f9b63",
+    "ssha": "001fd7a",
+    "parenthashes": [
+      "3bc72fde3f35b988c902abf5a0bc027f2e54d0c1"
+    ],
+    "authorname": "Atousa Pahlevan Duprat",
+    "authoremail": "apahlevan@ieee.org",
+    "authordate": "1446705522",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446748511",
+    "encoding": "",
+    "subject": "sha1: allow limiting the size of the data passed to SHA1_Update()",
+    "ssubject": "sha1-allow-limiting-the-size-of-the-data-passed-to-SHA1_Update",
+    "body": "Using the previous commit's inredirection mechanism for SHA1,\nsupport a chunked implementation of SHA1_Update() that limits the\namount of data in the chunk passed to SHA1_Update().\n\nThis is enabled by using the Makefile variable SHA1_MAX_BLOCK_SIZE\nto specify chunk size.  When using Apple's CommonCrypto library this\nis set to 1GiB (the implementation cannot handle more 4GiB).\n\nSigned-off-by: Atousa Pahlevan Duprat <apahlevan@ieee.org>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e65ddcbb8c7018b1272cc8a8c37cbed716eb6d83"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 64
+  },
+  "3bc72fde3f35b988c902abf5a0bc027f2e54d0c1": {
+    "sha": "3bc72fde3f35b988c902abf5a0bc027f2e54d0c1",
+    "ssha": "3bc72fd",
+    "parenthashes": [
+      "441c4a40173fe1ee8a5c0094e587dfc47e2a6460"
+    ],
+    "authorname": "Atousa Pahlevan Duprat",
+    "authoremail": "apahlevan@ieee.org",
+    "authordate": "1446705521",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446748511",
+    "encoding": "",
+    "subject": "sha1: provide another level of indirection for the SHA-1 functions",
+    "ssubject": "sha1-provide-another-level-of-indirection-for-the-SHA-1-functions",
+    "body": "The git source uses git_SHA1_Update() and friends to call into the\ncode that computes the hashes.  Traditionally, we used to map these\ndirectly to underlying implementation of the SHA-1 hash (e.g.\nSHA1_Update() from OpenSSL or blk_SHA1_Update() from block-sha1/).\n\nThis arrangement however makes it hard to tweak behaviour of the\nunderlying implementation without fully replacing.  If we want to\nintroduce a tweaked_SHA1_Update() wrapper to implement the \"Update\"\nin a slightly different way, for example, the implementation of the\nwrapper still would want to call into the underlying implementation,\nbut tweaked_SHA1_Update() cannot call git_SHA1_Update() to get to\nthe underlying implementation (often but not always SHA1_Update()).\n\nAdd another level of indirection that maps platform_SHA1_Update()\nand friends to their underlying implementations, and by default make\ngit_SHA1_Update() and friends map to platform_SHA1_* functions.\n\nDoing it this way will later allow us to map git_SHA1_Update() to\ntweaked_SHA1_Update(), and the latter can use platform_SHA1_Update()\nin its implementation.\n\nSigned-off-by: Atousa Pahlevan Duprat <apahlevan@ieee.org>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "001fd7a90b5851f62e700510729a5e09706f9b63"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 65
+  },
+  "aa71ff9bd506794e7e540b3cc7cb51ec10116c71": {
+    "sha": "aa71ff9bd506794e7e540b3cc7cb51ec10116c71",
+    "ssha": "aa71ff9",
+    "parenthashes": [
+      "595b96af80404335de2a8c292cee81ed3da24d29",
+      "259b5e6d33800762142e1fadefbbcf1150e6ccc5"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446675798",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446675798",
+    "encoding": "",
+    "subject": "Sync with master",
+    "ssubject": "Sync-with-master",
+    "body": "* master:\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "550542234b0fed5a3944af44b01152b620e8dba1"
+    ],
+    "inHeads": [
+      "550542234b0fed5a3944af44b01152b620e8dba1"
+    ],
+    "index": 66
+  },
+  "259b5e6d33800762142e1fadefbbcf1150e6ccc5": {
+    "sha": "259b5e6d33800762142e1fadefbbcf1150e6ccc5",
+    "ssha": "259b5e6",
+    "parenthashes": [
+      "aa826b651ae3012d1039453b36ed6f1eab939ef9",
+      "684fea37948d720cc69b3553b42353b4b42709dc"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446675701",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446675701",
+    "encoding": "",
+    "subject": "Sync with maint",
+    "ssubject": "Sync-with-maint",
+    "body": "* maint:\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "aa71ff9bd506794e7e540b3cc7cb51ec10116c71"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 67
+  },
+  "684fea37948d720cc69b3553b42353b4b42709dc": {
+    "sha": "684fea37948d720cc69b3553b42353b4b42709dc",
+    "ssha": "684fea3",
+    "parenthashes": [
+      "6c66686e0b917df914af779257479c341590a9a0",
+      "b2af4829cc51fc90885948f19f24b76f2670a677"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446675649",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446675649",
+    "encoding": "",
+    "subject": "Merge branch 'xf/user-manual-ff' into maint",
+    "ssubject": "Merge-branch-xf-user-manual-ff-into-maint",
+    "body": "* xf/user-manual-ff:\n  user-manual: fix the description of fast-forward\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "53be145209eeac5972d4ea4374d667fdf594f78f",
+      "259b5e6d33800762142e1fadefbbcf1150e6ccc5"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 68
+  },
+  "6c66686e0b917df914af779257479c341590a9a0": {
+    "sha": "6c66686e0b917df914af779257479c341590a9a0",
+    "ssha": "6c66686",
+    "parenthashes": [
+      "7974b3fd75bb37b58e2504758e95c2ac81434219",
+      "77d5f715c24f1c2f3469aab35536b06237a5883d"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446675647",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446675647",
+    "encoding": "",
+    "subject": "Merge branch 'xf/user-manual-markup' into maint",
+    "ssubject": "Merge-branch-xf-user-manual-markup-into-maint",
+    "body": "AsciiDoc markup fixes.\n\n* xf/user-manual-markup:\n  Documentation: match undefline with the text in old release notes\n  Documentation: match underline with the text\n  Documentation: fix header markup\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "684fea37948d720cc69b3553b42353b4b42709dc"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 69
+  },
+  "7974b3fd75bb37b58e2504758e95c2ac81434219": {
+    "sha": "7974b3fd75bb37b58e2504758e95c2ac81434219",
+    "ssha": "7974b3f",
+    "parenthashes": [
+      "bc1e0481bf0a01e4f4741ee206cc0d81e667d73a",
+      "f3f38c7d9b41d03e0d587db9799b26e3c7863250"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446675646",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446675646",
+    "encoding": "",
+    "subject": "Merge branch 'jc/everyday-markup' into maint",
+    "ssubject": "Merge-branch-jc-everyday-markup-into-maint",
+    "body": "AsciiDoc markup fixes.\n\n* jc/everyday-markup:\n  Documentation/everyday: match undefline with the text\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6c66686e0b917df914af779257479c341590a9a0"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 70
+  },
+  "bc1e0481bf0a01e4f4741ee206cc0d81e667d73a": {
+    "sha": "bc1e0481bf0a01e4f4741ee206cc0d81e667d73a",
+    "ssha": "bc1e048",
+    "parenthashes": [
+      "d091031ce2d6bf8a8e9bc4d16acf426449c62a68",
+      "3b19dba7030f179cf981a8714693f74c07d915a4"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446675645",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446675645",
+    "encoding": "",
+    "subject": "Merge branch 'jc/em-dash-in-doc' into maint",
+    "ssubject": "Merge-branch-jc-em-dash-in-doc-into-maint",
+    "body": "AsciiDoc markup fixes.\n\n* jc/em-dash-in-doc:\n  Documentation: AsciiDoc spells em-dash as double-dashes, not triple\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7974b3fd75bb37b58e2504758e95c2ac81434219"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 71
+  },
+  "d091031ce2d6bf8a8e9bc4d16acf426449c62a68": {
+    "sha": "d091031ce2d6bf8a8e9bc4d16acf426449c62a68",
+    "ssha": "d091031",
+    "parenthashes": [
+      "fdca2bed90a7991f2a3afc6a463e45acb03487ac",
+      "ae9f2745bee74ed169f0ca2933b8cc9d21214110"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446675644",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446675644",
+    "encoding": "",
+    "subject": "Merge branch 'es/worktree-add' into maint",
+    "ssubject": "Merge-branch-es-worktree-add-into-maint",
+    "body": "* es/worktree-add:\n  worktree: usage: denote <branch> as optional with 'add'\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "bc1e0481bf0a01e4f4741ee206cc0d81e667d73a"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 72
+  },
+  "33518409bcd8135ac757251b9c5dcdb9ac5e5142": {
+    "sha": "33518409bcd8135ac757251b9c5dcdb9ac5e5142",
+    "ssha": "3351840",
+    "parenthashes": [
+      "b984605582ea08ae152782a7f0a7d94259787b5e"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446666843",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446666843",
+    "encoding": "",
+    "subject": "SQUASH???",
+    "ssubject": "SQUASH",
+    "body": "Signed-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9303431dfe172bac4977132591eb71a6ee629df2"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 73
+  },
+  "b984605582ea08ae152782a7f0a7d94259787b5e": {
+    "sha": "b984605582ea08ae152782a7f0a7d94259787b5e",
+    "ssha": "b984605",
+    "parenthashes": [
+      "75222df0832566774fa7f6bbc2fd89fe4cffa128"
+    ],
+    "authorname": "Knut Franke",
+    "authoremail": "k.franke@science-computing.de",
+    "authordate": "1446628405",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446666281",
+    "encoding": "",
+    "subject": "http: use credential API to handle proxy authentication",
+    "ssubject": "http-use-credential-API-to-handle-proxy-authentication",
+    "body": "Currently, the only way to pass proxy credentials to curl is by including them\nin the proxy URL. Usually, this means they will end up on disk unencrypted, one\nway or another (by inclusion in ~/.gitconfig, shell profile or history). Since\nproxy authentication often uses a domain user, credentials can be security\nsensitive; therefore, a safer way of passing credentials is desirable.\n\nIf the configured proxy contains a username but not a password, query the\ncredential API for one. Also, make sure we approve/reject proxy credentials\nproperly.\n\nFor consistency reasons, add parsing of http_proxy/https_proxy/all_proxy\nenvironment variables, which would otherwise be evaluated as a fallback by curl.\nWithout this, we would have different semantics for git configuration and\nenvironment variables.\n\nSigned-off-by: Knut Franke <k.franke@science-computing.de>\nHelped-by: Junio C Hamano <gitster@pobox.com>\nHelped-by: Eric Sunshine <sunshine@sunshineco.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "33518409bcd8135ac757251b9c5dcdb9ac5e5142"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 74
+  },
+  "75222df0832566774fa7f6bbc2fd89fe4cffa128": {
+    "sha": "75222df0832566774fa7f6bbc2fd89fe4cffa128",
+    "ssha": "75222df",
+    "parenthashes": [
+      "2635c2b8bfc9aec07b7f023d8e3b3d02df715344"
+    ],
+    "authorname": "Knut Franke",
+    "authoremail": "k.franke@science-computing.de",
+    "authordate": "1446628404",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446666239",
+    "encoding": "",
+    "subject": "http: allow selection of proxy authentication method",
+    "ssubject": "http-allow-selection-of-proxy-authentication-method",
+    "body": "CURLAUTH_ANY does not work with proxies which answer unauthenticated requests\nwith a 307 redirect to an error page instead of a 407 listing supported\nauthentication methods. Therefore, allow the authentication method to be set\nusing the environment variable GIT_HTTP_PROXY_AUTHMETHOD or configuration\nvariables http.proxyAuthmethod and remote.<name>.proxyAuthmethod (in analogy\nto http.proxy and remote.<name>.proxy).\n\nThe following values are supported:\n\n* anyauth (default)\n* basic\n* digest\n* negotiate\n* ntlm\n\nSigned-off-by: Knut Franke <k.franke@science-computing.de>\nHelped-by: Junio C Hamano <gitster@pobox.com>\nHelped-by: Eric Sunshine <sunshine@sunshineco.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b984605582ea08ae152782a7f0a7d94259787b5e"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 75
+  },
+  "478f34d2b6ea13d5f56ecec04de7ca7ce18367c0": {
+    "sha": "478f34d2b6ea13d5f56ecec04de7ca7ce18367c0",
+    "ssha": "478f34d",
+    "parenthashes": [
+      "e6d65c9a47a0f245614d34246fe28782a6d2209b"
+    ],
+    "authorname": "Doug Kelly",
+    "authoremail": "dougk.ff7@gmail.com",
+    "authordate": "1446606308",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446665422",
+    "encoding": "",
+    "subject": "gc: remove garbage .idx files from pack dir",
+    "ssubject": "gc-remove-garbage-.idx-files-from-pack-dir",
+    "body": "Add a custom report_garbage handler to collect and remove\ngarbage .idx files from the pack directory.\n\nSigned-off-by: Doug Kelly <dougk.ff7@gmail.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f653a79bd4bd7370a28b1b696898621322e151bf"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 76
+  },
+  "e6d65c9a47a0f245614d34246fe28782a6d2209b": {
+    "sha": "e6d65c9a47a0f245614d34246fe28782a6d2209b",
+    "ssha": "e6d65c9",
+    "parenthashes": [
+      "0a489b0680b841d3e7714be53b263ff190c39193"
+    ],
+    "authorname": "Doug Kelly",
+    "authoremail": "dougk.ff7@gmail.com",
+    "authordate": "1446606307",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446665410",
+    "encoding": "",
+    "subject": "t5304: test cleaning pack garbage",
+    "ssubject": "t5304-test-cleaning-pack-garbage",
+    "body": "Pack garbage, noticeably stale .idx files, can be cleaned up during\na garbage collection.  This tests to ensure such garbage is properly\ncleaned up.\n\nNote that the prior test for checking pack garbage with count-objects\nleft some stale garbage after the test exited.  This has also been\ncorrected.\n\nSigned-off-by: Doug Kelly <dougk.ff7@gmail.com>\nSigned-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "478f34d2b6ea13d5f56ecec04de7ca7ce18367c0"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7"
+    ],
+    "index": 77
+  },
+  "595b96af80404335de2a8c292cee81ed3da24d29": {
+    "sha": "595b96af80404335de2a8c292cee81ed3da24d29",
+    "ssha": "595b96a",
+    "parenthashes": [
+      "08a8d1f5d56c0529f390674639b0eedac0c7308d",
+      "aa826b651ae3012d1039453b36ed6f1eab939ef9"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446594374",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446594374",
+    "encoding": "",
+    "subject": "Sync with master",
+    "ssubject": "Sync-with-master",
+    "body": "* master:\n  Tenth batch for 2.7\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "aa71ff9bd506794e7e540b3cc7cb51ec10116c71"
+    ],
+    "inHeads": [
+      "550542234b0fed5a3944af44b01152b620e8dba1"
+    ],
+    "index": 78
+  },
+  "08a8d1f5d56c0529f390674639b0eedac0c7308d": {
+    "sha": "08a8d1f5d56c0529f390674639b0eedac0c7308d",
+    "ssha": "08a8d1f",
+    "parenthashes": [
+      "7c3cc60b0f999497d39239f5d7304b2b2104bc74",
+      "870ebdb9c4facb55ed4817c5ff0968c0aadb7283"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446594366",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446594366",
+    "encoding": "",
+    "subject": "Merge branch 'ea/checkout-progress' into next",
+    "ssubject": "Merge-branch-ea-checkout-progress-into-next",
+    "body": "\"git checkout\" did not follow the usual \"--[no-]progress\"\nconvention and implemented only \"--quiet\" that is essentially\na superset of \"--no-progress\".  Extend the command to support the\nusual \"--[no-]progress\".\n\n* ea/checkout-progress:\n  checkout: add --progress option\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "595b96af80404335de2a8c292cee81ed3da24d29"
+    ],
+    "inHeads": [
+      "550542234b0fed5a3944af44b01152b620e8dba1"
+    ],
+    "index": 79
+  },
+  "7c3cc60b0f999497d39239f5d7304b2b2104bc74": {
+    "sha": "7c3cc60b0f999497d39239f5d7304b2b2104bc74",
+    "ssha": "7c3cc60",
+    "parenthashes": [
+      "64afbb9dda2d0c3dc621493ecd0f23585ecdb440",
+      "f8117f550b900b0bc93364ecadbed237b0ffe25e"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446594365",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446594365",
+    "encoding": "",
+    "subject": "Merge branch 'dt/http-range' into next",
+    "ssubject": "Merge-branch-dt-http-range-into-next",
+    "body": "A Range: request can be responded with a full response and when\nasked properly libcurl knows how to strip the result down to the\nrequested range.  However, we were hand-crafting a range request\nand it did not kick in.\n\n* dt/http-range:\n  http: use off_t to store partial file size\n  http.c: use CURLOPT_RANGE for range requests\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "08a8d1f5d56c0529f390674639b0eedac0c7308d"
+    ],
+    "inHeads": [
+      "550542234b0fed5a3944af44b01152b620e8dba1"
+    ],
+    "index": 80
+  },
+  "aa826b651ae3012d1039453b36ed6f1eab939ef9": {
+    "sha": "aa826b651ae3012d1039453b36ed6f1eab939ef9",
+    "ssha": "aa826b6",
+    "parenthashes": [
+      "c29024e5d1ad88cf45ef66b175966a0ba44a0490",
+      "fdca2bed90a7991f2a3afc6a463e45acb03487ac"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446594110",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446594110",
+    "encoding": "",
+    "subject": "Sync with maint",
+    "ssubject": "Sync-with-maint",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "92cab492ba988ffd3e3edf040f19ba820306c833",
+      "259b5e6d33800762142e1fadefbbcf1150e6ccc5",
+      "595b96af80404335de2a8c292cee81ed3da24d29"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 81
+  },
+  "fdca2bed90a7991f2a3afc6a463e45acb03487ac": {
+    "sha": "fdca2bed90a7991f2a3afc6a463e45acb03487ac",
+    "ssha": "fdca2be",
+    "parenthashes": [
+      "5c15ca0b3c866398f22cbab974d0a1964ef105ca",
+      "95261974bbc8cc1a32ed260f06a694cde86f732d"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593562",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593563",
+    "encoding": "",
+    "subject": "Merge branch 'mk/blame-error-message' into maint",
+    "ssubject": "Merge-branch-mk-blame-error-message-into-maint",
+    "body": "The error message from \"git blame --contents --reverse\" incorrectly\ntalked about \"--contents --children\".\n\n* mk/blame-error-message:\n  blame: fix option name in error message\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d091031ce2d6bf8a8e9bc4d16acf426449c62a68",
+      "aa826b651ae3012d1039453b36ed6f1eab939ef9"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 82
+  },
+  "5c15ca0b3c866398f22cbab974d0a1964ef105ca": {
+    "sha": "5c15ca0b3c866398f22cbab974d0a1964ef105ca",
+    "ssha": "5c15ca0",
+    "parenthashes": [
+      "3a27eec48ecfcc0764c90b3f478a124c01c082bc",
+      "e34f80278e920e53b69016c7cecb24e4621e4564"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593561",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593561",
+    "encoding": "",
+    "subject": "Merge branch 'jk/merge-file-exit-code' into maint",
+    "ssubject": "Merge-branch-jk-merge-file-exit-code-into-maint",
+    "body": "\"git merge-file\" tried to signal how many conflicts it found, which\nobviously would not work well when there are too many of them.\n\n* jk/merge-file-exit-code:\n  merge-file: clamp exit code to maximum 127\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fdca2bed90a7991f2a3afc6a463e45acb03487ac"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 83
+  },
+  "3a27eec48ecfcc0764c90b3f478a124c01c082bc": {
+    "sha": "3a27eec48ecfcc0764c90b3f478a124c01c082bc",
+    "ssha": "3a27eec",
+    "parenthashes": [
+      "ced2321a8df8260e7d22e72e2bb5b8c6ab3f2180",
+      "41284eb0f944fe2d73708bb4105a8e3ccd0297df"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593560",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593560",
+    "encoding": "",
+    "subject": "Merge branch 'dt/name-hash-dir-entry-fix' into maint",
+    "ssubject": "Merge-branch-dt-name-hash-dir-entry-fix-into-maint",
+    "body": "The name-hash subsystem that is used to cope with case insensitive\nfilesystems keeps track of directories and their on-filesystem\ncases for all the paths in the index by holding a pointer to a\nrandomly chosen cache entry that is inside the directory (for its\nce->ce_name component).  This pointer was not updated even when the\ncache entry was removed from the index, leading to use after free.\nThis was fixed by recording the path for each directory instead of\nborrowing cache entries and restructuring the API somewhat.\n\n* dt/name-hash-dir-entry-fix:\n  name-hash: don't reuse cache_entry in dir_entry\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5c15ca0b3c866398f22cbab974d0a1964ef105ca"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 84
+  },
+  "ced2321a8df8260e7d22e72e2bb5b8c6ab3f2180": {
+    "sha": "ced2321a8df8260e7d22e72e2bb5b8c6ab3f2180",
+    "ssha": "ced2321",
+    "parenthashes": [
+      "f5f76845961f4207b3dc8c186b2356f160276e45",
+      "c63d4b2fe86876cc210d8bf22bd84d617f7815b7"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593559",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593559",
+    "encoding": "",
+    "subject": "Merge branch 'jc/am-3-fallback-regression-fix' into maint",
+    "ssubject": "Merge-branch-jc-am-3-fallback-regression-fix-into-maint",
+    "body": "\"git am -3\" had a small regression where it is aborted in its error\nhandling codepath when underlying merge-recursive failed in certain\nways, as it assumed that the internal call to merge-recursive will\nnever die, which is not the case (yet).\n\n* jc/am-3-fallback-regression-fix:\n  am -3: do not let failed merge from completing the error codepath\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "3a27eec48ecfcc0764c90b3f478a124c01c082bc"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 85
+  },
+  "f5f76845961f4207b3dc8c186b2356f160276e45": {
+    "sha": "f5f76845961f4207b3dc8c186b2356f160276e45",
+    "ssha": "f5f7684",
+    "parenthashes": [
+      "14f905caf2da593a65a2be51ff4d219e5cc3de04",
+      "33e8fc87407505c3a96792fc47189d57b97b34c3"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593558",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593558",
+    "encoding": "",
+    "subject": "Merge branch 'jc/usage-stdin' into maint",
+    "ssubject": "Merge-branch-jc-usage-stdin-into-maint",
+    "body": "The synopsis text and the usage string of subcommands that read\nlist of things from the standard input are often shown as if they\nonly take input from a file on a filesystem, which was misleading.\n\n* jc/usage-stdin:\n  usage: do not insist that standard input must come from a file\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ced2321a8df8260e7d22e72e2bb5b8c6ab3f2180"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 86
+  },
+  "14f905caf2da593a65a2be51ff4d219e5cc3de04": {
+    "sha": "14f905caf2da593a65a2be51ff4d219e5cc3de04",
+    "ssha": "14f905c",
+    "parenthashes": [
+      "ccb47391c1e35c5475529cb8f3bd66028df5a943",
+      "d96a0313efb7133f07dfe36e3cf9d8a04365b1e1"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593557",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593557",
+    "encoding": "",
+    "subject": "Merge branch 'rt/placeholder-in-usage' into maint",
+    "ssubject": "Merge-branch-rt-placeholder-in-usage-into-maint",
+    "body": "A couple of commands still showed \"[options]\" in their usage string\nto note where options should come on their command line, but we\nspell that \"[<options>]\" in most places these days.\n\n* rt/placeholder-in-usage:\n  am, credential-cache: add angle brackets to usage string\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f5f76845961f4207b3dc8c186b2356f160276e45"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 87
+  },
+  "ccb47391c1e35c5475529cb8f3bd66028df5a943": {
+    "sha": "ccb47391c1e35c5475529cb8f3bd66028df5a943",
+    "ssha": "ccb4739",
+    "parenthashes": [
+      "1bf986bc9c1e823da27465bfd9faf2b725bbcc09",
+      "9b680fbd3b47f39e44fe989971676996d4744ed7"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593556",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593556",
+    "encoding": "",
+    "subject": "Merge branch 'dt/t7063-fix-flaky-test' into maint",
+    "ssubject": "Merge-branch-dt-t7063-fix-flaky-test-into-maint",
+    "body": "* dt/t7063-fix-flaky-test:\n  t7063: fix flaky untracked-cache test\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "14f905caf2da593a65a2be51ff4d219e5cc3de04"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 88
+  },
+  "1bf986bc9c1e823da27465bfd9faf2b725bbcc09": {
+    "sha": "1bf986bc9c1e823da27465bfd9faf2b725bbcc09",
+    "ssha": "1bf986b",
+    "parenthashes": [
+      "c1324e66d44b7d58915cd7e61c1ea85ed3db6a58",
+      "11f9dd719104a960d3e2b478477d9055141d1dbc"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593554",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593555",
+    "encoding": "",
+    "subject": "Merge branch 'mk/submodule-gitdir-path' into maint",
+    "ssubject": "Merge-branch-mk-submodule-gitdir-path-into-maint",
+    "body": "The submodule code has been taught to work better with separate\nwork trees created via \"git worktree add\".\n\n* mk/submodule-gitdir-path:\n  path: implement common_dir handling in git_pathdup_submodule()\n  submodule refactor: use strbuf_git_path_submodule() in add_submodule_odb()\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ccb47391c1e35c5475529cb8f3bd66028df5a943"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 89
+  },
+  "c1324e66d44b7d58915cd7e61c1ea85ed3db6a58": {
+    "sha": "c1324e66d44b7d58915cd7e61c1ea85ed3db6a58",
+    "ssha": "c1324e6",
+    "parenthashes": [
+      "c7bdbd6f92bbab2a030ee8bf7957af25327545e5",
+      "329e6e8794c347d3da92144f88ad838945508ac6"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593553",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593553",
+    "encoding": "",
+    "subject": "Merge branch 'nd/gc-auto-background-fix' into maint",
+    "ssubject": "Merge-branch-nd-gc-auto-background-fix-into-maint",
+    "body": "When \"git gc --auto\" is backgrounded, its diagnosis message is\nlost.  Save it to a file in $GIT_DIR and show it next time the \"gc\n--auto\" is run.\n\n* nd/gc-auto-background-fix:\n  gc: save log from daemonized gc --auto and print it next time\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "1bf986bc9c1e823da27465bfd9faf2b725bbcc09"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 90
+  },
+  "c7bdbd6f92bbab2a030ee8bf7957af25327545e5": {
+    "sha": "c7bdbd6f92bbab2a030ee8bf7957af25327545e5",
+    "ssha": "c7bdbd6",
+    "parenthashes": [
+      "c04b3a2dbff67605078139f97d4546716e4a1f40",
+      "1f5f3907117021961545e42097829001b58288db"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593551",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593552",
+    "encoding": "",
+    "subject": "Merge branch 'ls/p4-translation-failure' into maint",
+    "ssubject": "Merge-branch-ls-p4-translation-failure-into-maint",
+    "body": "Work around \"git p4\" failing when the P4 depot records the contents\nin UTF-16 without UTF-16 BOM.\n\n* ls/p4-translation-failure:\n  git-p4: handle \"Translation of file content failed\"\n  git-p4: add test case for \"Translation of file content failed\" error\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c1324e66d44b7d58915cd7e61c1ea85ed3db6a58"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 91
+  },
+  "c04b3a2dbff67605078139f97d4546716e4a1f40": {
+    "sha": "c04b3a2dbff67605078139f97d4546716e4a1f40",
+    "ssha": "c04b3a2",
+    "parenthashes": [
+      "f836a32ba75beded3bca960f2918e08309642c62",
+      "39743cf554caaed462464b55315ab5b37f5ab1b9"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593550",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593550",
+    "encoding": "",
+    "subject": "Merge branch 'gr/rebase-i-drop-warn' into maint",
+    "ssubject": "Merge-branch-gr-rebase-i-drop-warn-into-maint",
+    "body": "Recent update to \"rebase -i\" that tries to sanity check the edited\ninsn sheet before it uses it has become too picky on Windows where\nCRLF left by the editor is turned into a trailing CR on the line\nread via the \"read\" built-in command.\n\n* gr/rebase-i-drop-warn:\n  rebase-i: work around Windows CRLF line endings\n  t3404: \"rebase -i\" gets broken when insn sheet uses CR/LF line endings\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c7bdbd6f92bbab2a030ee8bf7957af25327545e5"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 92
+  },
+  "f836a32ba75beded3bca960f2918e08309642c62": {
+    "sha": "f836a32ba75beded3bca960f2918e08309642c62",
+    "ssha": "f836a32",
+    "parenthashes": [
+      "04bba3a12b27f592d6d0b8f8af28b2697e55532d",
+      "786b150c8d0960cb7c36fb1cbbf70dbd76b586de"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593548",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593549",
+    "encoding": "",
+    "subject": "Merge branch 'js/clone-dissociate' into maint",
+    "ssubject": "Merge-branch-js-clone-dissociate-into-maint",
+    "body": "\"git clone --dissociate\" runs a big \"git repack\" process at the\nend, and it helps to close file descriptors that are open on the\npacks and their idx files before doing so on filesystems that\ncannot remove a file that is still open.\n\n* js/clone-dissociate:\n  clone --dissociate: avoid locking pack files\n  sha1_file.c: add a function to release all packs\n  sha1_file: consolidate code to close a pack's file descriptor\n  t5700: demonstrate a Windows file locking issue with `git clone --dissociate`\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c04b3a2dbff67605078139f97d4546716e4a1f40"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 93
+  },
+  "04bba3a12b27f592d6d0b8f8af28b2697e55532d": {
+    "sha": "04bba3a12b27f592d6d0b8f8af28b2697e55532d",
+    "ssha": "04bba3a",
+    "parenthashes": [
+      "e23469f91a3417e7680cda2402c3c6c4a653cf54",
+      "b43702ac56e602d5163ef662fb9caf382da90b94"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593547",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593548",
+    "encoding": "",
+    "subject": "Merge branch 'ld/p4-import-labels' into maint",
+    "ssubject": "Merge-branch-ld-p4-import-labels-into-maint",
+    "body": "Correct \"git p4 --detect-labels\" so that it does not fail to create\na tag that points at a commit that is also being imported.\n\n* ld/p4-import-labels:\n  git-p4: fix P4 label import for unprocessed commits\n  git-p4: do not terminate creating tag for unknown commit\n  git-p4: failing test for ignoring invalid p4 labels\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f836a32ba75beded3bca960f2918e08309642c62"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 94
+  },
+  "e23469f91a3417e7680cda2402c3c6c4a653cf54": {
+    "sha": "e23469f91a3417e7680cda2402c3c6c4a653cf54",
+    "ssha": "e23469f",
+    "parenthashes": [
+      "f89baca1b99ff2882690d6b58dc2071195c6ae84",
+      "bed4452468cc564adc5ab99dfdbee0eb0f7cfb97"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593546",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593546",
+    "encoding": "",
+    "subject": "Merge branch 'tk/stripspace' into maint",
+    "ssubject": "Merge-branch-tk-stripspace-into-maint",
+    "body": "The internal stripspace() function has been moved to where it\nlogically belongs to, i.e. strbuf API, and the command line parser\nof \"git stripspace\" has been updated to use the parse_options API.\n\n* tk/stripspace:\n  stripspace: use parse-options for command-line parsing\n  strbuf: make stripspace() part of strbuf\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "04bba3a12b27f592d6d0b8f8af28b2697e55532d"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 95
+  },
+  "f89baca1b99ff2882690d6b58dc2071195c6ae84": {
+    "sha": "f89baca1b99ff2882690d6b58dc2071195c6ae84",
+    "ssha": "f89baca",
+    "parenthashes": [
+      "b05c2f9ed48adfd9670b28ecdd5c55a4e4698704",
+      "067fbd4105c5aa8260a73cc6961854be0e93fa03"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446593545",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446593545",
+    "encoding": "",
+    "subject": "Merge branch 'jk/repository-extension' into maint",
+    "ssubject": "Merge-branch-jk-repository-extension-into-maint",
+    "body": "Prepare for Git on-disk repository representation to undergo\nbackward incompatible changes by introducing a new repository\nformat version \"1\", with an extension mechanism.\n\n* jk/repository-extension:\n  introduce \"preciousObjects\" repository extension\n  introduce \"extensions\" form of core.repositoryformatversion\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e23469f91a3417e7680cda2402c3c6c4a653cf54"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2",
+      "af40944bda352190f05d22b7cb8fe88beb17f3a7"
+    ],
+    "index": 96
+  },
+  "c29024e5d1ad88cf45ef66b175966a0ba44a0490": {
+    "sha": "c29024e5d1ad88cf45ef66b175966a0ba44a0490",
+    "ssha": "c29024e",
+    "parenthashes": [
+      "c3c592ef95ee21833e2214fb9068889dcac220c9"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592702",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592702",
+    "encoding": "",
+    "subject": "Tenth batch for 2.7",
+    "ssubject": "Tenth-batch-for-2.7",
+    "body": "Signed-off-by: Junio C Hamano <gitster@pobox.com>\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "aa826b651ae3012d1039453b36ed6f1eab939ef9"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 97
+  },
+  "c3c592ef95ee21833e2214fb9068889dcac220c9": {
+    "sha": "c3c592ef95ee21833e2214fb9068889dcac220c9",
+    "ssha": "c3c592e",
+    "parenthashes": [
+      "6784eb5ad93da15d24a5d111a3d6df618f98532f",
+      "b1b49ff8d42a21ade6a72b40a147fd3eaff3db8d"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592391",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592392",
+    "encoding": "",
+    "subject": "Merge branch 'rs/daemon-plug-child-leak'",
+    "ssubject": "Merge-branch-rs-daemon-plug-child-leak",
+    "body": "\"git daemon\" uses \"run_command()\" without \"finish_command()\", so it\nneeds to release resources itself, which it forgot to do.\n\n* rs/daemon-plug-child-leak:\n  daemon: plug memory leak\n  run-command: factor out child_process_clear()\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c29024e5d1ad88cf45ef66b175966a0ba44a0490"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 98
+  },
+  "6784eb5ad93da15d24a5d111a3d6df618f98532f": {
+    "sha": "6784eb5ad93da15d24a5d111a3d6df618f98532f",
+    "ssha": "6784eb5",
+    "parenthashes": [
+      "a59d1d8035a1a6d878274e97818c56bb691ac5c0",
+      "700fd28e4f3ecd6e7b5f8f2098e62ffef9ab958b"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592389",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592390",
+    "encoding": "",
+    "subject": "Merge branch 'mk/blame-first-parent'",
+    "ssubject": "Merge-branch-mk-blame-first-parent",
+    "body": "\"git blame\" learnt to take \"--first-parent\" and \"--reverse\" at the\nsame time when it makes sense.\n\n* mk/blame-first-parent:\n  blame: allow blame --reverse --first-parent when it makes sense\n  blame: extract find_single_final\n  blame: test to describe use of blame --reverse --first-parent\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c3c592ef95ee21833e2214fb9068889dcac220c9"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 99
+  },
+  "a59d1d8035a1a6d878274e97818c56bb691ac5c0": {
+    "sha": "a59d1d8035a1a6d878274e97818c56bb691ac5c0",
+    "ssha": "a59d1d8",
+    "parenthashes": [
+      "654b986decd71bafd98a129ae709848949fe4a21",
+      "c72b49dfab8381abfd947db53c1c9e2da9593ab6"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592388",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592388",
+    "encoding": "",
+    "subject": "Merge branch 'rs/wt-status-detached-branch-fix'",
+    "ssubject": "Merge-branch-rs-wt-status-detached-branch-fix",
+    "body": "\"git status --branch --short\" accessed beyond the constant string\n\"HEAD\", which has been corrected.\n\n* rs/wt-status-detached-branch-fix:\n  wt-status: use skip_prefix() to get rid of magic string length constants\n  wt-status: don't skip a magical number of characters blindly\n  wt-status: avoid building bogus branch name with detached HEAD\n  wt-status: exit early using goto in wt_shortstatus_print_tracking()\n  t7060: add test for status --branch on a detached HEAD\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6784eb5ad93da15d24a5d111a3d6df618f98532f"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 100
+  },
+  "654b986decd71bafd98a129ae709848949fe4a21": {
+    "sha": "654b986decd71bafd98a129ae709848949fe4a21",
+    "ssha": "654b986",
+    "parenthashes": [
+      "4b571eb0c2149a3a45d7fe8bf2e93e67eab4a4c9",
+      "c949b00fb8ade8b5ad806ea801983f980181d5a5"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592386",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592387",
+    "encoding": "",
+    "subject": "Merge branch 'rs/show-branch-argv-array'",
+    "ssubject": "Merge-branch-rs-show-branch-argv-array",
+    "body": "Code simplification.\n\n* rs/show-branch-argv-array:\n  show-branch: use argv_array for default arguments\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a59d1d8035a1a6d878274e97818c56bb691ac5c0"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 101
+  },
+  "4b571eb0c2149a3a45d7fe8bf2e93e67eab4a4c9": {
+    "sha": "4b571eb0c2149a3a45d7fe8bf2e93e67eab4a4c9",
+    "ssha": "4b571eb",
+    "parenthashes": [
+      "acfeaf8c962772e482bb705afd93bea7a7fa078e",
+      "6a94088cc3d539bdc15b824befc083f7ff8d0288"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592385",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592385",
+    "encoding": "",
+    "subject": "Merge branch 'js/git-gdb'",
+    "ssubject": "Merge-branch-js-git-gdb",
+    "body": "Allow easier debugging of a single \"git\" invocation in our test\nscripts.\n\n* js/git-gdb:\n  test: facilitate debugging Git executables in tests with gdb\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "654b986decd71bafd98a129ae709848949fe4a21"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 102
+  },
+  "acfeaf8c962772e482bb705afd93bea7a7fa078e": {
+    "sha": "acfeaf8c962772e482bb705afd93bea7a7fa078e",
+    "ssha": "acfeaf8",
+    "parenthashes": [
+      "c253b82e42d8e6673917efb431479f8a9165de76",
+      "9a6e4f032ef7ca45a71639ff5e60cbb9b8a6e556"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592384",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592384",
+    "encoding": "",
+    "subject": "Merge branch 'jk/initialization-fix-to-add-submodule-odb'",
+    "ssubject": "Merge-branch-jk-initialization-fix-to-add-submodule-odb",
+    "body": "We peek objects from submodule's object store by linking it to the\nlist of alternate object databases, but the code to do so forgot to\ncorrectly initialize the list.\n\n* jk/initialization-fix-to-add-submodule-odb:\n  add_submodule_odb: initialize alt_odb list earlier\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "4b571eb0c2149a3a45d7fe8bf2e93e67eab4a4c9"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 103
+  },
+  "c253b82e42d8e6673917efb431479f8a9165de76": {
+    "sha": "c253b82e42d8e6673917efb431479f8a9165de76",
+    "ssha": "c253b82",
+    "parenthashes": [
+      "c5d9418ecdffe6e71a83ba1a5940d2cf2bf4f7e3",
+      "cfe2d4be9126f03d8ca198f9da36762cdf59b52f"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592381",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592382",
+    "encoding": "",
+    "subject": "Merge branch 'da/difftool'",
+    "ssubject": "Merge-branch-da-difftool",
+    "body": "The code to prepare the working tree side of temporary directory\nfor the \"dir-diff\" feature forgot that symbolic links need not be\ncopied (or symlinked) to the temporary area, as the code already\nspecial cases and overwrites them.  Besides, it was wrong to try\ncomputing the object name of the target of symbolic link, which may\nnot even exist or may be a directory.\n\n* da/difftool:\n  difftool: ignore symbolic links in use_wt_file\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "acfeaf8c962772e482bb705afd93bea7a7fa078e"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 104
+  },
+  "c5d9418ecdffe6e71a83ba1a5940d2cf2bf4f7e3": {
+    "sha": "c5d9418ecdffe6e71a83ba1a5940d2cf2bf4f7e3",
+    "ssha": "c5d9418",
+    "parenthashes": [
+      "415095f05501bb17edcb86c6d9fd193753b30ea7",
+      "85d9d9ddf38aba0c13a1be8f667af6b8cf021ca6"
+    ],
+    "authorname": "Junio C Hamano",
+    "authoremail": "gitster@pobox.com",
+    "authordate": "1446592379",
+    "committername": "Junio C Hamano",
+    "committeremail": "gitster@pobox.com",
+    "committerdate": "1446592379",
+    "encoding": "",
+    "subject": "Merge branch 'jc/mailinfo-lib'",
+    "ssubject": "Merge-branch-jc-mailinfo-lib",
+    "body": "Hotfix for a topic already in 'master'.\n\n* jc/mailinfo-lib:\n  mailinfo: fix passing wrong address to git_mailinfo_config\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c253b82e42d8e6673917efb431479f8a9165de76"
+    ],
+    "inHeads": [
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "22f095ab15ca98b73bd1e8dcc655665e4e7f29c7",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "550542234b0fed5a3944af44b01152b620e8dba1",
+      "2c78628255b8cc7f0b5d47981acea138db8716d2"
+    ],
+    "index": 105
+  }
+}

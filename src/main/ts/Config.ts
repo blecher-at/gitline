@@ -4,6 +4,7 @@
 /* globals */
 declare var jsgl: any;
 declare var CryptoJS: any;
+declare var Logger: any;
 
 function indexToX(index) {
 	return index *20 + 12;
@@ -21,3 +22,4 @@ class GitlineConfig {
 
 	public avatars : Function[] = [this.avatar_gravatar];
 }
+
