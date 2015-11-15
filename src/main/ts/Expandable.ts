@@ -14,11 +14,9 @@ module Gitline {
 
 			extended.whenFull = (innerHTML: string) => {
 				extended.onclick = (event) => {
-					if (event.detail == 2) {
-						extended.innerHTML = innerHTML;
-						event.cancelBubble = true;
-						element.classList.add("gitline-expandable-expanded");
-					}
+					extended.innerHTML = innerHTML;
+					event.cancelBubble = true;
+					element.classList.add("gitline-expandable-expanded");
 				};
 			};
 

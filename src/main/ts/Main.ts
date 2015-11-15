@@ -205,7 +205,7 @@ module Gitline {
 			el.setAttribute("class", type);
 			el.setAttribute("name", id.name);
 			var fullname = id.name + " &lt;" + id.email.toLowerCase() + "&gt;";
-			el.setAttribute("title", fullname);
+			el.setAttribute("title", id.name + " <" + id.email.toLowerCase() + ">");
 
 			el.style.background = this.config.avatars.map(f => {
 				return "url(" + f(id.email) + ") no-repeat"
