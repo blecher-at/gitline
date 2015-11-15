@@ -30,6 +30,7 @@ Imports / Third party
 - SVG Rendering: [JSGL](http://www.jsgl.org/)  
 - Generic JS framework: [jQuery](https://jquery.org/)
 - Hash Generation: [Crypto JS](https://github.com/brix/crypto-js)
+- Icon font: [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 
 Legal / License
 -----

@@ -38,18 +38,10 @@ module Gitline.Plugin {
 		private limit: number;
 		private accessToken: string;
 
-		public obtainAccessToken(callback: Function) {
-			if (window.localStorage) {
-				this.accessToken = window.localStorage.getItem("github-accesstoken");
-				this.limit = 500;
-			}
-
-			if (this.accessToken == null) {
-				window.alert("No access token to github defined. see log");
-				Logger.debug('window.localStorage.setItem("github-accesstoken", "TOKEN")');
-			} else {
-				callback();
-			}
+		public constructor(url: string, limit: number, accessToken: string) {
+			super(url);
+			this.accessToken = accessToken;
+			this.limit = limit;
 		}
 
 		public gitURL(url: string, api: string, params: string = "") {
@@ -63,13 +55,16 @@ module Gitline.Plugin {
 		}
 
 		public onRequested(url: string) {
-			this.obtainAccessToken(() => {
-				this.loadForks(url)
-			});
+			this.loadForks(url);
 		}
 
 		public loadForks(url: string) {
 			jQuery.getJSON(this.gitURL(url, "forks")).done((forks) => {
+				if (forks.data.message === "Bad credentials") {
+					Gitline.Main.displayFatalError("Github API: " + forks.data.message)
+					return;
+				}
+
 				jQuery.getJSON(this.gitURL(url, "branches")).done((branches) => {
 					this.processBranches(url, branches.data);
 					this.forks = forks.data;

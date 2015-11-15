@@ -87,8 +87,8 @@ gulp.task('watch', ['build', 'test','package'], function () {
 
 gulp.task('package', ['clean', 'test'], function () {
 	var p1 = gulp.src([
-	  		'target/js/gitline.min.js', 
-	  		'target/css/gitline.min.css', 
+	  		'target/js/**/*',
+	  		'target/css/**/*',
 	  		'src/demo/html/**']).pipe(gulp.dest('dist'));
 	var p2 = gulp.src([ 'src/main/external/**']).pipe(gulp.dest('dist/external'));
 	var p3 = gulp.src([ 'src/test/data/**']).pipe(gulp.dest('dist/data'));
