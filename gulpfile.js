@@ -26,7 +26,7 @@ gulp.task('tsc', function () {
         .pipe(ts(tsProject, {}, ts.reporter.fullReporter(true)));
 
     return tsResult.js
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(typeScriptTarget));
 });
 
@@ -37,7 +37,7 @@ gulp.task('compress', ['tsc'], function () {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(typeScriptTarget));
 });
 
@@ -48,15 +48,15 @@ gulp.task('sass:compressed', function () {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(sassTarget));
 });
 
 gulp.task('sass:uncompressed', function () {
     return gulp.src(sassSource)
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(sassTarget));
 });
 
