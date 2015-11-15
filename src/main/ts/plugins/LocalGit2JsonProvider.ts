@@ -12,8 +12,8 @@ class LocalGit2JsonProvider extends CommitProvider {
 		
 		jQuery.getJSON(url, {}, (json) => {
 			this.whenDone(json);
-		}).error(function() {
-			Gitline.displayFatalError("Error loading git data from "+url+ " create it using git2json");
+		}).error(() =>  {
+			this.error("Error loading git data from "+url+ " create it using git2json");
 		});
 	}
 }
