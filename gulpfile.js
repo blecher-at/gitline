@@ -15,6 +15,7 @@ var deploy = require('gulp-deploy-git');
 var all = require('gulp-all');
 
 var typescriptSource = 'src/main/ts/**/*.ts';
+var htmlSource = 'src/demo/html/**/*';
 var typeScriptTarget = 'target/js';
 var sassSource = 'src/main/scss/**/*.scss';
 var sassTarget = 'target/css';
@@ -55,7 +56,7 @@ gulp.task('compress', ['tsc'], function () {
         .pipe(gulp.dest(typeScriptTarget));
 });
 
-gulp.task('sass:compressed', function () {
+gulp.task('sass:compressed', ['clean'], function () {
     return gulp.src(sassSource)
         .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -66,7 +67,7 @@ gulp.task('sass:compressed', function () {
         .pipe(gulp.dest(sassTarget));
 });
 
-gulp.task('sass:uncompressed', function () {
+gulp.task('sass:uncompressed', ['clean'], function () {
     return gulp.src(sassSource)
         .pipe(sourcemaps.write())
         .pipe(sass().on('error', sass.logError))
@@ -83,6 +84,7 @@ gulp.task('run', ['build', 'package'], serve('dist'));
 gulp.task('watch', ['build', 'test','package'], function () {
     gulp.watch(typescriptSource, ['compress', 'test', 'package']);
     gulp.watch(sassSource, ['sass', 'package']);
+    gulp.watch(htmlSource, ['sass', 'package']);
 });
 
 gulp.task('package', ['clean', 'test'], function () {
