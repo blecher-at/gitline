@@ -17,6 +17,10 @@ module Gitline {
 		[key:string]:Branch;
 	}
 
+	export function create(): Main {
+		return new Main();
+	}
+
 	export class Main {
 
 		public maxX: number = 0;
