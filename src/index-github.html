@@ -15,8 +15,8 @@
         $(function () {
             Logger.useDefaults();
 
-            new Gitline()
-                    .fromProvider(new GithubCommitProvider("https://github.com/blecher-at/gitline"))
+            new Gitline.Main()
+                    .fromProvider(new Gitline.Plugin.GithubCommitProvider("https://github.com/blecher-at/gitline"))
                     .withHeader("Gitline GitHub repository <a href=\"https://github.com/blecher-at/gitline\">https://github.com/blecher-at/gitline</a>")
                     .renderTo(document.getElementById("myGitlinePanel-1"));
         });

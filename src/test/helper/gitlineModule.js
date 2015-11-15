@@ -4,5 +4,5 @@ var Logger = log4js.getLogger();
 
 eval(fs.readFileSync('target/js/gitline.min.js', 'utf8'));
 
-exports.Commit = Commit;
+exports.Commit = Gitline.Commit;
 exports.Gitline = Gitline;

@@ -11,7 +11,7 @@ describe('Gitline', function() {
   });
 
   it('should be able to process git2json output', function() {
-    var line = new Gitline.Gitline(),
+    var line = new Gitline.Gitline.Main(),
       that = this;
     line.data = this.data;
     

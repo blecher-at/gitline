@@ -1,19 +1,17 @@
-/**
- * New typescript file
- */
-/// <reference path="../CommitProvider.ts"/>
-/// <reference path="../Gitline.ts"/>
-declare var jQuery: any;
-declare var Logger: any;
+///<reference path="../CommitProvider.ts"/>
+///<reference path="../Main.ts"/>
 
-class LocalGit2JsonProvider extends CommitProvider {
-	
-	public onRequested(url: string) {
-		
-		jQuery.getJSON(url, {}, (json) => {
-			this.whenDone(json);
-		}).error(function() {
-			Gitline.displayFatalError("Error loading git data from "+url+ " create it using git2json");
-		});
+declare var jQuery: any;
+
+module Gitline.Plugin {
+	export class LocalGit2JsonProvider extends Gitline.CommitProvider {
+
+		public onRequested(url: string) {
+			jQuery.getJSON(url, {}, (json) => {
+				this.whenDone(json);
+			}).error(function () {
+				Gitline.Main.displayFatalError("Error loading git data from " + url + " create it using git2json");
+			});
+		}
 	}
 }

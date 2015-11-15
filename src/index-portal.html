@@ -13,8 +13,8 @@
 
     <script>
         $(function () {
-            new Gitline().fromJSON('test/example02.json').withHeader('Gitline repository from Github').renderTo($('#myGitlinePanel-1').get(0));
-            new Gitline().fromJSON('test/example03.json').withHeader('git repository from Github').renderTo($('#myGitlinePanel-2').get(0));
+            new Gitline.Main().fromJSON('test/example02.json').withHeader('Gitline repository from Github').renderTo($('#myGitlinePanel-1').get(0));
+            new Gitline.Main().fromJSON('test/example03.json').withHeader('git repository from Github').renderTo($('#myGitlinePanel-2').get(0));
         });
     </script>
 
