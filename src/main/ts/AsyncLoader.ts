@@ -81,10 +81,21 @@ module Gitline {
 		}
 
 		public execute(item: AsyncLoadingItem) {
-			item.callback(item.data);
-			if (!this.suspended) {
-				this.next();
+			try {
+				item.callback(item.data);
+				if (!this.suspended) {
+					this.next();
+				}
+			} catch (e) {
+				this.error(e);
 			}
+
+		}
+
+		public error(e: any) {
+			Logger.error(e);
+			this.element.innerHTML = e;
+			this.suspend();
 		}
 	}
 }
