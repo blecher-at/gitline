@@ -3,18 +3,37 @@
 declare var jQuery: any;
 declare var Logger: any;
 
+module Gitline.Plugin.Github {
+	export interface Branch {
+		name: string;
+		repo: string;
+		assigned: boolean;
+		commit: Commit;
+	}
+
+	export interface Fork {
+		url: string;
+		name: string;
+	}
+
+	export interface Commit {
+		sha: string;
+	}
+}
+
 module Gitline.Plugin {
+	import Github = Gitline.Plugin.Github;
 
 	/**
 	 * GitHub commit provider. only works if there is and accesstoken configured in the browser
 	 */
 	export class GithubCommitProvider extends Gitline.CommitProvider {
 
-		private forks: any[] = [];
-		private baseBranches: any[] = [];
+		private forks: Github.Fork[] = [];
+		private baseBranches: Github.Branch[] = [];
 		private data: {} = {};
 
-		private limit;
+		private limit: number;
 		private accessToken: string;
 		private done: boolean = false;
 
@@ -62,7 +81,7 @@ module Gitline.Plugin {
 
 		}
 
-		public processBranches(fork, data) {
+		public processBranches(fork, data: Github.Branch[]) {
 			data.forEach(branch => {
 				branch.repo = fork.url !== undefined ? fork.url : fork;
 				if (fork.full_name !== undefined) {
@@ -130,9 +149,7 @@ module Gitline.Plugin {
 			}).forEach(commit => {
 				this.data[commit.sha] = commit;
 			});
-
 		}
-
 
 		public process() {
 			this.baseBranches.forEach(b => {
@@ -166,9 +183,9 @@ module Gitline.Plugin {
 			while (commit.parents1.length > 0) {
 				var newParents = [];
 				commit.parents1.forEach(parentHash => {
-					var p = this.data[parentHash]
+					var p = this.data[parentHash];
 					if (p != undefined) {
-						p.inHeads.push(commit.sha)
+						p.inHeads.push(commit.sha);
 						// add all grandparents to the newparents
 						p.parenthashes.forEach(h => {
 							if (newParents.indexOf(h) === -1) {
