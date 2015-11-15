@@ -1,6 +1,6 @@
 ///<reference path="../CommitProvider.ts"/>
+///<reference path="../typedefs/jquery.d.ts"/>
 
-declare var jQuery: any;
 declare var Logger: any;
 
 module Gitline.Plugin.Github {
@@ -14,6 +14,8 @@ module Gitline.Plugin.Github {
 	export interface Fork {
 		url: string;
 		name: string;
+		data: any;
+		full_name: string;
 	}
 
 	export interface Commit {
@@ -35,7 +37,6 @@ module Gitline.Plugin {
 
 		private limit: number;
 		private accessToken: string;
-		private done: boolean = false;
 
 		public obtainAccessToken(callback: Function) {
 			if (window.localStorage) {
@@ -68,17 +69,14 @@ module Gitline.Plugin {
 		}
 
 		public loadForks(url: string) {
-			jQuery.when(
-				jQuery.getJSON(this.gitURL(url, "forks")),
-				jQuery.getJSON(this.gitURL(url, "branches"))
-			).then((forks, branches) => {
-					//this.baseCommits = commits[0].data;
-					this.processBranches(url, branches[0].data);
-					this.forks = forks[0].data;
+			jQuery.getJSON(this.gitURL(url, "forks")).done((forks) => {
+				jQuery.getJSON(this.gitURL(url, "branches")).done((branches) => {
+					this.processBranches(url, branches.data);
+					this.forks = forks.data;
 
 					this.loadBranches();
-				});
-
+				})
+			});
 		}
 
 		public processBranches(fork, data: Github.Branch[]) {

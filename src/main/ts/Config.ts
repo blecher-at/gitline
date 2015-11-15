@@ -1,5 +1,6 @@
+///<reference path="typedefs/cryptojs.d.ts"/>
+
 declare var jsgl: any;
-declare var CryptoJS: any;
 declare var Logger: any;
 
 module Gitline {
