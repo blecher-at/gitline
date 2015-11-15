@@ -22,3 +22,4 @@ class GitlineConfig {
 
 	public avatars : Function[] = [this.avatar_gravatar];
 }
+

@@ -65,13 +65,14 @@
 	    	$("x-config").toggle(); 
 	    }
     	function display() {
+    		toggleConfig();
+    		
 			$("#myGitlinePanel-1").html("");
     		new Gitline()
 				.fromProvider(new GithubCommitProvider(data.url, data.limit, data.accessToken))
 				.withHeader("Gitline GitHub repository <a href=\""+data.url+"\">"+data.url+"</a>")
 				.renderTo(document.getElementById("myGitlinePanel-1"));
     		
-    		toggleConfig();
     	}
     	
     	function configure() {
@@ -94,7 +95,7 @@
     			toggleConfig();
     		})
     		
-    		$("x-config").hide();
+    		//$("x-config").hide();
         	// Render it
         	$("x-config x-config-value").each(function() {
         		var desc = $(this).html();
