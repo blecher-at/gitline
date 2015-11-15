@@ -5,6 +5,7 @@
 class CommitProvider {
  	private url;
  	private callback: Function;
+ 	private errorCallback: Function;
  	
 	constructor (url: string) {
 		this.url = url;
@@ -12,6 +13,10 @@ class CommitProvider {
 	
 	public whenDone(data: any) {
 		this.callback(data);
+	}
+	
+	public withErrorCallback(callbackFn: Function) {
+		this.errorCallback = callbackFn;
 	}
 	
 	public withCallback(callbackFn: Function) {
@@ -25,6 +30,10 @@ class CommitProvider {
 	
 	public request() {
 		this.onRequested(this.url);
+	}
+	
+	public error(e: any) {
+		this.errorCallback(e);
 	}
 }
 	

@@ -20,20 +20,26 @@ class GithubCommitProvider extends CommitProvider {
 		super(url);
 		this.accessToken = accessToken;
 		this.limit = limit;
+		Logger.debug("github provider initialized");
 	}
 	
 	public gitURL(url: string, api: string, params: string = "") {
+		Logger.debug("github getURL requested");
 
 		// convert to api url and remove trailing /
 		if(url.indexOf("api.github.com") == -1) {
 			url = url.replace(/.*github.com/, "https://api.github.com/repos/").replace(/\/\//g, "/");
 				
 		}
-		return url + "/"+api+"?access_token="+this.accessToken+"&per_page="+this.limit+"&callback=?&"+params;
+		
+		var fullUrl = url + "/"+api+"?access_token="+this.accessToken+"&per_page="+this.limit+"&"+params+"&callback=?";
+		Logger.debug("URL : ", fullUrl);
+		return fullUrl;
 	}
 
 	public onRequested(url: string) {
-		this.loadForks(url)
+		Logger.debug("github provider requested");
+		this.loadForks(url);
 	}
 	
 	public loadForks(url: string) {
@@ -41,16 +47,21 @@ class GithubCommitProvider extends CommitProvider {
 				jQuery.getJSON(this.gitURL(url, "forks")),
 				jQuery.getJSON(this.gitURL(url, "branches"))
 			).then( (forks, branches) => {
+				Logger.debug("github provider forks loaded");
 				//this.baseCommits = commits[0].data;
 				this.processBranches(url, branches[0].data);
 				this.forks = forks[0].data;
 				
 				this.loadBranches();
 			});
-		
+
 	}
 
 	public processBranches(fork, data) {
+		if(data.message !== undefined) {
+			this.error(data.message);
+		}
+		
 		data.forEach(branch => {
 			branch.repo = fork.url !== undefined ? fork.url : fork;
 			if(fork.full_name !== undefined) {

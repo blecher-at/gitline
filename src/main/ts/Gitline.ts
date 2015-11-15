@@ -55,7 +55,10 @@ class Gitline {
 
 		this.al.thenSingle("Loading Data", () => {
 			this.al.suspend();
-			this.commitProvider.withCallback( (json) => {
+			this.commitProvider.withErrorCallback(error => {
+				this.al.error(error);
+			});
+			this.commitProvider.withCallback( json => {
 				this.data = json;
 				this.al.resume();
 			})
@@ -307,8 +310,4 @@ class Gitline {
 		
 		return this;
 	}
-	
-	public static displayFatalError(message: string) {
-		alert(message);
-	}	
 }
