@@ -24,10 +24,6 @@
                 new Gitline()
                         .fromJSON("dist/data/example02.json")
                         .renderTo(document.getElementById("sample"));
-                
-/*                $("#header")
-                	.animate({backgroundSize: '150%'}, 30000)
-                	.animate({backgroundSize: '100%'}, 30000); */
         });
 </script>
 
@@ -43,7 +39,7 @@
 
     <section class="main-content">
 		<h1>
-		<a id="gitline---a-git-history-to-html-renderer-implemented-in-typescript" class="anchor" href="#gitline---a-git-history-to-html-renderer-implemented-in-typescript" aria-hidden="true"><span class="octicon octicon-link"></span></a>gitline - A git history to HTML renderer implemented in TypeScript
+		<a id="gitline---a-git-history-to-html-renderer-implemented-in-typescript" class="anchor" href="#gitline---a-git-history-to-html-renderer-implemented-in-typescript" aria-hidden="true"><span class="octicon octicon-link"></span></a>A git history to HTML renderer
 <a href="https://travis-ci.org/blecher-at/gitline/builds/"><img src="https://travis-ci.org/blecher-at/gitline.svg?branch=master" alt="Travis CI Status"></a>
 		</h1>
 
@@ -51,35 +47,16 @@
 
 
 
-<p>The idea is to have this on a central server or your local machine, to keep tabs on what your team is doing :)
-Needs a JSON file as input (generated with <a href="https://github.com/blecher-at/git2json">git2json</a>)</p>
+<p>Gitline renders the git history of multiple branches and even repositories to a sweet graphical view (live sample above), use it to keep tabs on what your team is doing :)</p>
 
-<p>gitline tries to be aware of your branching scheme. It will autodetect the category and assignment of branches and groups commits accordingly.</p>
+<p>Gitline tries to be aware of your branching scheme. It will autodetect the category and assignment of branches and groups commits accordingly.</p>
 
+<h2>Run it online against any github repository</h2>
+<p>Don't want to setup a server? Love everything cloud? Gitline integrates with github directly right here. Just open <a href="dist/github.html" target="_blank">http://lookatgit.com/dist/github.html</a>, configure and use! It will store the credentials in your browser, so next time you open it, it will show your repository.
+</p>
 <h2>
 <a id="installation--setup-of-development-environment" class="anchor" href="#installation--setup-of-development-environment" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation / Setup of development environment</h2>
-
-<ul>
-<li>Install Node.js</li>
-<li>Install Gulp globally: <code>npm install -g gulp</code>
-</li>
-<li>Install dependencies in project's root folder: <code>npm install</code>
-</li>
-<li>Run <code>gulp watch</code> in project's root folder in a second terminal window to compile TypeScript on the fly when a file changes</li>
-<li>To run, execute <code>gulp run</code> in project's root folder, then visit http://localhost:3000</li>
-<li>To test, execute <code>gulp test</code>
-</li>
-</ul>
-
-<h2>
-<a id="creating-sample-data" class="anchor" href="#creating-sample-data" aria-hidden="true"><span class="octicon octicon-link"></span></a>Creating sample data</h2>
-
-<ul>
-<li>Install <a href="https://github.com/blecher-at/git2json">git2json</a>
-</li>
-<li>run <code>git json &gt; myfile.json</code> - in a cronjob presumably</li>
-<li>point <code>src/index.html</code> to the newly created JSON file</li>
-</ul>
+You want to install it yourself, run it against your private or corporate repository, access multiple repositories and customize gitline to your needs? Go to the github page and get involved: <a href="https://github.com/blecher-at/gitline" class="">View on GitHub</a>
 
 <h2>
 <a id="imports--third-party" class="anchor" href="#imports--third-party" aria-hidden="true"><span class="octicon octicon-link"></span></a>Imports / Third party</h2>
