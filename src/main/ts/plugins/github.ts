@@ -16,20 +16,12 @@ class GithubCommitProvider extends CommitProvider {
 	private accessToken: string;
 	private done: boolean = false;
 	
-	public obtainAccessToken(callback: Function) {
-		if(window.localStorage) {
-			this.accessToken = window.localStorage.getItem("github-accesstoken");
-			this.limit = 500;
-		}
-
-		if(this.accessToken == null) {
-			window.alert("No access token to github defined. see log");
-			Logger.debug('window.localStorage.setItem("github-accesstoken", "TOKEN")');
-		} else {
-			callback();
-		}
+	constructor (url: string, limit: number, accessToken: string) {
+		super(url);
+		this.accessToken = accessToken;
+		this.limit = limit;
 	}
-
+	
 	public gitURL(url: string, api: string, params: string = "") {
 
 		// convert to api url and remove trailing /
@@ -41,9 +33,7 @@ class GithubCommitProvider extends CommitProvider {
 	}
 
 	public onRequested(url: string) {
-		this.obtainAccessToken(() => {
-			this.loadForks(url)
-		});
+		this.loadForks(url)
 	}
 	
 	public loadForks(url: string) {
