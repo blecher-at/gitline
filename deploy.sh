@@ -1,8 +1,6 @@
 #!/bin/bash
 echo Running $0 from $(pwd) - for branch $1
 
-
-
 git clone -b $1 https://$GH_TOKEN@github.com/blecher-at/gitline.git .deploy
 cd .deploy
 cp -R ../dist .
