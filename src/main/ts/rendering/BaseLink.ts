@@ -1,37 +1,39 @@
-/// <reference path="Shape.ts"/>
-/// <reference path="Dot.ts"/>
-/**
- * Shape that links two dots
- */
+///<reference path="Shape.ts"/>
 
-class BaseLink extends Shape {
-	
-	parentDot: Dot;
-	childDot: Dot;
-	
-	lineColor: string;
-	
-	constructor(canvas: any, element: any) {
-		super(canvas, element);
-	}
-	
-	public from(from: Dot): BaseLink  {
-		this.dependsOn(from);
-		this.parentDot = from;
-		return this;
-	}
-	
-	public to(to: Dot): BaseLink {
-		//this.dependsOn(to);
-		this.childDot = to;
-		return this;
-	}
-	
-	public color(lineColor: string): BaseLink {
-		this.element.getStroke().setWeight(1);
-		this.element.getStroke().setColor(lineColor);
-		this.lineColor = lineColor;
-		this.addIfMissing();		
-		return this;
+module Gitline.Rendering {
+
+	/**
+	 * Shape that links two dots
+	 */
+	export class BaseLink extends Shape {
+
+		parentDot: Dot;
+		childDot: Dot;
+
+		lineColor: string;
+
+		constructor(canvas: any, element: any) {
+			super(canvas, element);
+		}
+
+		public from(from: Dot): BaseLink {
+			this.dependsOn(from);
+			this.parentDot = from;
+			return this;
+		}
+
+		public to(to: Dot): BaseLink {
+			//this.dependsOn(to);
+			this.childDot = to;
+			return this;
+		}
+
+		public color(lineColor: string): BaseLink {
+			this.element.getStroke().setWeight(1);
+			this.element.getStroke().setColor(lineColor);
+			this.lineColor = lineColor;
+			this.addIfMissing();
+			return this;
+		}
 	}
 }
