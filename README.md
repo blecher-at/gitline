@@ -15,7 +15,7 @@ Installation / Setup of development environment
 - Install Gulp globally: `npm install -g gulp`
 - Install dependencies in project's root folder: `npm install`
 - Run `gulp watch` in project's root folder in a second terminal window to compile TypeScript on the fly when a file changes
-- To run, execute `gulp run` in project's root folder, then visit http://localhost:3000
+- To run, execute `gulp run` in project's root folder, then visit `http://localhost:3000/`
 - To test, execute `gulp test`
 
 Creating sample data
@@ -30,6 +30,7 @@ Imports / Third party
 - SVG Rendering: [JSGL](http://www.jsgl.org/)  
 - Generic JS framework: [jQuery](https://jquery.org/)
 - Hash Generation: [Crypto JS](https://github.com/brix/crypto-js)
+- Icon font: [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 
 Legal / License
 -----

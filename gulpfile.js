@@ -8,8 +8,6 @@ var rename = require('gulp-rename');
 var serve = require('gulp-serve');
 var mocha = require('gulp-mocha');
 var sass = require('gulp-sass');
-//var git = require('gulp-git');
-//#var process = require('gulp-process');
 var sourcemaps = require('gulp-sourcemaps');
 var deploy = require('gulp-deploy-git');
 var all = require('gulp-all');
@@ -41,7 +39,7 @@ gulp.task('tsc', ['clean'], function () {
         .pipe(ts(tsProject, {}, ts.reporter.fullReporter(true)));
 
     return tsResult.js
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(typeScriptTarget));
 });
 
@@ -52,7 +50,7 @@ gulp.task('compress', ['tsc'], function () {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(typeScriptTarget));
 });
 
@@ -63,15 +61,15 @@ gulp.task('sass:compressed', ['clean'], function () {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(sassTarget));
 });
 
 gulp.task('sass:uncompressed', ['clean'], function () {
     return gulp.src(sassSource)
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.init())
         .pipe(sass().on('error', sass.logError))
-        .pipe(sourcemaps.write())
+        .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(sassTarget));
 });
 
@@ -89,8 +87,8 @@ gulp.task('watch', ['build', 'test','package'], function () {
 
 gulp.task('package', ['clean', 'test'], function () {
 	var p1 = gulp.src([
-	  		'target/js/gitline.min.js', 
-	  		'target/css/gitline.min.css', 
+	  		'target/js/**/*',
+	  		'target/css/**/*',
 	  		'src/demo/html/**']).pipe(gulp.dest('dist'));
 	var p2 = gulp.src([ 'src/main/external/**']).pipe(gulp.dest('dist/external'));
 	var p3 = gulp.src([ 'src/test/data/**']).pipe(gulp.dest('dist/data'));
