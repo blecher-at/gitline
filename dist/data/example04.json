@@ -1,0 +1,3498 @@
+{
+  "e5ef95393a09b2451298ed8b6f585bdfc634701c": {
+    "sha": "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+    "ssha": "e5ef953",
+    "parenthashes": [
+      "53d7c50902796d08d48c84910b5f2a543a53dae5",
+      "78cfcfc49347c3f9b2857613c7dccc815de06533"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447247707",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447247707",
+    "encoding": "",
+    "subject": "Merge pull request #11120 from sergeyklay/random_doc",
+    "ssubject": "Merge-pull-request-11120-from-sergeyklay-random_doc",
+    "body": "Amended doc for Phalcon\\Security\\Random",
+    "refnames": [
+      "origin/2.0.x"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 0
+  },
+  "53d7c50902796d08d48c84910b5f2a543a53dae5": {
+    "sha": "53d7c50902796d08d48c84910b5f2a543a53dae5",
+    "ssha": "53d7c50",
+    "parenthashes": [
+      "72c94c4ee4683541ae5120ed691419daa098e534",
+      "e90febe1172ecbdff8a097d1035d3c42e674286d"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447247701",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447247701",
+    "encoding": "",
+    "subject": "Merge pull request #11116 from sergeyklay/patch-7",
+    "ssubject": "Merge-pull-request-11116-from-sergeyklay-patch-7",
+    "body": "Fixed issue #11115",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 1
+  },
+  "72c94c4ee4683541ae5120ed691419daa098e534": {
+    "sha": "72c94c4ee4683541ae5120ed691419daa098e534",
+    "ssha": "72c94c4",
+    "parenthashes": [
+      "7ccdbd812709c148e9952fbcdf470c600cc7d4f0",
+      "788cab8823be7c7eb661c433a640ca50a3204060"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447247691",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447247691",
+    "encoding": "",
+    "subject": "Merge pull request #11113 from sergeyklay/issue_11112",
+    "ssubject": "Merge-pull-request-11113-from-sergeyklay-issue_11112",
+    "body": "Fixed issue #11112",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "53d7c50902796d08d48c84910b5f2a543a53dae5"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 2
+  },
+  "7ccdbd812709c148e9952fbcdf470c600cc7d4f0": {
+    "sha": "7ccdbd812709c148e9952fbcdf470c600cc7d4f0",
+    "ssha": "7ccdbd8",
+    "parenthashes": [
+      "5d5cbed9b98c2eca90d00b57f504b2ddd86dc3cd",
+      "96941a77cb8aaa731c5a6f8927fb168ca3941695"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447247679",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447247679",
+    "encoding": "",
+    "subject": "Merge pull request #11111 from sergeyklay/fixed_serghei_email",
+    "ssubject": "Merge-pull-request-11111-from-sergeyklay-fixed_serghei_email",
+    "body": "Fixed Serghei email",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "72c94c4ee4683541ae5120ed691419daa098e534"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 3
+  },
+  "5d5cbed9b98c2eca90d00b57f504b2ddd86dc3cd": {
+    "sha": "5d5cbed9b98c2eca90d00b57f504b2ddd86dc3cd",
+    "ssha": "5d5cbed",
+    "parenthashes": [
+      "b5cc07903397b37ffbb2e3adb8af573b6092b070",
+      "ceb7e5d07fb1077f1ce924ef0bba77e38eab28c0"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447247672",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447247672",
+    "encoding": "",
+    "subject": "Merge pull request #11110 from sergeyklay/patch-6",
+    "ssubject": "Merge-pull-request-11110-from-sergeyklay-patch-6",
+    "body": "Fixed issue #11109",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7ccdbd812709c148e9952fbcdf470c600cc7d4f0"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 4
+  },
+  "b5cc07903397b37ffbb2e3adb8af573b6092b070": {
+    "sha": "b5cc07903397b37ffbb2e3adb8af573b6092b070",
+    "ssha": "b5cc079",
+    "parenthashes": [
+      "b3a3adec28c5ffa0d826312ae55fd6656d514a0f",
+      "f5466c58a1bda6bad01d0e893f9c1cfd2692ae70"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447247664",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447247664",
+    "encoding": "",
+    "subject": "Merge pull request #11102 from sergeyklay/text",
+    "ssubject": "Merge-pull-request-11102-from-sergeyklay-text",
+    "body": "Added Text::humanize, Text::underscore",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5d5cbed9b98c2eca90d00b57f504b2ddd86dc3cd"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 5
+  },
+  "78cfcfc49347c3f9b2857613c7dccc815de06533": {
+    "sha": "78cfcfc49347c3f9b2857613c7dccc815de06533",
+    "ssha": "78cfcfc",
+    "parenthashes": [
+      "b3a3adec28c5ffa0d826312ae55fd6656d514a0f"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1447189488",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1447189488",
+    "encoding": "",
+    "subject": "Amended doc for Phalcon\\Security\\Random [ci skip]",
+    "ssubject": "Amended-doc-for-Phalcon-Security-Random-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 6
+  },
+  "0bd4a23d28dfafb0318cf2294ece41d3d9794347": {
+    "sha": "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+    "ssha": "0bd4a23",
+    "parenthashes": [
+      "d8a337b95ab787bb2a0d6f7675baddfd89e16f99",
+      "355e31c7d8f8d1962293e56dc79d5df1c6359a60"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447173672",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447173672",
+    "encoding": "",
+    "subject": "Merge pull request #11044 from sergeyklay/loader/namespace/multiple_directories",
+    "ssubject": "Merge-pull-request-11044-from-sergeyklay-loader-namespace-multiple_directories",
+    "body": "Introducing ability of multiple directories for namespace",
+    "refnames": [
+      "origin/2.1.x"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 7
+  },
+  "b3a3adec28c5ffa0d826312ae55fd6656d514a0f": {
+    "sha": "b3a3adec28c5ffa0d826312ae55fd6656d514a0f",
+    "ssha": "b3a3ade",
+    "parenthashes": [
+      "0b7683eab5e41792bbb081b7f25b7fcff91629fd",
+      "7707552d4f12a34aedd74bb730ac0e022935c239"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447103796",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447103796",
+    "encoding": "",
+    "subject": "Merge pull request #11105 from sergeyklay/patch-4",
+    "ssubject": "Merge-pull-request-11105-from-sergeyklay-patch-4",
+    "body": "Update RouteInterface",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b5cc07903397b37ffbb2e3adb8af573b6092b070",
+      "78cfcfc49347c3f9b2857613c7dccc815de06533"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 8
+  },
+  "e90febe1172ecbdff8a097d1035d3c42e674286d": {
+    "sha": "e90febe1172ecbdff8a097d1035d3c42e674286d",
+    "ssha": "e90febe",
+    "parenthashes": [
+      "0b7683eab5e41792bbb081b7f25b7fcff91629fd"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1447103453",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1447103453",
+    "encoding": "",
+    "subject": "Fixed issue #11115 [ci skip]",
+    "ssubject": "Fixed-issue-11115-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "53d7c50902796d08d48c84910b5f2a543a53dae5"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 9
+  },
+  "788cab8823be7c7eb661c433a640ca50a3204060": {
+    "sha": "788cab8823be7c7eb661c433a640ca50a3204060",
+    "ssha": "788cab8",
+    "parenthashes": [
+      "0b7683eab5e41792bbb081b7f25b7fcff91629fd"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1447098548",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1447098626",
+    "encoding": "",
+    "subject": "Fixed issue #11112 [ci skip]",
+    "ssubject": "Fixed-issue-11112-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "72c94c4ee4683541ae5120ed691419daa098e534"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 10
+  },
+  "96941a77cb8aaa731c5a6f8927fb168ca3941695": {
+    "sha": "96941a77cb8aaa731c5a6f8927fb168ca3941695",
+    "ssha": "96941a7",
+    "parenthashes": [
+      "0b7683eab5e41792bbb081b7f25b7fcff91629fd"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1447096904",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1447096904",
+    "encoding": "",
+    "subject": "Fixed Serghei email",
+    "ssubject": "Fixed-Serghei-email",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7ccdbd812709c148e9952fbcdf470c600cc7d4f0"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 11
+  },
+  "ceb7e5d07fb1077f1ce924ef0bba77e38eab28c0": {
+    "sha": "ceb7e5d07fb1077f1ce924ef0bba77e38eab28c0",
+    "ssha": "ceb7e5d",
+    "parenthashes": [
+      "0b7683eab5e41792bbb081b7f25b7fcff91629fd"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1447096508",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1447096508",
+    "encoding": "",
+    "subject": "Fixed issue #11109",
+    "ssubject": "Fixed-issue-11109",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5d5cbed9b98c2eca90d00b57f504b2ddd86dc3cd"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 12
+  },
+  "d8a337b95ab787bb2a0d6f7675baddfd89e16f99": {
+    "sha": "d8a337b95ab787bb2a0d6f7675baddfd89e16f99",
+    "ssha": "d8a337b",
+    "parenthashes": [
+      "8f3bde73c0848129bd236918d1c3cad3f7d725c5",
+      "0a89d4704ef47ecbc202b567babf852440de25b5"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447009996",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447009996",
+    "encoding": "",
+    "subject": "Merge pull request #11080 from sergeyklay/events/event_interface",
+    "ssubject": "Merge-pull-request-11080-from-sergeyklay-events-event_interface",
+    "body": "Introduced Phalcon\\Events\\EventInterface",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 13
+  },
+  "0b7683eab5e41792bbb081b7f25b7fcff91629fd": {
+    "sha": "0b7683eab5e41792bbb081b7f25b7fcff91629fd",
+    "ssha": "0b7683e",
+    "parenthashes": [
+      "6acca855e721eb3f2c62c92034625c5d1d314650",
+      "dd97416b4e04bbee93020c700facb83099ed3c1a"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447009977",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447009977",
+    "encoding": "",
+    "subject": "Merge pull request #11076 from sergeyklay/filter",
+    "ssubject": "Merge-pull-request-11076-from-sergeyklay-filter",
+    "body": "Fixed Filter::sanitize return type",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b3a3adec28c5ffa0d826312ae55fd6656d514a0f",
+      "e90febe1172ecbdff8a097d1035d3c42e674286d",
+      "788cab8823be7c7eb661c433a640ca50a3204060",
+      "96941a77cb8aaa731c5a6f8927fb168ca3941695",
+      "ceb7e5d07fb1077f1ce924ef0bba77e38eab28c0"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 14
+  },
+  "7707552d4f12a34aedd74bb730ac0e022935c239": {
+    "sha": "7707552d4f12a34aedd74bb730ac0e022935c239",
+    "ssha": "7707552",
+    "parenthashes": [
+      "6acca855e721eb3f2c62c92034625c5d1d314650"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1447009421",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1447009421",
+    "encoding": "",
+    "subject": "Update routeinterface.zep",
+    "ssubject": "Update-routeinterface.zep",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b3a3adec28c5ffa0d826312ae55fd6656d514a0f"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 15
+  },
+  "cb6a2fb167ed84db93de2af26ed12df7af7079ef": {
+    "sha": "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+    "ssha": "cb6a2fb",
+    "parenthashes": [
+      "0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447009265",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447009265",
+    "encoding": "",
+    "subject": "Merge pull request #11103 from phalcon/revert-11072-patch-5",
+    "ssubject": "Merge-pull-request-11103-from-phalcon-revert-11072-patch-5",
+    "body": "Revert 0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50",
+    "refnames": [
+      "HEAD -> master",
+      "origin/master",
+      "origin/HEAD"
+    ],
+    "parents": [],
+    "children": [],
+    "inHeads": [],
+    "index": 16
+  },
+  "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9": {
+    "sha": "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+    "ssha": "103c2e0",
+    "parenthashes": [
+      "0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447009220",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447009220",
+    "encoding": "",
+    "subject": "Revert 0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50",
+    "ssubject": "Revert-0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50",
+    "body": "",
+    "refnames": [
+      "origin/revert-11072-patch-5"
+    ],
+    "parents": [],
+    "children": [
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef"
+    ],
+    "inHeads": [
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef"
+    ],
+    "index": 17
+  },
+  "0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50": {
+    "sha": "0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50",
+    "ssha": "0bdb0d7",
+    "parenthashes": [
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f",
+      "f843bea764887c1944e6199bf418c20cd5631f42"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1447009176",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1447009176",
+    "encoding": "",
+    "subject": "Merge pull request #11072 from sergeyklay/patch-5",
+    "ssubject": "Merge-pull-request-11072-from-sergeyklay-patch-5",
+    "body": "Fixed RouteInterface::setHttpMethods return type",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9"
+    ],
+    "inHeads": [
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9"
+    ],
+    "index": 18
+  },
+  "f5466c58a1bda6bad01d0e893f9c1cfd2692ae70": {
+    "sha": "f5466c58a1bda6bad01d0e893f9c1cfd2692ae70",
+    "ssha": "f5466c5",
+    "parenthashes": [
+      "6acca855e721eb3f2c62c92034625c5d1d314650"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1446942015",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1446942060",
+    "encoding": "",
+    "subject": "Added Text::humanize, Text::underscore",
+    "ssubject": "Added-Text-humanize-Text-underscore",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b5cc07903397b37ffbb2e3adb8af573b6092b070"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 19
+  },
+  "6acca855e721eb3f2c62c92034625c5d1d314650": {
+    "sha": "6acca855e721eb3f2c62c92034625c5d1d314650",
+    "ssha": "6acca85",
+    "parenthashes": [
+      "97e740e8a395796b0652572714a651d8c1213d50",
+      "e4ad6e8ca5521fa019885b7caf40ef9f9cdfdfb1"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446665799",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446665799",
+    "encoding": "",
+    "subject": "Merge pull request #11086 from AlexDRiVER/patch-1",
+    "ssubject": "Merge-pull-request-11086-from-AlexDRiVER-patch-1",
+    "body": "Add 'strict' option in ExclusionIn validator",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0b7683eab5e41792bbb081b7f25b7fcff91629fd",
+      "7707552d4f12a34aedd74bb730ac0e022935c239",
+      "f5466c58a1bda6bad01d0e893f9c1cfd2692ae70"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 20
+  },
+  "97e740e8a395796b0652572714a651d8c1213d50": {
+    "sha": "97e740e8a395796b0652572714a651d8c1213d50",
+    "ssha": "97e740e",
+    "parenthashes": [
+      "036bc44a0fb1f1863c3d282394140ccf4d8bba2d",
+      "8c68d90fd158a9d21375b8911263fdf43169f53d"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446665787",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446665787",
+    "encoding": "",
+    "subject": "Merge pull request #11092 from AlexDRiVER/patch-2",
+    "ssubject": "Merge-pull-request-11092-from-AlexDRiVER-patch-2",
+    "body": "Update CHANGELOG.md",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6acca855e721eb3f2c62c92034625c5d1d314650"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 21
+  },
+  "036bc44a0fb1f1863c3d282394140ccf4d8bba2d": {
+    "sha": "036bc44a0fb1f1863c3d282394140ccf4d8bba2d",
+    "ssha": "036bc44",
+    "parenthashes": [
+      "077315982d4bae581155975124422d23297e852f",
+      "471760bff152cbd1083d232e26966e4fae1a7685"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446665770",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446665770",
+    "encoding": "",
+    "subject": "Merge pull request #11079 from sergeyklay/patch-4",
+    "ssubject": "Merge-pull-request-11079-from-sergeyklay-patch-4",
+    "body": "Replaced spaces to tabs",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "97e740e8a395796b0652572714a651d8c1213d50"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 22
+  },
+  "077315982d4bae581155975124422d23297e852f": {
+    "sha": "077315982d4bae581155975124422d23297e852f",
+    "ssha": "0773159",
+    "parenthashes": [
+      "975f7a90f5e06eb7b1f342594d9f8246dbf99143",
+      "425abc4d9111a1e1f907bfad280c2f98665418a4"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446665439",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446665439",
+    "encoding": "",
+    "subject": "Merge pull request #11004 from Green-Cat/patch-5",
+    "ssubject": "Merge-pull-request-11004-from-Green-Cat-patch-5",
+    "body": "Removes duplicate use statement in router",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "036bc44a0fb1f1863c3d282394140ccf4d8bba2d"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 23
+  },
+  "8c68d90fd158a9d21375b8911263fdf43169f53d": {
+    "sha": "8c68d90fd158a9d21375b8911263fdf43169f53d",
+    "ssha": "8c68d90",
+    "parenthashes": [
+      "975f7a90f5e06eb7b1f342594d9f8246dbf99143"
+    ],
+    "authorname": "Alex Barinov",
+    "authoremail": "driver.rus@gmail.com",
+    "authordate": "1446653232",
+    "committername": "Alex Barinov",
+    "committeremail": "driver.rus@gmail.com",
+    "committerdate": "1446653232",
+    "encoding": "",
+    "subject": "Update CHANGELOG.md",
+    "ssubject": "Update-CHANGELOG.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "97e740e8a395796b0652572714a651d8c1213d50"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 24
+  },
+  "e4ad6e8ca5521fa019885b7caf40ef9f9cdfdfb1": {
+    "sha": "e4ad6e8ca5521fa019885b7caf40ef9f9cdfdfb1",
+    "ssha": "e4ad6e8",
+    "parenthashes": [
+      "975f7a90f5e06eb7b1f342594d9f8246dbf99143"
+    ],
+    "authorname": "Alex Barinov",
+    "authoremail": "driver.rus@gmail.com",
+    "authordate": "1446536867",
+    "committername": "Alex Barinov",
+    "committeremail": "driver.rus@gmail.com",
+    "committerdate": "1446536867",
+    "encoding": "",
+    "subject": "Add 'strict' option in ExclusionIn validator",
+    "ssubject": "Add-strict-option-in-ExclusionIn-validator",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6acca855e721eb3f2c62c92034625c5d1d314650"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 25
+  },
+  "0a89d4704ef47ecbc202b567babf852440de25b5": {
+    "sha": "0a89d4704ef47ecbc202b567babf852440de25b5",
+    "ssha": "0a89d47",
+    "parenthashes": [
+      "8f3bde73c0848129bd236918d1c3cad3f7d725c5"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1446290987",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1446290987",
+    "encoding": "",
+    "subject": "Introduced Phalcon\\Events\\EventInterface",
+    "ssubject": "Introduced-Phalcon-Events-EventInterface",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d8a337b95ab787bb2a0d6f7675baddfd89e16f99"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 26
+  },
+  "471760bff152cbd1083d232e26966e4fae1a7685": {
+    "sha": "471760bff152cbd1083d232e26966e4fae1a7685",
+    "ssha": "471760b",
+    "parenthashes": [
+      "975f7a90f5e06eb7b1f342594d9f8246dbf99143"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1446285615",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1446285615",
+    "encoding": "",
+    "subject": "Replaced spaces to tabs",
+    "ssubject": "Replaced-spaces-to-tabs",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "036bc44a0fb1f1863c3d282394140ccf4d8bba2d"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 27
+  },
+  "dd97416b4e04bbee93020c700facb83099ed3c1a": {
+    "sha": "dd97416b4e04bbee93020c700facb83099ed3c1a",
+    "ssha": "dd97416",
+    "parenthashes": [
+      "44e8916f6c9c2a81e6e5fd3a9522f41e80164a3f"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1446133905",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1446133905",
+    "encoding": "",
+    "subject": "Update filter.zep",
+    "ssubject": "Update-filter.zep",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0b7683eab5e41792bbb081b7f25b7fcff91629fd"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 28
+  },
+  "8f3bde73c0848129bd236918d1c3cad3f7d725c5": {
+    "sha": "8f3bde73c0848129bd236918d1c3cad3f7d725c5",
+    "ssha": "8f3bde7",
+    "parenthashes": [
+      "7fdc8831d7bb80e84b17b9be6eefec809dc70e28",
+      "6065a84c7dcb2a00f112a7fbcc440ea97effa96e"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130990",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130990",
+    "encoding": "",
+    "subject": "Merge pull request #11062 from sergeyklay/acl/roles",
+    "ssubject": "Merge-pull-request-11062-from-sergeyklay-acl-roles",
+    "body": "Added control of Role type to the Memory::addRole",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d8a337b95ab787bb2a0d6f7675baddfd89e16f99",
+      "0a89d4704ef47ecbc202b567babf852440de25b5"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 29
+  },
+  "975f7a90f5e06eb7b1f342594d9f8246dbf99143": {
+    "sha": "975f7a90f5e06eb7b1f342594d9f8246dbf99143",
+    "ssha": "975f7a9",
+    "parenthashes": [
+      "575beea61b37cff495b48e86d2150f52c19c0c3c",
+      "660596b48d37c1cc88aece0d58d1e0b0aee445ee"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130971",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130971",
+    "encoding": "",
+    "subject": "Merge pull request #11051 from sergeyklay/patch-4",
+    "ssubject": "Merge-pull-request-11051-from-sergeyklay-patch-4",
+    "body": "Update Phalcon\\Queue\\Beanstalk\\Job doc for getters",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "077315982d4bae581155975124422d23297e852f",
+      "8c68d90fd158a9d21375b8911263fdf43169f53d",
+      "e4ad6e8ca5521fa019885b7caf40ef9f9cdfdfb1",
+      "471760bff152cbd1083d232e26966e4fae1a7685"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 30
+  },
+  "575beea61b37cff495b48e86d2150f52c19c0c3c": {
+    "sha": "575beea61b37cff495b48e86d2150f52c19c0c3c",
+    "ssha": "575beea",
+    "parenthashes": [
+      "7b0a878e39453d89672e77692afc501f6578f194",
+      "cd73ca713f9db711d87a5feae8b3af8d50a05d6a"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130953",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130953",
+    "encoding": "",
+    "subject": "Merge pull request #11050 from ashpumpkin/paginate-notice",
+    "ssubject": "Merge-pull-request-11050-from-ashpumpkin-paginate-notice",
+    "body": "Fixed notice in query builder paginator when totalQuery result is empty",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "975f7a90f5e06eb7b1f342594d9f8246dbf99143"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 31
+  },
+  "7b0a878e39453d89672e77692afc501f6578f194": {
+    "sha": "7b0a878e39453d89672e77692afc501f6578f194",
+    "ssha": "7b0a878",
+    "parenthashes": [
+      "8dcc5d3b1e7b3b1ad5f3d3cd499424c6e9378a10",
+      "60cbfa44140c135d31f67d5cdddb0376fa3726be"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130887",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130887",
+    "encoding": "",
+    "subject": "Merge pull request #11011 from Green-Cat/patch-6",
+    "ssubject": "Merge-pull-request-11011-from-Green-Cat-patch-6",
+    "body": "Removes duplicate use statement in response",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "575beea61b37cff495b48e86d2150f52c19c0c3c"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 32
+  },
+  "8dcc5d3b1e7b3b1ad5f3d3cd499424c6e9378a10": {
+    "sha": "8dcc5d3b1e7b3b1ad5f3d3cd499424c6e9378a10",
+    "ssha": "8dcc5d3",
+    "parenthashes": [
+      "7362fd8142a0bd2a731ef7c4aa169b1ba68251a6",
+      "d120eb77273888d3cdf25c89fad3c788664aedcf"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130853",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130853",
+    "encoding": "",
+    "subject": "Merge pull request #11048 from SidRoberts/db-typo-getsqlexpressionhaving",
+    "ssubject": "Merge-pull-request-11048-from-SidRoberts-db-typo-getsqlexpressionhaving",
+    "body": "Fixed a typo and removed redundant type-checking code from Db\\Dialect.",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7b0a878e39453d89672e77692afc501f6578f194"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 33
+  },
+  "7362fd8142a0bd2a731ef7c4aa169b1ba68251a6": {
+    "sha": "7362fd8142a0bd2a731ef7c4aa169b1ba68251a6",
+    "ssha": "7362fd8",
+    "parenthashes": [
+      "b1bccbc85c51da3746a8a023f6dac072e04327ae",
+      "56f95835fadbc2ddf3778e83e0c3eaf8aa46fd9f"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130671",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130671",
+    "encoding": "",
+    "subject": "Merge pull request #11047 from SidRoberts/docs-432",
+    "ssubject": "Merge-pull-request-11047-from-SidRoberts-docs-432",
+    "body": "Added another example to Mvc\\Url::get()",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8dcc5d3b1e7b3b1ad5f3d3cd499424c6e9378a10"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 34
+  },
+  "b1bccbc85c51da3746a8a023f6dac072e04327ae": {
+    "sha": "b1bccbc85c51da3746a8a023f6dac072e04327ae",
+    "ssha": "b1bccbc",
+    "parenthashes": [
+      "edcdea20ce84e922b997989bdea85a5e3aa790d0",
+      "cb8453b1eec8d70728edd3f8b6e38ad1fa7f6ad0"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130655",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130655",
+    "encoding": "",
+    "subject": "Merge pull request #11032 from sergeyklay/mvc/router/tests",
+    "ssubject": "Merge-pull-request-11032-from-sergeyklay-mvc-router-tests",
+    "body": "Amended Router Mvc Test",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7362fd8142a0bd2a731ef7c4aa169b1ba68251a6"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 35
+  },
+  "edcdea20ce84e922b997989bdea85a5e3aa790d0": {
+    "sha": "edcdea20ce84e922b997989bdea85a5e3aa790d0",
+    "ssha": "edcdea2",
+    "parenthashes": [
+      "eea3eb3c10774c161d0bc050fbd154fbbb50d996",
+      "2df9582e12596aceac22faea73049e1d5ff51852"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130635",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130635",
+    "encoding": "",
+    "subject": "Merge pull request #11040 from sergeyklay/sql/dialect/sqlite/indexes",
+    "ssubject": "Merge-pull-request-11040-from-sergeyklay-sql-dialect-sqlite-indexes",
+    "body": "Small fixes in Sqlite::describeIndexes",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b1bccbc85c51da3746a8a023f6dac072e04327ae"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 36
+  },
+  "eea3eb3c10774c161d0bc050fbd154fbbb50d996": {
+    "sha": "eea3eb3c10774c161d0bc050fbd154fbbb50d996",
+    "ssha": "eea3eb3",
+    "parenthashes": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8",
+      "6da308e9d44ba061c089ea6d832a246148fe0191"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1446130617",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1446130617",
+    "encoding": "",
+    "subject": "Merge pull request #11030 from sergeyklay/mvc/router/host_name",
+    "ssubject": "Merge-pull-request-11030-from-sergeyklay-mvc-router-host_name",
+    "body": "Added missed RouteInterface::setHostname, RouteInterface::getHostname",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "edcdea20ce84e922b997989bdea85a5e3aa790d0"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 37
+  },
+  "44e8916f6c9c2a81e6e5fd3a9522f41e80164a3f": {
+    "sha": "44e8916f6c9c2a81e6e5fd3a9522f41e80164a3f",
+    "ssha": "44e8916",
+    "parenthashes": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445975920",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445975920",
+    "encoding": "",
+    "subject": "Fixed Filter::sanitize return type",
+    "ssubject": "Fixed-Filter-sanitize-return-type",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "dd97416b4e04bbee93020c700facb83099ed3c1a"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 38
+  },
+  "6da308e9d44ba061c089ea6d832a246148fe0191": {
+    "sha": "6da308e9d44ba061c089ea6d832a246148fe0191",
+    "ssha": "6da308e",
+    "parenthashes": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445171514",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445974825",
+    "encoding": "",
+    "subject": "Added missed RouteInterface::setHostname, RouteInterface::getHostname",
+    "ssubject": "Added-missed-RouteInterface-setHostname-RouteInterface-getHostname",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "eea3eb3c10774c161d0bc050fbd154fbbb50d996"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 39
+  },
+  "f843bea764887c1944e6199bf418c20cd5631f42": {
+    "sha": "f843bea764887c1944e6199bf418c20cd5631f42",
+    "ssha": "f843bea",
+    "parenthashes": [
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1445898328",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1445898328",
+    "encoding": "",
+    "subject": "Fixed RouteInterface::setHttpMethods return type",
+    "ssubject": "Fixed-RouteInterface-setHttpMethods-return-type",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50"
+    ],
+    "inHeads": [
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9"
+    ],
+    "index": 40
+  },
+  "6065a84c7dcb2a00f112a7fbcc440ea97effa96e": {
+    "sha": "6065a84c7dcb2a00f112a7fbcc440ea97effa96e",
+    "ssha": "6065a84",
+    "parenthashes": [
+      "7fdc8831d7bb80e84b17b9be6eefec809dc70e28"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445804099",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445857672",
+    "encoding": "",
+    "subject": "Added control of Role type to the Memory::addRole",
+    "ssubject": "Added-control-of-Role-type-to-the-Memory-addRole",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8f3bde73c0848129bd236918d1c3cad3f7d725c5"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 41
+  },
+  "660596b48d37c1cc88aece0d58d1e0b0aee445ee": {
+    "sha": "660596b48d37c1cc88aece0d58d1e0b0aee445ee",
+    "ssha": "660596b",
+    "parenthashes": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1445550806",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1445550806",
+    "encoding": "",
+    "subject": "Update Phalcon\\Queue\\Beanstalk\\Job doc for getters",
+    "ssubject": "Update-Phalcon-Queue-Beanstalk-Job-doc-for-getters",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "975f7a90f5e06eb7b1f342594d9f8246dbf99143"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 42
+  },
+  "cd73ca713f9db711d87a5feae8b3af8d50a05d6a": {
+    "sha": "cd73ca713f9db711d87a5feae8b3af8d50a05d6a",
+    "ssha": "cd73ca7",
+    "parenthashes": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8"
+    ],
+    "authorname": "Eugene Smirnov",
+    "authoremail": "ashpumpkin@gmail.com",
+    "authordate": "1445547059",
+    "committername": "Eugene Smirnov",
+    "committeremail": "ashpumpkin@gmail.com",
+    "committerdate": "1445547059",
+    "encoding": "",
+    "subject": "Fixed notice in query builder paginator when totalQuery result is empty",
+    "ssubject": "Fixed-notice-in-query-builder-paginator-when-totalQuery-result-is-empty",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "575beea61b37cff495b48e86d2150f52c19c0c3c"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 43
+  },
+  "d120eb77273888d3cdf25c89fad3c788664aedcf": {
+    "sha": "d120eb77273888d3cdf25c89fad3c788664aedcf",
+    "ssha": "d120eb7",
+    "parenthashes": [
+      "c98d9faec841ba0ebb39bbde700b7577a4683d46"
+    ],
+    "authorname": "Sid Roberts",
+    "authoremail": "sid@sidroberts.co.uk",
+    "authordate": "1445506298",
+    "committername": "Sid Roberts",
+    "committeremail": "sid@sidroberts.co.uk",
+    "committerdate": "1445506303",
+    "encoding": "",
+    "subject": "Added stricter type-checking to `Db\\Dialect::getSqlExpressionHaving()`.",
+    "ssubject": "Added-stricter-type-checking-to-Db-Dialect-getSqlExpressionHaving",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8dcc5d3b1e7b3b1ad5f3d3cd499424c6e9378a10"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 44
+  },
+  "56f95835fadbc2ddf3778e83e0c3eaf8aa46fd9f": {
+    "sha": "56f95835fadbc2ddf3778e83e0c3eaf8aa46fd9f",
+    "ssha": "56f9583",
+    "parenthashes": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8"
+    ],
+    "authorname": "Sid Roberts",
+    "authoremail": "sid@sidroberts.co.uk",
+    "authordate": "1445504958",
+    "committername": "Sid Roberts",
+    "committeremail": "sid@sidroberts.co.uk",
+    "committerdate": "1445506156",
+    "encoding": "",
+    "subject": "Added another example to Mvc\\Url::get() (phalcon/docs#432)",
+    "ssubject": "Added-another-example-to-Mvc-Url-get-phalcon-docs-432",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7362fd8142a0bd2a731ef7c4aa169b1ba68251a6"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 45
+  },
+  "c98d9faec841ba0ebb39bbde700b7577a4683d46": {
+    "sha": "c98d9faec841ba0ebb39bbde700b7577a4683d46",
+    "ssha": "c98d9fa",
+    "parenthashes": [
+      "0c5a01210dbab83baa861e8ec84424dbd767b5f8"
+    ],
+    "authorname": "Sid Roberts",
+    "authoremail": "sid@sidroberts.co.uk",
+    "authordate": "1445506035",
+    "committername": "Sid Roberts",
+    "committeremail": "sid@sidroberts.co.uk",
+    "committerdate": "1445506039",
+    "encoding": "",
+    "subject": "Removed redundant type-checking code from `Db\\Dialect::getSqlExpressionHaving()`.",
+    "ssubject": "Removed-redundant-type-checking-code-from-Db-Dialect-getSqlExpressionHaving",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d120eb77273888d3cdf25c89fad3c788664aedcf"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 46
+  },
+  "0c5a01210dbab83baa861e8ec84424dbd767b5f8": {
+    "sha": "0c5a01210dbab83baa861e8ec84424dbd767b5f8",
+    "ssha": "0c5a012",
+    "parenthashes": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8"
+    ],
+    "authorname": "Sid Roberts",
+    "authoremail": "sid@sidroberts.co.uk",
+    "authordate": "1445505972",
+    "committername": "Sid Roberts",
+    "committeremail": "sid@sidroberts.co.uk",
+    "committerdate": "1445505972",
+    "encoding": "",
+    "subject": "Fixed typo in Db\\Dialect (filed -> field).",
+    "ssubject": "Fixed-typo-in-Db-Dialect-filed-field",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c98d9faec841ba0ebb39bbde700b7577a4683d46"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 47
+  },
+  "355e31c7d8f8d1962293e56dc79d5df1c6359a60": {
+    "sha": "355e31c7d8f8d1962293e56dc79d5df1c6359a60",
+    "ssha": "355e31c",
+    "parenthashes": [
+      "594f462f2ff83ae5f864f05299326b834e8ee3c0"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445449068",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445449068",
+    "encoding": "",
+    "subject": "Cleaned Loader",
+    "ssubject": "Cleaned-Loader",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 48
+  },
+  "594f462f2ff83ae5f864f05299326b834e8ee3c0": {
+    "sha": "594f462f2ff83ae5f864f05299326b834e8ee3c0",
+    "ssha": "594f462",
+    "parenthashes": [
+      "062d94d13c0c1336a7a532898d0ffbd408dc1b77"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445442491",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445442491",
+    "encoding": "",
+    "subject": "Fixed .gitignore",
+    "ssubject": "Fixed-.gitignore",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "355e31c7d8f8d1962293e56dc79d5df1c6359a60"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 49
+  },
+  "062d94d13c0c1336a7a532898d0ffbd408dc1b77": {
+    "sha": "062d94d13c0c1336a7a532898d0ffbd408dc1b77",
+    "ssha": "062d94d",
+    "parenthashes": [
+      "58844459f0a5571ce073e9aed97c5bc0227a52e4"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445441223",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445441223",
+    "encoding": "",
+    "subject": "Added tests for Loader::registerNamespaces",
+    "ssubject": "Added-tests-for-Loader-registerNamespaces",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "594f462f2ff83ae5f864f05299326b834e8ee3c0"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 50
+  },
+  "58844459f0a5571ce073e9aed97c5bc0227a52e4": {
+    "sha": "58844459f0a5571ce073e9aed97c5bc0227a52e4",
+    "ssha": "5884445",
+    "parenthashes": [
+      "7fdc8831d7bb80e84b17b9be6eefec809dc70e28"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445439459",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445439459",
+    "encoding": "",
+    "subject": "Fixed issue #11021",
+    "ssubject": "Fixed-issue-11021",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "062d94d13c0c1336a7a532898d0ffbd408dc1b77"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 51
+  },
+  "23de7e94bab11cdd5b558370bc95f00dee991fc8": {
+    "sha": "23de7e94bab11cdd5b558370bc95f00dee991fc8",
+    "ssha": "23de7e9",
+    "parenthashes": [
+      "fddfed4ffdd6c6f6f48bcf64cfc8953ba6296f98",
+      "71345a456fcdb9a44298cfc17d404c5028051012"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1445430986",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1445430986",
+    "encoding": "",
+    "subject": "Merge pull request #11039 from sergeyklay/sql/dialect/mysql/indexes",
+    "ssubject": "Merge-pull-request-11039-from-sergeyklay-sql-dialect-mysql-indexes",
+    "body": "Fixed issue #11036",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "eea3eb3c10774c161d0bc050fbd154fbbb50d996",
+      "44e8916f6c9c2a81e6e5fd3a9522f41e80164a3f",
+      "6da308e9d44ba061c089ea6d832a246148fe0191",
+      "660596b48d37c1cc88aece0d58d1e0b0aee445ee",
+      "cd73ca713f9db711d87a5feae8b3af8d50a05d6a",
+      "56f95835fadbc2ddf3778e83e0c3eaf8aa46fd9f",
+      "0c5a01210dbab83baa861e8ec84424dbd767b5f8"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 52
+  },
+  "71345a456fcdb9a44298cfc17d404c5028051012": {
+    "sha": "71345a456fcdb9a44298cfc17d404c5028051012",
+    "ssha": "71345a4",
+    "parenthashes": [
+      "3a8f73bbe02679fe1dd49fd1cc6c935cce0c503d"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445420494",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445424736",
+    "encoding": "",
+    "subject": "Updated CHANGELOG",
+    "ssubject": "Updated-CHANGELOG",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 53
+  },
+  "3a8f73bbe02679fe1dd49fd1cc6c935cce0c503d": {
+    "sha": "3a8f73bbe02679fe1dd49fd1cc6c935cce0c503d",
+    "ssha": "3a8f73b",
+    "parenthashes": [
+      "1ffa9a7a0990177d1e2a40153b03f24d2e979fe8"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445420384",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445424736",
+    "encoding": "",
+    "subject": "Added tests for MySQL indexes",
+    "ssubject": "Added-tests-for-MySQL-indexes",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "71345a456fcdb9a44298cfc17d404c5028051012"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 54
+  },
+  "1ffa9a7a0990177d1e2a40153b03f24d2e979fe8": {
+    "sha": "1ffa9a7a0990177d1e2a40153b03f24d2e979fe8",
+    "ssha": "1ffa9a7",
+    "parenthashes": [
+      "fddfed4ffdd6c6f6f48bcf64cfc8953ba6296f98"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445418794",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445424728",
+    "encoding": "",
+    "subject": "Fixed issue #11036",
+    "ssubject": "Fixed-issue-11036",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "3a8f73bbe02679fe1dd49fd1cc6c935cce0c503d"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 55
+  },
+  "2df9582e12596aceac22faea73049e1d5ff51852": {
+    "sha": "2df9582e12596aceac22faea73049e1d5ff51852",
+    "ssha": "2df9582",
+    "parenthashes": [
+      "fddfed4ffdd6c6f6f48bcf64cfc8953ba6296f98"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445424502",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445424502",
+    "encoding": "",
+    "subject": "Small fixes in Sqlite::describeIndexes",
+    "ssubject": "Small-fixes-in-Sqlite-describeIndexes",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "edcdea20ce84e922b997989bdea85a5e3aa790d0"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 56
+  },
+  "fddfed4ffdd6c6f6f48bcf64cfc8953ba6296f98": {
+    "sha": "fddfed4ffdd6c6f6f48bcf64cfc8953ba6296f98",
+    "ssha": "fddfed4",
+    "parenthashes": [
+      "fb8d18bc070233068279ce8e6d3636439af8e328",
+      "fac1ef7a167243fae3b35bbd0d6466a9e340bc1f"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1445280133",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1445280133",
+    "encoding": "",
+    "subject": "Merge pull request #11015 from sergeyklay/patch-5",
+    "ssubject": "Merge-pull-request-11015-from-sergeyklay-patch-5",
+    "body": "Fixed issue #11014",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "23de7e94bab11cdd5b558370bc95f00dee991fc8",
+      "1ffa9a7a0990177d1e2a40153b03f24d2e979fe8",
+      "2df9582e12596aceac22faea73049e1d5ff51852"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 57
+  },
+  "fb8d18bc070233068279ce8e6d3636439af8e328": {
+    "sha": "fb8d18bc070233068279ce8e6d3636439af8e328",
+    "ssha": "fb8d18b",
+    "parenthashes": [
+      "b0fd988d46413be2cfc800d316bc77adab9f3c1c",
+      "15a295220cf9a7fdbe3f157362d95135bd517dad"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1445280115",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1445280115",
+    "encoding": "",
+    "subject": "Merge pull request #10998 from sergeyklay/sql/dialect/sqlite/indexes",
+    "ssubject": "Merge-pull-request-10998-from-sergeyklay-sql-dialect-sqlite-indexes",
+    "body": "Fixed issue #10997",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fddfed4ffdd6c6f6f48bcf64cfc8953ba6296f98"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 58
+  },
+  "b0fd988d46413be2cfc800d316bc77adab9f3c1c": {
+    "sha": "b0fd988d46413be2cfc800d316bc77adab9f3c1c",
+    "ssha": "b0fd988",
+    "parenthashes": [
+      "a5809522c60a1806f55a0cfde70c31ae78a29f94",
+      "8572ea112706bbede9b44318a72d88b6437141a7"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1445268054",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1445268054",
+    "encoding": "",
+    "subject": "Merge pull request #10961 from sergeyklay/patch-4",
+    "ssubject": "Merge-pull-request-10961-from-sergeyklay-patch-4",
+    "body": "Added mixed return type to Phalcon\\Config::get",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fb8d18bc070233068279ce8e6d3636439af8e328"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 59
+  },
+  "a5809522c60a1806f55a0cfde70c31ae78a29f94": {
+    "sha": "a5809522c60a1806f55a0cfde70c31ae78a29f94",
+    "ssha": "a580952",
+    "parenthashes": [
+      "31cbb01bcabca839e8f19d6be914830e6db87089",
+      "9868e945f06e916af203942fb8d0017fbbc5fa64"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1445268044",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1445268044",
+    "encoding": "",
+    "subject": "Merge pull request #10933 from sergeyklay/sql/dialect/general",
+    "ssubject": "Merge-pull-request-10933-from-sergeyklay-sql-dialect-general",
+    "body": "Fixed misspelling in doc",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b0fd988d46413be2cfc800d316bc77adab9f3c1c"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 60
+  },
+  "cb8453b1eec8d70728edd3f8b6e38ad1fa7f6ad0": {
+    "sha": "cb8453b1eec8d70728edd3f8b6e38ad1fa7f6ad0",
+    "ssha": "cb8453b",
+    "parenthashes": [
+      "31cbb01bcabca839e8f19d6be914830e6db87089"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1445206367",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445206367",
+    "encoding": "",
+    "subject": "Amended Router Mvc Test",
+    "ssubject": "Amended-Router-Mvc-Test",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b1bccbc85c51da3746a8a023f6dac072e04327ae"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 61
+  },
+  "15a295220cf9a7fdbe3f157362d95135bd517dad": {
+    "sha": "15a295220cf9a7fdbe3f157362d95135bd517dad",
+    "ssha": "15a2952",
+    "parenthashes": [
+      "35b72ff4050d429983a1b59c3dcc0b375f378005"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1443973688",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445157648",
+    "encoding": "",
+    "subject": "Escape table & keyName in Sqlite::listIndexesSql",
+    "ssubject": "Escape-table-keyName-in-Sqlite-listIndexesSql",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fb8d18bc070233068279ce8e6d3636439af8e328"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 62
+  },
+  "35b72ff4050d429983a1b59c3dcc0b375f378005": {
+    "sha": "35b72ff4050d429983a1b59c3dcc0b375f378005",
+    "ssha": "35b72ff",
+    "parenthashes": [
+      "c8455b232b73b8ae0b4799474e89e3bdb391dbb0"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1443971496",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445157648",
+    "encoding": "",
+    "subject": "Updated CHANGELOG [ci skip]",
+    "ssubject": "Updated-CHANGELOG-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "15a295220cf9a7fdbe3f157362d95135bd517dad"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 63
+  },
+  "c8455b232b73b8ae0b4799474e89e3bdb391dbb0": {
+    "sha": "c8455b232b73b8ae0b4799474e89e3bdb391dbb0",
+    "ssha": "c8455b2",
+    "parenthashes": [
+      "271598202e1373197e0df05a4bcd1b631304cfab"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1443969753",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445157588",
+    "encoding": "",
+    "subject": "Added tests for SQLite indexes",
+    "ssubject": "Added-tests-for-SQLite-indexes",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "35b72ff4050d429983a1b59c3dcc0b375f378005"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 64
+  },
+  "271598202e1373197e0df05a4bcd1b631304cfab": {
+    "sha": "271598202e1373197e0df05a4bcd1b631304cfab",
+    "ssha": "2715982",
+    "parenthashes": [
+      "31cbb01bcabca839e8f19d6be914830e6db87089"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1443961957",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1445157588",
+    "encoding": "",
+    "subject": "Fixed issue #10997",
+    "ssubject": "Fixed-issue-10997",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c8455b232b73b8ae0b4799474e89e3bdb391dbb0"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 65
+  },
+  "31cbb01bcabca839e8f19d6be914830e6db87089": {
+    "sha": "31cbb01bcabca839e8f19d6be914830e6db87089",
+    "ssha": "31cbb01",
+    "parenthashes": [
+      "91b68db0b45dae461cd093db6c54f497f3a8e405",
+      "413722cfa4064d250b98e94599df83843d89b8fc"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1444904918",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1444904918",
+    "encoding": "",
+    "subject": "Merge pull request #10994 from KorsaR-ZN/hostfix-1",
+    "ssubject": "Merge-pull-request-10994-from-KorsaR-ZN-hostfix-1",
+    "body": "[2.0.x] Added implementation options \"allowEmpty\"",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "a5809522c60a1806f55a0cfde70c31ae78a29f94",
+      "cb8453b1eec8d70728edd3f8b6e38ad1fa7f6ad0",
+      "271598202e1373197e0df05a4bcd1b631304cfab"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 66
+  },
+  "fac1ef7a167243fae3b35bbd0d6466a9e340bc1f": {
+    "sha": "fac1ef7a167243fae3b35bbd0d6466a9e340bc1f",
+    "ssha": "fac1ef7",
+    "parenthashes": [
+      "91b68db0b45dae461cd093db6c54f497f3a8e405"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1444388791",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1444388791",
+    "encoding": "",
+    "subject": "Fixed issue #11014",
+    "ssubject": "Fixed-issue-11014",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "fddfed4ffdd6c6f6f48bcf64cfc8953ba6296f98"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 67
+  },
+  "413722cfa4064d250b98e94599df83843d89b8fc": {
+    "sha": "413722cfa4064d250b98e94599df83843d89b8fc",
+    "ssha": "413722c",
+    "parenthashes": [
+      "91b68db0b45dae461cd093db6c54f497f3a8e405"
+    ],
+    "authorname": "Stanislav Kiryukhin",
+    "authoremail": "korsar.zn@gmail.com",
+    "authordate": "1443781374",
+    "committername": "Stanislav Kiryukhin",
+    "committeremail": "korsar.zn@gmail.com",
+    "committerdate": "1444382014",
+    "encoding": "",
+    "subject": "#10992 - Added implementation options \"allowEmpty\"",
+    "ssubject": "10992-Added-implementation-options-allowEmpty",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "31cbb01bcabca839e8f19d6be914830e6db87089"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 68
+  },
+  "7fdc8831d7bb80e84b17b9be6eefec809dc70e28": {
+    "sha": "7fdc8831d7bb80e84b17b9be6eefec809dc70e28",
+    "ssha": "7fdc883",
+    "parenthashes": [
+      "de2df9c8d5e18d9b39f53b1621f96e33159b964b",
+      "ba478c4221e525c9f3a9ea7d9b2a8829d69e4bb2"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1444318770",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1444318770",
+    "encoding": "",
+    "subject": "Merge pull request #10939 from patrick-zippenfenig/persistentMemcached",
+    "ssubject": "Merge-pull-request-10939-from-patrick-zippenfenig-persistentMemcached",
+    "body": "[2.1.x] Memcached persistent connection pool for cache and session backends.",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "8f3bde73c0848129bd236918d1c3cad3f7d725c5",
+      "6065a84c7dcb2a00f112a7fbcc440ea97effa96e",
+      "58844459f0a5571ce073e9aed97c5bc0227a52e4"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 69
+  },
+  "91b68db0b45dae461cd093db6c54f497f3a8e405": {
+    "sha": "91b68db0b45dae461cd093db6c54f497f3a8e405",
+    "ssha": "91b68db",
+    "parenthashes": [
+      "6f4096ddf3aef3163669f407784658dabd5c4ec7",
+      "f27c7f1a4fc62d2251f5eb9e83a2fa2fec05ec11"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1444315604",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1444315604",
+    "encoding": "",
+    "subject": "Merge pull request #10993 from sergeyklay/boot",
+    "ssubject": "Merge-pull-request-10993-from-sergeyklay-boot",
+    "body": "Added console:boot event",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "31cbb01bcabca839e8f19d6be914830e6db87089",
+      "fac1ef7a167243fae3b35bbd0d6466a9e340bc1f",
+      "413722cfa4064d250b98e94599df83843d89b8fc"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 70
+  },
+  "de2df9c8d5e18d9b39f53b1621f96e33159b964b": {
+    "sha": "de2df9c8d5e18d9b39f53b1621f96e33159b964b",
+    "ssha": "de2df9c",
+    "parenthashes": [
+      "311aeb60f12496a334ca8eedb3b0f865934f0ecb",
+      "64b68c9e72d1aa4b3d9c399c74477f6820047787"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1444315577",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1444315577",
+    "encoding": "",
+    "subject": "Merge pull request #10982 from temuri416/2.1.x",
+    "ssubject": "Merge-pull-request-10982-from-temuri416-2.1.x",
+    "body": "2.1.x. Pass validator error code to validation message constructor.",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7fdc8831d7bb80e84b17b9be6eefec809dc70e28"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 71
+  },
+  "60cbfa44140c135d31f67d5cdddb0376fa3726be": {
+    "sha": "60cbfa44140c135d31f67d5cdddb0376fa3726be",
+    "ssha": "60cbfa4",
+    "parenthashes": [
+      "6f4096ddf3aef3163669f407784658dabd5c4ec7"
+    ],
+    "authorname": "Green Cat",
+    "authoremail": "green.cat@me.com",
+    "authordate": "1444301335",
+    "committername": "Green Cat",
+    "committeremail": "green.cat@me.com",
+    "committerdate": "1444301335",
+    "encoding": "",
+    "subject": "Removes duplicate use statement in response",
+    "ssubject": "Removes-duplicate-use-statement-in-response",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7b0a878e39453d89672e77692afc501f6578f194"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 72
+  },
+  "425abc4d9111a1e1f907bfad280c2f98665418a4": {
+    "sha": "425abc4d9111a1e1f907bfad280c2f98665418a4",
+    "ssha": "425abc4",
+    "parenthashes": [
+      "6f4096ddf3aef3163669f407784658dabd5c4ec7"
+    ],
+    "authorname": "Green Cat",
+    "authoremail": "green.cat@me.com",
+    "authordate": "1444122554",
+    "committername": "Green Cat",
+    "committeremail": "green.cat@me.com",
+    "committerdate": "1444122554",
+    "encoding": "",
+    "subject": "Removes duplicate use statement in router",
+    "ssubject": "Removes-duplicate-use-statement-in-router",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "077315982d4bae581155975124422d23297e852f"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 73
+  },
+  "f27c7f1a4fc62d2251f5eb9e83a2fa2fec05ec11": {
+    "sha": "f27c7f1a4fc62d2251f5eb9e83a2fa2fec05ec11",
+    "ssha": "f27c7f1",
+    "parenthashes": [
+      "6f4096ddf3aef3163669f407784658dabd5c4ec7"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1443602201",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1443764200",
+    "encoding": "",
+    "subject": "Added console:boot event",
+    "ssubject": "Added-console-boot-event",
+    "body": "In order to allow the developer to perform initialization actions\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "91b68db0b45dae461cd093db6c54f497f3a8e405"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 74
+  },
+  "6f4096ddf3aef3163669f407784658dabd5c4ec7": {
+    "sha": "6f4096ddf3aef3163669f407784658dabd5c4ec7",
+    "ssha": "6f4096d",
+    "parenthashes": [
+      "54415843e17e1157bc3417784cc3f51b3895c107",
+      "9090a03e0721e597bbc4dff8e9df1baff7a9508a"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443718843",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443718843",
+    "encoding": "",
+    "subject": "Merge pull request #10991 from sergeyklay/patch-6",
+    "ssubject": "Merge-pull-request-10991-from-sergeyklay-patch-6",
+    "body": "Fixed logger doc",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "91b68db0b45dae461cd093db6c54f497f3a8e405",
+      "60cbfa44140c135d31f67d5cdddb0376fa3726be",
+      "425abc4d9111a1e1f907bfad280c2f98665418a4",
+      "f27c7f1a4fc62d2251f5eb9e83a2fa2fec05ec11"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 75
+  },
+  "54415843e17e1157bc3417784cc3f51b3895c107": {
+    "sha": "54415843e17e1157bc3417784cc3f51b3895c107",
+    "ssha": "5441584",
+    "parenthashes": [
+      "5b8ec521ee76bf7580f15dc6e9dc0a1360c4f03b"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443712453",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443712453",
+    "encoding": "",
+    "subject": "Updating version to 2.0.9, using latest Zephir",
+    "ssubject": "Updating-version-to-2.0.9-using-latest-Zephir",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6f4096ddf3aef3163669f407784658dabd5c4ec7"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 76
+  },
+  "5b8ec521ee76bf7580f15dc6e9dc0a1360c4f03b": {
+    "sha": "5b8ec521ee76bf7580f15dc6e9dc0a1360c4f03b",
+    "ssha": "5b8ec52",
+    "parenthashes": [
+      "f6fc1565802285b8a0dccf8faa79a37a018c8c27",
+      "17493b8078f657fc11eaf031153181429ef074f2"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443712276",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443712276",
+    "encoding": "",
+    "subject": "Merge pull request #10986 from dreamsxin/session_redis",
+    "ssubject": "Merge-pull-request-10986-from-dreamsxin-session_redis",
+    "body": "Fix #10829",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "54415843e17e1157bc3417784cc3f51b3895c107"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 77
+  },
+  "9090a03e0721e597bbc4dff8e9df1baff7a9508a": {
+    "sha": "9090a03e0721e597bbc4dff8e9df1baff7a9508a",
+    "ssha": "9090a03",
+    "parenthashes": [
+      "5336ab7c1650450d4b5f5c9eab0bbadd5471e2ee"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1443639306",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1443639306",
+    "encoding": "",
+    "subject": "Update syslog.zep",
+    "ssubject": "Update-syslog.zep",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6f4096ddf3aef3163669f407784658dabd5c4ec7"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 78
+  },
+  "5336ab7c1650450d4b5f5c9eab0bbadd5471e2ee": {
+    "sha": "5336ab7c1650450d4b5f5c9eab0bbadd5471e2ee",
+    "ssha": "5336ab7",
+    "parenthashes": [
+      "5460d71851d68b75c148f537e91abfebba8fe013"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1443639248",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1443639248",
+    "encoding": "",
+    "subject": "Update stream.zep",
+    "ssubject": "Update-stream.zep",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "9090a03e0721e597bbc4dff8e9df1baff7a9508a"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 79
+  },
+  "5460d71851d68b75c148f537e91abfebba8fe013": {
+    "sha": "5460d71851d68b75c148f537e91abfebba8fe013",
+    "ssha": "5460d71",
+    "parenthashes": [
+      "c1cadf36936ca7dc5269e23d173a1ec26f84f3c0"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1443639211",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1443639211",
+    "encoding": "",
+    "subject": "Update file.zep",
+    "ssubject": "Update-file.zep",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5336ab7c1650450d4b5f5c9eab0bbadd5471e2ee"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 80
+  },
+  "c1cadf36936ca7dc5269e23d173a1ec26f84f3c0": {
+    "sha": "c1cadf36936ca7dc5269e23d173a1ec26f84f3c0",
+    "ssha": "c1cadf3",
+    "parenthashes": [
+      "f6fc1565802285b8a0dccf8faa79a37a018c8c27"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1443637773",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1443637773",
+    "encoding": "",
+    "subject": "Fixed logger doc",
+    "ssubject": "Fixed-logger-doc",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5460d71851d68b75c148f537e91abfebba8fe013"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 81
+  },
+  "17493b8078f657fc11eaf031153181429ef074f2": {
+    "sha": "17493b8078f657fc11eaf031153181429ef074f2",
+    "ssha": "17493b8",
+    "parenthashes": [
+      "f6fc1565802285b8a0dccf8faa79a37a018c8c27"
+    ],
+    "authorname": "dreamsxin",
+    "authoremail": "dreamsxin@126.com",
+    "authordate": "1443575272",
+    "committername": "dreamsxin",
+    "committeremail": "dreamsxin@126.com",
+    "committerdate": "1443575272",
+    "encoding": "",
+    "subject": "Fix #10829",
+    "ssubject": "Fix-10829",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5b8ec521ee76bf7580f15dc6e9dc0a1360c4f03b"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 82
+  },
+  "f6fc1565802285b8a0dccf8faa79a37a018c8c27": {
+    "sha": "f6fc1565802285b8a0dccf8faa79a37a018c8c27",
+    "ssha": "f6fc156",
+    "parenthashes": [
+      "2477fd2b930a6d81da8f1c7eba1f86de25ead217",
+      "4d6f1e1547e57870c026fd82b377f5d53b9e1c32"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443535371",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443535371",
+    "encoding": "",
+    "subject": "Merge pull request #10983 from sergeyklay/patch-5",
+    "ssubject": "Merge-pull-request-10983-from-sergeyklay-patch-5",
+    "body": "Fixed return for Phalcon\\Di",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5b8ec521ee76bf7580f15dc6e9dc0a1360c4f03b",
+      "c1cadf36936ca7dc5269e23d173a1ec26f84f3c0",
+      "17493b8078f657fc11eaf031153181429ef074f2"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 83
+  },
+  "4d6f1e1547e57870c026fd82b377f5d53b9e1c32": {
+    "sha": "4d6f1e1547e57870c026fd82b377f5d53b9e1c32",
+    "ssha": "4d6f1e1",
+    "parenthashes": [
+      "eb7c5d06ffe58a9167f4d3fe89f9793997c7e0fa"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1443534519",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1443534519",
+    "encoding": "",
+    "subject": "Update di.zep",
+    "ssubject": "Update-di.zep",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f6fc1565802285b8a0dccf8faa79a37a018c8c27"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 84
+  },
+  "2477fd2b930a6d81da8f1c7eba1f86de25ead217": {
+    "sha": "2477fd2b930a6d81da8f1c7eba1f86de25ead217",
+    "ssha": "2477fd2",
+    "parenthashes": [
+      "7a6b79e207a49e421aa85b49116235c2848d19fe",
+      "3fa3a6c0887c1ce4dad06679a2707606f29f3df2"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443533169",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443533169",
+    "encoding": "",
+    "subject": "Merge pull request #10942 from sergeyklay/patch-1",
+    "ssubject": "Merge-pull-request-10942-from-sergeyklay-patch-1",
+    "body": "Update CHANGELOG.md [ci skip]",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "f6fc1565802285b8a0dccf8faa79a37a018c8c27"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 85
+  },
+  "ba478c4221e525c9f3a9ea7d9b2a8829d69e4bb2": {
+    "sha": "ba478c4221e525c9f3a9ea7d9b2a8829d69e4bb2",
+    "ssha": "ba478c4",
+    "parenthashes": [
+      "518e1b248d342e5aba71e40253ede831f409040b"
+    ],
+    "authorname": "patrick-zippenfenig",
+    "authoremail": "patrick@zippenfenig.de",
+    "authordate": "1443430597",
+    "committername": "patrick",
+    "committeremail": "patrick.zippenfenig@meteoblue.com",
+    "committerdate": "1443430597",
+    "encoding": "",
+    "subject": "- Removed memcached config docs - getServerList is now in zephir/master memcached prototypes -> travis should work now",
+    "ssubject": "Removed-memcached-config-docs",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7fdc8831d7bb80e84b17b9be6eefec809dc70e28"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 86
+  },
+  "eb7c5d06ffe58a9167f4d3fe89f9793997c7e0fa": {
+    "sha": "eb7c5d06ffe58a9167f4d3fe89f9793997c7e0fa",
+    "ssha": "eb7c5d0",
+    "parenthashes": [
+      "7a6b79e207a49e421aa85b49116235c2848d19fe"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1443388433",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1443388433",
+    "encoding": "",
+    "subject": "Update di.zep",
+    "ssubject": "Update-di.zep",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "4d6f1e1547e57870c026fd82b377f5d53b9e1c32"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 87
+  },
+  "64b68c9e72d1aa4b3d9c399c74477f6820047787": {
+    "sha": "64b68c9e72d1aa4b3d9c399c74477f6820047787",
+    "ssha": "64b68c9",
+    "parenthashes": [
+      "10e20f1853b50fd9fa4b208b11c30c312d96f661"
+    ],
+    "authorname": "temuri416",
+    "authoremail": "temuri416@gmail.com",
+    "authordate": "1443283799",
+    "committername": "Temuri Imnaishvili",
+    "committeremail": "temuri416@gmail.com",
+    "committerdate": "1443385935",
+    "encoding": "",
+    "subject": "Pass validator error code to validation message.",
+    "ssubject": "Pass-validator-error-code-to-validation-message",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "de2df9c8d5e18d9b39f53b1621f96e33159b964b"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 88
+  },
+  "10e20f1853b50fd9fa4b208b11c30c312d96f661": {
+    "sha": "10e20f1853b50fd9fa4b208b11c30c312d96f661",
+    "ssha": "10e20f1",
+    "parenthashes": [
+      "311aeb60f12496a334ca8eedb3b0f865934f0ecb"
+    ],
+    "authorname": "temuri416",
+    "authoremail": "temuri416@gmail.com",
+    "authordate": "1443283768",
+    "committername": "temuri416",
+    "committeremail": "temuri416@gmail.com",
+    "committerdate": "1443283768",
+    "encoding": "",
+    "subject": "Pass validator error code to validation message.",
+    "ssubject": "Pass-validator-error-code-to-validation-message",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "64b68c9e72d1aa4b3d9c399c74477f6820047787"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 89
+  },
+  "7a6b79e207a49e421aa85b49116235c2848d19fe": {
+    "sha": "7a6b79e207a49e421aa85b49116235c2848d19fe",
+    "ssha": "7a6b79e",
+    "parenthashes": [
+      "5bb9da95499c6c0395164f747f619cd876cea45d",
+      "ec3ef0ec771c612285678529496e26a9b19de45d"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443227961",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443227961",
+    "encoding": "",
+    "subject": "Merge pull request #10972 from snowair/2.0.x",
+    "ssubject": "Merge-pull-request-10972-from-snowair-2.0.x",
+    "body": "Fix: cookie is always resent after get.",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2477fd2b930a6d81da8f1c7eba1f86de25ead217",
+      "eb7c5d06ffe58a9167f4d3fe89f9793997c7e0fa"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 90
+  },
+  "311aeb60f12496a334ca8eedb3b0f865934f0ecb": {
+    "sha": "311aeb60f12496a334ca8eedb3b0f865934f0ecb",
+    "ssha": "311aeb6",
+    "parenthashes": [
+      "6efbbd4d9aa9432149ac0d6335e0ad1c0a070ab9"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443208742",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443208742",
+    "encoding": "",
+    "subject": "Fixed conflicts in CHANGELOG [ci skip]",
+    "ssubject": "Fixed-conflicts-in-CHANGELOG-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "de2df9c8d5e18d9b39f53b1621f96e33159b964b",
+      "10e20f1853b50fd9fa4b208b11c30c312d96f661"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 91
+  },
+  "5bb9da95499c6c0395164f747f619cd876cea45d": {
+    "sha": "5bb9da95499c6c0395164f747f619cd876cea45d",
+    "ssha": "5bb9da9",
+    "parenthashes": [
+      "58cb694bb77164ac4366d430b65c39ca5753470d",
+      "2c289b426a64f15eec9cbf43d3666a588c259309"
+    ],
+    "authorname": "Andy Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443208557",
+    "committername": "Andy Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443208557",
+    "encoding": "",
+    "subject": "Merge pull request #10966 from sergeyklay/patch-5",
+    "ssubject": "Merge-pull-request-10966-from-sergeyklay-patch-5",
+    "body": "Added mixed return types to Request",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7a6b79e207a49e421aa85b49116235c2848d19fe"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 92
+  },
+  "6efbbd4d9aa9432149ac0d6335e0ad1c0a070ab9": {
+    "sha": "6efbbd4d9aa9432149ac0d6335e0ad1c0a070ab9",
+    "ssha": "6efbbd4",
+    "parenthashes": [
+      "00d79b4c5fa7eacafc8239088893ac55961f6b0d",
+      "58cb694bb77164ac4366d430b65c39ca5753470d"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443207860",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443207860",
+    "encoding": "",
+    "subject": "Merging 2.0.x and using zephir 0.8",
+    "ssubject": "Merging-2.0.x-and-using-zephir-0.8",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "311aeb60f12496a334ca8eedb3b0f865934f0ecb"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 93
+  },
+  "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f": {
+    "sha": "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f",
+    "ssha": "c8d4916",
+    "parenthashes": [
+      "880b4fde422c1e7a112d5546e274d12f6784442a",
+      "ff17a9c99bfdd7532c30441a3973f3ceb297fa2b"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443206865",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443206865",
+    "encoding": "",
+    "subject": "Merge branch '2.0.x'",
+    "ssubject": "Merge-branch-2.0.x",
+    "body": "",
+    "refnames": [
+      "tag: phalcon-v2.0.8"
+    ],
+    "parents": [],
+    "children": [
+      "0bdb0d792a7eecaf0509ee8caebcab94bfb9ad50",
+      "f843bea764887c1944e6199bf418c20cd5631f42"
+    ],
+    "inHeads": [
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9"
+    ],
+    "index": 94
+  },
+  "ff17a9c99bfdd7532c30441a3973f3ceb297fa2b": {
+    "sha": "ff17a9c99bfdd7532c30441a3973f3ceb297fa2b",
+    "ssha": "ff17a9c",
+    "parenthashes": [
+      "58cb694bb77164ac4366d430b65c39ca5753470d",
+      "880b4fde422c1e7a112d5546e274d12f6784442a"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443206854",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443206854",
+    "encoding": "",
+    "subject": "Merge branch 'master' into 2.0.x",
+    "ssubject": "Merge-branch-master-into-2.0.x",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "inHeads": [
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 95
+  },
+  "58cb694bb77164ac4366d430b65c39ca5753470d": {
+    "sha": "58cb694bb77164ac4366d430b65c39ca5753470d",
+    "ssha": "58cb694",
+    "parenthashes": [
+      "b0581c2d11c6be8948cc2d5d9e192d34546613e4"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443199759",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443199759",
+    "encoding": "",
+    "subject": "Regenerating build [ci skip]",
+    "ssubject": "Regenerating-build-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5bb9da95499c6c0395164f747f619cd876cea45d",
+      "6efbbd4d9aa9432149ac0d6335e0ad1c0a070ab9",
+      "ff17a9c99bfdd7532c30441a3973f3ceb297fa2b"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 96
+  },
+  "b0581c2d11c6be8948cc2d5d9e192d34546613e4": {
+    "sha": "b0581c2d11c6be8948cc2d5d9e192d34546613e4",
+    "ssha": "b0581c2",
+    "parenthashes": [
+      "39023b164639a6470f22f319b9b8cce6233f6bf9"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1443194838",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1443194838",
+    "encoding": "",
+    "subject": "Using Zephir 0.8.0",
+    "ssubject": "Using-Zephir-0.8.0",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "58cb694bb77164ac4366d430b65c39ca5753470d"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 97
+  },
+  "ec3ef0ec771c612285678529496e26a9b19de45d": {
+    "sha": "ec3ef0ec771c612285678529496e26a9b19de45d",
+    "ssha": "ec3ef0e",
+    "parenthashes": [
+      "a49da4114c705f18a9a383bc7a22dcc475d35329"
+    ],
+    "authorname": "snowair",
+    "authoremail": "xcoolcc@gmail.com",
+    "authordate": "1443074340",
+    "committername": "snowair",
+    "committeremail": "xcoolcc@gmail.com",
+    "committerdate": "1443074340",
+    "encoding": "",
+    "subject": "fix the indentation",
+    "ssubject": "fix-the-indentation",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7a6b79e207a49e421aa85b49116235c2848d19fe"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 98
+  },
+  "a49da4114c705f18a9a383bc7a22dcc475d35329": {
+    "sha": "a49da4114c705f18a9a383bc7a22dcc475d35329",
+    "ssha": "a49da41",
+    "parenthashes": [
+      "39023b164639a6470f22f319b9b8cce6233f6bf9"
+    ],
+    "authorname": "snowair",
+    "authoremail": "xcoolcc@gmail.com",
+    "authordate": "1443066069",
+    "committername": "snowair",
+    "committeremail": "xcoolcc@gmail.com",
+    "committerdate": "1443066069",
+    "encoding": "",
+    "subject": "Fix: cookie is allways resent after get.",
+    "ssubject": "Fix-cookie-is-allways-resent-after-get",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ec3ef0ec771c612285678529496e26a9b19de45d"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 99
+  },
+  "2c289b426a64f15eec9cbf43d3666a588c259309": {
+    "sha": "2c289b426a64f15eec9cbf43d3666a588c259309",
+    "ssha": "2c289b4",
+    "parenthashes": [
+      "39023b164639a6470f22f319b9b8cce6233f6bf9"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1442921386",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1442921386",
+    "encoding": "",
+    "subject": "Added mixed return types to Request",
+    "ssubject": "Added-mixed-return-types-to-Request",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "5bb9da95499c6c0395164f747f619cd876cea45d"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 100
+  },
+  "8572ea112706bbede9b44318a72d88b6437141a7": {
+    "sha": "8572ea112706bbede9b44318a72d88b6437141a7",
+    "ssha": "8572ea1",
+    "parenthashes": [
+      "39023b164639a6470f22f319b9b8cce6233f6bf9"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1442788815",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1442788815",
+    "encoding": "",
+    "subject": "Added mixed return type Phalcon\\Config::get",
+    "ssubject": "Added-mixed-return-type-Phalcon-Config-get",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b0fd988d46413be2cfc800d316bc77adab9f3c1c"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 101
+  },
+  "39023b164639a6470f22f319b9b8cce6233f6bf9": {
+    "sha": "39023b164639a6470f22f319b9b8cce6233f6bf9",
+    "ssha": "39023b1",
+    "parenthashes": [
+      "cafc8a75de8bec27469a4593215a5d5a9ae5baac",
+      "29db0e4137f8fe931ae6a2d262a27ff7af35c90a"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442610812",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442610812",
+    "encoding": "",
+    "subject": "Merge branch '2.0.x' of https://github.com/phalcon/cphalcon into 2.0.x",
+    "ssubject": "Merge-branch-2.0.x-of-https-github.com-phalcon-cphalcon-into-2.0.x",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "b0581c2d11c6be8948cc2d5d9e192d34546613e4",
+      "a49da4114c705f18a9a383bc7a22dcc475d35329",
+      "2c289b426a64f15eec9cbf43d3666a588c259309",
+      "8572ea112706bbede9b44318a72d88b6437141a7"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 102
+  },
+  "cafc8a75de8bec27469a4593215a5d5a9ae5baac": {
+    "sha": "cafc8a75de8bec27469a4593215a5d5a9ae5baac",
+    "ssha": "cafc8a7",
+    "parenthashes": [
+      "45b83002561ebb2b56180f17a55856a7ac5245c0"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442610797",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442610797",
+    "encoding": "",
+    "subject": "Added CHANGELOG.md",
+    "ssubject": "Added-CHANGELOG.md",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "39023b164639a6470f22f319b9b8cce6233f6bf9"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 103
+  },
+  "29db0e4137f8fe931ae6a2d262a27ff7af35c90a": {
+    "sha": "29db0e4137f8fe931ae6a2d262a27ff7af35c90a",
+    "ssha": "29db0e4",
+    "parenthashes": [
+      "45b83002561ebb2b56180f17a55856a7ac5245c0",
+      "0d44215507d387717f6eb4f147a72e5f2be9d129"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442605420",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442605420",
+    "encoding": "",
+    "subject": "Merge pull request #10943 from sergeyklay/patch-4",
+    "ssubject": "Merge-pull-request-10943-from-sergeyklay-patch-4",
+    "body": "Update Composer config",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "39023b164639a6470f22f319b9b8cce6233f6bf9"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 104
+  },
+  "45b83002561ebb2b56180f17a55856a7ac5245c0": {
+    "sha": "45b83002561ebb2b56180f17a55856a7ac5245c0",
+    "ssha": "45b8300",
+    "parenthashes": [
+      "893966b729e300828539b9577751481cf7b867ae"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442521064",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442521064",
+    "encoding": "",
+    "subject": "Regenerating build [ci skip]",
+    "ssubject": "Regenerating-build-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "cafc8a75de8bec27469a4593215a5d5a9ae5baac",
+      "29db0e4137f8fe931ae6a2d262a27ff7af35c90a"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 105
+  },
+  "893966b729e300828539b9577751481cf7b867ae": {
+    "sha": "893966b729e300828539b9577751481cf7b867ae",
+    "ssha": "893966b",
+    "parenthashes": [
+      "6d4f77c6ac93556efbb5e362268edfc4b338cc50"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442509710",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442509710",
+    "encoding": "",
+    "subject": "Regenerating ext/",
+    "ssubject": "Regenerating-ext",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "45b83002561ebb2b56180f17a55856a7ac5245c0"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 106
+  },
+  "00d79b4c5fa7eacafc8239088893ac55961f6b0d": {
+    "sha": "00d79b4c5fa7eacafc8239088893ac55961f6b0d",
+    "ssha": "00d79b4",
+    "parenthashes": [
+      "95f665efe5cffbd31a1dd39c49c59d782b884d2c",
+      "cbfec378622692eb8a6aa21cc627913f2735d746"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442508765",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442508765",
+    "encoding": "",
+    "subject": "Merge pull request #10956 from michanismus/2.1.x",
+    "ssubject": "Merge-pull-request-10956-from-michanismus-2.1.x",
+    "body": "Fixes validation of uniqueness on existing records #10940",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6efbbd4d9aa9432149ac0d6335e0ad1c0a070ab9"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 107
+  },
+  "6d4f77c6ac93556efbb5e362268edfc4b338cc50": {
+    "sha": "6d4f77c6ac93556efbb5e362268edfc4b338cc50",
+    "ssha": "6d4f77c",
+    "parenthashes": [
+      "42e849ecd95aff99c822cb137de7685f184be0b8",
+      "464b979d6ba20cbfc75517702d77a5c4b24bf4aa"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442508746",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442508746",
+    "encoding": "",
+    "subject": "Merge pull request #10954 from SidRoberts/fix-10953",
+    "ssubject": "Merge-pull-request-10954-from-SidRoberts-fix-10953",
+    "body": "Messages in Forms\\Element are now always available (#10953)",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "893966b729e300828539b9577751481cf7b867ae"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 108
+  },
+  "cbfec378622692eb8a6aa21cc627913f2735d746": {
+    "sha": "cbfec378622692eb8a6aa21cc627913f2735d746",
+    "ssha": "cbfec37",
+    "parenthashes": [
+      "95f665efe5cffbd31a1dd39c49c59d782b884d2c"
+    ],
+    "authorname": "michanismus",
+    "authoremail": "michanismus@gmail.com",
+    "authordate": "1442494008",
+    "committername": "michanismus",
+    "committeremail": "michanismus@gmail.com",
+    "committerdate": "1442494008",
+    "encoding": "",
+    "subject": "Fixes validation of uniqueness on existing records #10940",
+    "ssubject": "Fixes-validation-of-uniqueness-on-existing-records-10940",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "00d79b4c5fa7eacafc8239088893ac55961f6b0d"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 109
+  },
+  "464b979d6ba20cbfc75517702d77a5c4b24bf4aa": {
+    "sha": "464b979d6ba20cbfc75517702d77a5c4b24bf4aa",
+    "ssha": "464b979",
+    "parenthashes": [
+      "42e849ecd95aff99c822cb137de7685f184be0b8"
+    ],
+    "authorname": "Sid Roberts",
+    "authoremail": "sid@sidroberts.co.uk",
+    "authordate": "1442471828",
+    "committername": "Sid Roberts",
+    "committeremail": "sid@sidroberts.co.uk",
+    "committerdate": "1442471893",
+    "encoding": "",
+    "subject": "Messages in Forms\\Element are now always available (#10953)",
+    "ssubject": "Messages-in-Forms-Element-are-now-always-available-10953",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6d4f77c6ac93556efbb5e362268edfc4b338cc50"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 110
+  },
+  "42e849ecd95aff99c822cb137de7685f184be0b8": {
+    "sha": "42e849ecd95aff99c822cb137de7685f184be0b8",
+    "ssha": "42e849e",
+    "parenthashes": [
+      "776f9d101c3ebe78f9a849dbc056af7f50b31a84",
+      "7fb0fa8162aa099a7c40caddc590e74e9d6b5207"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442348290",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442348290",
+    "encoding": "",
+    "subject": "Merge pull request #10935 from sergeyklay/sql/dialect/sqlite",
+    "ssubject": "Merge-pull-request-10935-from-sergeyklay-sql-dialect-sqlite",
+    "body": "Improvements for Phalcon\\Db\\Dialect\\Sqlite",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "6d4f77c6ac93556efbb5e362268edfc4b338cc50",
+      "464b979d6ba20cbfc75517702d77a5c4b24bf4aa"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 111
+  },
+  "776f9d101c3ebe78f9a849dbc056af7f50b31a84": {
+    "sha": "776f9d101c3ebe78f9a849dbc056af7f50b31a84",
+    "ssha": "776f9d1",
+    "parenthashes": [
+      "d46863d2a8ea7f03142ae9b2a6a0e6baaa4d5778",
+      "6fc5c5072b1265ce09249f27c562f5ef73270f79"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442326222",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442326222",
+    "encoding": "",
+    "subject": "Merge branch '2.0.x' of github.com:phalcon/cphalcon into 2.0.x",
+    "ssubject": "Merge-branch-2.0.x-of-github.com-phalcon-cphalcon-into-2.0.x",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "42e849ecd95aff99c822cb137de7685f184be0b8"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 112
+  },
+  "d46863d2a8ea7f03142ae9b2a6a0e6baaa4d5778": {
+    "sha": "d46863d2a8ea7f03142ae9b2a6a0e6baaa4d5778",
+    "ssha": "d46863d",
+    "parenthashes": [
+      "1d4886a41aa42be3bd1fb0b9ca4ceaba1ec51986"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442326206",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442326206",
+    "encoding": "",
+    "subject": "Fixes #10945",
+    "ssubject": "Fixes-10945",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "776f9d101c3ebe78f9a849dbc056af7f50b31a84"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 113
+  },
+  "6fc5c5072b1265ce09249f27c562f5ef73270f79": {
+    "sha": "6fc5c5072b1265ce09249f27c562f5ef73270f79",
+    "ssha": "6fc5c50",
+    "parenthashes": [
+      "1d4886a41aa42be3bd1fb0b9ca4ceaba1ec51986",
+      "db66c9a962394f6b980e5a3f01123987c4f5129a"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442235945",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442235945",
+    "encoding": "",
+    "subject": "Merge pull request #10913 from Green-Cat/patch-3",
+    "ssubject": "Merge-pull-request-10913-from-Green-Cat-patch-3",
+    "body": "Adds mixed return type to session adapter get method",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "776f9d101c3ebe78f9a849dbc056af7f50b31a84"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 114
+  },
+  "1d4886a41aa42be3bd1fb0b9ca4ceaba1ec51986": {
+    "sha": "1d4886a41aa42be3bd1fb0b9ca4ceaba1ec51986",
+    "ssha": "1d4886a",
+    "parenthashes": [
+      "dec930a35c6f43c5d43f966c44a9026f25ce8652"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442235044",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442235044",
+    "encoding": "",
+    "subject": "Latest Zephir + Regenerating build [ci skip]",
+    "ssubject": "Latest-Zephir-Regenerating-build-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "d46863d2a8ea7f03142ae9b2a6a0e6baaa4d5778",
+      "6fc5c5072b1265ce09249f27c562f5ef73270f79"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 115
+  },
+  "dec930a35c6f43c5d43f966c44a9026f25ce8652": {
+    "sha": "dec930a35c6f43c5d43f966c44a9026f25ce8652",
+    "ssha": "dec930a",
+    "parenthashes": [
+      "cd7552f40a4613e8e9610d98e568d999a873bd20"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442234975",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442234975",
+    "encoding": "",
+    "subject": "Regenerating build [ci skip]",
+    "ssubject": "Regenerating-build-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "1d4886a41aa42be3bd1fb0b9ca4ceaba1ec51986"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 116
+  },
+  "0d44215507d387717f6eb4f147a72e5f2be9d129": {
+    "sha": "0d44215507d387717f6eb4f147a72e5f2be9d129",
+    "ssha": "0d44215",
+    "parenthashes": [
+      "cd7552f40a4613e8e9610d98e568d999a873bd20"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1442180470",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1442180470",
+    "encoding": "",
+    "subject": "Update Composer config",
+    "ssubject": "Update-Composer-config",
+    "body": "See https://getcomposer.org/doc/04-schema.md",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "29db0e4137f8fe931ae6a2d262a27ff7af35c90a"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 117
+  },
+  "cd7552f40a4613e8e9610d98e568d999a873bd20": {
+    "sha": "cd7552f40a4613e8e9610d98e568d999a873bd20",
+    "ssha": "cd7552f",
+    "parenthashes": [
+      "e80a8bb3cfad38ad8daf3b06a95a570a7476cfe7",
+      "3c34772305ecb3629373c883f0e8e74cb6873389"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442172652",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442172652",
+    "encoding": "",
+    "subject": "Merge pull request #10896 from caiofralmeida/validation-cc-v2",
+    "ssubject": "Merge-pull-request-10896-from-caiofralmeida-validation-cc-v2",
+    "body": "basic validation credit card number using luhn algorithm",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "dec930a35c6f43c5d43f966c44a9026f25ce8652",
+      "0d44215507d387717f6eb4f147a72e5f2be9d129"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 118
+  },
+  "3fa3a6c0887c1ce4dad06679a2707606f29f3df2": {
+    "sha": "3fa3a6c0887c1ce4dad06679a2707606f29f3df2",
+    "ssha": "3fa3a6c",
+    "parenthashes": [
+      "e80a8bb3cfad38ad8daf3b06a95a570a7476cfe7"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sergeyklay@users.noreply.github.com",
+    "authordate": "1442171703",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sergeyklay@users.noreply.github.com",
+    "committerdate": "1442171703",
+    "encoding": "",
+    "subject": "Update CHANGELOG.md [ci skip]",
+    "ssubject": "Update-CHANGELOG.md-ci-skip",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "2477fd2b930a6d81da8f1c7eba1f86de25ead217"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c"
+    ],
+    "index": 119
+  },
+  "518e1b248d342e5aba71e40253ede831f409040b": {
+    "sha": "518e1b248d342e5aba71e40253ede831f409040b",
+    "ssha": "518e1b2",
+    "parenthashes": [
+      "95f665efe5cffbd31a1dd39c49c59d782b884d2c"
+    ],
+    "authorname": "patrick-zippenfenig",
+    "authoremail": "patrick@zippenfenig.de",
+    "authordate": "1442076651",
+    "committername": "patrick-zippenfenig",
+    "committeremail": "patrick@zippenfenig.de",
+    "committerdate": "1442076651",
+    "encoding": "",
+    "subject": "Memcached persistent connection pool for cache and session backends.",
+    "ssubject": "Memcached-persistent-connection-pool-for-cache-and-session-backends",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "ba478c4221e525c9f3a9ea7d9b2a8829d69e4bb2"
+    ],
+    "inHeads": [
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347"
+    ],
+    "index": 120
+  },
+  "7fb0fa8162aa099a7c40caddc590e74e9d6b5207": {
+    "sha": "7fb0fa8162aa099a7c40caddc590e74e9d6b5207",
+    "ssha": "7fb0fa8",
+    "parenthashes": [
+      "65e76e16f6f71d6e454a53655d498c4932a25f04"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1442015556",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1442048471",
+    "encoding": "",
+    "subject": "Amended SQL dislect test",
+    "ssubject": "Amended-SQL-dislect-test",
+    "body": "* Fixed SQLite tests for DATETIME datetype\n* Added SQLite test for creating table\n* Added timestamp test for all dialects\n",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "42e849ecd95aff99c822cb137de7685f184be0b8"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 121
+  },
+  "e80a8bb3cfad38ad8daf3b06a95a570a7476cfe7": {
+    "sha": "e80a8bb3cfad38ad8daf3b06a95a570a7476cfe7",
+    "ssha": "e80a8bb",
+    "parenthashes": [
+      "12f5f310426026ea2e371a7768226fae67375218",
+      "a54c66571344e4dfb98513566cbaf1ba77d5a8d6"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442016025",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442016025",
+    "encoding": "",
+    "subject": "Merge pull request #10937 from dreamsxin/10871_2.0",
+    "ssubject": "Merge-pull-request-10937-from-dreamsxin-10871_2.0",
+    "body": "Fix #10871 Updated method Phalcon\\Http\\Cookie::delete",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "cd7552f40a4613e8e9610d98e568d999a873bd20",
+      "3fa3a6c0887c1ce4dad06679a2707606f29f3df2"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 122
+  },
+  "a54c66571344e4dfb98513566cbaf1ba77d5a8d6": {
+    "sha": "a54c66571344e4dfb98513566cbaf1ba77d5a8d6",
+    "ssha": "a54c665",
+    "parenthashes": [
+      "8dffced7e8dc172dcb186133cc4ec0aa481b5289"
+    ],
+    "authorname": "dreamsxin",
+    "authoremail": "dreamsxin@126.com",
+    "authordate": "1442015872",
+    "committername": "dreamsxin",
+    "committeremail": "dreamsxin@126.com",
+    "committerdate": "1442015872",
+    "encoding": "",
+    "subject": "Fix #10871 Updated method Phalcon\\Http\\Cookie::delete",
+    "ssubject": "Fix-10871-Updated-method-Phalcon-Http-Cookie-delete",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e80a8bb3cfad38ad8daf3b06a95a570a7476cfe7"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 123
+  },
+  "12f5f310426026ea2e371a7768226fae67375218": {
+    "sha": "12f5f310426026ea2e371a7768226fae67375218",
+    "ssha": "12f5f31",
+    "parenthashes": [
+      "8dffced7e8dc172dcb186133cc4ec0aa481b5289",
+      "824f5b717767f3dd9d51fe37502c321e5cc69df6"
+    ],
+    "authorname": "Andres Gutierrez",
+    "authoremail": "gutierrezandresfelipe@gmail.com",
+    "authordate": "1442015754",
+    "committername": "Andres Gutierrez",
+    "committeremail": "gutierrezandresfelipe@gmail.com",
+    "committerdate": "1442015754",
+    "encoding": "",
+    "subject": "Merge pull request #10936 from dreamsxin/10909_2.0",
+    "ssubject": "Merge-pull-request-10936-from-dreamsxin-10909_2.0",
+    "body": "Fix bug #10909",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "e80a8bb3cfad38ad8daf3b06a95a570a7476cfe7"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 124
+  },
+  "824f5b717767f3dd9d51fe37502c321e5cc69df6": {
+    "sha": "824f5b717767f3dd9d51fe37502c321e5cc69df6",
+    "ssha": "824f5b7",
+    "parenthashes": [
+      "8dffced7e8dc172dcb186133cc4ec0aa481b5289"
+    ],
+    "authorname": "dreamsxin",
+    "authoremail": "dreamsxin@126.com",
+    "authordate": "1442015664",
+    "committername": "dreamsxin",
+    "committeremail": "dreamsxin@126.com",
+    "committerdate": "1442015664",
+    "encoding": "",
+    "subject": "Fix bug #10909",
+    "ssubject": "Fix-bug-10909",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "12f5f310426026ea2e371a7768226fae67375218"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 125
+  },
+  "65e76e16f6f71d6e454a53655d498c4932a25f04": {
+    "sha": "65e76e16f6f71d6e454a53655d498c4932a25f04",
+    "ssha": "65e76e1",
+    "parenthashes": [
+      "8dffced7e8dc172dcb186133cc4ec0aa481b5289"
+    ],
+    "authorname": "Serghei Iakovlev",
+    "authoremail": "sadhooklay@gmail.com",
+    "authordate": "1442013389",
+    "committername": "Serghei Iakovlev",
+    "committeremail": "sadhooklay@gmail.com",
+    "committerdate": "1442014679",
+    "encoding": "",
+    "subject": "Implemented Phalcon\\Db\\Dialect\\Sqlite::createTable",
+    "ssubject": "Implemented-Phalcon-Db-Dialect-Sqlite-createTable",
+    "body": "",
+    "refnames": [],
+    "parents": [],
+    "children": [
+      "7fb0fa8162aa099a7c40caddc590e74e9d6b5207"
+    ],
+    "inHeads": [
+      "e5ef95393a09b2451298ed8b6f585bdfc634701c",
+      "0bd4a23d28dfafb0318cf2294ece41d3d9794347",
+      "cb6a2fb167ed84db93de2af26ed12df7af7079ef",
+      "103c2e07f1e8ae7b62bdca84f9c5e2caa3b3cff9",
+      "c8d4916bbfd0cb18395fe25d8c5a663fc5077d8f"
+    ],
+    "index": 126
+  }
+}

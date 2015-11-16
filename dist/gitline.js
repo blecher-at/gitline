@@ -1088,17 +1088,26 @@ var Gitline;
                 return this.branch.start.indexY;
             }
         };
+        /** Tip plus the next direct child index (position of last merge) */
+        Commit.prototype.getTipPlusIndexY = function () {
+            if (this.branch != undefined && this.branch.commit != undefined) {
+                var indexY = this.branch.commit.indexY;
+                // find the top child 
+                this.branch.commit.childs.forEach(function (c) {
+                    indexY = Math.min(indexY, c.indexY);
+                });
+                return indexY;
+            }
+            // nothing found, assume top
+            return 0;
+        };
+        /** does this branch intersect with another when drawn next to each other.
+            can this branch be displayed on the same X axis without overlapping? */
         Commit.prototype.intersects = function (other) {
             var otherY = 9999999, thisY = 999999;
             if (this.outOfScope || other.outOfScope)
                 return true;
-            if (other.directchild != null) {
-                otherY = other.directchild.indexY;
-            }
-            if (this.directchild != null) {
-                thisY = this.directchild.indexY;
-            }
-            return this.getOriginIndexY() >= Math.min(other.indexY, otherY) && Math.min(thisY, this.indexY) <= other.getOriginIndexY();
+            return this.getOriginIndexY() > other.getTipPlusIndexY() && this.getTipPlusIndexY() < other.getOriginIndexY();
         };
         Commit.prototype.getIndexY = function () {
             return this.indexY;
