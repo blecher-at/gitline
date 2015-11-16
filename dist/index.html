@@ -16,7 +16,7 @@
         $(function () {
         	Logger.useDefaults();
 
-            new Gitline()
+            Gitline.create()
                     .fromJSON('data/example02.json')
                     .withHeader('Gitline repository <a href="https://github.com/blecher-at/gitline">https://github.com/blecher-at/gitline</a>')
                     .renderTo($("#myGitlinePanel-1").get(0));
