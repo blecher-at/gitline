@@ -24,6 +24,7 @@ body {
 
 #textPanel {
   width: 100%
+
 }
 
 #console {
@@ -37,15 +38,11 @@ gitline-headerpanel {
   background-color: #f2f2f2;
   width: 100%;
   display: block;
-  padding-left: 6px;
+  padding: 6px;
   font-size: 14px;
+  box-sizing: border-box;
   z-index: 5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 30px;
-  line-height: 30px;
-  border-bottom: 1px solid darkgray;
+  position: relative;
 }
 
 .gitline-expandable {
@@ -54,7 +51,6 @@ gitline-headerpanel {
 
 gitline-contentpanel {
   position: relative;
-  display: block;
 }
 
 gitline-loadingpanel {
