@@ -13,7 +13,7 @@ module Gitline.Plugin {
 			});
 
 			xhr.fail(() => {
-				Gitline.Main.displayFatalError("Error loading git data from " + url + " create it using git2json");
+				this.error("Error loading git data from " + url + " create it using git2json");
 			});
 		}
 	}

@@ -329,9 +329,5 @@ module Gitline {
 
 			return this;
 		}
-
-		public static displayFatalError(message: string) {
-			alert(message);
-		}
 	}
 }
