@@ -4,6 +4,7 @@
 ///<reference path="CommitProvider.ts"/>
 ///<reference path="Branch.ts"/>
 ///<reference path="Expandable.ts"/>
+///<reference path="typedefs/jquery.d.ts"/>
 ///<reference path="plugins/LocalGit2JsonProvider.ts"/>
 ///<reference path="plugins/GithubCommitProvider.ts"/>
 
@@ -165,7 +166,7 @@ module Gitline {
 			var fullSha: string = commit.getFullSha();
 			var sha: HTMLExpandableElement = Expandable.extend(document.createElement("span"));
 			sha.whenShort(shortSha + " ");
-			sha.whenFull(fullSha);
+			sha.whenFull(fullSha + " ");
 			sha.style.fontFamily = "Courier";
 
 			label.appendChild(sha);
@@ -189,11 +190,10 @@ module Gitline {
 				label.appendChild(head);
 			}
 
-
 			// Subject
 			var subject = document.createElement("span");
 			subject.innerHTML = " " + commit.subject;
-			subject.style.color = commit.hasMerges() ? "grey" : "black";
+			subject.style.color = commit.hasMerges() ? "#bbb" : "black";
 			label.appendChild(subject);
 
 			label.style.position = "relative";
@@ -204,13 +204,14 @@ module Gitline {
 			var el: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-identity"));
 			el.setAttribute("class", type);
 			el.setAttribute("name", id.name);
-			var fullname = id.name + " &lt;" + id.email.toLowerCase() + "&gt;";
-			el.setAttribute("title", id.name + " <" + id.email.toLowerCase() + ">");
+			var fullname = id.name + " <" + id.email.toLowerCase() + ">";
+			var encodedFullname = $('<div/>').text(fullname).html();
+			el.setAttribute("title", fullname);
 
 			el.style.background = this.config.avatars.map(f => {
-				return "url(" + f(id.email) + ") no-repeat"
+				return "url(" + f(id.email) + ") no-repeat left center"
 			}).join(", ");
-			el.whenFull(fullname);
+			el.whenFull(encodedFullname);
 			el.whenShort(" ");
 			return el;
 		}
