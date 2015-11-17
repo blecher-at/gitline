@@ -126,12 +126,10 @@ module Gitline.Plugin {
 				c.authorname = data.commit.author.name;
 				c.authoremail = data.commit.author.email;
 				c.authordate = data.commit.author.date;
-				c.authortimestamp = new Date(data.commit.author.date).getTime();
 
 				c.committername = data.commit.committer.name;
 				c.committeremail = data.commit.committer.email;
 				c.committerdate = data.commit.committer.date;
-				c.committertimestamp = new Date(data.commit.committer.date).getTime();
 
 				c.subject = data.commit.message;
 				c.body = ""; // Todo: where to get this?

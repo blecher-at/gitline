@@ -6,6 +6,8 @@
 ///<reference path="Expandable.ts"/>
 ///<reference path="plugins/LocalGit2JsonProvider.ts"/>
 ///<reference path="plugins/GithubCommitProvider.ts"/>
+///<reference path="typedefs/moment-node.d.ts"/>
+///<reference path="typedefs/moment.d.ts"/>
 
 module Gitline {
 
@@ -169,6 +171,12 @@ module Gitline {
 			sha.style.fontFamily = "Courier";
 
 			label.appendChild(sha);
+
+			// Date and Time
+			var dateTime = commit.committer.date.format("YYYY-MM-DD HH:mm");
+			var dateTimeElement = document.createElement("span");
+			dateTimeElement.innerHTML = dateTime;
+			label.appendChild(dateTimeElement);
 
 			// Author and committer
 			label.appendChild(this.drawIdentity("author", commit.author));
