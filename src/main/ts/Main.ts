@@ -303,13 +303,19 @@ module Gitline {
 		}
 
 		private renderTo(panel: HTMLElement): Main {
+			this.contentPanel = document.createElement("gitline-contentpanel")
+
 			if (this.headerPanel !== undefined) {
 				panel.appendChild(this.headerPanel);
+				this.contentPanel.style.marginTop = this.headerPanel.offsetHeight + "px";
 			}
+
 			panel.appendChild(this.loadingPanel = document.createElement("gitline-loadingpanel"));
-			panel.appendChild(this.contentPanel = document.createElement("gitline-contentpanel"));
+			panel.appendChild(this.contentPanel);
+
 			this.contentPanel.appendChild(this.graphicalPanel = document.createElement("gitline-graphicalpanel"));
 			this.contentPanel.appendChild(this.textPanel = document.createElement("gitline-textpanel"));
+
 			this.al = new AsyncLoader(this.loadingPanel);
 
 			this.render();
