@@ -165,18 +165,12 @@ module Gitline {
 			// SHA Hash
 			var shortSha: string = commit.getShortSha();
 			var fullSha: string = commit.getFullSha();
-			var sha: HTMLExpandableElement = Expandable.extend(document.createElement("span"));
+			var sha: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-sha"));
+			sha.setAttribute("title", fullSha);
 			sha.whenShort(shortSha + " ");
 			sha.whenFull(fullSha);
-			sha.style.fontFamily = "Courier";
 
 			label.appendChild(sha);
-
-			// Date and Time
-			var dateTime = commit.committer.date.format("YYYY-MM-DD HH:mm");
-			var dateTimeElement = document.createElement("span");
-			dateTimeElement.innerHTML = dateTime;
-			label.appendChild(dateTimeElement);
 
 			// Author and committer
 			label.appendChild(this.drawIdentity("author", commit.author));
@@ -197,7 +191,6 @@ module Gitline {
 				label.appendChild(head);
 			}
 
-
 			// Subject
 			var subject = document.createElement("span");
 			subject.innerHTML = " " + commit.subject;
@@ -208,19 +201,30 @@ module Gitline {
 			return label;
 		}
 
-		public drawIdentity(type: string, id: Identity) {
-			var el: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-identity"));
-			el.setAttribute("class", type);
-			el.setAttribute("name", id.name);
-			var fullname = id.name + " &lt;" + id.email.toLowerCase() + "&gt;";
-			el.setAttribute("title", id.name + " <" + id.email.toLowerCase() + ">");
+		private drawIdentity(type: string, id: Identity): HTMLElement {
+			var container: HTMLElement = document.createElement("gitline-identity-container");
 
-			el.style.background = this.config.avatars.map(f => {
+			var identity: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-identity"));
+			identity.classList.add(type);
+			var fullname = id.name + " &lt;" + id.email.toLowerCase() + "&gt;";
+			identity.setAttribute("title", id.name + " <" + id.email.toLowerCase() + ">");
+			identity.style.background = this.config.avatars.map(f => {
 				return "url(" + f(id.email) + ") no-repeat"
 			}).join(", ");
-			el.whenFull(fullname);
-			el.whenShort(" ");
-			return el;
+			identity.whenFull(fullname);
+			identity.whenShort(" ");
+
+			var datetime: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-identity-datetime"));
+			datetime.classList.add(type + "-datetime");
+			var fullDate = id.date.format("YYYY-MM-DD HH:mm");
+			datetime.setAttribute("title", fullDate);
+			datetime.whenFull(fullDate);
+			datetime.whenShort(id.date.format("HH:mm"));
+
+			container.appendChild(identity);
+			container.appendChild(datetime);
+
+			return container;
 		}
 
 		/*
@@ -308,7 +312,7 @@ module Gitline {
 			this.commitProvider = commitProvider;
 			return this;
 		}
-
+		
 		private renderTo(panel: HTMLElement): Main {
 			if (this.headerPanel !== undefined) {
 				panel.appendChild(this.headerPanel);

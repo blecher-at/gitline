@@ -1,5 +1,7 @@
 ///<reference path="../CommitProvider.ts"/>
 ///<reference path="../typedefs/jquery.d.ts"/>
+///<reference path="../typedefs/moment-node.d.ts"/>
+///<reference path="../typedefs/moment.d.ts"/>
 
 declare var Logger: any;
 
@@ -125,11 +127,11 @@ module Gitline.Plugin {
 				});
 				c.authorname = data.commit.author.name;
 				c.authoremail = data.commit.author.email;
-				c.authordate = data.commit.author.date;
+				c.authordate = moment(data.commit.author.date).unix();
 
 				c.committername = data.commit.committer.name;
 				c.committeremail = data.commit.committer.email;
-				c.committerdate = data.commit.committer.date;
+				c.committerdate = moment(data.commit.committer.date).unix();
 
 				c.subject = data.commit.message;
 				c.body = ""; // Todo: where to get this?
