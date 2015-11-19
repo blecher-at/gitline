@@ -23,7 +23,7 @@ module Gitline {
 			extended.whenShort = (innerHTML: string) => {
 				extended.innerHTML = innerHTML;
 				extended.onmouseout = () => {
-					extended.innerHTML = innerHTML + " ";
+					extended.innerHTML = innerHTML;
 					element.classList.remove("gitline-expandable-expanded");
 				};
 			};

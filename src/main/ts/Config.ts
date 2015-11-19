@@ -15,7 +15,7 @@ module Gitline {
 		public remoteOnly: boolean = false;
 
 		private avatar_gravatar(email) {
-			return "http://www.gravatar.com/avatar/" + CryptoJS.MD5(email.toLowerCase()) + "?s=18&d=mm";
+			return "http://www.gravatar.com/avatar/" + CryptoJS.MD5(email.toLowerCase()) + "?s=23&d=mm";
 		}
 
 		public avatars: Function[] = [this.avatar_gravatar];

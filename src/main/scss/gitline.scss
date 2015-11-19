@@ -1,36 +1,31 @@
-.head-label {
-  background-color: lightgrey;
+$commit-height: 25px;
+$commit-entry-padding: 5px;
+$header-height: 30px;
+
+body {
+  font-family: Verdana, Arial, sans-serif;
+  margin: 0;
+  font-size: 12px;
 }
 
 .commit-legend {
   border-bottom: 1px solid #e0e0e0;
   min-width: 250px;
-  box-sizing: content-box;
+  min-height: $commit-height;
 
-  span.head-label {
-    line-height: 21px;
+  * {
+    vertical-align: middle;
+    display: inline-block;
   }
 
-  span {
-    line-height: 17px;
+  .subject {
+    color: black;
+    display: inline;
+
+    .has-merges {
+      color: #bbb;
+    }
   }
-}
-
-body {
-  font-family: Verdana, Arial, sans-serif;
-  margin: 0;
-  font-size: 12px
-}
-
-#textPanel {
-  width: 100%
-}
-
-#console {
-  width: 100%;
-  background-color: black;
-  color: #e6e6e6;
-  border: 0;
 }
 
 gitline-headerpanel {
@@ -41,25 +36,28 @@ gitline-headerpanel {
   font-size: 14px;
   z-index: 5;
   position: relative;
-  height: 30px;
-  line-height: 30px;
+  height: $header-height;
+  line-height: $header-height;
   border-bottom: 1px solid darkgray;
+  box-sizing: border-box;
 }
 
 .gitline-expandable {
   cursor: pointer;
 }
 
-gitline-sha {
-  display: inline;
-  color: steelblue;
-  font-size: 13px;
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
-  DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
+.head-label {
+  padding: 1px 3px 1px 3px;
+  color: white;
+  margin-right: 5px;
 }
 
-gitline-contentpanel {
-  position: relative;
+gitline-sha {
+  color: #688094;
+  font-size: 13px;
+  padding-right: $commit-entry-padding;
+  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+  DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
 }
 
 gitline-loadingpanel {
@@ -83,25 +81,23 @@ gitline-textpanel {
 }
 
 gitline-identity-container {
-  padding: 0 3px 0 3px;
+  padding-right: $commit-entry-padding;
 
   gitline-identity {
-    display: inline-block;
-    min-width: 18px;
-    min-height: 18px;
-    vertical-align: bottom;
+    min-width: $commit-height;
+    min-height: $commit-height;
 
     &.gitline-expandable-expanded {
-      padding-left: 24px;
-      vertical-align: initial;
-      line-height: 20px;
+      padding-left: 30px;
       font-style: italic;
+      line-height: $commit-height;
     }
   }
 
   gitline-identity-datetime {
-    display: inline-block;
-    padding-left: 6px;
+    font-style: italic;
+    color: #688094;
+    padding-left: $commit-entry-padding;
   }
 }
 
