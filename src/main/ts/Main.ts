@@ -4,6 +4,7 @@
 ///<reference path="CommitProvider.ts"/>
 ///<reference path="Branch.ts"/>
 ///<reference path="Expandable.ts"/>
+///<reference path="typedefs/jquery.d.ts"/>
 ///<reference path="plugins/LocalGit2JsonProvider.ts"/>
 ///<reference path="plugins/GithubCommitProvider.ts"/>
 ///<reference path="typedefs/moment-node.d.ts"/>
@@ -167,7 +168,7 @@ module Gitline {
 			var fullSha: string = commit.getFullSha();
 			var sha: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-sha"));
 			sha.setAttribute("title", fullSha);
-			sha.whenShort(shortSha + " ");
+			sha.whenShort(shortSha);
 			sha.whenFull(fullSha);
 
 			label.appendChild(sha);
@@ -181,7 +182,7 @@ module Gitline {
 
 			// Branch - TODO: Tags and other branches
 			if (commit.branch && commit.branch.commit === commit && !commit.branch.anonymous) {
-				var head = document.createElement("span");
+				var head = document.createElement("gitline-ref");
 				head.className = "head-label";
 				head.style.backgroundColor = commit.getColor(40);
 				head.style.color = "white";
@@ -193,8 +194,8 @@ module Gitline {
 
 			// Subject
 			var subject = document.createElement("span");
-			subject.innerHTML = " " + commit.subject;
-			subject.style.color = commit.hasMerges() ? "grey" : "black";
+			subject.innerHTML = commit.subject;
+			subject.style.color = commit.hasMerges() ? "#bbb" : "black";
 			label.appendChild(subject);
 
 			label.style.position = "relative";
@@ -212,7 +213,7 @@ module Gitline {
 				return "url(" + f(id.email) + ") no-repeat"
 			}).join(", ");
 			identity.whenFull(fullname);
-			identity.whenShort(" ");
+			identity.whenShort("&nbsp;"); // changing from no text to text will change the stlye
 
 			var datetime: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-identity-datetime"));
 			datetime.classList.add(type + "-datetime");

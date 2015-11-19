@@ -6,17 +6,24 @@
   border-bottom: 1px solid #e0e0e0;
   min-width: 250px;
   box-sizing: content-box;
+
+  span.head-label {
+    line-height: 21px;
+  }
+
+  span {
+    line-height: 17px;
+  }
 }
 
 body {
-  font-family: Verdana, Arial;
+  font-family: Verdana, Arial, sans-serif;
   margin: 0;
   font-size: 12px
 }
 
 #textPanel {
   width: 100%
-
 }
 
 #console {
@@ -30,11 +37,13 @@ gitline-headerpanel {
   background-color: #f2f2f2;
   width: 100%;
   display: block;
-  padding: 6px;
+  padding-left: 6px;
   font-size: 14px;
-  box-sizing: border-box;
   z-index: 5;
   position: relative;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid darkgray;
 }
 
 .gitline-expandable {
@@ -80,7 +89,12 @@ gitline-identity-container {
     display: inline-block;
     min-width: 18px;
     min-height: 18px;
-    vertical-align: bottom;
+	white-space: nowrap;
+
+    &.gitline-expandable-expanded {
+      padding-left: 24px;
+      font-style: italic;
+    }
   }
 
   gitline-identity-datetime {
@@ -93,4 +107,8 @@ gitline-graphicalpanel {
   z-index: 3;
   position: absolute !important;
   display: block;
+}
+
+gitline-ref {
+	margin-right: 3px;
 }
