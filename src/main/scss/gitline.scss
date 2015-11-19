@@ -1,4 +1,4 @@
-$commit-height: 22px;
+$commit-height: 20px;
 $commit-entry-space: 5px;
 $header-height: 30px;
 
@@ -107,9 +107,10 @@ gitline-textpanel {
         min-width: $commit-height;
         min-height: $commit-height;
         white-space: nowrap;
+		background-size: $commit-height $commit-height !important;
 
         &.gitline-expandable-expanded {
-          padding-left: 30px;
+          padding-left: ($commit-height + 4px);
           font-style: italic;
           line-height: $commit-height;
         }
