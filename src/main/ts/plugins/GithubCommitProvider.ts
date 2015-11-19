@@ -62,7 +62,7 @@ module Gitline.Plugin {
 
 		public loadForks(url: string) {
 			jQuery.getJSON(this.gitURL(url, "forks")).done((forks) => {
-				if (forks.data.message === "Bad credentials") {
+				if (forks.data.message !== undefined) {
 					this.error("Github API: " + forks.data.message);
 					return;
 				}

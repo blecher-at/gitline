@@ -71,6 +71,10 @@ module Gitline {
 					this.data = json;
 					this.al.resume();
 				});
+				
+				this.commitProvider.withErrorCallback(error => {
+					this.al.error(error);
+				});
 				this.commitProvider.request();
 			}).then("Loading Commits", () => {
 				return Object.keys(this.data)
