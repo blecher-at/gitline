@@ -17,7 +17,7 @@ module Gitline {
 			extended.whenFull = (innerHTML: string) => {
 				extended.onclick = () => {
 					extended.innerHTML = innerHTML;
-					$(extended).hide().fadeIn("slow");
+					$(extended).hide().stop().fadeIn("slow");
 					element.classList.add("gitline-expandable-expanded");
 					Expandable.selectElementText(element);
 				};
