@@ -89,12 +89,10 @@ gitline-identity-container {
     display: inline-block;
     min-width: 18px;
     min-height: 18px;
-    vertical-align: bottom;
+	white-space: nowrap;
 
     &.gitline-expandable-expanded {
       padding-left: 24px;
-      vertical-align: initial;
-      line-height: 20px;
       font-style: italic;
     }
   }
@@ -109,4 +107,8 @@ gitline-graphicalpanel {
   z-index: 3;
   position: absolute !important;
   display: block;
+}
+
+gitline-ref {
+	margin-right: 3px;
 }
