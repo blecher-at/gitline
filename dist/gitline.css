@@ -1,13 +1,8 @@
 .head-label {
   background-color: lightgrey; }
 
-.commit-legend {
-  border-bottom: 1px solid #e0e0e0;
-  min-width: 250px;
-  box-sizing: content-box; }
-
 body {
-  font-family: Verdana, Arial;
+  font-family: Verdana, Arial, sans-serif;
   margin: 0;
   font-size: 12px; }
 
@@ -24,20 +19,16 @@ gitline-headerpanel {
   background-color: #f2f2f2;
   width: 100%;
   display: block;
-  padding: 6px;
+  padding-left: 6px;
   font-size: 14px;
-  box-sizing: border-box;
   z-index: 5;
-  position: relative; }
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  border-bottom: 1px solid darkgray; }
 
 .gitline-expandable {
   cursor: pointer; }
-
-gitline-sha {
-  display: inline;
-  color: steelblue;
-  font-size: 13px;
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif; }
 
 gitline-contentpanel {
   position: relative; }
@@ -59,17 +50,41 @@ gitline-loadingpanel {
 gitline-textpanel {
   z-index: 2;
   min-width: 300px; }
-
-gitline-identity-container {
-  padding: 0 3px 0 3px; }
-  gitline-identity-container gitline-identity {
-    display: inline-block;
-    min-width: 18px;
+  gitline-textpanel gitline-legend {
+    display: block;
+    border-bottom: 1px solid #e0e0e0;
+    min-width: 250px;
     min-height: 18px;
-    vertical-align: bottom; }
-  gitline-identity-container gitline-identity-datetime {
-    display: inline-block;
-    padding-left: 6px; }
+    box-sizing: content-box;
+    line-height: 18px; }
+    gitline-textpanel gitline-legend gitline-sha {
+      display: inline;
+      color: steelblue;
+      font-size: 13px;
+      font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif; }
+    gitline-textpanel gitline-legend gitline-identity-container {
+      padding: 0 3px 0 3px; }
+      gitline-textpanel gitline-legend gitline-identity-container gitline-identity {
+        display: inline-block;
+        min-width: 18px;
+        min-height: 18px;
+        white-space: nowrap;
+        vertical-align: top; }
+        gitline-textpanel gitline-legend gitline-identity-container gitline-identity.gitline-expandable-expanded {
+          padding-left: 24px;
+          font-style: italic; }
+      gitline-textpanel gitline-legend gitline-identity-container gitline-identity-datetime {
+        display: inline-block;
+        padding-left: 6px; }
+    gitline-textpanel gitline-legend gitline-ref {
+      margin-right: 3px; }
+
+.gitline-expandable, .gitline-expandable-expanded {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
 
 gitline-graphicalpanel {
   z-index: 3;
