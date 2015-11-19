@@ -1,3 +1,5 @@
+///<reference path="typedefs/jquery.d.ts"/>
+
 module Gitline {
 	export interface HTMLExpandableElement extends HTMLElement {
 		whenShort(innerHTML: string): void;
@@ -15,6 +17,7 @@ module Gitline {
 			extended.whenFull = (innerHTML: string) => {
 				extended.onclick = () => {
 					extended.innerHTML = innerHTML;
+					$(extended).hide().fadeIn("slow");
 					element.classList.add("gitline-expandable-expanded");
 					Expandable.selectElementText(element);
 				};
