@@ -104,7 +104,7 @@ var Gitline;
             this.avatars = [this.avatar_gravatar];
         }
         Config.prototype.avatar_gravatar = function (email) {
-            return "http://www.gravatar.com/avatar/" + CryptoJS.MD5(email.toLowerCase()) + "?s=18&d=mm";
+            return "http://www.gravatar.com/avatar/" + CryptoJS.MD5(email.toLowerCase()) + "?s=20&d=mm";
         };
         return Config;
     })();
@@ -139,6 +139,7 @@ var Gitline;
     })();
     Gitline.CommitProvider = CommitProvider;
 })(Gitline || (Gitline = {}));
+///<reference path="typedefs/jquery.d.ts"/>
 var Gitline;
 (function (Gitline) {
     /**
@@ -151,10 +152,11 @@ var Gitline;
             var extended = element;
             element.classList.add("gitline-expandable");
             extended.whenFull = function (innerHTML) {
-                extended.onclick = function (event) {
+                extended.onclick = function () {
                     extended.innerHTML = innerHTML;
+                    $(extended).hide().stop().fadeIn("fast");
                     element.classList.add("gitline-expandable-expanded");
-                    selectElementText(element);
+                    Expandable.selectElementText(element);
                 };
             };
             extended.whenShort = function (innerHTML) {
@@ -164,30 +166,31 @@ var Gitline;
                     window.setTimeout(function () {
                         extended.innerHTML = innerHTML;
                         element.classList.remove("gitline-expandable-expanded");
-                    }, 700);
+                    }, 1000);
                 };
             };
             return extended;
         };
+        // x-browser text select
+        // http://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+        Expandable.selectElementText = function (el) {
+            var doc = window.document, sel, range;
+            if (window.getSelection && doc.createRange) {
+                sel = window.getSelection();
+                range = doc.createRange();
+                range.selectNodeContents(el);
+                sel.removeAllRanges();
+                sel.addRange(range);
+            }
+            else if (doc.body.createTextRange) {
+                range = doc.body.createTextRange();
+                range.moveToElementText(el);
+                range.select();
+            }
+        };
         return Expandable;
     })();
     Gitline.Expandable = Expandable;
-    // x-browser text select http://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
-    function selectElementText(el) {
-        var doc = window.document, sel, range;
-        if (window.getSelection && doc.createRange) {
-            sel = window.getSelection();
-            range = doc.createRange();
-            range.selectNodeContents(el);
-            sel.removeAllRanges();
-            sel.addRange(range);
-        }
-        else if (doc.body.createTextRange) {
-            range = doc.body.createTextRange();
-            range.moveToElementText(el);
-            range.select();
-        }
-    }
 })(Gitline || (Gitline = {}));
 ///<reference path="../CommitProvider.ts"/>
 ///<reference path="../Main.ts"/>
@@ -318,11 +321,11 @@ var Gitline;
                     c.authorname = data.commit.author.name;
                     c.authoremail = data.commit.author.email;
                     c.authordate = moment(data.commit.author.date).unix();
-                    c.authortimestamp = new Date(data.commit.author.date).getTime();
+                    c.authortimestamp = moment(data.commit.author.date).valueOf();
                     c.committername = data.commit.committer.name;
                     c.committeremail = data.commit.committer.email;
                     c.committerdate = moment(data.commit.committer.date).unix();
-                    c.committertimestamp = new Date(data.commit.committer.date).getTime();
+                    c.committertimestamp = moment(data.commit.committer.date).valueOf();
                     c.subject = data.commit.message;
                     c.body = ""; // Todo: where to get this?
                     c.refnames = []; // set when parsing branches
@@ -505,8 +508,8 @@ var Gitline;
         Main.prototype.drawLabel = function (commit) {
             var label = document.createElement('gitline-legend');
             // SHA Hash
-            var shortSha = commit.getShortSha();
-            var fullSha = commit.getFullSha();
+            var shortSha = commit.getShortSha().trim();
+            var fullSha = commit.getFullSha().trim();
             var sha = Gitline.Expandable.extend(document.createElement("gitline-sha"));
             sha.setAttribute("title", fullSha);
             sha.whenShort(shortSha);
@@ -520,20 +523,18 @@ var Gitline;
             // Branch - TODO: Tags and other branches
             if (commit.branch && commit.branch.commit === commit && !commit.branch.anonymous) {
                 var head = Gitline.Expandable.extend(document.createElement("gitline-ref"));
-                head.className = "head-label";
                 head.style.backgroundColor = commit.getColor(40);
-                head.style.color = "white";
-                head.style.paddingLeft = head.style.paddingRight = "2px";
                 head.whenShort(commit.branch.ref);
                 head.whenFull(commit.branch.ref);
                 label.appendChild(head);
             }
             // Subject
-            var subject = document.createElement("span");
+            var subject = document.createElement("gitline-subject");
             subject.innerHTML = commit.subject;
-            subject.style.color = commit.hasMerges() ? "#bbb" : "black";
+            if (commit.hasMerges()) {
+                subject.classList.add("has-merges");
+            }
             label.appendChild(subject);
-            label.style.position = "relative";
             return label;
         };
         Main.prototype.drawIdentity = function (type, id) {
@@ -543,10 +544,10 @@ var Gitline;
             var fullname = id.name + " &lt;" + id.email.toLowerCase() + "&gt;";
             identity.setAttribute("title", id.name + " <" + id.email.toLowerCase() + ">");
             identity.style.background = this.config.avatars.map(function (f) {
-                return "url(" + f(id.email) + ") no-repeat";
+                return "url(" + f(id.email) + ") no-repeat left center";
             }).join(", ");
             identity.whenFull(fullname);
-            identity.whenShort("&nbsp;"); // changing from no text to text will change the stlye
+            identity.whenShort("");
             var datetime = Gitline.Expandable.extend(document.createElement("gitline-identity-datetime"));
             datetime.classList.add(type + "-datetime");
             var fullDate = id.date.format("YYYY-MM-DD HH:mm");
