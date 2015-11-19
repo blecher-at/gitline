@@ -160,8 +160,7 @@ module Gitline {
 		}
 
 		public drawLabel(commit: Commit) {
-			var label = document.createElement('div');
-			label.className = "commit-legend";
+			var label = document.createElement('gitline-legend');
 
 			// SHA Hash
 			var shortSha: string = commit.getShortSha().trim();
@@ -182,18 +181,18 @@ module Gitline {
 
 			// Branch - TODO: Tags and other branches
 			if (commit.branch && commit.branch.commit === commit && !commit.branch.anonymous) {
-				var head = document.createElement("span");
+				var head: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-ref"));
 				head.className = "head-label";
 				head.style.backgroundColor = commit.getColor(40);
-				head.innerHTML = commit.branch.ref;
+				head.whenShort(commit.branch.ref);
+				head.whenFull(commit.branch.ref);
 
 				label.appendChild(head);
 			}
 
 			// Subject
-			var subject = document.createElement("span");
-			subject.innerHTML = " " + commit.subject;
-			subject.classList.add("subject");
+			var subject = document.createElement("gitline-subject");
+			subject.innerHTML = commit.subject;
 			if (commit.hasMerges()) {
 				subject.classList.add("has-merges");
 			}
