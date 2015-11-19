@@ -1,3 +1,5 @@
+///<reference path="typedefs/jquery.d.ts"/>
+
 module Gitline {
 	export interface HTMLExpandableElement extends HTMLElement {
 		whenShort(innerHTML: string): void;
@@ -13,10 +15,11 @@ module Gitline {
 			element.classList.add("gitline-expandable");
 
 			extended.whenFull = (innerHTML: string) => {
-				extended.onclick = (event) => {
+				extended.onclick = () => {
 					extended.innerHTML = innerHTML;
+					$(extended).hide().stop().fadeIn("fast");
 					element.classList.add("gitline-expandable-expanded");
-					selectElementText(element);
+					Expandable.selectElementText(element);
 				};
 			};
 
@@ -24,30 +27,31 @@ module Gitline {
 				extended.innerHTML = innerHTML;
 				extended.onmouseout = () => {
 					// Delay hiding it
-					window.setTimeout ( () => {
+					window.setTimeout (() => {
 						extended.innerHTML = innerHTML;
 						element.classList.remove("gitline-expandable-expanded");
-						} , 700);
+					}, 1000);
 				};
 			};
 
 			return extended;
 		}
-	}
-	
-	// x-browser text select http://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
-	function selectElementText(el) {
-	    var doc = window.document, sel, range;
-	    if (window.getSelection && doc.createRange) {
-	        sel = window.getSelection();
-	        range = doc.createRange();
-	        range.selectNodeContents(el);
-	        sel.removeAllRanges();
-	        sel.addRange(range);
-	    } else if ((<any> doc.body).createTextRange) {
-	        range = (<any> doc.body).createTextRange();
-	        range.moveToElementText(el);
-	        range.select();
-	    }
+
+		// x-browser text select
+		// http://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+		private static selectElementText(el: HTMLElement): void {
+			var doc = window.document, sel, range;
+			if (window.getSelection && doc.createRange) {
+				sel = window.getSelection();
+				range = doc.createRange();
+				range.selectNodeContents(el);
+				sel.removeAllRanges();
+				sel.addRange(range);
+			} else if ((<any> doc.body).createTextRange) {
+				range = (<any> doc.body).createTextRange();
+				range.moveToElementText(el);
+				range.select();
+			}
+		}
 	}
 }

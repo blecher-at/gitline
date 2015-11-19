@@ -163,8 +163,8 @@ module Gitline {
 			var label = document.createElement('gitline-legend');
 
 			// SHA Hash
-			var shortSha: string = commit.getShortSha();
-			var fullSha: string = commit.getFullSha();
+			var shortSha: string = commit.getShortSha().trim();
+			var fullSha: string = commit.getFullSha().trim();
 			var sha: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-sha"));
 			sha.setAttribute("title", fullSha);
 			sha.whenShort(shortSha);
@@ -182,10 +182,7 @@ module Gitline {
 			// Branch - TODO: Tags and other branches
 			if (commit.branch && commit.branch.commit === commit && !commit.branch.anonymous) {
 				var head: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-ref"));
-				head.className = "head-label";
 				head.style.backgroundColor = commit.getColor(40);
-				head.style.color = "white";
-				head.style.paddingLeft = head.style.paddingRight = "2px";
 				head.whenShort(commit.branch.ref);
 				head.whenFull(commit.branch.ref);
 
@@ -193,12 +190,13 @@ module Gitline {
 			}
 
 			// Subject
-			var subject = document.createElement("span");
+			var subject = document.createElement("gitline-subject");
 			subject.innerHTML = commit.subject;
-			subject.style.color = commit.hasMerges() ? "#bbb" : "black";
+			if (commit.hasMerges()) {
+				subject.classList.add("has-merges");
+			}
 			label.appendChild(subject);
 
-			label.style.position = "relative";
 			return label;
 		}
 
@@ -210,10 +208,10 @@ module Gitline {
 			var fullname = id.name + " &lt;" + id.email.toLowerCase() + "&gt;";
 			identity.setAttribute("title", id.name + " <" + id.email.toLowerCase() + ">");
 			identity.style.background = this.config.avatars.map(f => {
-				return "url(" + f(id.email) + ") no-repeat"
+				return "url(" + f(id.email) + ") no-repeat left center"
 			}).join(", ");
 			identity.whenFull(fullname);
-			identity.whenShort("&nbsp;"); // changing from no text to text will change the stlye
+			identity.whenShort("");
 
 			var datetime: HTMLExpandableElement = Expandable.extend(document.createElement("gitline-identity-datetime"));
 			datetime.classList.add(type + "-datetime");

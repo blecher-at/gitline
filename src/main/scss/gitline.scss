@@ -1,24 +1,23 @@
-.head-label {
-  background-color: lightgrey;
-}
+$commit-height: 20px;
+$commit-entry-space: 5px;
+$header-height: 30px;
 
-
+$link-color: #688094;
 
 body {
   font-family: Verdana, Arial, sans-serif;
   margin: 0;
-  font-size: 12px
+  font-size: 12px;
 }
 
-#textPanel {
-  width: 100%
+::-moz-selection {
+  color: white;
+  background: #525252;
 }
 
-#console {
-  width: 100%;
-  background-color: black;
-  color: #e6e6e6;
-  border: 0;
+::selection {
+  color: white;
+  background: #525252;
 }
 
 gitline-headerpanel {
@@ -29,19 +28,18 @@ gitline-headerpanel {
   font-size: 14px;
   z-index: 5;
   position: relative;
-  height: 30px;
-  line-height: 30px;
+  height: $header-height;
+  line-height: $header-height;
   border-bottom: 1px solid darkgray;
-}
+  box-sizing: border-box;
 
-.gitline-expandable {
-  cursor: pointer;
-}
+  a {
+    color: $link-color;
 
-
-
-gitline-contentpanel {
-  position: relative;
+    &:hover {
+      color: black;
+    }
+  }
 }
 
 gitline-loadingpanel {
@@ -62,57 +60,69 @@ gitline-loadingpanel {
 gitline-textpanel {
   z-index: 2;
   min-width: 300px;
-  
-  gitline-legend {
-	display: block;
-	border-bottom: 1px solid #e0e0e0;
-	min-width: 250px;
-	min-height: 18px;
-	box-sizing: content-box;
-	line-height: 18px;
-	
-	gitline-sha {
-	  display: inline;
-	  color: steelblue;
-	  font-size: 13px;
-	  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
-	  DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
-	}
-	  
-	gitline-identity-container {
-	  padding: 0 3px 0 3px;
-		
-	  gitline-identity {
-		display: inline-block;
-		min-width: 18px;
-		min-height: 18px;
-		white-space: nowrap;
-		vertical-align: top;
-		
-		&.gitline-expandable-expanded {
-		  padding-left: 24px;
-		  font-style: italic;
-		}
-	  }
-		
-	  gitline-identity-datetime {
-	    display: inline-block;
-	    padding-left: 6px;
-	  }
-	}
-	
-    gitline-ref {
-	  margin-right: 3px;
-    }	
-  }
-}
 
-.gitline-expandable, .gitline-expandable-expanded {
-  -moz-user-select     : none;
-  -khtml-user-select   : none;
-  -webkit-user-select  : none;
-  -o-user-select       : none;
-  user-select          : none;
+  .gitline-expandable {
+    cursor: pointer;
+  }
+
+  gitline-legend {
+    border-bottom: 1px solid #e0e0e0;
+    min-width: 250px;
+    min-height: $commit-height;
+    display: block;
+
+    * {
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    gitline-subject {
+      color: black;
+      display: inline;
+      line-height: 22px; // for multi line
+
+      &.has-merges {
+        color: #bbb;
+      }
+    }
+
+    gitline-sha {
+      color: $link-color;
+      font-size: 13px;
+      padding-right: $commit-entry-space;
+      font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
+    }
+
+    gitline-ref {
+      padding: 1px 3px 1px 3px;
+      color: white;
+      margin-right: $commit-entry-space;
+    }
+
+    gitline-identity-container {
+      padding-right: $commit-entry-space;
+
+      gitline-identity {
+        min-width: $commit-height;
+        min-height: $commit-height;
+        white-space: nowrap;
+		background-size: $commit-height $commit-height !important;
+
+        &.gitline-expandable-expanded {
+          padding-left: ($commit-height + 4px);
+          font-style: italic;
+          line-height: $commit-height;
+        }
+      }
+
+      gitline-identity-datetime {
+        font-style: italic;
+        color: $link-color;
+        padding-left: $commit-entry-space;
+      }
+    }
+  }
 }
 
 gitline-graphicalpanel {
@@ -120,4 +130,3 @@ gitline-graphicalpanel {
   position: absolute !important;
   display: block;
 }
-
