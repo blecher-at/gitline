@@ -2,19 +2,7 @@
   background-color: lightgrey;
 }
 
-.commit-legend {
-  border-bottom: 1px solid #e0e0e0;
-  min-width: 250px;
-  box-sizing: content-box;
 
-  span.head-label {
-    line-height: 21px;
-  }
-
-  span {
-    line-height: 17px;
-  }
-}
 
 body {
   font-family: Verdana, Arial, sans-serif;
@@ -50,13 +38,7 @@ gitline-headerpanel {
   cursor: pointer;
 }
 
-gitline-sha {
-  display: inline;
-  color: steelblue;
-  font-size: 13px;
-  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
-  DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
-}
+
 
 gitline-contentpanel {
   position: relative;
@@ -80,27 +62,57 @@ gitline-loadingpanel {
 gitline-textpanel {
   z-index: 2;
   min-width: 300px;
+  
+  gitline-legend {
+	display: block;
+	border-bottom: 1px solid #e0e0e0;
+	min-width: 250px;
+	min-height: 18px;
+	box-sizing: content-box;
+	line-height: 18px;
+	
+	gitline-sha {
+	  display: inline;
+	  color: steelblue;
+	  font-size: 13px;
+	  font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono,
+	  DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, sans-serif;
+	}
+	  
+	gitline-identity-container {
+	  padding: 0 3px 0 3px;
+		
+	  gitline-identity {
+		display: inline-block;
+		min-width: 18px;
+		min-height: 18px;
+		white-space: nowrap;
+		vertical-align: top;
+		
+		&.gitline-expandable-expanded {
+		  padding-left: 24px;
+		  font-style: italic;
+		}
+	  }
+		
+	  gitline-identity-datetime {
+	    display: inline-block;
+	    padding-left: 6px;
+	  }
+	}
+	
+    gitline-ref {
+	  margin-right: 3px;
+    }	
+  }
 }
 
-gitline-identity-container {
-  padding: 0 3px 0 3px;
-
-  gitline-identity {
-    display: inline-block;
-    min-width: 18px;
-    min-height: 18px;
-	white-space: nowrap;
-
-    &.gitline-expandable-expanded {
-      padding-left: 24px;
-      font-style: italic;
-    }
-  }
-
-  gitline-identity-datetime {
-    display: inline-block;
-    padding-left: 6px;
-  }
+.gitline-expandable, .gitline-expandable-expanded {
+  -moz-user-select     : none;
+  -khtml-user-select   : none;
+  -webkit-user-select  : none;
+  -o-user-select       : none;
+  user-select          : none;
 }
 
 gitline-graphicalpanel {
@@ -109,6 +121,3 @@ gitline-graphicalpanel {
   display: block;
 }
 
-gitline-ref {
-	margin-right: 3px;
-}

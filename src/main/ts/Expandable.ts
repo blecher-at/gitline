@@ -15,7 +15,6 @@ module Gitline {
 			extended.whenFull = (innerHTML: string) => {
 				extended.onclick = (event) => {
 					extended.innerHTML = innerHTML;
-					event.cancelBubble = true;
 					element.classList.add("gitline-expandable-expanded");
 					selectElementText(element);
 				};
