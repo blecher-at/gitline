@@ -25,7 +25,8 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-typescript": "^2.9.2",
     "gulp-uglify": "^1.4.2",
-    "log4js": "^0.6.27"
+    "log4js": "^0.6.27",
+    "moment": "^2.10.6"
   },
   "repository": {
     "type": "git",

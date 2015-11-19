@@ -1,5 +1,7 @@
 ///<reference path="../CommitProvider.ts"/>
 ///<reference path="../typedefs/jquery.d.ts"/>
+///<reference path="../typedefs/moment-node.d.ts"/>
+///<reference path="../typedefs/moment.d.ts"/>
 
 declare var Logger: any;
 
@@ -125,12 +127,12 @@ module Gitline.Plugin {
 				});
 				c.authorname = data.commit.author.name;
 				c.authoremail = data.commit.author.email;
-				c.authordate = data.commit.author.date;
+				c.authordate = moment(data.commit.author.date).unix();
 				c.authortimestamp = new Date(data.commit.author.date).getTime();
 
 				c.committername = data.commit.committer.name;
 				c.committeremail = data.commit.committer.email;
-				c.committerdate = data.commit.committer.date;
+				c.committerdate = moment(data.commit.committer.date).unix();
 				c.committertimestamp = new Date(data.commit.committer.date).getTime();
 
 				c.subject = data.commit.message;
