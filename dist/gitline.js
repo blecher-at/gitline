@@ -259,7 +259,7 @@ var Gitline;
             GithubCommitProvider.prototype.loadForks = function (url) {
                 var _this = this;
                 jQuery.getJSON(this.gitURL(url, "forks")).done(function (forks) {
-                    if (forks.data.message === "Bad credentials") {
+                    if (forks.data.message !== undefined) {
                         _this.error("Github API: " + forks.data.message);
                         return;
                     }
@@ -426,6 +426,9 @@ var Gitline;
                 _this.commitProvider.withCallback(function (json) {
                     _this.data = json;
                     _this.al.resume();
+                });
+                _this.commitProvider.withErrorCallback(function (error) {
+                    _this.al.error(error);
                 });
                 _this.commitProvider.request();
             }).then("Loading Commits", function () {
