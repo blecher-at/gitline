@@ -15,13 +15,14 @@
 <script type="text/javascript" src="dist/external/md5.js"></script>
 <script type="text/javascript" src="dist/external/jsgl.min.js"></script>
 <script type="text/javascript" src="dist/external/logger.min.js"></script>
+<script type="text/javascript" src="dist/external/moment.min.js"></script>
 
 <link rel="stylesheet" href="dist/gitline.min.css"></link>
 <script type="text/javascript" src="dist/gitline.min.js"></script>
 
 <script type="text/javascript">
         $(function() {
-                new Gitline()
+                Gitline.create()
                         .fromJSON("dist/data/example02.json")
                         .renderTo(document.getElementById("sample"));
         });
