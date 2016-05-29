@@ -25,6 +25,6 @@ after_success:
   - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "feature/GL-36-dist" && bash deploy.sh gh-pages-test
 
 before_install:
-  - docker build -t blecherat/gitline .
+  - docker build -t blecherat/gitline docker-image
   - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
   - docker push blecherat/gitline
