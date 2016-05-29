@@ -9,6 +9,11 @@ Needs a JSON file as input (generated with [git2json](https://github.com/blecher
 
 gitline tries to be aware of your branching scheme. It will autodetect the category and assignment of branches and groups commits accordingly.
 
+Run it on a server (requires docker)
+-----
+docker run -dP -e REPO_URL="https://github.com/blecher-at/gitline" -e REPO_NAME="Gitline" blecherat/gitline
+see https://github.com/blecher-at/gitline/tree/master/docker-image for more details
+
 Installation / Setup of development environment
 -----
 - Install Node.js
