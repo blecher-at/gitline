@@ -1,3 +1,8 @@
+var __extends = (this && this.__extends) || function (d, b) {
+    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+    function __() { this.constructor = d; }
+    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+};
 var Gitline;
 (function (Gitline) {
     var AsyncLoadingItem = (function () {
@@ -9,7 +14,7 @@ var Gitline;
             this.of = of;
         }
         return AsyncLoadingItem;
-    })();
+    }());
     var AsyncLoader = (function () {
         function AsyncLoader(element) {
             this.items = [];
@@ -86,7 +91,7 @@ var Gitline;
             this.suspend();
         };
         return AsyncLoader;
-    })();
+    }());
     Gitline.AsyncLoader = AsyncLoader;
 })(Gitline || (Gitline = {}));
 ///<reference path="typedefs/cryptojs.d.ts"/>
@@ -107,7 +112,7 @@ var Gitline;
             return "http://www.gravatar.com/avatar/" + CryptoJS.MD5(email.toLowerCase()) + "?s=20&d=mm";
         };
         return Config;
-    })();
+    }());
     Gitline.Config = Config;
 })(Gitline || (Gitline = {}));
 var Gitline;
@@ -136,7 +141,7 @@ var Gitline;
             this.errorCallback(e);
         };
         return CommitProvider;
-    })();
+    }());
     Gitline.CommitProvider = CommitProvider;
 })(Gitline || (Gitline = {}));
 ///<reference path="typedefs/jquery.d.ts"/>
@@ -189,17 +194,12 @@ var Gitline;
             }
         };
         return Expandable;
-    })();
+    }());
     Gitline.Expandable = Expandable;
 })(Gitline || (Gitline = {}));
 ///<reference path="../CommitProvider.ts"/>
 ///<reference path="../Main.ts"/>
 ///<reference path="../typedefs/jquery.d.ts"/>
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
 var Gitline;
 (function (Gitline) {
     var Plugin;
@@ -220,7 +220,7 @@ var Gitline;
                 });
             };
             return LocalGit2JsonProvider;
-        })(Gitline.CommitProvider);
+        }(Gitline.CommitProvider));
         Plugin.LocalGit2JsonProvider = LocalGit2JsonProvider;
     })(Plugin = Gitline.Plugin || (Gitline.Plugin = {}));
 })(Gitline || (Gitline = {}));
@@ -379,7 +379,7 @@ var Gitline;
                 }
             };
             return GithubCommitProvider;
-        })(Gitline.CommitProvider);
+        }(Gitline.CommitProvider));
         Plugin.GithubCommitProvider = GithubCommitProvider;
     })(Plugin = Gitline.Plugin || (Gitline.Plugin = {}));
 })(Gitline || (Gitline = {}));
@@ -651,7 +651,7 @@ var Gitline;
             return this;
         };
         return Main;
-    })();
+    }());
     Gitline.Main = Main;
 })(Gitline || (Gitline = {}));
 var Gitline;
@@ -685,7 +685,7 @@ var Gitline;
                 on.dependencies.push(this);
             };
             return Shape;
-        })();
+        }());
         Rendering.Shape = Shape;
     })(Rendering = Gitline.Rendering || (Gitline.Rendering = {}));
 })(Gitline || (Gitline = {}));
@@ -720,7 +720,7 @@ var Gitline;
                 return this;
             };
             return BaseLink;
-        })(Rendering.Shape);
+        }(Rendering.Shape));
         Rendering.BaseLink = BaseLink;
     })(Rendering = Gitline.Rendering || (Gitline.Rendering = {}));
 })(Gitline || (Gitline = {}));
@@ -768,7 +768,7 @@ var Gitline;
                 }
             };
             return Curve;
-        })(Rendering.BaseLink);
+        }(Rendering.BaseLink));
         Rendering.Curve = Curve;
     })(Rendering = Gitline.Rendering || (Gitline.Rendering = {}));
 })(Gitline || (Gitline = {}));
@@ -788,7 +788,7 @@ var Gitline;
                 this.element.setEndPointXY(this.childDot.x, this.childDot.y + this.childDot.height / 2);
             };
             return Straight;
-        })(Rendering.BaseLink);
+        }(Rendering.BaseLink));
         Rendering.Straight = Straight;
     })(Rendering = Gitline.Rendering || (Gitline.Rendering = {}));
 })(Gitline || (Gitline = {}));
@@ -828,7 +828,7 @@ var Gitline;
                 this.secondLine.getStroke().setColor(this.lineColor);
             };
             return Creation;
-        })(Rendering.BaseLink);
+        }(Rendering.BaseLink));
         Rendering.Creation = Creation;
     })(Rendering = Gitline.Rendering || (Gitline.Rendering = {}));
 })(Gitline || (Gitline = {}));
@@ -871,7 +871,7 @@ var Gitline;
                 _super.prototype.update.call(this);
             };
             return Dot;
-        })(Rendering.Shape);
+        }(Rendering.Shape));
         Rendering.Dot = Dot;
     })(Rendering = Gitline.Rendering || (Gitline.Rendering = {}));
 })(Gitline || (Gitline = {}));
@@ -926,7 +926,7 @@ var Gitline;
                 .color(this.commit.getColor(20), this.commit.getColor(80));
         };
         return CommitView;
-    })();
+    }());
     Gitline.CommitView = CommitView;
 })(Gitline || (Gitline = {}));
 ///<reference path="Main.ts"/>
@@ -944,7 +944,7 @@ var Gitline;
             this.date = date;
         }
         return Identity;
-    })();
+    }());
     Gitline.Identity = Identity;
     var Commit = (function () {
         function Commit(container, data) {
@@ -1166,7 +1166,7 @@ var Gitline;
             return null;
         };
         return Commit;
-    })();
+    }());
     Gitline.Commit = Commit;
 })(Gitline || (Gitline = {}));
 ///<reference path="Commit.ts"/>
@@ -1181,7 +1181,7 @@ var Gitline;
             this.category = this.shortname.substring(0, this.shortname.lastIndexOf("/"));
         }
         return Branch;
-    })();
+    }());
     Gitline.Branch = Branch;
 })(Gitline || (Gitline = {}));
 
