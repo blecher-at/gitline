@@ -11,7 +11,8 @@ gitline tries to be aware of your branching scheme. It will autodetect the categ
 
 Run it on a server (requires docker)
 -----
-docker run -dP -e REPO_URL="https://github.com/blecher-at/gitline" -e REPO_NAME="Gitline" blecherat/gitline
+    docker run -dP -e REPO_URL="https://github.com/blecher-at/gitline" -e REPO_NAME="Gitline" blecherat/gitline
+  
 see https://github.com/blecher-at/gitline/tree/master/docker-image for more details
 
 Installation / Setup of development environment
