@@ -1,6 +1,5 @@
-///<reference path="Commit.ts"/>
+import { Commit } from "./Commit";
 
-module Gitline {
 	export class Branch {
 		public specifity: number;
 		public start: Commit;
@@ -22,4 +21,3 @@ module Gitline {
 			this.category = this.shortname.substring(0, this.shortname.lastIndexOf("/"));
 		}
 	}
-}

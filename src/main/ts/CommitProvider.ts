@@ -1,4 +1,3 @@
-module Gitline {
 	export class CommitProvider {
 		private url;
 		private callback: Function;
@@ -33,4 +32,3 @@ module Gitline {
 			this.errorCallback(e);
 		}
 	}
-}

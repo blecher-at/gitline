@@ -1,35 +1,51 @@
 {
-  "name": "gitline",
-  "version": "0.0.1",
+  "name": "@piotrpdev/gitline",
+  "version": "1.0.6",
   "description": "Graphical git UI",
-  "author": "Stephan Blecher <stephan@blecher.at>",
+  "author": "Piotr Placzek <piotrpdev@gmail.com>",
+  "license": "AGPL-3.0-only",
   "keywords": [
     "git",
     "ui",
     "graph",
     "network"
   ],
-  "preferGlobal": true,
-  "private": true,
-  "devDependencies": {
-    "chai": "^3.4.1",
-    "del": "^2.0.2",
-    "gulp": "^3.9.0",
-    "gulp-all": "^1.0.3",
-    "gulp-deploy-git": "^0.5.1",
-    "gulp-github-release": "^1.0.3",
-    "gulp-mocha": "^2.1.3",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.1.0",
-    "gulp-serve": "^1.2.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-typescript": "^2.9.2",
-    "gulp-uglify": "^1.4.2",
-    "log4js": "^0.6.27",
-    "moment": "^2.10.6"
+  "scripts": {
+    "dev": "vite",
+    "dev:demo": "vite build && vite --config vite-demo.config.ts",
+    "build": "tsc && vite build",
+    "build:demo": "vite build && vite build --config vite-demo.config.ts",
+    "test": "vitest --dir src/test"
   },
+  "devDependencies": {
+    "@types/node": "^20.8.10",
+    "@types/spark-md5": "^3.0.4",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "vite-plugin-static-copy": "^0.17.0",
+    "vitest": "^0.34.6"
+  },
+  "homepage": "https://github.com/piotrpdev/gitline#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/blecher-at/gitline.git"
+    "url": "git+https://github.com/piotrpdev/gitline.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piotrpdev/gitline/issues"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/gitline.umd.js",
+  "module": "./dist/gitline.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/gitline.es.js",
+      "require": "./dist/gitline.umd.js"
+    }
+  },
+  "dependencies": {
+    "spark-md5": "^3.0.2"
   }
 }

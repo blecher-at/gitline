@@ -1,6 +1,5 @@
-///<reference path="BaseLink.ts"/>
+import { BaseLink } from "./BaseLink";
 
-module Gitline.Rendering {
 	export class Straight extends BaseLink {
 
 		constructor(canvas: any) {
@@ -13,5 +12,4 @@ module Gitline.Rendering {
 			this.element.setEndPointXY(this.childDot.x, this.childDot.y + this.childDot.height / 2);
 		}
 
-}
 }

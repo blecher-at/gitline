@@ -1,8 +1,5 @@
-///<reference path="BaseLink.ts"/>
+import { BaseLink } from "./BaseLink";
 
-declare var jsgl: any;
-
-module Gitline.Rendering {
 	export class Curve extends BaseLink {
 
 		private arrow;
@@ -54,4 +51,3 @@ module Gitline.Rendering {
 			}
 		}
 	}
-}

@@ -1,11 +1,5 @@
-///<reference path="../CommitProvider.ts"/>
-///<reference path="../typedefs/jquery.d.ts"/>
-///<reference path="../typedefs/moment-node.d.ts"/>
-///<reference path="../typedefs/moment.d.ts"/>
+import { CommitProvider } from "../CommitProvider";
 
-declare var Logger: any;
-
-module Gitline.Plugin.Github {
 	export interface Branch {
 		name: string;
 		repo: string;
@@ -23,18 +17,14 @@ module Gitline.Plugin.Github {
 	export interface Commit {
 		sha: string;
 	}
-}
-
-module Gitline.Plugin {
-	import Github = Gitline.Plugin.Github;
 
 	/**
 	 * GitHub commit provider. only works if there is and accesstoken configured in the browser
 	 */
-	export class GithubCommitProvider extends Gitline.CommitProvider {
+	export class GithubCommitProvider extends CommitProvider {
 
-		private forks: Github.Fork[] = [];
-		private baseBranches: Github.Branch[] = [];
+		private forks: Fork[] = [];
+		private baseBranches: Branch[] = [];
 		private data: {} = {};
 
 		private limit: number;
@@ -50,33 +40,43 @@ module Gitline.Plugin {
 
 			// convert to api url and remove trailing /
 			if (url.indexOf("api.github.com") == -1) {
-				url = url.replace(/.*github.com/, "https://api.github.com/repos/").replace(/\/\//g, "/");
-
+				url = url.replace(/.*github.com\//, "https://api.github.com/repos/");
 			}
-			return url + "/" + api + "?access_token=" + this.accessToken + "&per_page=" + this.limit + "&callback=?&" + params;
+
+			return url + "/" + api + "?per_page=" + this.limit + "&" + params;
 		}
+
+		public fetchGithubJson = (url: string) =>
+			fetch(url, {
+				headers: {
+					...(this.accessToken && {"Authorization": `token ${this.accessToken}`}),
+					"Accept": "application/vnd.github.v3+json",
+				}
+			}).then((response) => {
+				if (response.ok) {
+				  return response.json();
+				}
+				throw new Error('Response wasn\'t OK when fetching JSON');
+			})
 
 		public onRequested(url: string) {
 			this.loadForks(url);
 		}
 
 		public loadForks(url: string) {
-			jQuery.getJSON(this.gitURL(url, "forks")).done((forks) => {
-				if (forks.data.message !== undefined) {
-					this.error("Github API: " + forks.data.message);
-					return;
-				}
-
-				jQuery.getJSON(this.gitURL(url, "branches")).done((branches) => {
-					this.processBranches(url, branches.data);
-					this.forks = forks.data;
+			this.fetchGithubJson(this.gitURL(url, "forks")).then((forks) => {
+				this.fetchGithubJson(this.gitURL(url, "branches")).then((branches) => {
+					this.processBranches(url, branches);
+					this.forks = forks;
 
 					this.loadBranches();
 				})
+			}).catch((error) => {
+				this.error("Github API: " + error);
 			});
 		}
 
-		public processBranches(fork, data: Github.Branch[]) {
+		public processBranches(fork, data: Branch[]) {
 			data.forEach(branch => {
 				branch.repo = fork.url !== undefined ? fork.url : fork;
 				if (fork.full_name !== undefined) {
@@ -88,13 +88,13 @@ module Gitline.Plugin {
 
 		public loadBranches() {
 			var forkRequests = this.forks.map(fork => {
-				return jQuery.getJSON(this.gitURL(fork.url, "branches"), data => {
-					Logger.debug("loaded branches for " + fork.name);
-					this.processBranches(fork, data.data);
-				})
+				return this.fetchGithubJson(this.gitURL(fork.url, "branches")).then(branches => {
+					console.debug("loaded branches for " + fork.name);
+					this.processBranches(fork, branches);
+				});
 			});
-			jQuery.when.apply(jQuery, forkRequests).done(() => {
-				Logger.debug("all branches loaded");
+			Promise.all(forkRequests).then(() => {
+				console.debug("all branches loaded");
 				this.loadCommits();
 			});
 		}
@@ -105,14 +105,14 @@ module Gitline.Plugin {
 				var commit = this.data[b.commit.sha];
 				if (commit == undefined) {
 					commitRequests.push(
-						jQuery.getJSON(this.gitURL(b.repo, "commits", "sha=" + b.commit.sha), data => {
-							Logger.debug("loaded commits for " + b.name);
-							this.processCommits(data.data);
+						this.fetchGithubJson(this.gitURL(b.repo, "commits", "sha=" + b.commit.sha)).then(commits => {
+							console.debug("loaded commits for " + b.name);
+							this.processCommits(commits);
 						}));
 				}
 			});
 
-			jQuery.when.apply(jQuery, commitRequests).done(() => {
+			Promise.all(commitRequests).then(() => {
 				this.process();
 			});
 		}
@@ -127,13 +127,13 @@ module Gitline.Plugin {
 				});
 				c.authorname = data.commit.author.name;
 				c.authoremail = data.commit.author.email;
-				c.authordate = moment(data.commit.author.date).unix();
-				c.authortimestamp = moment(data.commit.author.date).valueOf();
+				c.authordate = new Date(data.commit.author.date).valueOf() / 1000;
+				c.authortimestamp = new Date(data.commit.author.date).valueOf();
 
 				c.committername = data.commit.committer.name;
 				c.committeremail = data.commit.committer.email;
-				c.committerdate = moment(data.commit.committer.date).unix();
-				c.committertimestamp = moment(data.commit.committer.date).valueOf();
+				c.committerdate = new Date(data.commit.committer.date).valueOf() / 1000;
+				c.committertimestamp = new Date(data.commit.committer.date).valueOf();
 
 				c.subject = data.commit.message;
 				c.body = ""; // Todo: where to get this?
@@ -193,4 +193,3 @@ module Gitline.Plugin {
 			}
 		}
 	}
-}

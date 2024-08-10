@@ -1,12 +1,10 @@
-///<reference path="rendering/Curve.ts"/>
-///<reference path="rendering/Straight.ts"/>
-///<reference path="rendering/Creation.ts"/>
-///<reference path="rendering/Dot.ts"/>
-///<reference path="Config.ts"/>
-///<reference path="Commit.ts"/>
-///<reference path="rendering/Shape.ts"/>
-
-module Gitline {
+import { Commit } from "./Commit";
+import { Config } from "./Config";
+import { Creation } from "./rendering/Creation";
+import { Curve } from "./rendering/Curve";
+import { Dot } from "./rendering/Dot";
+import { Shape } from "./rendering/Shape";
+import { Straight } from "./rendering/Straight";
 
 	/**
 	 * View of the Commit
@@ -18,28 +16,28 @@ module Gitline {
 		public canvas: any; // jsgl
 		public config: Config;
 
-		public dot: Rendering.Dot;
-		public lines: Rendering.Shape[] = [];
+		public dot: Dot;
+		public lines: Shape[] = [];
 
 		constructor(canvas, config: Config, commit: Commit) {
 			this.canvas = canvas;
 			this.config = config;
 			this.commit = commit;
 
-			this.dot = new Rendering.Dot(this.canvas);
+			this.dot = new Dot(this.canvas);
 		}
 
 		public addRelations() {
 
 			// Direct parent
 			if (this.commit.directparent != null) {
-				var dpl: Rendering.Shape;
+				var dpl: Shape;
 				if (this.commit.getLane() == this.commit.directparent.getLane() || this.commit.directparent.outOfScope) {
 					// direct parent is the same X/lane, this means it is a standard forward commit
-					dpl = new Rendering.Straight(this.canvas).from(this.commit.directparent.view.dot).to(this.dot).color(this.commit.getColor(20));
+					dpl = new Straight(this.canvas).from(this.commit.directparent.view.dot).to(this.dot).color(this.commit.getColor(20));
 				} else {
 					// direct parent is on a different lane, this is most certainly a new branch
-					dpl = new Rendering.Creation(this.canvas).from(this.commit.directparent.view.dot).to(this.dot).color(this.commit.getColor(30));
+					dpl = new Creation(this.canvas).from(this.commit.directparent.view.dot).to(this.dot).color(this.commit.getColor(30));
 				}
 
 				this.lines.push(dpl);
@@ -48,7 +46,7 @@ module Gitline {
 			var allmerges = this.commit.merges.standard.concat(this.commit.merges.anonymous);
 			allmerges.forEach(merge => {
 				this.lines.push(
-					new Rendering.Curve(this.canvas)
+					new Curve(this.canvas)
 						.from(merge.source.view.dot)
 						.to(this.dot)
 						.color(merge.source.getColor(35)))
@@ -66,4 +64,3 @@ module Gitline {
 
 
 	}
-}

@@ -1,6 +1,5 @@
-/// <reference path="Shape.ts"/>
+import { Shape } from "./Shape";
 
-module Gitline.Rendering {
 	export class Dot extends Shape {
 
 		x: number;
@@ -47,4 +46,3 @@ module Gitline.Rendering {
 			super.update();
 		}
 	}
-}

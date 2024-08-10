@@ -1,8 +1,6 @@
-///<reference path="BaseLink.ts"/>
+import { BaseLink } from "./BaseLink";
 
 declare var jsgl: any;
-
-module Gitline.Rendering {
 	export class Creation extends BaseLink {
 
 		secondLine;
@@ -41,4 +39,3 @@ module Gitline.Rendering {
 			this.secondLine.getStroke().setColor(this.lineColor);
 		}
 	}
-}

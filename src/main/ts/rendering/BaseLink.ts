@@ -1,6 +1,5 @@
-///<reference path="Shape.ts"/>
-
-module Gitline.Rendering {
+import { Dot } from "./Dot";
+import { Shape } from "./Shape";
 
 	/**
 	 * Shape that links two dots
@@ -36,4 +35,3 @@ module Gitline.Rendering {
 			return this;
 		}
 	}
-}

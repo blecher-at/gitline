@@ -1,101 +1,118 @@
-module Gitline {
-	class AsyncLoadingItem {
-		public label: string;
-		public data: any;
-		public callback: Function;
-		public index: number;
-		public of: number;
+class AsyncLoadingItem {
+    public label: string;
+    public data: any;
+    public callback: Function;
+    public index: number;
+    public of: number;
 
-		constructor(label: string, data: any, callback: Function, index: number, of: number) {
-			this.label = label;
-			this.data = data;
-			this.callback = callback;
-			this.index = index;
-			this.of = of;
-		}
-	}
+    constructor(label: string, data: any, callback: Function, index: number, of: number) {
+        this.label = label;
+        this.data = data;
+        this.callback = callback;
+        this.index = index;
+        this.of = of;
+    }
+}
 
-	export class AsyncLoader {
+export class AsyncLoader {
+    private element: HTMLElement;
+    private queue: (() => Promise<void>)[] = []; // Now storing a queue of functions returning promises.
+    private suspended: boolean = false;
 
-		private element: HTMLElement;
-		private items: AsyncLoadingItem[] = [];
-		private suspended: boolean = false;
+    constructor(element: HTMLElement) {
+        this.element = element;
+    }
 
-		constructor(element: HTMLElement) {
-			this.element = element;
-		}
+    public then(label: string, dataCallback: Function, callback: Function): AsyncLoader {
+        // Store the function returning a promise in the queue.
+        this.queue.push(() => this.processBatch(label, dataCallback, callback));
+        return this;
+    }
 
-		/** do this async, display the label and the data */
-		public then(label: string, datacallback: Function, callback: Function): AsyncLoader {
-			this.thenSingle(label, () => {
-				// add it to the beginning of the queue
-				var data: any[] = datacallback();
-				for (var i = data.length - 1; i >= 0; i--) {
-					this.items.unshift(new AsyncLoadingItem(label, data[i], callback, i, data.length));
-				}
-			});
-			return this;
-		}
+    public thenSingle(label: string, callback: Function): AsyncLoader {
+        // Store the function returning a promise in the queue.
+        this.queue.push(() => this.processSingle(label, callback));
+        return this;
+    }
 
-		public thenSingle(label: string, callback: Function): AsyncLoader {
-			this.items.push(new AsyncLoadingItem(label, null, callback, 0, 1));
-			return this;
-		}
+    private processSingle(label: string, callback: Function): Promise<void> {
+        // The showStatus and other synchronous code should be placed outside of the promise constructor.
+        const item = new AsyncLoadingItem(label, null, callback, 0, 1);
+        this.showStatus(item);
 
-		public start(shield: boolean = true) {
-			if (shield) {
-				this.element.hidden = false;
-			}
-			this.next();
-		}
+        return new Promise<void>((resolve, reject) => {
+            try {
+                callback();
+                resolve();
+            } catch (error) {
+                reject(error);
+            }
+        });
+    }
 
-		public next() {
-			var nextItem: AsyncLoadingItem = this.items.shift();
-			if (nextItem !== undefined) {
-				// avoid yielding control unnecessarily, but limit stack depth at the same time
-				if ((nextItem.index % 50) === 0) {
-					this.showStatus(nextItem);
-					window.setTimeout(() => {
-						Logger.debug("executing " + nextItem.label + " (" + nextItem.index + "/" + nextItem.of + ")");
-						this.execute(nextItem);
-					}, 0);
-				} else {
-					this.execute(nextItem);
-				}
-			} else {
-				this.element.hidden = true;
-			}
-		}
+    private processBatch(label: string, dataCallback: Function, itemCallback: Function): Promise<void> {
+        const data = dataCallback();
+        const promises = data.map((itemData, index) => {
+            const item = new AsyncLoadingItem(label, itemData, itemCallback, index, data.length);
+            return this.processItem(item, itemCallback);
+        });
 
-		public suspend() {
-			this.suspended = true;
-		}
+        return Promise.all(promises).then(() => {});
+    }
 
-		public resume() {
-			this.suspended = false;
-			this.next();
-		}
+    private processItem(item: AsyncLoadingItem, itemCallback: Function): Promise<void> {
+        this.showStatus(item);
 
-		public showStatus(item: AsyncLoadingItem) {
-			this.element.innerHTML = item.label; // + " ("+item.index + "/"+item.of+")";
-		}
+        return new Promise<void>((resolve, reject) => {
+            try {
+                itemCallback(item.data);
+                resolve();
+            } catch (error) {
+                reject(error);
+            }
+        });
+    }
 
-		public execute(item: AsyncLoadingItem) {
-			try {
-				item.callback(item.data);
-				if (!this.suspended) {
-					this.next();
-				}
-			} catch (e) {
-				this.error(e);
-			}
+	private async processQueue(): Promise<void> {
+        while (this.queue.length > 0 && !this.suspended) {
+            const task = this.queue.shift(); // Get the next task.
+            if (task) {
+                try {
+                    await task();
+                } catch (e) {
+                    this.error(e);
+                    break;
+                }
+            }
+        }
+        if (this.queue.length === 0) {
+            this.element.hidden = true; // Hide the element when all tasks are done.
+        }
+    }
 
-		}
+    public start(shield: boolean = true): Promise<void> {
+        if (shield && this.suspended === false) {
+            this.element.hidden = false;
+        }
+        return this.processQueue();
+    }
 
-		public error(e: any) {
-			Logger.error(e);
-			this.element.innerHTML = e;
-			this.suspend();
-		}
-	}
+    public suspend() {
+        this.suspended = true;
+    }
+
+    public resume() {
+        this.suspended = false;
+        this.start(false); // Pass 'false' to indicate the element should stay as is.
+    }
+
+    public showStatus(item: AsyncLoadingItem) {
+        this.element.innerHTML = `${item.label} (${item.index + 1}/${item.of})`;
+    }
+
+    public error(e: any) {
+        console.error(e);
+        this.element.innerHTML = 'Error: ' + e.toString();
+        this.suspend();
+    }
 }
